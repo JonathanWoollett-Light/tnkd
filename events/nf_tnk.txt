@@ -1,0 +1,871 @@
+add_namespace = nf_tnk #3.0
+
+country_event = {
+	id = nf_tnk.1
+	title = tnk_leaving_the_big_empty #Heh, hack here to make writing events easier :pepega:
+	desc = tnk_leaving_the_big_empty_desc
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.1.a
+		add_war_support = 0.1
+	}
+
+	option = {
+		name = nf_tnk.1.b
+		add_stability = 0.1
+	}
+}
+
+country_event = {
+	id = nf_tnk.2
+	title = tnk_eyes_forward_with_hope
+	desc = tnk_eyes_forward_with_hope_desc
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.2.a
+		add_offsite_building = {
+			type = industrial_complex
+			level = 4
+		}
+	}
+
+	option = {
+		name = nf_tnk.2.b
+		add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+	}
+}
+
+country_event = {
+	id = nf_tnk.3
+	title = tnk_personality_restoration
+	desc = tnk_personality_restoration_desc
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.3.a
+		add_political_power = 300
+	}
+
+	option = {
+		name = nf_tnk.3.b
+		capital_scope = {
+			add_extra_state_shared_building_slots = 5
+		}
+	}
+}
+
+#Tranquility Lane Schooling Board
+country_event = {
+	id = nf_tnk.4
+	title = nf_tnk.4.t
+	desc = nf_tnk.4.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.4.a
+		add_political_power = 150
+	}
+}
+
+#Sorrows event!
+country_event = {
+	id = nf_tnk.5
+	title = nf_tnk.5.t
+	desc = nf_tnk.5.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+	immediate = {
+		set_variable = { mp = manpower_k }
+		multiply_variable = {
+			var = mp
+			value = -100
+		}
+	}
+
+	option = {
+		name = nf_tnk.5.a
+		add_manpower = mp
+		TNK = {
+			country_event = nf_tnk.51
+		}
+	}
+}
+
+country_event = {
+	id = nf_tnk.51
+	title = nf_tnk.51.t
+	desc = nf_tnk.51.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+	immediate = {
+		set_variable = { mp2 = FROM.mp }
+		FROM = { clear_variable = mp }
+		multiply_variable = {
+			var = mp2
+			value = -1
+		}
+	}
+
+	option = {
+		name = nf_tnk.51.a
+		add_manpower = mp2
+		clear_variable = mp2
+	}
+}
+
+country_event = {
+	id = nf_tnk.6
+	title = nf_tnk.6.t
+	desc = nf_tnk.6.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.6.a
+		add_tech_bonus = {
+			bonus = 1
+			category = computing_tech
+		}
+	}
+}
+
+country_event = {
+	id = nf_tnk.7
+	title = nf_tnk.7.t
+	desc = nf_tnk.7.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.7.a
+		add_research_slot = 1
+	}
+}
+
+country_event = {
+	id = nf_tnk.70
+	title = tnk_tranquility_lane_high_schools
+	desc = tnk_tranquility_lane_high_schools_desc
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.70.a
+		add_ideas = tnk_tranquility_lane_high_schools
+		unlock_decision_tooltip = remove_tranquility_lane_high_schools
+	}
+}
+
+
+country_event = {
+	id = nf_tnk.8
+	title = tnk_0_bitterness_against_national_electric
+	desc = tnk_0_bitterness_against_national_electric_desc
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.8.a
+		add_political_power = 150
+	}
+}
+
+country_event = {
+	id = nf_tnk.9
+	title = tnk_8_looking_for_a_new_song
+	desc = tnk_8_looking_for_a_new_song_desc
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.9.a
+		add_political_power = 150
+	}
+}
+
+#A miracle of science
+
+country_event = {
+	id = nf_tnk.10
+	title = nf_tnk.10.t
+	desc = nf_tnk.10.d
+	picture = GFX_event_MOJ_sierra_madre
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.10.a
+		set_country_flag = tnk_miracle_of_science
+	}
+}
+
+country_event = {
+	id = nf_tnk.13
+	title = nf_tnk.13.t
+	desc = nf_tnk.13.d
+	picture = GFX_event_MOJ_sierra_madre
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.13.a
+		add_ideas = tnk_national_electric_corporate_secrets
+	}
+}
+
+country_event = {
+	id = nf_tnk.14
+	title = nf_tnk.14.t
+	desc = nf_tnk.14.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.14.a
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = nf_tnk.15
+	title = nf_tnk.15.t
+	desc = nf_tnk.15.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.14.a
+		add_manpower = 250
+	}
+}
+
+country_event = {
+	id = nf_tnk.16
+	title = nf_tnk.16.t
+	desc = nf_tnk.16.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.16.a
+		army_experience = 10
+	}
+}
+
+country_event = {
+	id = nf_tnk.17
+	title = nf_tnk.17.t
+	desc = nf_tnk.17.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.17.a
+		country_event = nf_tnk.18
+	}
+}
+
+country_event = {
+	id = nf_tnk.18
+	title = nf_tnk.18.t
+	desc = nf_tnk.18.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.18.a
+		hidden_effect = {
+			LUL = {
+				inherit_technology = CES #Based more on CES then TNK!
+				set_technology = {
+					ghoul_civilization = 1
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 4
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 8
+				}
+				every_state = {
+					limit = {
+						OR = {
+							AND = {
+								OR = {
+									state = 359
+									state = 553
+									state = 49
+									state = 130
+									state = 438
+								}
+								is_owned_by = CES
+							}
+							AND = {
+								OR = {
+									is_owned_by = CES
+									is_core_of = CES
+								}
+								is_controlled_by = TNK
+							}
+						}
+					}
+					LUL = {
+						transfer_state = PREV
+					}
+				}
+				load_oob = "LUL"
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Old Triarii\" division_template = \"Triarii\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+						owner = LUL
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = CES
+					}
+					add_core_of = LUL
+				}
+				add_manpower = 6000
+				438 = {
+					add_extra_state_shared_building_slots = 4
+					add_resource = {
+						type = metal
+						amount = 16
+					}
+				}
+				create_or_join_big_mt = yes
+				if = {
+					limit = {
+						country_exists = CES
+					}
+					declare_war_on = {
+						target = CES
+						type = civil_war
+					}
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						is_on_continent = west_coast
+						is_on_continent = land_of_titans
+						is_on_continent = midwest
+					}
+				}
+			}
+			country_event = nf_tnk.19
+		}
+	}
+}
+
+country_event = {
+	id = nf_tnk.19
+	title = nf_tnk.19.t
+	desc = nf_tnk.19.d
+	picture = GFX_event_lul_lunar_legion
+
+	is_triggered_only = yes
+	option = {
+		name = nf_tnk.19.1
+		trigger = {
+			original_tag = TNK
+		}
+	}
+	option = {
+		name = nf_tnk.19.2
+		trigger = {
+			original_tag = TNK
+		}
+		LUL = { change_tag_from = TNK }
+	}
+	option = {
+		name = nf_tnk.19.3
+		trigger = {
+			original_tag = CES
+		}
+	}
+	option = {
+		name = nf_tnk.19.4
+		trigger = {
+			NOT = { original_tag = TNK }
+			NOT = { original_tag = CES }
+		}
+	}
+}
+
+country_event = {
+	id = nf_tnk.20
+	title = nf_tnk.20.t
+	picture = GFX_event_big_mt_event_weird_science
+
+	desc = {
+		text = nf_tnk.20.d.1
+		trigger = {
+			NOT = { has_variable = tnk_warning }
+		}
+	}
+	desc = {
+		text = nf_tnk.20.d.2
+		trigger = {
+			check_variable = {
+				var = tnk_warning
+				value = 1
+				compare = equals
+			}
+		}
+	}
+	desc = {
+		text = nf_tnk.20.d.3
+		trigger = {
+			check_variable = {
+				var = tnk_warning
+				value = 1
+				compare = greater_than
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.20.1
+		trigger = {
+			NOT = { has_variable = tnk_warning }
+		}
+		set_variable = {
+			tnk_warning = 1
+		}
+	}
+	option = {
+		name = nf_tnk.20.2
+		trigger = {
+			check_variable = {
+				var = tnk_warning
+				value = 1
+				compare = equals
+			}
+		}
+		add_to_variable = { tnk_warning = 1 }
+	}
+	option = {
+		name = nf_tnk.20.3
+		trigger = {
+			check_variable = {
+				var = tnk_warning
+				value = 1
+				compare = greater_than
+			}
+		}
+	}
+}
+
+country_event = {
+	id = nf_tnk.21
+	title = tnk_tnkd_next_steps
+	desc = tnk_tnkd_next_steps_desc
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.21.a
+		capital_scope = {
+			add_extra_state_shared_building_slots = 15
+			add_building_construction = {
+				type = bunker2
+				level = 2
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			add_building_construction = {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
+
+	option = {
+		name = nf_tnk.21.b
+        every_owned_state = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker2
+				level = 2
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = nf_tnk.22
+	title = tnk_tnkd_little_green_dot
+	desc = nf_tnk.22.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.22.a
+		add_war_support = 0.05
+	}
+
+	option = {
+		name = nf_tnk.22.b
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = nf_tnk.23
+	title = tnk_tnkd_mobius_convergance
+	desc = nf_tnk.23.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.23.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Guardian"
+			desc = "TNK_DESC"
+			picture = "guardian.dds"
+			expire = "3000.1.1"
+			ideology = technocracy
+			traits = {
+			}
+		}
+		country_event = nf_tnk.33
+	}
+}
+country_event = {
+	id = nf_tnk.24
+	title = tnk_tnkd_true_convergance
+	desc = nf_tnk.24.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.24.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Dominator"
+			desc = "TNK_DESC"
+			picture = "dominator.dds"
+			expire = "3000.1.1"
+			ideology = technocracy
+			traits = {
+			}
+		}
+		country_event = nf_tnk.33
+	}
+}
+country_event = {
+	id = nf_tnk.25
+	title = tnk_tnkd_caesar_deal
+	desc = tnk_tnkd_caesar_deal_desc
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.25.a
+		every_owned_state = {
+			limit = {
+				NOT = {
+					OR = {
+						state = 47
+						state = 67
+						state = 552
+						state = 46
+						state = 573
+						state = 417
+						state = 137
+					}
+				}
+			}
+			CES = {
+				transfer_state = PREV
+			}
+		}
+		diplomatic_relation = {
+			country = CES
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+
+country_event = {
+	id = nf_tnk.26
+	title = tnk_tnkd_shoot_it_down
+	desc = tnk_tnkd_shoot_it_down_desc
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.26.a
+		hidden_effect = {
+			ALI = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 30
+				}
+				ALI = {
+					# transfer_state = PREV
+					transfer_state = 389 # area 51
+				}
+				
+				every_neighbor_country = {
+					ALI = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+				load_oob = "ALI"
+				389 = {
+					add_core_of = PREV
+					add_extra_state_shared_building_slots = 25 # maxes out state
+					add_resource = {
+						type = metal
+						amount = 30
+					}
+					add_resource = {
+						type = advanced
+						amount = 50
+					}
+					add_resource = {
+						type = energy
+						amount = 50
+					}
+					add_resource = {
+						type = composites
+						amount = 50
+					}
+					add_resource = {
+						type = circuitry
+						amount = 50
+					}
+					add_resource = {
+						type = water
+						amount = 20
+					}
+					teleport_armies = {
+						limit = {
+							NOT = { original_tag = ALI } 
+						}
+					}
+				}
+				add_manpower = 500
+			}
+		}
+		every_country = {
+			if {
+				limit = {
+					original_tag = TNK
+				}
+				country_event = nf_tnk.27
+			}
+			else {
+				country_event = nf_tnk.28
+			}
+		}
+	}
+}
+country_event = {
+	id = nf_tnk.27
+	title = nf_tnk.27.t
+	desc = nf_tnk.27.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.27.a
+	}
+	option = {
+		name = nf_tnk.27.b
+		ALI = { change_tag_from = TNK }
+	}
+}
+country_event = {
+	id = nf_tnk.28
+	title = nf_tnk.28.t
+	desc = nf_tnk.28.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.28.a
+		country_event = nf_tnk.28.b
+	}
+}
+
+country_event = {
+	id = nf_tnk.29
+	title = tnk_tnkd_ncr_deal
+	desc = tnk_tnkd_ncr_deal_desc
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.29.a
+		every_owned_state = {
+			limit = {
+				NOT = {
+					OR = {
+						state = 47
+						state = 67
+						state = 46
+						state = 573
+						state = 417
+						state = 137
+					}
+				}
+			}
+			NCR = {
+				transfer_state = PREV
+			}
+		}
+		diplomatic_relation = {
+			country = NCR
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+
+country_event = {
+	id = nf_tnk.30
+	title = nf_tnk.30.t
+	desc = nf_tnk.30.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.30.a
+		add_to_variable = { geck_count = 4 }
+		TNK = {
+			add_to_faction = ROOT
+		}
+	}
+	option = {
+		name = nf_tnk.30.b
+	}
+}
+country_event = {
+	id = nf_tnk.31
+	title = nf_tnk.31.t
+	desc = nf_tnk.31.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.31.a
+		add_to_variable = { geck_count = 4 }
+	}
+}
+country_event = {
+	id = nf_tnk.32
+	title = tnk_tnkd_a_new_frontier
+	desc = nf_tnk.32.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.32.a
+	}
+}
+country_event = {
+	id = nf_tnk.33
+	title = tnk_tnkd_decohesion
+	desc = tnk_tnkd_decohesion_desc
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.33.a
+		add_dynamic_modifier = {
+			modifier = tnk_decohesion_dynamic_modifier
+		}
+		activate_mission = tnk_tnkd_decohesion_decision
+		set_variable = { tnk_decohesion_stability_var = -0.01 }
+		set_variable = { tnk_decohesion_org_var = -0.01 }
+	}
+}
+
+country_event = {
+	id = nf_tnk.34
+	title = tnk_tnkd_peace
+	desc = nf_tnk.34.d
+	picture = GFX_tnkd_event_peace
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.34.a
+	}
+}

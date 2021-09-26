@@ -1,0 +1,127 @@
+ideas = {
+	country = {
+		tnk_old_world_blues = {
+			picture = animated_tnk_mojave_drive_in
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				custom_modifier_tooltip = tnk_old_world_blues_tt
+				caps_expense_modifier = -1
+				exodus_national_appeal = -1
+				exodus_occupier_appeal = -1
+			}
+		}
+		tnk_science_idea = {
+			picture = tnk_science_idea
+			allowed = {
+				always = no
+			}
+			modifier = {
+				custom_modifier_tooltip = tnk_science_idea_tt
+			}
+
+			removal_cost = -1
+		}
+		tnk_mobius_roboscorpion_research_chasis = {
+			picture = tnk_roboscorpion
+			allowed = {
+				always = no
+			}
+			modifier = {
+				fuel_gain_factor = -0.1
+			}
+			equipment_bonus = {
+				support_robot_equipment = {
+					defense = 0.1
+					instant = yes
+				}
+			}
+			removal_cost = -1
+		}
+		tnk_mobius_roboscorpion_research_power = {
+			picture = tnk_roboscorpion
+			allowed = {
+				always = no
+			}
+			modifier = {
+				fuel_gain_factor = 0.2
+			}
+			removal_cost = -1
+		}
+		tnk_klein_lobotomite_research_numbers = {
+			picture = tnk_lobotomite
+			allowed = {
+				always = no
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+			}
+			removal_cost = -1
+		}
+		tnk_klein_lobotomite_research_strength = {
+			picture = tnk_lobotomite
+			allowed = {
+				always = no
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.1
+					build_cost_ic = 0.1
+					instant = yes
+				}
+			}
+			removal_cost = -1
+		}
+		tnk_expanded_radar_fence = {
+			picture = tnk_shield
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_core_defence_factor = 0.75
+			}
+			removal_cost = -1
+		}
+		tnk_tranquility_lane_high_schools = {
+			picture = TIM_patch_american_cultures
+			allowed = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = 0.05
+				weekly_manpower = -25
+			}
+			removal_cost = -1
+		}
+		tnk_national_electric_corporate_secrets = {
+			picture = sierra_madre
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.25
+			}
+		}
+		tnk_roboscorpion_conscription = {
+			picture = roboscorpion_conscription
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				support_robot_equipment = {
+					build_cost_ic = -0.05
+					soft_attack = 0.05
+					defense = 0.05
+					instant = yes
+				}
+			}
+		}
+	}
+}

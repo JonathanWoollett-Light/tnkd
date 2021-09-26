@@ -1,0 +1,22 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_robot_zeta_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_zeta_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_saucer_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/saucer_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_alien_weaponry_1_medium"
+		texturefile = "gfx/interface/equipment/generic/alien_blaster_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_alien_weaponry_2_medium"
+		texturefile = "gfx/interface/equipment/generic/alien_disintegrator_icon.dds"
+		alwaystransparent = yes
+	}
+}

@@ -1,0 +1,41 @@
+sub_units = {
+
+	exotic_robot = {
+		sprite = combat_robot
+		map_icon_category = armored
+		special_forces = yes
+		priority = 2503
+		ai_priority = 2503
+		active = yes
+		training_time = 180
+
+		type = {
+			armor
+		}
+
+		group = robot_group
+
+		categories = {
+			category_army
+			category_front_line
+			category_robots
+		}
+
+		combat_width = 3
+
+		transport = exotic_robot_equipment
+
+		need = {
+			exotic_robot_equipment = 25
+		}
+
+		manpower = 5
+		max_organisation = 10
+        max_strength = 25
+		default_morale = 0.3
+        training_time = 60
+        weight = 1.2
+		suppression = 1
+		supply_consumption = 0.15
+	}
+}

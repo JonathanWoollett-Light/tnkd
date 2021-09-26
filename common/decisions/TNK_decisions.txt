@@ -1,0 +1,26 @@
+tnk_tnkd_decohesion = {
+   tnk_tnkd_decohesion_decision = {
+        icon = GFX_decision_generic_scorched_earth
+        priority = 1000
+        visible = {
+            has_country_flag = TNK
+        }
+        allowed = {
+            always = yes
+        }
+        fixed_random_seed = no
+        is_good = no
+        days_mission_timeout = 20
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            hidden_effect = {
+                activate_mission = tnk_tnkd_decohesion_decision
+            }
+            subtract_from_variable = { tnk_decohesion_stability_var = 0.01 }
+            subtract_from_variable = { tnk_decohesion_org_var = 0.01 }
+            custom_effect_tooltip = tnk_tnkd_decohesion_decision_tt
+        }
+    }
+}

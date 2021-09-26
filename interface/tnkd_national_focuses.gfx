@@ -1,0 +1,165 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_goal_tnk_tnkd_next_steps"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_onwards.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_larping_luddites"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_larping_luddites.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_caesar_deal"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_caesar_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_unity"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_convergance"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_convergance.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_serenity"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_serenity.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_cohesion"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_cohesion.dds"
+	}
+	# ----------------------------------------------------------
+	# True convergance
+	# ----------------------------------------------------------
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_true_convergance"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_true_convergance.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_attack_weak"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_attack_weak.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_burn_land"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_burn_land.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_purification"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_purification.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_extermination"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_extermination.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_clean_slate"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_clean_slate.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_peace"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_peace.dds"
+	}
+	# ----------------------------------------------------------
+	# Advanced genes
+	# ----------------------------------------------------------
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_advanced_genetics"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_advanced_genetics.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_nanomachines"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_nanomachines.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_muscle"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_muscle.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_cellular_combustion"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_cellular_combustion.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_mutation_resistance"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_mutation_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_metabolism"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_metabolism.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_genetic_supremacy"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_genetic_supremacy.dds"
+	}
+	# ----------------------------------------------------------
+	# Advanced robotic
+	# ----------------------------------------------------------
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_advanced_robots"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_advanced_robots.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_incineration_beam"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_incineration_beam.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_annihilation_beam"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_annihilation_beam.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_super_saturnite_plating"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_super_saturnite_plating.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_shovels"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_shovels.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_light_engine"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_light_engine.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_reactors"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_reactors.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_robotic_supremacy"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_robotic_supremacy.dds"
+	}
+	# ----------------------------------------------------------
+	# Exotic research
+	# ----------------------------------------------------------
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_little_green_dot"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_little_green_dot.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_a_new_frontier"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_a_new_frontier.dds"
+	}
+	# ----------------------------------------------------------
+	# Mobius convergance
+	# ----------------------------------------------------------
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_mobius_convergance"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_mobius_convergance.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_do_no_harm"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_do_no_harm.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_bulwark"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_bulwark.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_guardian"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_guardian.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_giant_slayer"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_giant_slayer.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_perfection_sync"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_perfection_sync.dds"
+	}
+}

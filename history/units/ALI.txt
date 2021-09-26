@@ -1,0 +1,155 @@
+division_template = {
+	name = "Militia Force"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Supervisors"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Annihilation Squadron"
+	regiments = {
+		exotic_robot  = { x = 0 y = 0 }
+		exotic_robot  = { x = 0 y = 1 }
+		exotic_robot  = { x = 0 y = 2 }
+		exotic_robot  = { x = 1 y = 0 }
+		exotic_robot  = { x = 1 y = 1 }
+		exotic_robot  = { x = 1 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "Supervisors"
+		location = 8855
+		division_template = "Supervisors"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Alpha"
+		location = 8855
+		division_template = "Annihilation Squadron"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Beta"
+		location = 8854
+		division_template = "Annihilation Squadron"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Gamma"
+		location = 8861
+		division_template = "Annihilation Squadron"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Delta"
+		location = 8863
+		division_template = "Annihilation Squadron"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Epsilon"
+		location = 8862
+		division_template = "Annihilation Squadron"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Zeta"
+		location = 6589
+		division_template = "Annihilation Squadron"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Eta"
+		location = 8882
+		division_template = "Annihilation Squadron"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Theta"
+		location = 3516
+		division_template = "Annihilation Squadron"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Iota"
+		location = 3362
+		division_template = "Annihilation Squadron"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Kappa"
+		location = 8883
+		division_template = "Annihilation Squadron"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Lambda"
+		location = 3366
+		division_template = "Annihilation Squadron"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = exotic_robot_zeta_equipment
+			creator = "ALI"
+		}
+		requested_factories = 10
+		progress = 0.75
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = alien_equipment_1
+			creator = "ALI"
+		}
+		requested_factories = 5
+		progress = 0.75
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = saucer_equipment
+			creator = "ALI"
+		}
+		requested_factories = 15
+		progress = 0.75
+		efficiency = 100
+	}
+	add_equipment_to_stockpile = {
+		type = saucer_equipment
+		amount = 50
+	}
+	add_equipment_to_stockpile = {
+		type = alien_equipment_1
+		amount = 100
+	}
+}

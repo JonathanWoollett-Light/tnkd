@@ -1,0 +1,4 @@
+technology_categories = { 
+    exotic_robot_tech_category
+    alien_weaponry_tech_category
+}
