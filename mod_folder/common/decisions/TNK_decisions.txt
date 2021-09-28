@@ -5,11 +5,13 @@ tnk_tnkd_decohesion = {
         visible = {
             has_country_flag = TNK
         }
-        allowed = {
-            always = yes
+        allowed = { tag = TNK }
+        available = {
+            always = no
         }
         fixed_random_seed = no
         is_good = no
+        selectable_mission = yes
         days_mission_timeout = 20
         activation = {
             always = no
@@ -21,6 +23,40 @@ tnk_tnkd_decohesion = {
             subtract_from_variable = { tnk_decohesion_stability_var = 0.01 }
             subtract_from_variable = { tnk_decohesion_org_var = 0.01 }
             custom_effect_tooltip = tnk_tnkd_decohesion_decision_tt
+        }
+    }
+}
+tnk_tnkd_clean_slate = {
+   tnk_tnkd_clean_slate_decision = {
+        icon = GFX_decision_generic_scorched_earth
+        priority = 1000
+        visible = {
+            has_country_flag = TNK
+        }
+        allowed = { tag = TNK }
+        available = {
+            always = no
+        }
+        fixed_random_seed = no
+        is_good = no
+        selectable_mission = yes
+        days_mission_timeout = 10
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            hidden_effect = {
+                activate_mission = tnk_tnkd_clean_slate_decision
+                every_neighbor_country = {
+                    TNK = {
+                        declare_war_on = {
+                            target = PREV
+                            type =  annex_everything
+                        }
+                    }   
+                }
+            }
+            custom_effect_tooltip = tnk_tnkd_clean_slate_decision_tt
         }
     }
 }

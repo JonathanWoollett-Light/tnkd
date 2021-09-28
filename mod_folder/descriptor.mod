@@ -5,5 +5,5 @@ tags={
 dependencies = {
 	"Old World Blues"
 }
-name="TutorialMod"
+name="TNKD - Think Tank Defragmented"
 supported_version="1.10.8"

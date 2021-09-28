@@ -1,0 +1,1730 @@
+add_namespace = nf_mojave #Legacy
+add_namespace = nf_mojave_brotherhood #3.0
+add_namespace = mojave_helios_one_news
+add_namespace = mojave_news
+
+country_event = {
+	id = nf_mojave_brotherhood.1
+	title = nf_mojave_brotherhood.1.t
+	desc = nf_mojave_brotherhood.1.d
+	picture = GFX_event_MOJ_contact_the_west
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.1.a
+		add_war_support = 0.08
+	}
+	option = {
+		name = nf_mojave_brotherhood.1.b
+		add_stability = 0.08
+	}
+	option = {
+		name = nf_mojave_brotherhood.1.c
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.2
+	title = nf_mojave_brotherhood.2.t
+	desc = nf_mojave_brotherhood.2.d
+	picture = GFX_event_BOS_our_founding
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.2.a
+		random_unit_leader = {
+			limit = {
+				has_id = 10105
+			}
+			add_attack = 1
+		}
+	}
+	option = {
+		name = nf_mojave_brotherhood.2.b
+		random_unit_leader = {
+			limit = {
+				has_id = 10105
+			}
+			add_defense = 1
+		}
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.3
+	title = nf_mojave_brotherhood.3.t
+	desc = nf_mojave_brotherhood.3.d
+	picture = GFX_event_BOS_desert_patrol
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.3.a
+		46 = {
+			if = {
+				limit = {
+					is_valid_state_for_civilian_factory = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	option = {
+		name = nf_mojave_brotherhood.3.b
+		46 = {
+			if = {
+				limit = {
+					is_valid_state_for_arms_factory = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.4
+	title = nf_mojave_brotherhood.4.t
+	desc = nf_mojave_brotherhood.4.d
+	picture = GFX_event_MOJ_helios_one
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.4.a
+		add_stability = -0.10
+		MOJ = { set_temp_variable = { change_preperation = 10 } }
+		change_preperation = yes
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = moj_low_prep
+			}
+		}
+	}
+	option = {
+		name = nf_mojave_brotherhood.4.b
+		add_tech_bonus = {
+			name = power_armor_tech
+			bonus = 0.25
+			uses = 1
+			category = power_armor_tech_category
+		}
+		add_tech_bonus = {
+			name = power_armor_tech
+			bonus = 0.25
+			uses = 1
+			category = infantry_tech_category
+		}
+		add_tech_bonus = {
+			name = support_tech_category
+			bonus = 0.25
+			uses = 1
+			category = infantry_tech_category
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = moj_high_prep
+			}
+		}
+	}
+	option = {
+		name = nf_mojave_brotherhood.4.c
+		add_manpower = 800
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = moj_high_prep
+			}
+		}
+	}
+}
+
+#This event is mostly just to set the scope right
+country_event = {
+	id = nf_mojave_brotherhood.5
+	title = nf_mojave_brotherhood.5.t
+	desc = nf_mojave_brotherhood.5.d
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		MOJ = {
+			country_event = nf_mojave_brotherhood.6
+		}
+	}
+	option = {
+		name = nf_mojave_brotherhood.5.a
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.6
+	title = nf_mojave_brotherhood.6.t
+	desc = nf_mojave_brotherhood.6.d
+	picture = GFX_event_MOJ_helios_one
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.6.a
+		ai_chance = {
+			base = 0
+		}
+		every_state = {
+			limit = {
+				has_state_flag = outer_mojave
+				NOT = { is_owned_by = MOJ }
+			}
+			MOJ = { transfer_state = PREV }
+		}
+		FROM = {
+			country_event = nf_mojave_brotherhood.8
+			create_wargoal = {
+				type = annex_everything
+				target = MOJ
+			}
+		}
+	}
+
+	option = {
+		name = nf_mojave_brotherhood.6.b
+		FROM = {
+			every_country = {
+				limit = {
+					is_in_faction_with = PREV
+				}
+				set_truce = {
+					target = MOJ
+					days = 730
+				}
+			}
+			every_state = {
+				limit = {
+					has_state_flag = outer_mojave
+					NOT = { is_owned_by = MOJ }
+				}
+				add_core_of = PREV
+			}
+			country_event = nf_mojave_brotherhood.7
+		}
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.7
+	title = nf_mojave_brotherhood.7.t
+	desc = nf_mojave_brotherhood.7.d
+	picture = GFX_event_MOJ_helios_one
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.7.a
+		custom_effect_tooltip = nf_mojave_brotherhood.7.a_tt
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.8
+	title = nf_mojave_brotherhood.8.t
+	desc = nf_mojave_brotherhood.8.d
+	picture = GFX_event_MOJ_helios_one
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.8.a
+		custom_effect_tooltip = nf_mojave_brotherhood.7.a_tt
+		effect_tooltip = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOJ
+			}
+		}
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.9
+	title = nf_mojave_brotherhood.9.t
+	desc = nf_mojave_brotherhood.9.d
+	picture = GFX_event_navajo_1
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.9.a
+		add_manpower = 50
+		army_experience = 20
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = encryption_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = electronics
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = energy_weaponry_tech_category
+		}
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.10
+	title = nf_mojave_brotherhood.10.t
+	desc = nf_mojave_brotherhood.10.d
+	picture = GFX_event_navajo_1
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.10.a
+		add_manpower = 50
+		army_experience = 20
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.11
+	title = nf_mojave_brotherhood.11.t
+	desc = nf_mojave_brotherhood.11.d
+	picture = GFX_event_MOJ_patrol
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.11.a
+		add_war_support = -0.1
+		add_manpower = -400
+		add_ideas = moj_legion_army_preperation_1
+		custom_effect_tooltip = nf_mojave_brotherhood.11.tt
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.12
+	title = nf_mojave_brotherhood.12.t
+	desc = nf_mojave_brotherhood.12.d
+	picture = GFX_event_ach_hood_robot_corridor
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.12.a
+		add_manpower = 50
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = power_armor_tech_category
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = air_tech_category
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = infantry_weapons_tech_category
+		}
+		if = {
+			limit = {
+				owns_state = 344
+			}
+			344 = {
+				add_resource = { type = advanced amount = 20 }
+			}
+		}
+		custom_effect_tooltip = nf_mojave_brotherhood.12.tt
+		add_equipment_to_stockpile = {
+			type = enclave_power_armour_equipment_2
+			amount = 5
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = gauss_equipment_2
+			amount = 5
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = vb_gunship_equipment
+			amount = 1
+			producer = USA
+		}
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.13
+	title = nf_mojave_brotherhood.13.t
+	desc = nf_mojave_brotherhood.13.d
+	picture = GFX_event_MOJ_patrol
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.14.a
+		country_event = nf_mojave_brotherhood.14
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.14
+	title = nf_mojave_brotherhood.14.t
+	desc = nf_mojave_brotherhood.14.d
+	picture = GFX_event_big_mt_mojave_drive_inn
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.14.a
+		country_event = nf_mojave_brotherhood.15
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.15
+	title = nf_mojave_brotherhood.15.t
+	desc = nf_mojave_brotherhood.15.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.15.a
+		unlock_decision_category_tooltip = Big_MT_Decision_Category
+		set_country_flag = big_mt_decisions
+	}
+}
+#X22
+country_event = {
+	id = nf_mojave_brotherhood.16
+	title = nf_mojave_brotherhood.16.t
+	desc = nf_mojave_brotherhood.16.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.16.a
+		set_technology = { plant_support_tech = 1 }
+	}
+}
+
+#Higgs
+country_event = {
+	id = nf_mojave_brotherhood.17
+	title = nf_mojave_brotherhood.17.t
+	desc = nf_mojave_brotherhood.17.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.17.a
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = construction_category
+		}
+	}
+}
+
+#x13
+country_event = {
+	id = nf_mojave_brotherhood.18
+	title = nf_mojave_brotherhood.18.t
+	desc = nf_mojave_brotherhood.18.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.18.a
+		add_tech_bonus = {
+			bonus = 1
+			ahead_reduction = 1
+			uses = 2
+			category = spec_force_equipment_tech_category
+		}
+	}
+}
+
+#y0
+country_event = {
+	id = nf_mojave_brotherhood.19
+	title = nf_mojave_brotherhood.19.t
+	desc = nf_mojave_brotherhood.19.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.19.a
+		add_ideas = moj_rumors_of_the_sierra_madre
+	}
+}
+
+#x8
+country_event = {
+	id = nf_mojave_brotherhood.20
+	title = nf_mojave_brotherhood.20.t
+	desc = nf_mojave_brotherhood.20.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.20.a
+		random_unit_leader = {
+			limit = {
+				has_id = 10105
+			}
+			if = {
+				limit = {
+					NOT = { has_trait = animal_friend_trait }
+				}
+				add_unit_leader_trait = animal_friend_trait
+				add_logistics = 1
+			}
+			else = {
+				add_logistics = 3
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = dogs_equipment_3
+			amount = 1
+			producer = USA
+		}
+	}
+}
+
+#x7
+country_event = {
+	id = nf_mojave_brotherhood.21
+	title = nf_mojave_brotherhood.21.t
+	desc = nf_mojave_brotherhood.21.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.21.a
+		add_equipment_to_stockpile = {
+			type = explosive_demolitions_equipment_2
+			amount = 3500
+			producer = USA
+		}
+	}
+}
+
+#saturnite research facility
+country_event = {
+	id = nf_mojave_brotherhood.22
+	title = nf_mojave_brotherhood.22.t
+	desc = nf_mojave_brotherhood.22.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.22.a
+		add_ideas = moj_saturnite_alloy
+	}
+}
+
+#x17
+country_event = {
+	id = nf_mojave_brotherhood.23
+	title = nf_mojave_brotherhood.23.t
+	desc = nf_mojave_brotherhood.23.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.21.a
+		add_ideas = moj_trauma_suits
+	}
+}
+
+#Little Yangzte
+country_event = {
+	id = nf_mojave_brotherhood.24
+	title = nf_mojave_brotherhood.24.t
+	desc = nf_mojave_brotherhood.24.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.24.a
+		add_ideas = moj_yangzte_slave_collars
+	}
+}
+
+#THE FORBIDDEN ZONE
+country_event = {
+	id = nf_mojave_brotherhood.25
+	title = nf_mojave_brotherhood.25.t
+	desc = nf_mojave_brotherhood.25.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.25.a
+		set_technology = { robot_scurry_tech = 1 }
+		add_equipment_to_stockpile = {
+			type = support_robot_scurry_equipment
+			amount = 500
+			producer = USA
+		}
+	}
+}
+
+#The Dome
+country_event = {
+	id = nf_mojave_brotherhood.26
+	title = nf_mojave_brotherhood.26.t
+	desc = nf_mojave_brotherhood.26.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.26.a
+		country_event = nf_mojave_brotherhood.27
+	}
+}
+
+#The Dome
+country_event = {
+	id = nf_mojave_brotherhood.27
+	title = nf_mojave_brotherhood.27.t
+	desc = nf_mojave_brotherhood.27.d
+	picture = GFX_event_big_mt_mojave_drive_inn
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_province_name = {
+				id = 3238
+				name = "Mojave Drive-In"
+			}
+			47 = {
+				set_state_name = "Mojave Drive-In"
+				add_core_of = TNK
+			}
+			every_state = {
+				limit = {
+					OR = {
+						state = 552
+						state = 47
+						state = 67
+					}
+				}
+				TNK = {
+					transfer_state = PREV
+				}
+			}
+			TNK = {
+				47 = { add_core_of = TNK }
+				
+				load_oob = TNK_2275
+				
+				declare_war_on = {
+					target = MOJ
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	option = {
+		name = nf_mojave_brotherhood.27.a
+	}
+
+	option = {
+		name = nf_mojave_brotherhood.27.b
+		TNK = {
+			change_tag_from = MOJ
+		}
+	}
+}
+
+#Sierra Madre Rumors
+country_event = {
+	id = nf_mojave_brotherhood.28
+	title = nf_mojave_brotherhood.28.t
+	desc = nf_mojave_brotherhood.28.d
+	picture = GFX_event_MOJ_sierra_madre
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.28.a
+	}
+}
+
+#Ghost People
+country_event = {
+	id = nf_mojave_brotherhood.29
+	title = nf_mojave_brotherhood.29.t
+	desc = nf_mojave_brotherhood.29.d
+	picture = GFX_event_big_mt_mojave_drive_inn
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.29.a
+	}
+}
+
+#The Cloud
+country_event = {
+	id = nf_mojave_brotherhood.30
+	title = nf_mojave_brotherhood.30.t
+	desc = nf_mojave_brotherhood.30.d
+	picture = GFX_event_MOJ_sierra_madre_cloud
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.30.a
+	}
+}
+
+#A Chained Dog
+country_event = {
+	id = nf_mojave_brotherhood.31
+	title = nf_mojave_brotherhood.31.t
+	desc = nf_mojave_brotherhood.31.d
+	picture = GFX_event_MOJ_dog_god
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.31.a
+	}
+}
+
+#The Gala Event
+country_event = {
+	id = nf_mojave_brotherhood.32
+	title = nf_mojave_brotherhood.32.t
+	desc = nf_mojave_brotherhood.32.d
+	picture = GFX_event_MOJ_sierra_madre
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.32.a
+	}
+}
+
+#Big MT Surrender Event
+country_event = {
+	id = nf_mojave_brotherhood.33
+	title = nf_mojave_brotherhood.33.t
+	desc = nf_mojave_brotherhood.33.d
+	picture = GFX_event_big_mt_the_dome
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.33.a
+	}
+}
+
+#What Remains
+country_event = {
+	id = nf_mojave_brotherhood.34
+	title = nf_mojave_brotherhood.34.t
+	desc = nf_mojave_brotherhood.34.d
+	picture = GFX_event_MOJ_what_remains
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.34.a
+		add_ideas = mojave_holograms
+	}
+}
+
+#Big MT's Greatest Discovery - Vending Machines
+country_event = {
+	id = nf_mojave_brotherhood.35
+	title = nf_mojave_brotherhood.35.t
+	desc = nf_mojave_brotherhood.35.d
+	picture = GFX_event_big_mt_event_weird_science
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.35.a
+		add_ideas = mojave_vending
+	}
+}
+
+#Holorifles - Putting Holo-Tech to Use
+country_event = {
+	id = nf_mojave_brotherhood.36
+	title = nf_mojave_brotherhood.36.t
+	desc = nf_mojave_brotherhood.36.d
+	picture = GFX_event_big_mt_event_weird_science
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.36.a
+		add_ideas = mojave_holorifles
+	}
+}
+
+#Harness the Cloud
+country_event = {
+	id = nf_mojave_brotherhood.37
+	title = nf_mojave_brotherhood.37.t
+	desc = nf_mojave_brotherhood.37.d
+	picture = GFX_event_MOJ_sierra_madre_cloud
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.37.a
+		add_ideas = moj_repconn_cloud_strikes
+	}
+}
+
+#Begin Again
+country_event = {
+	id = nf_mojave_brotherhood.38
+	title = nf_mojave_brotherhood.38.t
+	desc = nf_mojave_brotherhood.38.d
+	picture = GFX_event_MOJ_dean_and_vera
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.38.a
+		country_event = nf_mojave_brotherhood.39
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.39
+	title = nf_mojave_brotherhood.39.t
+	desc = nf_mojave_brotherhood.39.d
+	picture = GFX_event_MOJ_what_remains
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.39.a
+		create_corps_commander = {
+			name = "Voice of Vera Keyes"
+			gfx = "GFX_Portrait_MOJ_Vera_Keyes_animated"
+			skill = 5
+			id = 121302
+			attack_skill = 9
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = { charismatic_trait strong_trait dont_add_specials_loser }
+		}
+		country_event = nf_mojave_brotherhood.40
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.40
+	title = nf_mojave_brotherhood.40.t
+	desc = nf_mojave_brotherhood.40.d
+	picture = GFX_event_MOJ_sierra_madre_vault
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.40.a
+		add_ideas = mojave_riches_of_the_sierra_madre
+	}
+}
+
+#Vertibird Graveyard Alert
+country_event = {
+	id = nf_mojave_brotherhood.41
+	title = nf_mojave_brotherhood.41.t
+	desc = nf_mojave_brotherhood.41.d
+	picture = GFX_event_generic_missile_silo
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.41.a
+		custom_effect_tooltip = moj_end_repconn_tt
+	}
+}
+
+#Yuma Caves News
+country_event = {
+	id = nf_mojave_brotherhood.42
+	title = nf_mojave_brotherhood.42.t
+	desc = nf_mojave_brotherhood.42.d
+	picture = GFX_event_mexico_city_ruins
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = moj_ops_3
+	}
+
+	option = {
+		name = nf_mojave_brotherhood.42.a
+	}
+}
+
+#Blowback from Yuma
+country_event = {
+	id = nf_mojave_brotherhood.43
+	title = nf_mojave_brotherhood.43.t
+	desc = nf_mojave_brotherhood.43.d
+	picture = GFX_event_mexico_city_ruins
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = moj_ops_4
+	}
+
+	mean_time_to_happen = {
+		days = 60
+
+		modifier = {
+			factor = 0.5
+			num_operative_slots > 1
+		}
+	}
+
+	option = {
+		name = nf_mojave_brotherhood.43.a
+		clr_country_flag = moj_ops_4
+		add_timed_idea = {
+			idea = mojave_military_priority
+			days = 365
+		}
+	}
+
+	option = {
+		name = nf_mojave_brotherhood.43.b
+		clr_country_flag = moj_ops_4
+		add_timed_idea = {
+			idea = mojave_intel_priority
+			days = 365
+		}
+	}
+}
+
+#White peace with CES
+country_event = {
+	id = nf_mojave_brotherhood.44
+	title = nf_mojave_brotherhood.44.t
+	desc = nf_mojave_brotherhood.44.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.44.a.a
+		set_country_flag = moj_ces_accepts_peace
+		effect_tooltip = {
+			every_country = {
+				limit = {
+					is_caesars_legion_member = yes
+					has_war_with = MOJ
+					is_in_faction_with = CES
+				}
+				white_peace = MOJ
+				set_truce = {
+					target = MOJ
+					days = 425
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = MOJ
+			}
+			remove_claim_by = CES
+		}
+		hidden_effect = {
+			MOJ = {
+				country_event = {
+					id = nf_mojave_brotherhood.45
+					days = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = nf_mojave_brotherhood.44.d.d
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			MOJ = {
+				country_event = {
+					id = nf_mojave_brotherhood.45
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = nf_mojave_brotherhood.45
+	title = {
+		text = nf_mojave_brotherhood.45.t.a
+		trigger = {
+			CES = { has_country_flag = moj_ces_accepts_peace }
+		}
+	}
+	title = {
+		text = nf_mojave_brotherhood.45.t.d
+		trigger = {
+			NOT = { CES = { has_country_flag = moj_ces_accepts_peace } }
+		}
+	}
+
+	desc = {
+		text = nf_mojave_brotherhood.45.d.d
+		trigger = {
+			NOT = { CES = { has_country_flag = moj_ces_accepts_peace } }
+		}
+	}
+	desc = {
+		text = nf_mojave_brotherhood.45.d.a
+		trigger = {
+			CES = { has_country_flag = moj_ces_accepts_peace }
+		}
+	}
+	#picture = GFX_event_animated_meeting_of_titans
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave_brotherhood.45.o.a
+		trigger = {
+			CES = { has_country_flag = moj_ces_accepts_peace }
+		}
+		every_country = {
+			limit = {
+				is_caesars_legion_member = yes
+				has_war_with = MOJ
+				is_in_faction_with = CES
+			}
+			white_peace = MOJ
+			set_truce = {
+				target = MOJ
+				days = 425
+			}
+		}
+	}
+	option = {
+		name = nf_mojave_brotherhood.45.o.d
+		trigger = {
+			NOT = { CES = { has_country_flag = moj_ces_accepts_peace } }
+		}
+		add_war_support = 0.1
+	}
+}
+
+country_event = { #Old
+	id = nf_mojave.1
+	title = nf_mojave.1.t
+	desc = nf_mojave.1.d
+	picture = GFX_event_MOJ_patrol
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.1.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				OR = {
+					#MOJ_has_ai_behavior_mcnamara = yes
+					#MOJ_has_ai_behavior_hardin = yes
+				}
+			}
+		}
+
+		set_country_flag = mojave_chapter_chose_leader
+	}
+	option = {
+		name = nf_mojave.1.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				OR = {
+					#MOJ_has_ai_behavior_hardin = yes
+					#MOJ_has_ai_behavior_elijah = yes
+				}
+			}
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Nolan McNamara"
+			desc = "POLITICS_MCNAMARA_DESC"
+			picture = "portrait_mcnamara.dds"
+			expire = "3000.1.1"
+			ideology = technocracy
+			traits = {
+				dislikes_caesars_legion
+			}
+			id = 10104
+		}
+		set_country_flag = mojave_chapter_chose_leader
+	}
+	option = {
+		name = nf_mojave.1.c
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				OR = {
+					#MOJ_has_ai_behavior_mcnamara = yes
+					#MOJ_has_ai_behavior_elijah = yes
+				}
+			}
+		}
+		hidden_effect = {
+			scoped_sound_effect = hardin_choice
+		}
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Edgar Hardin"
+			desc = "Edgar Hardin_DESC"
+			picture = "portrait_hardin.dds"
+			expire = "3000.1.1"
+			ideology = technocracy
+			traits = {
+				dislikes_caesars_legion
+			}
+			id = 10102
+		}
+		every_army_leader = {
+			limit = {
+				has_id = 10103
+			}
+			promote_leader = yes
+		}
+		set_country_flag = mojave_chapter_chose_leader
+	}
+}
+country_event = {
+	id = nf_mojave.2
+	title = nf_mojave.2.t
+	desc = nf_mojave.2.d
+	picture = GFX_event_MOJ_rumours_of_the_old_world
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.2.a
+
+	}
+}
+country_event = {
+	id = nf_mojave.3
+	title = nf_mojave.3.t
+	desc = nf_mojave.3.d
+	picture = GFX_event_MOJ_a_forgotten_hellscape
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.3.a
+
+	}
+}
+country_event = {
+	id = nf_mojave.4
+	title = nf_mojave.4.t
+	desc = nf_mojave.4.d
+	picture = GFX_event_MOJ_close_down_van_graffs
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.4.a
+
+		add_equipment_to_stockpile = { type = energy_equipment_2 amount = 300 producer = MOJ }
+	}
+}
+country_event = {
+	id = nf_mojave.5
+	title = nf_mojave.5.t
+	desc = nf_mojave.5.d
+	picture = GFX_event_MOJ_ncr_raids
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.5.a
+		add_equipment_to_stockpile = { type = energy_equipment_2 amount = 300 producer = MOJ }
+		add_timed_idea = {
+			idea = mojave_settlements_raided_mojave
+			days = 50
+		}
+		MOJ = {
+			every_neighbor_country = {
+				limit = {
+					OR = {
+						original_tag = NCR
+						is_in_faction_with = NCR
+					}
+					NOT = { has_non_aggression_pact_with = MOJ }
+				}
+				country_event = { id = nf_mojave.6 days = 1 }
+			}
+		}
+		hidden_effect = {
+			news_event = { id = mojave_news.0 }
+		}
+	}
+}
+country_event = {
+	id = nf_mojave.6
+	title = nf_mojave.6.t
+	desc = nf_mojave.6.d
+	picture = GFX_event_MOJ_ncr_raids
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.6.a
+		add_political_power = -50
+		add_opinion_modifier = { target = MOJ modifier = mojave_ncr_raids }
+		add_timed_idea = {
+			idea = mojave_settlements_raided_ncr
+			days = 50
+		}
+		every_owned_state = {
+			limit = {
+				is_impassable = no
+				any_neighbor_state = {
+					owner = { original_tag = MOJ }
+					is_impassable = no
+				}
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = nf_mojave.8
+	title = nf_mojave.8.t
+	desc = nf_mojave.8.d
+	picture = GFX_event_MOJ_contact_the_west
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.8.a
+		BOS = {
+			country_event = { id = nf_mojave.9 days = 10 }
+		}
+	}
+}
+country_event = {
+	id = nf_mojave.9
+	title = nf_mojave.9.t
+	desc = nf_mojave.9.d
+	picture = GFX_event_MOJ_contact_the_west
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.9.a
+		ai_chance = {
+			factor = 100
+		}
+		MOJ = {
+			country_event = { id = nf_mojave.10 days = 3 }
+		}
+	}
+	option = {
+		name = nf_mojave.9.b
+		ai_chance = {
+			factor = 0
+		}
+		MOJ = {
+			country_event = { id = nf_mojave.11 days = 3 }
+		}
+	}
+}
+country_event = {
+	id = nf_mojave.10
+	title = nf_mojave.10.t
+	desc = nf_mojave.10.d
+	picture = GFX_event_MOJ_contact_the_west
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.10.a
+    MOJ = { join_western_brotherhood_of_steel = yes }
+	}
+}
+country_event = {
+	id = nf_mojave.11
+	title = nf_mojave.11.t
+	desc = nf_mojave.11.d
+	picture = GFX_event_MOJ_contact_the_west
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.11.a
+	}
+}
+country_event = {
+	id = nf_mojave.12
+	title = nf_mojave.12.t
+	desc = nf_mojave.12.d
+	picture = GFX_event_NCR_caravan
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.12.a
+		add_political_power = 50.0
+	}
+}
+country_event = {
+	id = nf_mojave.13
+	title = nf_mojave.13.t
+	desc = nf_mojave.13.d
+	picture = GFX_event_MOJ_message_ncr
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.13.a
+		NCR = {
+			country_event = { id = nf_mojave.14 days = 3 }
+		}
+	}
+}
+country_event = {
+	id = nf_mojave.14
+	title = nf_mojave.14.t
+	desc = nf_mojave.14.d
+	picture = GFX_event_MOJ_message_ncr
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.14.a
+
+		ai_chance = {
+			factor = 50
+		}
+		MOJ = {
+			country_event = { id = nf_mojave.15 days = 1 }
+		}
+	}
+	option = {
+		name = nf_mojave.14.b
+		MOJ = {
+			country_event = { id = nf_mojave.26 days = 1 }
+		}
+	}
+}
+country_event = {
+	id = nf_mojave.15
+	title = nf_mojave.15.t
+	desc = nf_mojave.15.d
+	picture = GFX_event_MOJ_message_ncr
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.15.a
+
+		hidden_effect = {
+			MOJ = {
+				give_military_access = NCR
+			}
+			NCR = {
+				give_military_access = MOJ
+			}
+		}
+	}
+}
+country_event = {
+	id = nf_mojave.16
+	title = nf_mojave.16.t
+	desc = nf_mojave.16.d
+	picture = GFX_event_MOJ_what_remains
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.16.a
+
+		add_ideas = mojave_holograms
+	}
+	option = {
+		name = nf_mojave.16.b
+
+		add_ideas = mojave_vending
+	}
+}
+country_event = {
+	id = nf_mojave.17
+	title = nf_mojave.17.t
+	desc = nf_mojave.17.d
+	picture = GFX_event_generic_gun_runners
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.17.a
+
+		add_tech_bonus = { bonus = 0.75 uses = 1 category = energy_weaponry_tech_category }
+	}
+}
+country_event = {
+	id = nf_mojave.19
+	title = nf_mojave.19.t
+	desc = nf_mojave.19.d
+	picture = GFX_event_NCR_caravan
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.19.a
+
+		NCR = {
+			country_event = { id = nf_mojave.20 days = 2 }
+		}
+	}
+}
+country_event = {
+	id = nf_mojave.20
+	title = nf_mojave.20.t
+	desc = nf_mojave.20.d
+	picture = GFX_event_NCR_caravan
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.20.a
+
+		ai_chance = {
+			factor = 50
+		}
+		MOJ = {
+			country_event = { id = nf_mojave.21 days = 1 }
+		}
+	}
+	option = {
+		name = nf_mojave.20.b
+
+		MOJ = {
+			country_event = { id = nf_mojave.22 days = 1 }
+		}
+	}
+}
+country_event = { # NCR accepted the trade deal
+	id = nf_mojave.21
+	title = nf_mojave.21.t
+	desc = nf_mojave.21.d
+	picture = GFX_event_NCR_caravan
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.21.a
+
+		reverse_add_opinion_modifier = { target = NCR modifier = mojave_ncr_trade }
+	}
+}
+country_event = { # NCR rejected the trade deal
+	id = nf_mojave.22
+	title = nf_mojave.22.t
+	desc = nf_mojave.22.d
+	picture = GFX_event_NCR_caravan
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.22.a # Missing effect
+	}
+}
+country_event = {
+	id = nf_mojave.23
+	title = nf_mojave.23.t
+	desc = nf_mojave.23.d
+	picture = GFX_event_MOJ_sierra_madre
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.23.a
+
+	}
+}
+country_event = {
+	id = nf_mojave.25
+	title = nf_mojave.25.t
+	desc = nf_mojave.25.d
+	picture = GFX_event_MOJ_helios_one
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.25.a
+
+		hidden_effect = {
+			MOJ = {
+				set_state_owner = 417
+				set_state_controller = 417
+			}
+			news_event = {
+				id = mojave_helios_one_news.0
+				hours = 10
+			}
+		}
+	}
+}
+country_event = {
+	id = nf_mojave.26
+	title = nf_mojave.26.t
+	desc = nf_mojave.26.d
+	picture = GFX_event_MOJ_message_ncr
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.26.a
+
+	}
+}
+country_event = {
+	id = nf_mojave.27
+	title = nf_mojave.27.t
+	desc = nf_mojave.27.d
+	picture = GFX_event_MOJ_ncr_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.27.a
+
+		NCR = {
+			country_event = { id = nf_mojave.28 days = 1 }
+		}
+	}
+}
+country_event = {
+	id = nf_mojave.28
+	title = nf_mojave.28.t
+	desc = nf_mojave.28.d
+	picture = GFX_event_MOJ_ncr_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.28.a
+
+		ai_chance = {
+			factor = 1
+		}
+		MOJ = {
+			country_event = { id = nf_mojave.29 days = 1 }
+		}
+	}
+	option = {
+		name = nf_mojave.28.b
+
+		MOJ = {
+			country_event = { id = nf_mojave.30 days = 1 }
+		}
+	}
+	option = {
+		name = nf_mojave.28.c
+		trigger = {
+			OR = {
+				has_opinion_modifier = mojave_ncr_trade
+				NCR = {
+					has_military_access_to = MOJ
+					gives_military_access_to = MOJ
+				}
+			}
+		}
+		MOJ = {
+			country_event = {
+				id = nf_mojave.31
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = nf_mojave.28.dd
+		trigger = {
+			has_opinion_modifier = mojave_ncr_trade
+			NCR = {
+				has_military_access_to = MOJ
+				gives_military_access_to = MOJ
+			}
+		}
+		ai_chance = {
+			factor = 1000
+		}
+		MOJ = {
+			country_event = {
+				id = nf_mojave.32
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = nf_mojave.29
+	title = nf_mojave.29.t
+	desc = nf_mojave.29.d
+	picture = GFX_event_MOJ_ncr_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.29.a
+
+		diplomatic_relation = { country = NCR relation = non_aggression_pact }
+	}
+}
+country_event = {
+	id = nf_mojave.30
+	title = nf_mojave.30.t
+	desc = nf_mojave.30.d
+	picture = GFX_event_MOJ_ncr_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.30.a
+
+	}
+}
+country_event = {
+	id = nf_mojave.31
+	title = nf_mojave.31.t
+	desc = nf_mojave.31.d
+	picture = GFX_event_NCR_caravan
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.31.a
+
+		NCR = {
+			give_guarantee = MOJ
+		}
+		diplomatic_relation = { country = NCR relation = non_aggression_pact }
+	}
+}
+country_event = {
+	id = nf_mojave.32
+	title = nf_mojave.32.t
+	desc = nf_mojave.32.d
+	picture = GFX_event_NCR_caravan
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.32.a
+    MOJ = { join_ncr = yes }
+		#hidden_effect = {
+		#	news_event = mojave_news.1
+		#}
+	}
+	option = {
+		give_guarantee = NCR
+		diplomatic_relation = { country = NCR relation = non_aggression_pact }
+		NCR = {
+			give_guarantee = MOJ
+			diplomatic_relation = { country = MOJ relation = non_aggression_pact }
+		}
+	}
+}
+news_event = {
+	id = nf_mojave.33
+	title = nf_mojave.33.t
+	desc = nf_mojave.33.d
+	picture = GFX_event_NCR_caravan
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mojave.33.a
+		complete_national_focus = veg_platinumchip
+		complete_national_focus = veg_vault
+	}
+}
+############
+#News Events
+############
+
+news_event = {
+	id = mojave_news.0
+	title = mojave_news.0.t
+	desc = mojave_news.0.d
+	picture = GFX_event_MOJ_ncr_raids
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = mojave_news.0.a
+	}
+}
+
+news_event = {
+	id = mojave_news.1
+	title = mojave_news.1.t
+	desc = mojave_news.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = mojave_news.1.a
+	}
+}
+
+news_event = {
+	id = mojave_helios_one_news.0
+	title = mojave_helios_one_news.0.t
+	desc = mojave_helios_one_news.0.d
+	picture = GFX_event_MOJ_helios_one
+	major = yes
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = mojave_helios_one_news.0.a
+	}
+}
+news_event = {
+	id = mojave_helios_one_news.1
+	title = mojave_helios_one_news.1.t
+	desc = mojave_helios_one_news.1.d
+	picture = GFX_event_NCR_helios_one
+	major = yes
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = mojave_helios_one_news.1.a
+	}
+}

@@ -35,12 +35,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_true_convergance.dds"
 	}
 	spriteType = {
+		name = "GFX_goal_tnk_tnkd_domination_protocol"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_domination_protocol.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_test_subjects"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_test_subjects.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_tnk_tnkd_attack_weak"
 		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_attack_weak.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_tnk_tnkd_burn_land"
 		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_burn_land.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_the_future_vision"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_the_future_vision.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_tnk_tnkd_purification"
@@ -161,5 +173,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_tnk_tnkd_perfection_sync"
 		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_perfection_sync.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_a_future_vision"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_a_future_vision.dds"
 	}
 }

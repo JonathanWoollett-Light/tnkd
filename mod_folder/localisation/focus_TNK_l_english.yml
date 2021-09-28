@@ -227,7 +227,7 @@
 
  tnk_tnkd_cohesion:0 "Facing The Inveitable"
  tnk_tnkd_cohesion_desc:0 "Eventually a structure becomes so weak it must be demolished entirely before it can be rebuilt."
- tnk_tnkd_cohesion_tt:0 "§RSplit nation into 6 nations.§!"
+ tnk_tnkd_cohesion_tt:0 "§RWARNING:§! Splits §YThe Think Tank§! into 6 nations."
 
  tnk_tnkd_serenity:0 "Serenity"
  tnk_tnkd_serenity_desc:0"The voices are gone, our...\n\nmy... mind is at peace."
@@ -343,7 +343,7 @@
  tnk_tnkd_light_engines_desc:0 "Some of our robots have a tendency to overheat, why not direct this exhaust?"
  tnk_tnkd_robotic_supremacy:0 "Robotic Supremacy"
  tnk_tnkd_robotic_supremacy:0 "With all our research we have formed the most optimal robotic executors ever seen."
- supremacy_tt:0 "Consolidates dependant focusses and gives Reliability §G+10%§!."
+ supremacy_tt:0 "Consolidates dependant focusses and removes thier negative Reliability affect."
 
  tnk_tnkd_shovels:0 "Shovels"
  tnk_tnkd_shovels_desc:0 "What an incredible discovery, groundbreaking stuff..."

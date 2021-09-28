@@ -103,7 +103,7 @@
   nf_tnk.27.t:0 "Owwww... shit..."
   nf_tnk.27.d:0 "As we watch it crash through through the atomosphere like like a metoer we feel victorious, but the mood quickly changes when upon crashlanding killer death robots immedately emerge to defend their mothership."
   nf_tnk.27.a:0 "These green children are no match for our superior minds."
-  nf_tnk.27.b:0 "§G We shall teach these apes a lesson."
+  nf_tnk.27.b:0 "§G We shall teach these apes a lesson.§!"
 
   nf_tnk.28.t:0 "Aliens?!?"
   nf_tnk.28.d:0 "Sure we heard the stories, but they where just stories, this is madness."
@@ -125,3 +125,7 @@
 
   nf_tnk.34.d:0 "I sit back and watch the sun rise on a grateful wasteland. BLAH BLAH ADD MORE POETIC SPEECH HERE."
   nf_tnk.34.a:0 "finally... peace..."
+
+  nf_tnk.35.d:0 "Our convergance was rotten, we can do nothing but allow its dissolution for now, the others have broken off, they must be brought back into the fold in time."
+  nf_tnk.35.a:0 "§GMobius: A path forward§!"
+  nf_tnk.35.b:0 "§MKlein: A path forward§!"

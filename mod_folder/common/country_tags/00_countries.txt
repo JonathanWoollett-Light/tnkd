@@ -205,3 +205,5 @@ KSR = "countries/KSR - Kaiser's Legion.txt"
 MLP = "countries/MLP - Equestria.txt"
 # New
 ALI = "countries/ALI - Aliens.txt"
+MOR = "countries/MOR - Mobius Reich.txt"
+KKD = "countries/KKD - Klein Kingdom.txt"

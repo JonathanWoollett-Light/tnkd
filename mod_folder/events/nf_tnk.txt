@@ -658,18 +658,7 @@ country_event = {
 		name = nf_tnk.26.a
 		hidden_effect = {
 			ALI = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 10
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 30
-				}
-				ALI = {
-					# transfer_state = PREV
-					transfer_state = 389 # area 51
-				}
+				transfer_state = 389 # area 51
 				
 				every_neighbor_country = {
 					ALI = {
@@ -713,7 +702,6 @@ country_event = {
 						}
 					}
 				}
-				add_manpower = 500
 			}
 		}
 		every_country = {
@@ -867,5 +855,24 @@ country_event = {
 
 	option = {
 		name = nf_tnk.34.a
+	}
+}
+country_event = {
+	id = nf_tnk.35
+	title = tnk_tnkd_cohesion
+	desc = nf_tnk.35.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.35.a
+		
+		MOR = { change_tag_from = TNK }
+	}
+	option = {
+		name = nf_tnk.35.b
+		
+		KKD = { change_tag_from = TNK }
 	}
 }

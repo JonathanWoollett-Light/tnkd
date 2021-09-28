@@ -572,7 +572,7 @@ TOC = {
 	color = rgb { 77 52 65 }
 	color_ui = rgb { 77 52 65 }
 }
-TIM= {
+TIM = {
 	color = rgb { 161 101 6 }
 	color_ui = rgb { 161 101 6 }
 }
@@ -843,6 +843,14 @@ TCL = {
 # New
 # ---------------------------------------------------
 ALI = {
+	color = rgb { 111 45 156 }
+	color_ui = rgb { 111 45 156 }
+}
+MOR = {
+	color = rgb { 111 45 156 }
+	color_ui = rgb { 111 45 156 }
+}
+KKD = {
 	color = rgb { 111 45 156 }
 	color_ui = rgb { 111 45 156 }
 }

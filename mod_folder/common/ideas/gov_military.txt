@@ -429,7 +429,7 @@ ideas = {
 			level = 1
 			picture = tnk_simple_commands
 			allowed = {
-				original_tag = TNK
+				original_tag = ALI
 			}
 			ai_will_do = {
 				factor = 1

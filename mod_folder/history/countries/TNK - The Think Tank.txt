@@ -73,6 +73,24 @@ set_technology = {
 	robot_assaultron_tech = 1
 
 	robot_scurry_tech = 1 #Scurry is last researched light robot, important.
+
+	# They are good with computers
+	electronic_engineering = 1
+	electronic_engineering_1 = 1
+	electronic_engineering_2 = 1
+	electronic_engineering_3 = 1
+	electronic_engineering_4 = 1
+	electronic_engineering_5 = 1
+	# They have a radar fence so...
+	radio_detection = 1
+	decimetric_radar = 1
+	improved_decimetric_radar = 1
+
+	# They spawn late game, so should have basic industry research
+	tool_engineering = 1
+	basic_industry_tech = 1
+	pre_construction_industry_tech = 1
+	pre_recycling_industry_tech = 1
 }
 
 if = {
@@ -175,17 +193,21 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+# Strong generals but weak at everything else (when spawned)
 create_field_marshal = {
     name = "Alpha"
     picture = "robobrain2.dds"
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
+    attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 create_field_marshal = {
     name = "Beta"
@@ -193,11 +215,13 @@ create_field_marshal = {
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
+    attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 create_field_marshal = {
     name = "Gamma"
@@ -205,11 +229,13 @@ create_field_marshal = {
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
+    attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 create_corps_commander = {
     name = "00"
@@ -217,11 +243,13 @@ create_corps_commander = {
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
     name = "01"
@@ -229,11 +257,13 @@ create_corps_commander = {
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
     name = "02"
@@ -241,11 +271,13 @@ create_corps_commander = {
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
     name = "03"
@@ -253,11 +285,13 @@ create_corps_commander = {
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
     name = "04"
@@ -265,11 +299,13 @@ create_corps_commander = {
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
     name = "05"
@@ -277,11 +313,13 @@ create_corps_commander = {
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
     name = "06"
@@ -289,11 +327,13 @@ create_corps_commander = {
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
     name = "07"
@@ -301,11 +341,13 @@ create_corps_commander = {
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
     name = "08"
@@ -313,11 +355,13 @@ create_corps_commander = {
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
     name = "09"
@@ -325,11 +369,13 @@ create_corps_commander = {
     traits = { 
 		robotics_expert_trait
 		enduring_trait
+		trait_mountaineer
+		rooted_trait
 	}
-    attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 set_variable = { science = 10000 }

@@ -117,6 +117,16 @@ units = {
 
 ##### Starting Production #####
 instant_effect = {
+	add_manpower = 500
+
+	add_offsite_building = {
+		type = industrial_complex
+		level = 10
+	}
+	add_offsite_building = {
+		type = arms_factory
+		level = 30
+	}
 	add_equipment_production = {
 		equipment = {
 			type = exotic_robot_zeta_equipment

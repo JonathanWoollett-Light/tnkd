@@ -5,3 +5,10 @@ tnk_tnkd_decohesion = {
 		base = 10
 	}
 }
+tnk_tnkd_clean_slate = {
+	allowed = { tag = TNK }
+	icon = GFX_decision_category_hea_conversion
+	priority = {
+		base = 11
+	}
+}

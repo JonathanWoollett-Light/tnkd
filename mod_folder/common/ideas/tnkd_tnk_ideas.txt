@@ -16,7 +16,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				weekly_manpower = -25
+				weekly_manpower = -10
 				research_speed_factor = 0.10
 			}
 		}
@@ -27,7 +27,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				weekly_manpower = -50
+				weekly_manpower = -25
 				research_speed_factor = 0.25
 				stability_factor = -0.25
 			}
@@ -39,10 +39,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				weekly_manpower = -100
+				weekly_manpower = -50
 				research_speed_factor = 0.5
 				stability_factor = -0.50
-				war_support_factor = -0.10
 			}
 		}
 		tnk_insane_science = {
@@ -52,10 +51,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				weekly_manpower = -200
-				research_speed_factor = 1
+				weekly_manpower = -100
+				research_speed_factor = 0.75
 				stability_factor = -0.75
-				war_support_factor = -0.25
 			}
 		}
 		tnk_tnkd_balanced_science_idea = {
@@ -214,7 +212,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_leader_start_defense_level = 8
+				army_defence_factor = 0.3
 			}
 		}
 		tnk_tnkd_guardian = {
@@ -315,6 +313,7 @@ ideas = {
 				infantry_equipment = {
 					hard_attack = 0.15
 					ap_attack = 0.15
+					reliability = -0.05
 					instant = yes
 				}
 			}
@@ -330,6 +329,7 @@ ideas = {
 			equipment_bonus = {
 				infantry_equipment = {
 					defense = 0.15
+					reliability = -0.05
 					instant = yes
 				}
 			}
@@ -343,6 +343,7 @@ ideas = {
 				infantry_equipment = {
 					soft_attack = 0.15
 					breakthrough = 0.15
+					reliability = -0.05
 					instant = yes
 				}
 			}
@@ -355,6 +356,7 @@ ideas = {
 			equipment_bonus = {
 				infantry_equipment = {
 					maximum_speed = 0.15
+					reliability = -0.05
 					instant = yes
 				}
 			}
@@ -396,12 +398,14 @@ ideas = {
 				combat_robot_equipment = {
 					hard_attack = 0.2
 					ap_attack = 0.2
+					reliability = -0.1
 					build_cost_ic = 0.1
 					instant = yes
 				}
 				support_robot_equipment = {
 					hard_attack = 0.1
 					ap_attack = 0.1
+					reliability = -0.1
 					build_cost_ic = 0.1
 					instant = yes
 				}
@@ -416,12 +420,14 @@ ideas = {
 				combat_robot_equipment = {
 					soft_attack = 0.2
 					breakthrough = 0.2
+					reliability = -0.1
 					build_cost_ic = 0.1
 					instant = yes
 				}
 				support_robot_equipment = {
 					soft_attack = 0.1
 					breakthrough = 0.1
+					reliability = -0.1
 					build_cost_ic = 0.1
 					instant = yes
 				}
@@ -436,12 +442,14 @@ ideas = {
 				combat_robot_equipment = {
 					hardness = 0.2
 					armor_value = 0.2
+					reliability = -0.1
 					build_cost_ic = 0.1
 					instant = yes
 				}
 				support_robot_equipment = {
 					hardness = 0.1
 					armor_value = 0.1
+					reliability = -0.1
 					build_cost_ic = 0.1
 					instant = yes
 				}
@@ -455,11 +463,13 @@ ideas = {
 			equipment_bonus = {
 				combat_robot_equipment = {
 					fuel_consumption = -0.2
+					reliability = -0.1
 					build_cost_ic = 0.1
 					instant = yes
 				}
 				support_robot_equipment = {
 					fuel_consumption = -0.1
+					reliability = -0.1
 					build_cost_ic = 0.1
 					instant = yes
 				}
@@ -473,11 +483,13 @@ ideas = {
 			equipment_bonus = {
 				combat_robot_equipment = {
 					maximum_speed = 0.15
+					reliability = -0.1
 					build_cost_ic = 0.1
 					instant = yes
 				}
 				support_robot_equipment = {
 					maximum_speed = 0.3
+					reliability = -0.1
 					build_cost_ic = 0.1
 					instant = yes
 				}

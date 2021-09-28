@@ -2071,6 +2071,9 @@
   TCL_intellectuals_DEF:0 "the Texan Enclave"
   TCL_intellectuals:0 "Texan Enclave"
 
+  # ----------------------------------------------------------------------------
+  # New
+  # ----------------------------------------------------------------------------
   ALI_ruler_ADJ:0 "Aliens"
   ALI_ruler_DEF:0 "the Aliens"
   ALI_ruler:0 "Aliens"
@@ -2083,3 +2086,29 @@
   ALI_intellectuals_ADJ:0 "Aliens"
   ALI_intellectuals_DEF:0 "the Aliens"
   ALI_intellectuals:0 "Aliens"
+
+  MOR_ruler_ADJ:0 "Mobius"
+  MOR_ruler_DEF:0 "the Mobius Reich"
+  MOR_ruler:0 "Mobius Reich"
+  MOR_people_ADJ:0 "Mobius"
+  MOR_people_DEF:0 "the Mobius Reich"
+  MOR_people:0 "Mobius Reich"
+  MOR_elites_ADJ:0 "Mobius"
+  MOR_elites_DEF:0 "the Mobius Reich"
+  MOR_elites:0 "Mobius Reich"
+  MOR_intellectuals_ADJ:0 "Mobius"
+  MOR_intellectuals_DEF:0 "the Mobius Reich"
+  MOR_intellectuals:0 "Mobius Reich"
+
+  KKD_ruler_ADJ:0 "Klein"
+  KKD_ruler_DEF:0 "the Klein Kingdom"
+  KKD_ruler:0 "Klein Kingdom"
+  KKD_people_ADJ:0 "Klein"
+  KKD_people_DEF:0 "the Klein Kingdom"
+  KKD_people:0 "Klein Kingdom"
+  KKD_elites_ADJ:0 "Klein"
+  KKD_elites_DEF:0 "the Klein Kingdom"
+  KKD_elites:0 "Klein Kingdom"
+  KKD_intellectuals_ADJ:0 "Klein"
+  KKD_intellectuals_DEF:0 "the Klein Kingdom"
+  KKD_intellectuals:0 "Klein Kingdom"
