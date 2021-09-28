@@ -854,3 +854,19 @@ KKD = {
 	color = rgb { 111 45 156 }
 	color_ui = rgb { 111 45 156 }
 }
+TBR = {
+	color = rgb { 111 45 156 }
+	color_ui = rgb { 111 45 156 }
+}
+OLG = {
+	color = rgb { 111 45 156 }
+	color_ui = rgb { 111 45 156 }
+}
+GUE = {
+	color = rgb { 111 45 156 }
+	color_ui = rgb { 111 45 156 }
+}
+USB = {
+	color = rgb { 111 45 156 }
+	color_ui = rgb { 111 45 156 }
+}

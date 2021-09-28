@@ -25,28 +25,42 @@ division_template = {
 units = {
 	division = {
 		name = "Robo-scorpions"
-		location = 6990
+		location = 5766
 		division_template = "Robo-scorpions"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
 	}
     division = {
 		name = "Lobotomites"
-		location = 6990
+		location = 5766
+		division_template = "Lobotomites"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Lobotomites"
+		location = 5766
+		division_template = "Lobotomites"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Lobotomites"
+		location = 5766
+		division_template = "Lobotomites"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+    division = {
+		name = "Lobotomites"
+		location = 6992
 		division_template = "Lobotomites"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Lobotomites"
-		location = 6990
-		division_template = "Lobotomites"
-		start_experience_factor = 0.5
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Lobotomites"
-		location = 6990
+		location = 6992
 		division_template = "Lobotomites"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
@@ -55,10 +69,10 @@ units = {
 
 ##### Starting Production #####
 instant_effect = {
-    add_manpower = 300
+    add_manpower = 600
 	add_equipment_to_stockpile = {
         type = infantry_equipment
-        amount = 500
+        amount = 1000
     }
     add_equipment_to_stockpile = {
         type = support_robot_scurry_equipment
@@ -70,14 +84,14 @@ instant_effect = {
     }
     add_offsite_building = {
         type = arms_factory
-        level = 3
+        level = 5
     }
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
 			creator = KKD
 		}
-		requested_factories = 2
+		requested_factories = 4
 		progress = 0.75
 		efficiency = 100
 	}

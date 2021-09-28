@@ -25,28 +25,28 @@ division_template = {
 units = {
 	division = {
 		name = "Robo-scorpions"
-		location = 6990
+		location = 3235
 		division_template = "Robo-scorpions"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
 	}
     division = {
 		name = "Lobotomites"
-		location = 6990
+		location = 3235
 		division_template = "Lobotomites"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Lobotomites"
-		location = 6990
+		location = 6991
 		division_template = "Lobotomites"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Lobotomites"
-		location = 6990
+		location = 3234
 		division_template = "Lobotomites"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
@@ -75,7 +75,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = KKD
+			creator = TBR
 		}
 		requested_factories = 2
 		progress = 0.75
@@ -84,7 +84,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_robot_scurry_equipment
-			creator = KKD
+			creator = TBR
 		}
 		requested_factories = 1
 		progress = 0.75

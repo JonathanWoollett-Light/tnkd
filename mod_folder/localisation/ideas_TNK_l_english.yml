@@ -84,7 +84,7 @@
  tnk_tnkd_intense_radar_fence_desc:0 "You can come right in... if you can tolerate a little brain boiling."
 
  tnk_caesar_deal_desc:0 "Cedes all states to §Y[CES.GetName]§W excluding §Y[47.GetName]§W, §Y[67.GetName]§W, §Y[46.GetName]§W, §Y[573.GetName]§W, §Y[417.GetName]§W, §Y[137.GetName]§W and §Y[552.GetName]§W, in exchange for a non-aggression pact."
- tnk_ncr_deal_desc:0 "Cedes all states to §Y[NCR.GetName]§W excluding §Y[47.GetName]§W, §Y[67.GetName]§W, §Y[46.GetName]§W, §Y[573.GetName]§W, §Y[417.GetName]§W and §Y[137.GetName]§W, in exchange for a non-aggression pact."
+ tnk_ncr_deal_desc:0 "Cedes all states to §Y[NCR.GetName]§W excluding §Y[47.GetName]§W, §Y[67.GetName]§W, §Y[46.GetName]§W, §Y[573.GetName]§W, §Y[417.GetName]§W, §Y[137.GetName]§W and §Y[552.GetName]§W, in exchange for a non-aggression pact."
 
  tnk_tnkd_perfect_async_idea:0 "Perfect Asynchronicity"
  tnk_tnkd_perfect_async_idea_desc:0 "A dance of interweaving parts so complex it might seem like chaos."

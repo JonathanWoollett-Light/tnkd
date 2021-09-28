@@ -2213,7 +2213,7 @@ focus_tree = {
 		}
 		available = {
 			owns_state = 252
-			owns_state = 211
+			owns_state = 613
 		}
 		mutually_exclusive = {
 			focus = tnk_tnkd_ncr_ambitious_defence
@@ -2290,6 +2290,15 @@ focus_tree = {
 		prerequisite = {
 			focus = tnk_tnkd_perfection_sync
 		}
+		available = {
+			owns_state = 47
+			owns_state = 46
+			owns_state = 573
+			owns_state = 137
+			owns_state = 67
+			owns_state = 417
+			owns_state = 552
+		}
 		completion_reward = {
 			remove_dynamic_modifier = {
 				modifier = tnk_decohesion_dynamic_modifier
@@ -2314,7 +2323,7 @@ focus_tree = {
 				}
 				KKD = {
 					inherit_technology = TNK # Need to inherit before `load_oob`
-					transfer_state = 46 # Nipton/Mojave Drine through
+					transfer_state = 46 # Hidden Valley
 					load_oob = "KKD"
 					46 = {
 						add_core_of = PREV
@@ -2322,6 +2331,80 @@ focus_tree = {
 						teleport_armies = {
 							limit = {
 								NOT = { original_tag = KKD } 
+							}
+						}
+					}
+				}
+				TBR = {
+					inherit_technology = TNK # Need to inherit before `load_oob`
+					transfer_state = 573 # Black Mountain
+					load_oob = "TBR"
+					573 = {
+						add_core_of = PREV
+						add_extra_state_shared_building_slots = 25
+						teleport_armies = {
+							limit = {
+								NOT = { original_tag = TBR } 
+							}
+						}
+					}
+				}
+				OLG = {
+					inherit_technology = TNK # Need to inherit before `load_oob`
+					transfer_state = 137 # Route 95
+					load_oob = "OLG"
+					137 = {
+						add_core_of = PREV
+						add_extra_state_shared_building_slots = 25
+						teleport_armies = {
+							limit = {
+								NOT = { original_tag = OLG } 
+							}
+						}
+					}
+				}
+				GUE = {
+					inherit_technology = TNK # Need to inherit before `load_oob`
+					transfer_state = 67 # Cottonwood Cove
+					load_oob = "GUE"
+					67 = {
+						add_core_of = PREV
+						add_extra_state_shared_building_slots = 25
+						teleport_armies = {
+							limit = {
+								NOT = { original_tag = GUE } 
+							}
+						}
+					}
+				}
+				USB = {
+					inherit_technology = TNK # Need to inherit before `load_oob`
+					transfer_state = 417 # Helios One
+					# If owns Boulder City, give to Borous
+					IF {
+						limit = {
+							TNK = {
+								owns_state = 613
+							}
+						}
+						transfer_state = 613
+					}
+					# If owns Hoover Dam, give to Borous
+					IF {
+						limit = {
+							TNK = {
+								owns_state = 252
+							}
+						}
+						transfer_state = 252
+					}
+					load_oob = "USB"
+					417 = {
+						add_core_of = PREV
+						add_extra_state_shared_building_slots = 25
+						teleport_armies = {
+							limit = {
+								NOT = { original_tag = USB } 
 							}
 						}
 					}
@@ -3797,6 +3880,58 @@ focus_tree = {
 			country_event = nf_mor.3
 		}
 	}
+		focus = {
+		id = mor_political
+		icon = GFX_goal_mor_service_in_undeath
+		cost = 30
+		y = 1
+		prerequisite = {
+			focus = mor_setup_2
+		}
+
+		relative_position_id = mor_setup_2
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = mor_converge
+		icon = GFX_goal_mor_service_in_undeath
+		cost = 30
+		y = 1
+		x= -1
+		prerequisite = {
+			focus = mor_political
+		}
+		mutually_exclusive = {
+			focus = mor_seperate
+		}
+
+		relative_position_id = mor_political
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = mor_seperate
+		icon = GFX_goal_mor_service_in_undeath
+		cost = 30
+		x = 2
+		prerequisite = {
+			focus = mor_political
+		}
+		mutually_exclusive = {
+			focus = mor_converge
+		}
+
+		relative_position_id = mor_converge
+
+		completion_reward = {
+			
+		}
+	}
 	focus = {
 		id = mor_military
 		icon = GFX_goal_mor_service_in_undeath
@@ -3882,58 +4017,6 @@ focus_tree = {
 		}
 
 		relative_position_id = mor_economy_1
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = mor_political
-		icon = GFX_goal_mor_service_in_undeath
-		cost = 30
-		y = 1
-		prerequisite = {
-			focus = mor_setup_2
-		}
-
-		relative_position_id = mor_setup_2
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = mor_converge
-		icon = GFX_goal_mor_service_in_undeath
-		cost = 30
-		y = 1
-		x= -1
-		prerequisite = {
-			focus = mor_political
-		}
-		mutually_exclusive = {
-			focus = mor_seperate
-		}
-
-		relative_position_id = mor_political
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = mor_seperate
-		icon = GFX_goal_mor_service_in_undeath
-		cost = 30
-		x = 2
-		prerequisite = {
-			focus = mor_political
-		}
-		mutually_exclusive = {
-			focus = mor_converge
-		}
-
-		relative_position_id = mor_converge
 
 		completion_reward = {
 			

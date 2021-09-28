@@ -10,6 +10,22 @@ ideas = {
                 tag = KKD
                 attack_bonus_against = 0.1
             }
+            targeted_modifier = {
+                tag = TBR
+                attack_bonus_against = 0.1
+            }
+            targeted_modifier = {
+                tag = OLG
+                attack_bonus_against = 0.1
+            }
+            targeted_modifier = {
+                tag = GUE
+                attack_bonus_against = 0.1
+            }
+            targeted_modifier = {
+                tag = USB
+                attack_bonus_against = 0.1
+            }
         }
     }
 }

@@ -1,0 +1,95 @@
+capital = 67
+
+set_country_flag = caps_exempt
+
+# Inherits from tnk so don't need to set tech manually
+
+set_stability = 0.5
+set_war_support = 0.8
+set_research_slots = 6
+
+set_country_flag = is_settler_nation
+set_country_flag = is_robotic_nation
+set_country_flag = has_unique_manpower_law
+set_country_flag = has_unique_officer_laws
+set_country_flag = has_unique_economic_laws
+set_country_flag = has_unique_undesirable_laws
+
+set_politics = {
+	ruling_party = intellectuals
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 100
+	ruler = 0
+}
+
+set_party_name = {
+	ideology = intellectuals
+	long_name = "Borous"
+	name = "Borous"
+}
+
+add_ideas = {
+	tnk_old_world_blues
+
+	closed_economy
+	chems_legalised
+	outsider_law_none
+	mutant_law_none
+	slavers_idea_4
+}
+
+set_country_flag = slavery_allowed
+set_country_flag = no_generic_chief
+set_country_flag = no_generic_high_command
+set_country_flag = dont_give_settler_generic_chiefs
+set_country_flag = dont_give_settler_generic_high_command
+set_country_flag = dont_give_settler_generic_theorists
+set_country_flag = dont_give_settler_generic_political_advisors
+set_country_flag = no_generic_advisor
+set_country_flag = no_generic_manufacturer
+set_country_flag = robot_doctrine_ai
+
+create_country_leader = {
+	name = "Borous"
+	desc = "USB_DESC"
+	picture = "portrait_usb_leader.dds"
+	expire = "3000.1.1"
+	ideology = technocracy
+
+	traits = {
+	}
+}
+
+create_corps_commander = {
+    name = "Zeta"
+    picture = "robobrain2.dds"
+    traits = { 
+		robotics_expert_trait
+		enduring_trait
+        urban_assault_specialist
+		rooted_trait
+	}
+    attack_skill = 3
+	defense_skill = 6
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+    name = "06"
+    picture = "robobrain1.dds"
+    traits = { 
+		robotics_expert_trait
+		enduring_trait
+		trait_mountaineer
+		rooted_trait
+	}
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
