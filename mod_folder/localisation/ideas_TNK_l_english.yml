@@ -130,3 +130,12 @@
 
  tnk_tnkd_charging_laser:0 "Charging Mega-laser"
  tnk_tnkd_charging_laser_desc:0 "We will power beyound comphrension to shoot this monstrosity down."
+
+ # ---------------------------------------------------------
+ # Decohesion
+ # ---------------------------------------------------------
+
+ tnk_tnkd_understanding:0 "A Deep Understanding"
+ tnk_tnkd_understanding_desc:0 "I have known my colleagues for so long they can no longer surprise me.\n\nNegates the affects of §YConsolidated Cognition§! when fighting §Y[MOR.getName]§!, §Y[GUE.getName]§!, §Y[KKD.getName]§!, §Y[OLG.getName]§!, §Y[TBR.getName]§! or §Y[USB.getName]§!."
+ tnk_tnkd_dense_defence:0 "Consolidated Cognition"
+ tnk_tnkd_dense_defence_desc:0 "All our cognitive brilliance condensed into the defence of such a small area allows for levels of tactical cognition beyound any others."

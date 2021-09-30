@@ -27,6 +27,14 @@ spriteTypes = {
 		name = "GFX_goal_tnk_tnkd_cohesion"
 		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_cohesion.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_final"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_final.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_wall"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_wall.dds"
+	}
 	# ----------------------------------------------------------
 	# True convergance
 	# ----------------------------------------------------------
@@ -65,10 +73,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_tnk_tnkd_clean_slate"
 		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_clean_slate.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_tnk_tnkd_peace"
-		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_peace.dds"
 	}
 	# ----------------------------------------------------------
 	# Advanced genes
@@ -147,6 +151,10 @@ spriteTypes = {
 		name = "GFX_goal_tnk_tnkd_a_new_frontier"
 		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_a_new_frontier.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_el_dorado"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_el_dorado.dds"
+	}
 	# ----------------------------------------------------------
 	# Mobius convergance
 	# ----------------------------------------------------------
@@ -177,5 +185,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_tnk_tnkd_a_future_vision"
 		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_a_future_vision.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_gecks_final"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_gecks_final.dds"
 	}
 }

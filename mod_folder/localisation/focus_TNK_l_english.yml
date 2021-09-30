@@ -146,6 +146,7 @@
 
  tnk_tnkd_next_steps:0 "Venturing Forward"
  tnk_tnkd_next_steps_desc:0 "§OW§ge §Gm§Ro§Mv§Pe §Rf§Oo§gr§Gw§Ra§Mr§Pd §Rt§Oo§gg§Ge§Rt§Mh§Pe§Rr§O."
+ tnk_tnkd_next_steps_tt:0 "Completed all focuses in the §YLeaving the "Big Empty"§! tree."
 
  tnk_tnkd_ambitious_defence:0 "Amibitous Defence"
  tnk_tnkd_ambitious_defence_desc:0 "We shall hold line against the red tide."
@@ -265,6 +266,18 @@
  tnk_tnkd_stick_desc:0 "Only through unity may we rebuild this world, we cannot allow the fickle opinions of foreign elites to prevent us helping."
  tnk_tnkd_the_stick_tt:0 "Gives §YPuppet§! war goal against all neighbours."
 
+ tnk_tnkd_gecks:0 "In Pursuit of Eden"
+ tnk_tnkd_gecks_desc:0 "If we are to rebuild this land, we must not only rediscover how to manufacture §MG.E.C.K.s§! but a new way to deploy their technology, which can replicate and spread, like a virus."
+ tnk_tnkd_gecks_1:0 "Grave of Monsters"
+ tnk_tnkd_gecks_1_desc:0 "Rumours say this place is the grave the some of the greatest monsters every created by the FEV. This virus might form a brilliant base for our new deployment mechanism."
+ tnk_tnkd_gecks_2:0 "Historical Research"
+ tnk_tnkd_gecks_2_desc:0 "I think some our old friends used to work here."
+ tnk_tnkd_gecks_3:0 "A Pristine Collection"
+ tnk_tnkd_gecks_3_desc:0 "While we might debate calling this people scientists, they certainly have a great collection or pre-war relics, and a specific few we need."
+ tnk_tnkd_gecks_final:0 "G.E.V."
+ tnk_tnkd_gecks_final_desc:0 "§MEUREKA!§!\n\nWe have done it, we have the tool we need to transform this wasteland.\n\nThe Garden of Eden Virus... §PG.E.V.§!"
+
+
  # --------------------------------------------------------------
  # True convergance
  # --------------------------------------------------------------
@@ -301,8 +314,8 @@
  tnk_tnkd_clean_slate_desc:0 "Science must be carried out in a clean lab, we must clean the wasteland."
  tnk_tnkd_clean_slate_tt:0 "§RInitiates perpetual war.§!"
 
- tnk_tnkd_peace:0 "Peace"
- tnk_tnkd_peace_desc:0 "I sit back and watch the sun rise on a grateful wasteland."
+ tnk_tnkd_final:0 "Peace"
+ tnk_tnkd_final_desc:0 "I sit back and watch the sun rise on a grateful wasteland."
 
  # --------------------------------------------------------------
  # Tech ascendance
@@ -352,12 +365,20 @@
  tnk_tnkd_exotic_research_desc:0 "There is much to discover, much beyound the decrepit ancient relics our neighbours spend their lives stealing."
  
  tnk_tnkd_ship_tt:0 "Will give §YIntermediate Naval Tech§! if §YBasic Naval Tech§! is already researched."
+ 
  tnk_tnkd_south_men:0 "Southern Practises"
  tnk_tnkd_south_men_desc:0 "What strange humans choose to live in such a harsh place, surely they must have some unique knowledge for dealing with the burning heat."
+ tnk_tnkd_south_ships:0 "Southern Shipbuilding"
+ tnk_tnkd_south_ships_desc:0 "Silently fishing and escaping crocodiles, these southerns must know a thing or two about shipbuilding."
+ tnk_tnkd_el_dorado:0 "El Dorado"
+ tnk_tnkd_el_dorado_desc:0 "An ancient legend? a lost city? §YGOLD?!?§!"
+
  tnk_tnkd_north_men:0 "Northern Practises"
  tnk_tnkd_north_men_desc:0 "What strange humans choose to live in such a harsh place, surely they must have some unique knowledge for dealing with the harsh cold."
  tnk_tnkd_north_ships:0 "Northern Shipbuilding"
  tnk_tnkd_north_ships_desc:0 "These northern nations seem to have a knack for showing up far from home, how they do must be a result of their ships, we must investigate. "
+ tnk_tnkd_valhalla:0 "Valhalla"
+ tnk_tnkd_valhalla_desc:0 "A land of legendary warriors? Sounds like some good grave robbing."
 
  tnk_tnkd_little_green_dot:0 "Little Green Dot"
  tnk_tnkd_little_green_dot_desc:0 "Is that a star? Why's it green?"

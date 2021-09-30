@@ -77,6 +77,11 @@ set_party_name = {
 
 set_country_flag = tribal_doctrine_ai
 
+set_rule = {
+	can_not_declare_war = yes
+	can_join_factions = no
+}
+
 create_country_leader = {
 	name = "BLURGH"
 	desc = "MTW_DESC"

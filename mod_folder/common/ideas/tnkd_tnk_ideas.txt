@@ -532,6 +532,18 @@ ideas = {
 		# ----------------------------------------------------------------------
 		# Exotic research
 		# ----------------------------------------------------------------------
+		tnk_tnkd_exotic_research = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				cargo_plane_equipment = {
+					air_range = 1
+					instant = yes
+				}
+			}
+		}
 		tnk_tnkd_charging_laser = {
 			allowed = {
 				always = no
@@ -557,6 +569,58 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				heat_attrition = -0.2
+			}
+		}
+		tnk_tnkd_el_dorado = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ITZ
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = GRH
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = TDT
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = CAF
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ATE
+				attack_bonus_against = 0.1
+			}
+		}
+		tnk_tnkd_valhalla = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = DRE
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = BRK
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = HAI
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = WHI
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = KAM
+				attack_bonus_against = 0.1
 			}
 		}
 		# -------------------------------------------------
@@ -626,5 +690,57 @@ ideas = {
 				air_strategic_bomber_bombing_factor = 0.3
 			}
 		}
+		# -------------------------------------------------
+		# Decohesion
+		# -------------------------------------------------
+		tnk_tnkd_dense_defence = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+            modifier = {
+                army_core_attack_factor = 0.5
+                army_core_defence_factor = 0.5
+				army_org_factor = 0.3
+            }
+        }
+		tnk_tnkd_understanding = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+			targeted_modifier = {
+                tag = MOR
+                attack_bonus_against = 0.5
+                defense_bonus_against = 0.5
+            }
+            targeted_modifier = {
+                tag = KKD
+                attack_bonus_against = 0.5
+                defense_bonus_against = 0.5
+            }
+            targeted_modifier = {
+                tag = TBR
+                attack_bonus_against = 0.5
+                defense_bonus_against = 0.5
+            }
+            targeted_modifier = {
+                tag = OLG
+                attack_bonus_against = 0.5
+                defense_bonus_against = 0.5
+            }
+            targeted_modifier = {
+                tag = GUE
+                attack_bonus_against = 0.5
+                defense_bonus_against = 0.5
+            }
+            targeted_modifier = {
+                tag = USB
+                attack_bonus_against = 0.5
+                defense_bonus_against = 0.5
+            }
+        }
     }
 }
