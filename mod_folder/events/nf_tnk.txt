@@ -867,33 +867,8 @@ country_event = {
 
 	option = {
 		name = nf_tnk.35.a
-		MOR = { change_tag_from = TNK }
 		country_event = nf_tnk.36
-	}
-	option = {
-		name = nf_tnk.35.b
-		KKD = { change_tag_from = TNK }
-		country_event = nf_tnk.36
-	}
-	option = {
-		name = nf_tnk.35.c
-		TBR = { change_tag_from = TNK }
-		country_event = nf_tnk.36
-	}
-	option = {
-		name = nf_tnk.35.d
-		OLG = { change_tag_from = TNK }
-		country_event = nf_tnk.36
-	}
-	option = {
-		name = nf_tnk.35.e
-		GUE = { change_tag_from = TNK }
-		country_event = nf_tnk.36
-	}
-	option = {
-		name = nf_tnk.35.f
-		USB = { change_tag_from = TNK }
-		country_event = nf_tnk.36
+		add_ideas = tnk_tnkd_fractured_mind
 	}
 }
 country_event = {
@@ -908,14 +883,61 @@ country_event = {
 		name = nf_tnk.36.a
 		# Spawns MT Wastes
 		hidden_effect = {
-			MTW = {
-				transfer_state = 552 # Goodsprings
-				load_oob = "MTW"
-				552 = {
-					add_core_of = MTW
-					add_extra_state_shared_building_slots = 25
+			every_owned_state = {
+				limit = {
+					NOT = {
+						OR = {
+							state = 47
+							state = 67
+							state = 137
+							state = 417
+							state = 46
+							state = 573
+							state = 613
+							state = 252
+						}
+					}
+				}
+				MTW = {
+					transfer_state = PREV
+					PREV = {
+						add_core_of = PREV
+						teleport_armies = {
+							limit = {
+								NOT = { original_tag = MTW } 
+							}
+						}
+					}
+					
 				}
 			}
+			MTW = {
+				load_oob = "MTW"
+			}
 		}
+	}
+}
+country_event = {
+	id = nf_tnk.37
+	title = tnk_tnkd_serenity
+	desc = nf_tnk.37.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.37.a
+	}
+}
+country_event = {
+	id = nf_tnk.38
+	title = nf_tnk.38.t
+	desc = nf_tnk.38.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.38.a
 	}
 }

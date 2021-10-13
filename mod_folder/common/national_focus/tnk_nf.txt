@@ -1153,7 +1153,9 @@ focus_tree = {
 		x = 0
 		y = 2
 		available = {
-			owns_state = 313
+			313 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		prerequisite = {
 			focus = tnk_klein_mojave_experiments_develop_hexcrete_alloy
@@ -1260,7 +1262,8 @@ focus_tree = {
 		x = 0
 		y = 2
 		prerequisite = {
-			focus = tnk_klein_lobotomite_research_numbers focus = tnk_klein_lobotomite_research_strength
+			focus = tnk_klein_lobotomite_research_numbers
+			focus = tnk_klein_lobotomite_research_strength
 		}
 
 		relative_position_id = tnk_klein_lobotomite_research
@@ -1824,16 +1827,20 @@ focus_tree = {
 
 		relative_position_id = tnk_personality_restoration
 		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_state_core = 67
+			add_state_core = 137
+			add_state_core = 417
+			add_state_core = 46
+			add_state_core = 573
+			add_state_core = 552
 		}
 	}
 	focus {
 		id = tnk_tnkd_final
 		icon = GFX_goal_tnk_tnkd_final
-		cost = 7
-		y = 12
-		relative_position_id = tnk_tnkd_next_steps
+		cost = 10
+		y = 5
+		relative_position_id = tnk_tnkd_serenity
 		prerequisite = {
 			focus = tnk_tnkd_peace
 			focus = tnk_tnkd_gecks_final
@@ -1848,17 +1855,17 @@ focus_tree = {
 	# -----------------------------------------------------------------------
 
 	focus {
-		id = tnk_tnkd_defensive_intrastructure
+		id = tnk_tnkd_defensive_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 30
 		y = 7
-		x = 20
+		x = 11
 		relative_position_id = tnk_personality_restoration
 		available = {
 			has_completed_focus = tnk_personality_restoration
 		}
 		completion_reward = {
-			add_ideas = tnk_tnkd_defensive_intrastructure
+			add_ideas = tnk_tnkd_defensive_infrastructure
 		}
 	}
 	focus {
@@ -1867,16 +1874,15 @@ focus_tree = {
 		cost = 30
 		y = 2
 		x = -2
-		relative_position_id = tnk_tnkd_defensive_intrastructure
+		relative_position_id = tnk_tnkd_defensive_infrastructure
 		prerequisite = {
-			focus = tnk_tnkd_defensive_intrastructure
+			focus = tnk_tnkd_defensive_infrastructure
 		}
 		available = {
 			NOT = { has_completed_focus = tnk_tnkd_deentrenchment }
 		}
 		completion_reward = {
 			capital_scope = {
-				add_extra_state_shared_building_slots = 15
 				add_building_construction = {
 					type = bunker
 					level = 6
@@ -1917,9 +1923,9 @@ focus_tree = {
 		cost = 30
 		y=1
 		x=-1
-		relative_position_id = tnk_tnkd_defensive_intrastructure
+		relative_position_id = tnk_tnkd_defensive_infrastructure
 		prerequisite = {
-			focus = tnk_tnkd_defensive_intrastructure
+			focus = tnk_tnkd_defensive_infrastructure
 		}
 		available = {
 			NOT = { has_completed_focus = tnk_tnkd_deentrenchment }
@@ -1936,9 +1942,9 @@ focus_tree = {
 		cost = 30
 		y=1
 		x=1
-		relative_position_id = tnk_tnkd_defensive_intrastructure
+		relative_position_id = tnk_tnkd_defensive_infrastructure
 		prerequisite = {
-			focus = tnk_tnkd_defensive_intrastructure
+			focus = tnk_tnkd_defensive_infrastructure
 		}
 		available = {
 			NOT = { has_completed_focus = tnk_tnkd_deentrenchment }
@@ -1955,9 +1961,9 @@ focus_tree = {
 		cost = 30
 		y = 2
 		x = 2
-		relative_position_id = tnk_tnkd_defensive_intrastructure
+		relative_position_id = tnk_tnkd_defensive_infrastructure
 		prerequisite = {
-			focus = tnk_tnkd_defensive_intrastructure
+			focus = tnk_tnkd_defensive_infrastructure
 		}
 		available = {
 			NOT = { has_completed_focus = tnk_tnkd_deentrenchment }
@@ -1977,36 +1983,40 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		cost = 30
 		y=2
-		relative_position_id = tnk_tnkd_defensive_intrastructure
+		relative_position_id = tnk_tnkd_defensive_infrastructure
 		prerequisite = {
-			focus = tnk_tnkd_defensive_intrastructure
+			focus = tnk_tnkd_defensive_infrastructure
 		}
 		completion_reward = {
-			IF = {
-				limit = { has_idea = tnk_tnkd_dense_industry }
+			custom_effect_tooltip = tnk_tnkd_deentrenchment_tt
+			hidden_effect = {
+				IF = {
+					limit = { has_idea = tnk_tnkd_dense_industry }
+					remove_ideas = {
+						tnk_tnkd_dense_industry
+					}
+				}
+				IF = {
+					limit = { has_idea = tnk_tnkd_hyper_dense_industry }
+					remove_ideas = {
+						tnk_tnkd_hyper_dense_industry
+					}
+				}
+				IF = {
+					limit = { has_idea = tnk_tnkd_intense_radar_fence }
+					swap_ideas = {
+						remove_idea = tnk_tnkd_intense_radar_fence
+						add_idea = tnk_expanded_radar_fence
+					}
+				}
 				remove_ideas = {
-					tnk_tnkd_dense_industry
+					tnk_tnkd_defensive_infrastructure
 				}
 			}
-			IF = {
-				limit = { has_idea = tnk_tnkd_hyper_dense_industry }
-				remove_ideas = {
-					tnk_tnkd_hyper_dense_industry
-				}
-			}
-			IF = {
-				limit = { has_idea = tnk_tnkd_intense_radar_fence }
-				swap_ideas = {
-					remove_idea = tnk_tnkd_intense_radar_fence
-					add_idea = tnk_expanded_radar_fence
-				}
-			}
-			remove_ideas = {
-				tnk_tnkd_defensive_intrastructure
-			}
+
 			add_timed_idea = {
 				idea = tnk_tnkd_deentrenchment
-				days = 200
+				days = 100
 			}
 		}
 	}
@@ -2020,7 +2030,7 @@ focus_tree = {
 		icon = GFX_goal_tnk_tnkd_larping_luddites
 		cost = 30
 		x = -4
-		relative_position_id = tnk_tnkd_defensive_intrastructure
+		relative_position_id = tnk_tnkd_defensive_infrastructure
 		available = {
 			has_completed_focus = tnk_personality_restoration
 			is_neighbor_of = CES
@@ -2138,7 +2148,7 @@ focus_tree = {
 		icon = GFX_goal_generic_focus_ncr_raids
 		cost = 30
 		x = 4
-		relative_position_id = tnk_tnkd_defensive_intrastructure
+		relative_position_id = tnk_tnkd_defensive_infrastructure
 		available = {
 			has_completed_focus = tnk_personality_restoration
 			is_neighbor_of = NCR
@@ -2272,7 +2282,7 @@ focus_tree = {
 		id = tnk_tnkd_convergance
 		icon = GFX_goal_tnk_tnkd_convergance
 		cost = 7
-		y=1
+		y=4
 		relative_position_id = tnk_tnkd_unity
 		prerequisite = {
 			focus = tnk_tnkd_unity
@@ -2283,6 +2293,17 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = {
 				tnk_tnkd_convergance_idea
+			}
+			# If `tnk` does have currently have the idea `tnk_tnkd_silence_idea`.
+			IF = {
+				limit = {
+					NOT = {
+						has_idea = tnk_tnkd_silence_idea
+					}
+				}
+				every_country = {
+					country_event = nf_tnk.38
+				}
 			}
 		}
 	}
@@ -2297,6 +2318,9 @@ focus_tree = {
 			focus = tnk_tnkd_true_convergance
 			focus = tnk_tnkd_mobius_convergance
 		}
+		available = {
+			has_completed_focus = tnk_tnkd_balanced_science
+		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -2309,20 +2333,11 @@ focus_tree = {
 	focus {
 		id = tnk_tnkd_cohesion
 		icon = GFX_goal_tnk_tnkd_cohesion
-		cost = 60
+		cost = 30
 		y = 1
 		relative_position_id = tnk_tnkd_perfection_sync
 		prerequisite = {
 			focus = tnk_tnkd_perfection_sync
-		}
-		available = {
-			owns_state = 47
-			owns_state = 46
-			owns_state = 573
-			owns_state = 137
-			owns_state = 67
-			owns_state = 417
-			owns_state = 552
 		}
 		completion_reward = {
 			remove_dynamic_modifier = {
@@ -2331,169 +2346,6 @@ focus_tree = {
 			hidden_effect = {
 				# Removes decohesion
                 remove_mission = tnk_tnkd_decohesion_decision
-				# Spawns natiosn
-				MOR = {
-					inherit_technology = TNK # Need to inherit before `load_oob`
-					transfer_state = 47 # Nipton/Mojave Drine through
-					load_oob = "MOR"
-					47 = {
-						add_core_of = PREV
-						add_extra_state_shared_building_slots = 25
-						teleport_armies = {
-							limit = {
-								NOT = { original_tag = MOR } 
-							}
-						}
-					}
-				}
-				KKD = {
-					inherit_technology = TNK # Need to inherit before `load_oob`
-					transfer_state = 46 # Hidden Valley
-					load_oob = "KKD"
-					46 = {
-						add_core_of = PREV
-						add_extra_state_shared_building_slots = 25
-						teleport_armies = {
-							limit = {
-								NOT = { original_tag = KKD } 
-							}
-						}
-					}
-					573 = {
-						add_core_of = PREV
-					}
-					137 = {
-						add_core_of = PREV
-					}
-					67 = {
-						add_core_of = PREV
-					}
-					417 = {
-						add_core_of = PREV
-					}
-				}
-				TBR = {
-					inherit_technology = TNK # Need to inherit before `load_oob`
-					transfer_state = 573 # Black Mountain
-					load_oob = "TBR"
-					573 = {
-						add_core_of = PREV
-						add_extra_state_shared_building_slots = 25
-						teleport_armies = {
-							limit = {
-								NOT = { original_tag = TBR } 
-							}
-						}
-					}
-					46 = {
-						add_core_of = PREV
-					}
-					137 = {
-						add_core_of = PREV
-					}
-					67 = {
-						add_core_of = PREV
-					}
-					417 = {
-						add_core_of = PREV
-					}
-				}
-				OLG = {
-					inherit_technology = TNK # Need to inherit before `load_oob`
-					transfer_state = 137 # Route 95
-					load_oob = "OLG"
-					137 = {
-						add_core_of = PREV
-						add_extra_state_shared_building_slots = 25
-						teleport_armies = {
-							limit = {
-								NOT = { original_tag = OLG } 
-							}
-						}
-					}
-					46 = {
-						add_core_of = PREV
-					} 
-					573 = {
-						add_core_of = PREV
-					}
-					67 = {
-						add_core_of = PREV
-					}
-					417 = {
-						add_core_of = PREV
-					}
-				}
-				GUE = {
-					inherit_technology = TNK # Need to inherit before `load_oob`
-					transfer_state = 67 # Cottonwood Cove
-					load_oob = "GUE"
-					67 = {
-						add_core_of = PREV
-						add_extra_state_shared_building_slots = 25
-						teleport_armies = {
-							limit = {
-								NOT = { original_tag = GUE } 
-							}
-						}
-					}
-					46 = {
-						add_core_of = PREV
-					} 
-					573 = {
-						add_core_of = PREV
-					}
-					137 = {
-						add_core_of = PREV
-					}
-					417 = {
-						add_core_of = PREV
-					}
-				}
-				USB = {
-					inherit_technology = TNK # Need to inherit before `load_oob`
-					transfer_state = 417 # Helios One
-					# If owns Boulder City, give to Borous
-					IF {
-						limit = {
-							TNK = {
-								owns_state = 613
-							}
-						}
-						transfer_state = 613
-					}
-					# If owns Hoover Dam, give to Borous
-					IF {
-						limit = {
-							TNK = {
-								owns_state = 252
-							}
-						}
-						transfer_state = 252
-					}
-					load_oob = "USB"
-					417 = {
-						add_core_of = PREV
-						add_extra_state_shared_building_slots = 25
-						teleport_armies = {
-							limit = {
-								NOT = { original_tag = USB } 
-							}
-						}
-					}
-					46 = {
-						add_core_of = PREV
-					} 
-					573 = {
-						add_core_of = PREV
-					}
-					137 = {
-						add_core_of = PREV
-					}
-					67 = {
-						add_core_of = PREV
-					}
-				}
             }
 			country_event = nf_tnk.35
 			custom_effect_tooltip = tnk_tnkd_cohesion_tt
@@ -2502,14 +2354,20 @@ focus_tree = {
 	focus {
 		id = tnk_tnkd_serenity
 		icon = GFX_goal_tnk_tnkd_serenity
-		cost = 30
+		cost = 160
 		y=1
 		relative_position_id = tnk_tnkd_cohesion
 		prerequisite = {
 			focus = tnk_tnkd_cohesion
 		}
 		completion_reward = {
-			add_stability = 0.05
+			country_event = nf_tnk.37
+			if {
+				limit = {
+					has_idea = tnk_tnkd_fractured_mind
+				}
+				remove_ideas = tnk_tnkd_fractured_mind
+			}			
 		}
 	}
 
@@ -2520,8 +2378,9 @@ focus_tree = {
 	focus {
 		id = tnk_tnkd_preemption
 		cost = 30
-		x=8
-		relative_position_id = tnk_tnkd_convergance
+		x=-1
+		y=1
+		relative_position_id = tnk_tnkd_unity
 		prerequisite = {
 			focus = tnk_tnkd_unity
 		}
@@ -2533,13 +2392,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_timed_idea = {
-				idea = tnk_tnkd_threatening
+				idea = tnk_tnkd_preemption
 				days = 300
 			}
 		}
 	}
 	focus {
-		id = tnk_tnkd_threat_identification
+		id = tnk_tnkd_threat_classification
 		cost = 30
 		y=1
 		relative_position_id = tnk_tnkd_preemption
@@ -2551,32 +2410,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_timed_idea = {
-				idea = tnk_tnkd_identification_protocol_idea
+				idea = tnk_tnkd_classification_protocol_idea
 				days = 200
 			}
 		}
 	}
 	focus {
-		id = tnk_tnkd_threat_classification
-		cost = 30
-		y=1
-		relative_position_id = tnk_tnkd_threat_identification
-		available = {
-			NOT = { has_completed_focus = tnk_tnkd_convergance }
-		}
-		prerequisite = {
-			focus = tnk_tnkd_threat_identification
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = tnk_tnkd_classification_protocol_idea
-				days = 100
-			}
-		}
-	}
-	focus {
 		id = tnk_tnkd_threat_obliteration
-		cost = 7
+		cost = 30
 		y=1
 		relative_position_id = tnk_tnkd_threat_classification
 		available = {
@@ -2584,9 +2425,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = tnk_tnkd_threat_classification
-		}
-		available {
-			has_war = yes
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -2628,7 +2466,7 @@ focus_tree = {
 			custom_effect_tooltip = tnk_tnkd_silence_tt
 			add_timed_idea = {
 				idea = tnk_tnkd_silence_idea
-				days = 160
+				days = 100
 			}
 		}
 	}
@@ -2646,7 +2484,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = tnk_tnkd_inconspicuous_idea
-				days = 120
+				days = 100
 			}
 		}
 	}
@@ -2692,7 +2530,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = tnk_lobotomite_conscription
-				add_idea = tnk_tnkd_test_subjects_idea
+				add_idea = tnkd_tnk_test_subjects_idea
 			}
 		}
 	}
@@ -2765,8 +2603,8 @@ focus_tree = {
 		}
 	}
 	focus {
-		id = tnk_tnkd_purification
-		icon = GFX_goal_tnk_tnkd_purification
+		id = tnkd_tnk_purification
+		icon = GFX_goal_tnkd_tnk_purification
 		cost = 60
 		y=1
 		x=-1
@@ -2776,8 +2614,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = tnk_tnkd_test_subjects_idea
-				add_idea = tnk_tnkd_purification
+				remove_idea = tnkd_tnk_test_subjects_idea
+				add_idea = tnkd_tnk_purification
 			}
 		}
 	}
@@ -2818,23 +2656,86 @@ focus_tree = {
 			focus = tnk_tnkd_extermination
 		}
 		prerequisite = {
-			focus = tnk_tnkd_purification
+			focus = tnkd_tnk_purification
 		}
 		prerequisite = {
 			focus = tnk_tnkd_serenity
 		}
 		completion_reward = {
 			custom_effect_tooltip = tnk_tnkd_clean_slate_tt
+			hidden_effect = {
+				activate_mission = tnk_tnkd_clean_slate_decision
+			}
+			
+		}
+	}
+	focus {
+		id = tnk_tnkd_war_simulations
+		cost = 30
+		y=1
+		x=-2
+		relative_position_id = tnk_tnkd_clean_slate
+		prerequisite = {
+			focus = tnk_tnkd_clean_slate
+		}
+		available = {
+			554 = {
+				tnkd_sphere_controls_state = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = tnk_tnkd_war_simulations
+		}
+	}
+	focus {
+		id = tnk_tnkd_dna_shattering
+		cost = 30
+		y=1
+		relative_position_id = tnk_tnkd_clean_slate
+		prerequisite = {
+			focus = tnk_tnkd_clean_slate
+		}
+		available = {
+			932 = {
+				tnkd_sphere_controls_state = yes
+			}
+		}
+		completion_reward = {
+			activate_mission = tnk_tnkd_dna_shattering_decision
+			custom_effect_tooltip = tnk_tnkd_dna_shattering_tt
+		}
+	}
+	focus {
+		id = tnk_tnkd_missiles
+		cost = 30
+		y=1
+		x=2
+		relative_position_id = tnk_tnkd_clean_slate
+		prerequisite = {
+			focus = tnk_tnkd_clean_slate
+		}
+		available = {
+			127 = {
+				tnkd_sphere_controls_state = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = tnk_tnkd_missiles
 		}
 	}
 	focus {
 		id = tnk_tnkd_peace
-		icon = GFX_goal_tnk_tnkd_clean_slate
-		cost = 7
-		y = 2
-		relative_position_id = tnk_tnkd_clean_slate
+		cost = 30
+		y = 1
+		relative_position_id = tnk_tnkd_dna_shattering
 		prerequisite = {
-			focus = tnk_tnkd_clean_slate
+			focus = tnk_tnkd_war_simulations
+		}
+		prerequisite = {
+			focus = tnk_tnkd_dna_shattering
+		}
+		prerequisite = {
+			focus = tnk_tnkd_missiles
 		}
 		available = {
 			all_country = {
@@ -2892,7 +2793,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = tnk_lobotomite_conscription
-				add_idea = tnk_tnkd_do_no_harm_idea
+				add_idea = tnkd_tnk_do_no_harm_idea
 			}
 		}
 	}
@@ -3053,7 +2954,9 @@ focus_tree = {
 			focus = tnk_tnkd_gecks
 		}
 		available = {
-			controls_state = 932
+			932 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		completion_reward = {
 		}
@@ -3068,7 +2971,9 @@ focus_tree = {
 			focus = tnk_tnkd_gecks
 		}
 		available = {
-			controls_state = 548
+			548 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		completion_reward = {
 		}
@@ -3084,7 +2989,9 @@ focus_tree = {
 			focus = tnk_tnkd_gecks
 		}
 		available = {
-			controls_state = 291
+			291 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		completion_reward = {
 		}
@@ -3114,10 +3021,10 @@ focus_tree = {
 
 	focus = {
 		id = tnk_tnkd_balanced_science
-		icon = GFX_goal_pal_access_the_terminals
+		icon = GFX_goal_generic_neutrality_focus
 		cost = 30
 		y = 7
-		x = -17
+		x = -13
 		
 		available = {
 			has_completed_focus = tnk_0
@@ -3136,7 +3043,7 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = tnk_quirky_science
-					add_idea = tnk_tnkd_balanced_science_idea
+					add_idea = tnk_tnkd_balanced_science
 				}
 			}
 			else_if {
@@ -3145,7 +3052,7 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = tnk_wild_science
-					add_idea = tnk_tnkd_balanced_science_idea
+					add_idea = tnk_tnkd_balanced_science
 				}
 			}
 			else_if {
@@ -3154,7 +3061,7 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = tnk_crazy_science
-					add_idea = tnk_tnkd_balanced_science_idea
+					add_idea = tnk_tnkd_balanced_science
 				}
 			}
 			else_if {
@@ -3163,14 +3070,14 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = tnk_insane_science
-					add_idea = tnk_tnkd_balanced_science_idea
+					add_idea = tnk_tnkd_balanced_science
 				}
 			}
 		}
 	}
 	focus = {
 		id = tnk_tnkd_tech_ascendance
-		icon = GFX_goal_TLA_programming
+		icon = GFX_goal_pal_access_the_terminals
 		cost = 30
 		y = 1
 		x = -5
@@ -4033,417 +3940,6 @@ focus_tree = {
 			424 = {
 				add_claim_by = LUL
 			}
-		}
-	}
-}
-
-# Mobius Reich
-focus_tree = {
-	id = mor_nf
-	country = {
-		factor = 0
-		modifier = {
-			add = 100
-			tag = MOR
-		}
-	}
-	default = no
-
-	focus = {
-		id = mor_setup
-		
-		cost = 7
-		x = 15
-
-		completion_reward = {
-			country_event = nf_mor.1
-		}
-	}
-	focus = {
-		id = mor_setup_1
-		
-		cost = 7
-		y = 1
-		prerequisite = {
-			focus = mor_setup
-		}
-
-		relative_position_id = mor_setup
-
-		completion_reward = {
-			country_event = nf_mor.2
-		}
-	}
-	focus = {
-		id = mor_setup_2
-		
-		cost = 7
-		y = 1
-		prerequisite = {
-			focus = mor_setup_1
-		}
-
-		relative_position_id = mor_setup_1
-
-		completion_reward = {
-			country_event = nf_mor.3
-		}
-	}
-		focus = {
-		id = mor_political
-		
-		cost = 15
-		y = 1
-		prerequisite = {
-			focus = mor_setup_2
-		}
-
-		relative_position_id = mor_setup_2
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = mor_converge
-		
-		cost = 15
-		y = 1
-		x= -1
-		prerequisite = {
-			focus = mor_political
-		}
-		mutually_exclusive = {
-			focus = mor_seperate
-		}
-
-		relative_position_id = mor_political
-		available = {
-			TNK = {
-				has_completed_focus = tnk_tnkd_unity
-			}
-		}
-		completion_reward = {
-			hidden_effect = {
-				create_wargoal = {
-					type = annex_everything
-					target = GUE
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = KKD
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = OLG
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = TBR
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = USB
-				}
-			}
-			custom_effect_tooltip = mor_converge_tt
-		}
-	}
-	focus = {
-		id = mor_seperate
-		
-		cost = 15
-		x = 2
-		prerequisite = {
-			focus = mor_political
-		}
-		mutually_exclusive = {
-			focus = mor_converge
-		}
-
-		relative_position_id = mor_converge
-
-		completion_reward = {
-			hidden_effect = {
-				add_ideas = mor_seperate
-			}
-			
-			custom_effect_tooltip = mor_seperate_tt
-		}
-	}
-	focus = {
-		id = mor_join
-		
-		cost = 15
-		y = 1
-		prerequisite = {
-			focus = mor_converge
-		}
-		relative_position_id = mor_converge
-		available = {
-			NOT = {
-				OR = {
-					country_exists = GUE
-					country_exists = KKD
-					country_exists = OLG
-					country_exists = TBR
-					country_exists = USB
-				}
-			}
-			controls_state = 47
-		}
-		completion_reward = {
-			TNK = { change_tag_from = MOR }
-		}
-	}
-	focus = {
-		id = mor_culture
-		
-		cost = 15
-		y = 1
-		prerequisite = {
-			focus = mor_seperate
-		}
-		relative_position_id = mor_seperate
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = mor_military
-		
-		cost = 15
-		x= -4
-		prerequisite = {
-			focus = mor_setup_2
-		}
-
-		relative_position_id = mor_political
-
-		completion_reward = {
-			add_ideas = {
-				mor_military
-			}
-		}
-	}
-	focus = {
-		id = mor_military_1
-		
-		cost = 15
-		y = 1
-		prerequisite = {
-			focus = mor_military
-		}
-
-		relative_position_id = mor_military
-
-		completion_reward = {
-			add_ideas = {
-				mor_military_1
-			}
-		}
-	}
-	focus = {
-		id = mor_military_2
-		
-		cost = 15
-		y = 1
-		prerequisite = {
-			focus = mor_military_1
-		}
-
-		relative_position_id = mor_military_1
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = mor_economy
-		
-		cost = 15
-		x = 4
-		prerequisite = {
-			focus = mor_setup_2
-		}
-
-		relative_position_id = mor_political
-
-		completion_reward = {
-			add_ideas = {
-				tnk_tnkd_dense_industry
-			}
-		}
-	}
-	focus = {
-		id = mor_economy_1
-		
-		cost = 15
-		y = 1
-		prerequisite = {
-			focus = mor_economy
-		}
-
-		relative_position_id = mor_economy
-
-		completion_reward = {
-			add_ideas = mor_economy_1
-		}
-	}
-	focus = {
-		id = mor_economy_2
-		
-		cost = 15
-		y = 1
-		prerequisite = {
-			focus = mor_economy_1
-		}
-
-		relative_position_id = mor_economy_1
-
-		completion_reward = {
-			add_ideas = mor_economy_2
-		}
-	}
-	focus = {
-		id = mor_myth
-		
-		cost = 7
-		y = 1
-		x = -1
-		prerequisite = {
-			focus = mor_culture
-		}
-		relative_position_id = mor_culture
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = mor_people
-		
-		cost = 7
-		y = 1
-		prerequisite = {
-			focus = mor_myth
-		}
-		relative_position_id = mor_myth
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = mor_future
-		
-		cost = 7
-		y = 1
-		prerequisite = {
-			focus = mor_people
-		}
-		relative_position_id = mor_people
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = mor_path_1
-		
-		cost = 15
-		y = 2
-		prerequisite = {
-			focus = mor_path_a
-			focus = mor_path_b
-		}
-		relative_position_id = mor_future
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = mor_path_2
-		
-		cost = 15
-		y = 1
-		prerequisite = {
-			focus = mor_path_1
-		}
-		relative_position_id = mor_path_1
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = mor_path_a
-		
-		cost = 15
-		y = 1
-		x = -2
-		prerequisite = {
-			focus = mor_future
-		}
-		relative_position_id = mor_future
-		mutually_exclusive = {
-			focus = mor_path_b
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = mor_path_a_1
-		
-		cost = 15
-		y = 1
-		prerequisite = {
-			focus = mor_path_a
-		}
-		relative_position_id = mor_path_a
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = mor_path_a_2
-		
-		cost = 15
-		y = 1
-		prerequisite = {
-			focus = mor_path_a_1
-		}
-		relative_position_id = mor_path_a_1
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = mor_path_b
-		
-		cost = 15
-		y = 1
-		x = 2
-		prerequisite = {
-			focus = mor_future
-		}
-		relative_position_id = mor_future
-		mutually_exclusive = {
-			focus = mor_path_a
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = mor_path_b_1
-		
-		cost = 15
-		y = 1
-		prerequisite = {
-			focus = mor_path_b
-		}
-		relative_position_id = mor_path_b
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = mor_path_b_2
-		
-		cost = 15
-		y = 1
-		prerequisite = {
-			focus = mor_path_b_1
-		}
-		relative_position_id = mor_path_b_1
-		completion_reward = {
 		}
 	}
 }

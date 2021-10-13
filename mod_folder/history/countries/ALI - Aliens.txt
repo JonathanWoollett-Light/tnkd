@@ -114,13 +114,13 @@ set_party_name = {
 
 
 add_ideas = {
-	ali_xenos
+	tnkd_ali_xenos
 
-    ali_reinforcements
-	ali_no_apes
-	ali_war_council
-	ali_offworld_industry
-	ali_special_operations
+    tnkd_ali_reinforcements
+	tnkd_ali_no_apes
+	tnkd_ali_war_council
+	tnkd_ali_offworld_industry
+	tnkd_ali_special_operations
 	closed_economy
 	chems_legalised
 	outsider_law_none

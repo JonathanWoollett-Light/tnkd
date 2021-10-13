@@ -1,0 +1,79 @@
+﻿l_english:
+ tnk_unexpected_arrival:0 "Unexpected Arrival"
+ tnk_unexpected_arrival_desc:0 "For now we are an anomaly, but soon we shall be seen as a threat."
+
+ tnk_quirky_science:0 "Quirky science"
+ tnk_quirky_science_desc:0 "Industry? Hammers are boring, space is cool."
+ tnk_wild_science:0 "Wild science"
+ tnk_wild_science_desc:0 "Industry? Ethics? Lasers beats human rights."
+ tnk_crazy_science:0 "Crazy science"
+ tnk_crazy_science_desc:0 "Industry? Ethics? People? WITH SCIENCE WE CAN SOLVE ALL"
+ tnk_insane_science:0 "Insane science"
+ tnk_insane_science_desc:0 "Industry? Ethics? People? Reality? All NOTHING COMPARED TO SCIENCE, SCIENCE ABOVE ALL"
+
+ tnk_tnkd_silence_idea:0 "Radio silence"
+ tnk_tnkd_silence_idea_desc:0 "All's quite at Big Mt."
+ tnk_tnkd_inconspicuous_idea:0 "Inconspicuous"
+ tnk_tnkd_inconspicuous_idea_desc:0 "Us? We're nothing but a few crazy old robots slowly draining our powercells, no threat to anyone."
+
+ tnk_tnkd_classification_protocol_idea:0 "Classification protocol"
+ tnk_tnkd_obliteration_protocol_idea:0 "Obliteration protocol"
+
+ tnk_tnkd_convergance_idea:0 "Convergance"
+ tnk_tnkd_decohesion:0 "Decohesion"
+ tnk_tnkd_decohesion_desc:0 "WHAT?!? Something went wrong, our consciousnesses are not properly bound, our minds loose cohesion by at each moment."
+ tnk_decohesion_dynamic_modifier:0 "Decohesion"
+
+ tnk_tnkd_unity_idea:0 "Perfect Synchronisation"
+ tnk_tnkd_unity_idea_desc:0 "We have one mind, now we shall have one nation... one body."
+
+ tnk_tnkd_intense_radar_fence:0 "Blistering Radar Fence"
+ tnk_tnkd_intense_radar_fence_desc:0 "You can come right in... if you can tolerate a little brain boiling."
+
+ tnk_caesar_deal_desc:0 "Cedes all states to §Y[CES.GetName]§W excluding §Y[47.GetName]§W, §Y[67.GetName]§W, §Y[46.GetName]§W, §Y[573.GetName]§W, §Y[417.GetName]§W, §Y[137.GetName]§W and §Y[552.GetName]§W, in exchange for a non-aggression pact."
+ tnk_ncr_deal_desc:0 "Cedes all states to §Y[NCR.GetName]§W excluding §Y[47.GetName]§W, §Y[67.GetName]§W, §Y[46.GetName]§W, §Y[573.GetName]§W, §Y[417.GetName]§W, §Y[137.GetName]§W and §Y[552.GetName]§W, in exchange for a non-aggression pact."
+ 
+ tnk_tnkd_perfect_sync_idea:0 "Perfect Synchronisation"
+ tnk_tnkd_perfect_sync_idea_desc:0 "We have one mind, now we shall have one nation... one body."
+
+ # Mobius convergance
+ # --------------------------------------------------------
+
+ tnkd_tnk_do_no_harm_idea:0 "Do No Harm"
+ tnkd_tnk_do_no_harm_idea_desc:0 "Into whatsoever houses I enter, I will enter to help the sick, and I will abstain from all intentional wrong-doing and harm."
+
+ tnk_tnkd_giant_slayer_idea:0 "Giant Slaying"
+ tnk_tnkd_giant_slayer_idea_desc:0 "We shall go forth and they shall call timber in our wake."
+
+ # True convergance
+ # --------------------------------------------------------
+
+ tnkd_tnk_test_subjects_idea:0 "Aggressive Abductions"
+ tnkd_tnk_test_subjects_idea_desc:0 "WE NEED MORE MEAT"
+
+ tnk_tnkd_attack_weak_idea:0 "Wasteland Vulture"
+ tnk_tnkd_attack_weak_idea_desc:0 "The easiest resources must be grasped the quickest."
+
+ # Tech ascendance
+ # ---------------------------------------------------------
+
+ tnk_tnkd_annihilation_beam_idea:0 "Annhilation Beam"
+ tnk_tnkd_annihilation_beam_idea_desc:0 "With a little tinkering we can turn traditiona lasers into focussed plasma streams which cut through armour like butter."
+
+ tnk_tnkd_incineration_beam_idea:0 "Incineration Beam"
+ tnk_tnkd_incineration_beam_idea_desc:0 "By reconfiguring the crystals in our main armaments we can ignite any target."
+
+ tnk_tnkd_super_saturnite_plating_idea:0 "Super Saturnite Plating"
+ tnk_tnkd_super_saturnite_plating_idea_desc:0 "By reconfiguring the crystals in our main armaments we can ignite any target."
+
+ tnk_tnkd_shovels_idea:0 "Shovels"
+ tnk_tnkd_shovels_idea_desc:0 "What an incredible discovery, groundbreaking stuff..."
+
+ tnk_tnkd_charging_laser:0 "Charging Mega-laser"
+ tnk_tnkd_charging_laser_desc:0 "We will power beyound comphrension to shoot this monstrosity down."
+
+ # Decohesion
+ # ---------------------------------------------------------
+
+ tnk_tnkd_fractured_mind:0 "Fractured Mind"
+ tnk_tnkd_fractured_mind_desc:0 "Our conscious tears as it pulls outwards, memories of selves in defiance of our unity."

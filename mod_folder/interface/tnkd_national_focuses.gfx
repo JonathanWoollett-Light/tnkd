@@ -63,7 +63,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_the_future_vision.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_tnk_tnkd_purification"
+		name = "GFX_goal_tnkd_tnk_purification"
 		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_purification.dds"
 	}
 	spriteType = {

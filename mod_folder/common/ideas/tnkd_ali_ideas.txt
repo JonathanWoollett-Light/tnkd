@@ -1,6 +1,6 @@
 ideas = {
     country = {
-        ali_xenos = {
+        tnkd_ali_xenos = {
             picture = animated_tnk_mojave_drive_in
             allowed = {
                 always = no

@@ -1,5 +1,5 @@
 tnk_tnkd_decohesion = {
-   tnk_tnkd_decohesion_decision = {
+    tnk_tnkd_decohesion_decision = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
         visible = {
@@ -27,7 +27,7 @@ tnk_tnkd_decohesion = {
     }
 }
 tnk_tnkd_clean_slate = {
-   tnk_tnkd_clean_slate_decision = {
+    tnk_tnkd_clean_slate_decision = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
         visible = {
@@ -57,6 +57,39 @@ tnk_tnkd_clean_slate = {
                 }
             }
             custom_effect_tooltip = tnk_tnkd_clean_slate_decision_tt
+        }
+    }
+}
+tnk_tnkd_dna_shattering = {
+    tnk_tnkd_dna_shattering_decision = {
+        icon = GFX_decision_generic_scorched_earth
+        priority = 1000
+        visible = {
+            has_country_flag = TNK
+        }
+        allowed = { tag = TNK }
+        available = {
+            always = no
+        }
+        fixed_random_seed = no
+        is_good = yes
+        selectable_mission = yes
+        days_mission_timeout = 7
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            hidden_effect = {
+                activate_mission = tnk_tnkd_clean_slate_decision
+            }
+            every_country = {
+                IF = {
+                    limit = {
+                        has_war_with = TNK
+                    }
+                }
+                add_manpower = -200
+            }
         }
     }
 }

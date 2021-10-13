@@ -1,0 +1,40 @@
+ideas = {
+    officer_training_laws = {
+		law = yes
+        tnk_tnkd_perfect_sync_idea = {
+			picture = tnk_rule_of_six
+			cost = 150
+			removal_cost = -1
+			level = 6
+			allowed = {
+				always = no
+			}
+			modifier = {
+				compliance_gain = 0.1
+				command_power_gain_mult = 0.1
+				max_planning = 0.5
+				planning_speed = -0.25
+				army_org_factor = 0.3
+				production_factory_max_efficiency_factor = 0.5
+			}
+			default = no
+			cancel_if_invalid = no
+		}
+		tnkd_ali_war_council = {
+			picture = tnk_rule_of_six
+			cost = 150
+			removal_cost = -1
+			level = 6
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.5
+				special_forces_cap = 2
+				special_forces_min = 50
+			}
+			default = no
+			cancel_if_invalid = no
+		}
+    }
+}

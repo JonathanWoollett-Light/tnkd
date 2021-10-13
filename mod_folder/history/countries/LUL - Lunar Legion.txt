@@ -26,7 +26,7 @@ set_party_name = {
 
 add_ideas = {
 	tnk_old_world_blues
-    lul_walking_suits
+    tnkd_lul_walking_suits
 }
 
 set_country_flag = robot_doctrine_ai #Since they copy TNK's techs. Not 'really' flavorful. Something to look into laater.
