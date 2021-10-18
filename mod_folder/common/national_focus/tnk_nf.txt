@@ -1796,13 +1796,12 @@ focus_tree = {
 	# ------------------------------------------------------------
 	# Beyond
 	# ------------------------------------------------------------
+
 	focus = {
 		id = tnk_tnkd_next_steps
 		icon = GFX_goal_tnk_tnkd_next_steps
 		cost = 30
 		y = 7
-
-		
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = tnk_tnkd_next_steps_tt
@@ -1822,9 +1821,7 @@ focus_tree = {
 					has_completed_focus = tnk_my_gal_pal_betsy_bright
 				}
 			}
-			
 		}
-
 		relative_position_id = tnk_personality_restoration
 		completion_reward = {
 			add_state_core = 67
@@ -1833,20 +1830,6 @@ focus_tree = {
 			add_state_core = 46
 			add_state_core = 573
 			add_state_core = 552
-		}
-	}
-	focus {
-		id = tnk_tnkd_final
-		icon = GFX_goal_tnk_tnkd_final
-		cost = 10
-		y = 5
-		relative_position_id = tnk_tnkd_serenity
-		prerequisite = {
-			focus = tnk_tnkd_peace
-			focus = tnk_tnkd_gecks_final
-		}
-		completion_reward = {
-			country_event = nf_tnk.34
 		}
 	}
 
@@ -1906,11 +1889,6 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = air_base
-					level = 10
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
 					level = 10
 					instant_build = yes
 				}
@@ -2277,7 +2255,6 @@ focus_tree = {
 			add_stability = 0.05
 		}
 	}
-
 	focus {
 		id = tnk_tnkd_convergance
 		icon = GFX_goal_tnk_tnkd_convergance
@@ -2307,7 +2284,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnk_tnkd_perfection_sync
 		icon = GFX_goal_tnk_tnkd_perfection_sync
@@ -2329,7 +2305,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus {
 		id = tnk_tnkd_cohesion
 		icon = GFX_goal_tnk_tnkd_cohesion
@@ -2370,8 +2345,27 @@ focus_tree = {
 			}			
 		}
 	}
+	focus {
+		id = tnk_tnkd_assuming_control
+		icon = GFX_goal_generic_slave_collars
+		cost = 30
+		y=2
+		relative_position_id = tnk_tnkd_serenity
+		prerequisite = {
+			focus = tnk_tnkd_serenity
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = tnk_tnkd_assuming_control
+				days = 300
+			}
+			declare_war_on = {
+				target = MTW
+				type = annex_everything
+			}
+		}
+	}
 
-	# -----------------------------------------------------------------------
 	# Unity Defence
 	# -----------------------------------------------------------------------
 
@@ -2489,7 +2483,6 @@ focus_tree = {
 		}
 	}
 
-	# -----------------------------------------------------------------------
 	# True convergance
 	# -----------------------------------------------------------------------
 
@@ -2666,11 +2659,11 @@ focus_tree = {
 			hidden_effect = {
 				activate_mission = tnk_tnkd_clean_slate_decision
 			}
-			
 		}
 	}
 	focus {
 		id = tnk_tnkd_war_simulations
+		icon = GFX_goal_tnk_tnkd_war_simulations
 		cost = 30
 		y=1
 		x=-2
@@ -2689,6 +2682,7 @@ focus_tree = {
 	}
 	focus {
 		id = tnk_tnkd_dna_shattering
+		icon = GFX_goal_tnk_tnkd_dna_shattering
 		cost = 30
 		y=1
 		relative_position_id = tnk_tnkd_clean_slate
@@ -2707,6 +2701,7 @@ focus_tree = {
 	}
 	focus {
 		id = tnk_tnkd_missiles
+		icon = GFX_goal_tnk_tnkd_missiles
 		cost = 30
 		y=1
 		x=2
@@ -2725,6 +2720,7 @@ focus_tree = {
 	}
 	focus {
 		id = tnk_tnkd_peace
+		icon = GFX_goal_sun_flag
 		cost = 30
 		y = 1
 		relative_position_id = tnk_tnkd_dna_shattering
@@ -2750,7 +2746,6 @@ focus_tree = {
 		}
 	}
 
-	# -----------------------------------------------------------------------
 	# Mobius' convergance
 	# -----------------------------------------------------------------------
 
@@ -2997,7 +2992,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = tnk_tnkd_gecks_final
+		id = tnk_tnkd_gev
 		icon = GFX_goal_tnk_tnkd_gecks_final
 		cost = 30
 		y = 1
@@ -3012,10 +3007,13 @@ focus_tree = {
 			focus = tnk_tnkd_gecks_3
 		}
 		completion_reward = {
+			custom_effect_tooltip = tnk_tnkd_gev_tt
+			hidden_effect = {
+				activate_mission = tnk_tnkd_gev_decision
+			}
 		}
 	}
 
-	# -----------------------------------------------------------------------
 	# Tech ascendance
 	# -----------------------------------------------------------------------
 
@@ -3107,9 +3105,10 @@ focus_tree = {
 			}
 		}
 	}
-	# -----------------------------------------------------------------------
+
 	# Exotic research
 	# -----------------------------------------------------------------------
+
 	focus = {
 		id = tnk_tnkd_exotic_research
 		icon = GFX_goal_BDT_geck_corrupted
@@ -3343,9 +3342,10 @@ focus_tree = {
 			}
 		}
 	}
-	# -----------------------------------------------------------------------
+
 	# Advanced genetics
 	# -----------------------------------------------------------------------
+
 	focus = {
 		id = tnk_tnkd_advanced_genetics
 		icon = GFX_goal_tnk_tnkd_advanced_genetics
@@ -3465,9 +3465,10 @@ focus_tree = {
 			custom_effect_tooltip = supremacy_tt
 		}
 	}
-	# -----------------------------------------------------------------------
+
 	# Advanced Robotics
 	# -----------------------------------------------------------------------
+
 	focus = {
 		id = tnk_tnkd_advanced_robots
 		icon = GFX_goal_tnk_tnkd_advanced_robots
@@ -3585,6 +3586,24 @@ focus_tree = {
 				tnk_tnkd_light_engines
 			}
 			custom_effect_tooltip = supremacy_tt
+		}
+	}
+
+	# Final
+	# -----------------------------------------------------------------------
+
+	focus = {
+		id = tnk_tnkd_final
+		icon = GFX_goal_tnk_tnkd_final
+		cost = 10
+		y = 5
+		relative_position_id = tnk_tnkd_serenity
+		prerequisite = {
+			focus = tnk_tnkd_peace
+			focus = tnk_tnkd_gev
+		}
+		completion_reward = {
+			country_event = nf_tnk.34
 		}
 	}
 }

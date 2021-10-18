@@ -93,6 +93,12 @@
  tnk_tnkd_serenity:0 "Serenity"
  tnk_tnkd_serenity_desc:0"The voices are gone, our...\n\nmy... mind is at peace."
 
+ tnk_tnkd_assuming_control:0 "Assuming Control"
+ tnk_tnkd_assuming_control_desc:0 "We must bring the dogs back to heel."
+
+ tnk_tnkd_final:0 "Peace"
+ tnk_tnkd_final_desc:0 "I sit back and watch the sun rise on a grateful wasteland."
+
  # Mobius convergance
  # --------------------------------------------------------------
 
@@ -130,11 +136,12 @@
  tnk_tnkd_gecks_1:0 "Grave of Monsters"
  tnk_tnkd_gecks_1_desc:0 "Rumours say this place is the grave the some of the greatest monsters every created by the FEV. This virus might form a brilliant base for our new deployment mechanism."
  tnk_tnkd_gecks_2:0 "Historical Research"
- tnk_tnkd_gecks_2_desc:0 "I think some our old friends used to work here."
+ tnk_tnkd_gecks_2_desc:0 "I think some of our old friends used to work here."
  tnk_tnkd_gecks_3:0 "A Pristine Collection"
  tnk_tnkd_gecks_3_desc:0 "While we might debate calling this people scientists, they certainly have a great collection or pre-war relics, and a specific few we need."
- tnk_tnkd_gecks_final:0 "G.E.V."
- tnk_tnkd_gecks_final_desc:0 "§MEUREKA!§!\n\nWe have done it, we have the tool we need to transform this wasteland.\n\nThe Garden of Eden Virus... §PG.E.V.§!"
+ tnk_tnkd_gev:0 "G.E.V."
+ tnk_tnkd_gev_desc:0 "§MEUREKA!§!\n\nWe have done it, we have the tool we need to transform this wasteland.\n\nThe Garden of Eden Virus... §PG.E.V.§!"
+ tnk_tnkd_gev_tt:0 "§PG.E.V.§! is unleashed."
 
  # True convergance
  # --------------------------------------------------------------
@@ -181,9 +188,6 @@
 
  tnk_tnkd_peace:0 "A Silent Wasteland"
  tnk_tnkd_peace_desc:0 "Silence falls.\nNow we can focus."
-
- tnk_tnkd_final:0 "Peace"
- tnk_tnkd_final_desc:0 "I sit back and watch the sun rise on a grateful wasteland."
 
  # Tech ascendance
  # --------------------------------------------------------------

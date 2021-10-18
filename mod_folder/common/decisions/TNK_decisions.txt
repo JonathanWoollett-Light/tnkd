@@ -93,3 +93,49 @@ tnk_tnkd_dna_shattering = {
         }
     }
 }
+tnk_tnkd_gev = {
+    tnk_tnkd_gev_decision = {
+        icon = GFX_decision_generic_scorched_earth
+        priority = 1000
+        visible = {
+            has_country_flag = TNK
+        }
+        allowed = { tag = TNK }
+        available = {
+            always = no
+        }
+        fixed_random_seed = no
+        is_good = no
+        selectable_mission = yes
+        days_mission_timeout = 40
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            hidden_effect = {
+                activate_mission = tnk_tnkd_gev_decision
+            }
+            random_owned_state = {
+                add_building_construction = { 
+                    type = industrial_complex
+                    level = 3 
+                    instant_build = yes 
+                }
+                add_extra_state_shared_building_slots = 3
+            }
+            every_neighbor_country = {
+                IF = {
+                    limit = {
+                        NOT = { has_decision = tnk_tnkd_gev_decision }
+                    }
+                    random_list = {
+                        50 = {
+                            activate_mission = tnk_tnkd_gev_decision
+                        }
+                        50 = { }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 ideas = {
     country = {
         mtw_wasteland = {
-            icon = GFX_idea_mtw_wasteland
+            picture = GFX_idea_mtw_wasteland
             allowed = {
                 always = no
             }
@@ -16,7 +16,7 @@ ideas = {
             }
         }
         mtw_infested = {
-            icon = GFX_idea_mtw_infested
+            picture = GFX_idea_mtw_infested
             allowed = {
                 always = no
             }

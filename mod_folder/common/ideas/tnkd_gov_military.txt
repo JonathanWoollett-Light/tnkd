@@ -10,6 +10,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
+				political_power_factor = -0.5
 				compliance_gain = 0.1
 				command_power_gain_mult = 0.1
 				max_planning = 0.5

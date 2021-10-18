@@ -74,6 +74,18 @@ spriteTypes = {
 		name = "GFX_goal_tnk_tnkd_clean_slate"
 		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_clean_slate.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_war_simulations"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_war_simulations.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_dna_shattering"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_dna_shattering.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnk_tnkd_missiles"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_missiles.dds"
+	}
 	# ----------------------------------------------------------
 	# Advanced genes
 	# ----------------------------------------------------------
@@ -188,6 +200,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_goal_tnk_tnkd_gecks_final"
-		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_gecks_final.dds"
+		texturefile = "gfx/interface/goals/unique/TNK/tnk_tnkd_gev.dds"
 	}
 }
