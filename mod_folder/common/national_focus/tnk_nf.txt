@@ -2278,7 +2278,7 @@ focus_tree = {
 						has_idea = tnk_tnkd_silence_idea
 					}
 				}
-				every_country = {
+				every_other_country = {
 					country_event = nf_tnk.38
 				}
 			}

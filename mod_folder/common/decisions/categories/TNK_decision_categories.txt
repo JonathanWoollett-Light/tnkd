@@ -19,7 +19,7 @@ tnk_tnkd_dna_shattering = {
 		base = 12
 	}
 }
-tnk_tnkd_gev = {
+tnk_tnkd_gev_category = {
 	allowed = { tag = TNK }
 	icon = GFX_decision_category_hea_conversion
 	priority = {

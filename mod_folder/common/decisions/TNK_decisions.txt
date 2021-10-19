@@ -93,7 +93,7 @@ tnk_tnkd_dna_shattering = {
         }
     }
 }
-tnk_tnkd_gev = {
+tnk_tnkd_gev_category = {
     tnk_tnkd_gev_decision = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
@@ -130,7 +130,7 @@ tnk_tnkd_gev = {
                     }
                     random_list = {
                         50 = {
-                            activate_mission = tnk_tnkd_gev_decision
+                            country_event = nf_tnk.39
                         }
                         50 = { }
                     }

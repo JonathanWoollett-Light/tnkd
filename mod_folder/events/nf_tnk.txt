@@ -941,3 +941,19 @@ country_event = {
 		name = nf_tnk.38.a
 	}
 }
+
+# G.E.V. spread
+country_event = {
+	id = nf_tnk.39
+	title = nf_tnk.39.t
+	desc = nf_tnk.39.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.39.a
+		add_ideas = tnk_tnkd_gev_idea
+		activate_mission = tnk_tnkd_gev_decision
+	}
+}
