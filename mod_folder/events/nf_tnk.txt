@@ -942,7 +942,57 @@ country_event = {
 	}
 }
 
+
+# Mobius Convergance
+# ----------------------------------------------------------------
+country_event = {
+	id = nf_tnk.40
+	title = tnk_tnkd_gecks
+	desc = nf_tnk.40.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.40.a
+		932 = {
+			owner = {
+				TNK = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = 932
+					}
+				}
+			}
+		}
+		548 = {
+			owner = {
+				TNK = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = 548
+					}
+				}
+			}
+		}
+		291 = {
+			owner = {
+				TNK = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = 291
+					}
+				}
+			}
+		}
+	}
+}
+
 # G.E.V. spread
+# ----------------------------------------------------------------
 country_event = {
 	id = nf_tnk.39
 	title = nf_tnk.39.t

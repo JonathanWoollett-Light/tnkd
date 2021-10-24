@@ -2938,6 +2938,7 @@ focus_tree = {
 			focus = tnk_tnkd_serenity
 		}
 		completion_reward = {
+			country_event = nf_tnk.40
 		}
 	}
 	focus = {

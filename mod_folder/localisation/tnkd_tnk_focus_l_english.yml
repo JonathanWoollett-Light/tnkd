@@ -122,7 +122,7 @@
  tnk_tnkd_giant_slayer_tt:0 "Gain National Spirit §YGiant Slayer§!, which grants ((@NCR§Y[NCR.getName]§!, @CES§Y[CES.getName]§!, @WBH§Y[WBH.getName]§!, @BOS§Y[BOS.getName]§!, @LAC§Y[LAC.getName]§!, @TBH§Y[TBH.getName]§!, @MAX§Y[MAX.getName]§!, @ZAP§Y[ZAP.getName]§!, @ARM§Y[ARM.getName]§!) Attack bonus against country: §G+20%§!)."
 
  tnk_tnkd_a_future_vision:0 "A Vision Of A Future"
- tnk_tnkd_a_future_vision_desc:0 "A house burned down may still from the ashes provide the fertilisation for spring new life."
+ tnk_tnkd_a_future_vision_desc:0 "A house burned down may still from the ashes provide the fertilisation for spring new life.\n\n§gOf all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive...§!"
  
  tnk_tnkd_carrot:0 "The Carrot"
  tnk_tnkd_carrot_desc:0 "Perhaps given the power to rebuild their homes our neighbours might see the path forward."
@@ -134,7 +134,7 @@
  tnk_tnkd_the_stick_tt:0 "Gives §YPuppet§! war goal against all neighbours."
 
  tnk_tnkd_gecks:0 "In Pursuit of Eden"
- tnk_tnkd_gecks_desc:0 "If we are to rebuild this land, we must not only rediscover how to manufacture §MG.E.C.K.s§! but a new way to deploy their technology, which can replicate and spread, like a virus.\n\n§gOf all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive...§!"
+ tnk_tnkd_gecks_desc:0 "If we are to rebuild this land, we must not only rediscover how to manufacture §MG.E.C.K.s§! but a new way to deploy their technology, which can replicate and spread... like a virus."
  tnk_tnkd_gecks_1:0 "Grave of Monsters"
  tnk_tnkd_gecks_1_desc:0 "Rumours say this place is the grave the some of the greatest monsters every created by the FEV. This virus might form a brilliant base for our new deployment mechanism."
  tnk_tnkd_gecks_2:0 "Historical Research"
