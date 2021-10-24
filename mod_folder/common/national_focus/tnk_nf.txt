@@ -2556,9 +2556,10 @@ focus_tree = {
 			focus = tnk_tnkd_test_subjects
 		}
 		completion_reward = {
-			add_ideas = {
-				tnk_tnkd_attack_weak_idea
+			hidden_effect = {
+				add_ideas = tnk_tnkd_attack_weak
 			}
+			custom_effect_tooltip = tnk_tnkd_attack_weak_tt
 		}
 	}
 	focus {
@@ -2695,6 +2696,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_ideas = tnk_tnkd_dna_shattering_idea
 			activate_mission = tnk_tnkd_dna_shattering_decision
 			custom_effect_tooltip = tnk_tnkd_dna_shattering_tt
 		}
@@ -2823,10 +2825,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = {
-				tnk_tnkd_guardian
+			hidden_effect = {
+				add_ideas = tnk_tnkd_guardian
 			}
-			
+			custom_effect_tooltip = tnk_tnkd_guardian_tt
 		}
 	}
 	focus = {
@@ -2843,10 +2845,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = {
-				tnk_tnkd_giant_slayer_idea
+			hidden_effect = {
+				add_ideas = tnk_tnkd_giant_slayer
 			}
-			
+			custom_effect_tooltip = tnk_tnkd_giant_slayer_tt
 		}
 	}
 	focus {
@@ -3194,7 +3196,7 @@ focus_tree = {
 			controls_state = 79
 		}
 		completion_reward = {
-			add_ideas = tnk_tnkd_valhalla
+			custom_effect_tooltip = tnk_tnkd_valhalla_tt
 		}
 	}
 	focus = {
@@ -3266,7 +3268,7 @@ focus_tree = {
 			controls_state = 838
 		}
 		completion_reward = {
-			add_ideas = tnk_tnkd_el_dorado
+			custom_effect_tooltip = tnk_tnkd_el_dorado_tt
 		}
 	}
 	focus = {
@@ -3453,16 +3455,16 @@ focus_tree = {
 			has_completed_focus = tnk_tnkd_metabolism
 		}
 		completion_reward = {
-			add_ideas = {
-				tnk_tnkd_genetic_supremacy
+			hidden_effect = {
+				add_ideas = tnk_tnkd_genetic_supremacy
+				remove_ideas = {
+					tnk_tnkd_metabolism
+					tnk_tnkd_muscle
+					tnk_tnkd_cellular_combustion
+					tnk_tnkd_nanomachines
+				}
 			}
-			remove_ideas = {
-				tnk_tnkd_metabolism
-				tnk_tnkd_muscle
-				tnk_tnkd_cellular_combustion
-				tnk_tnkd_nanomachines
-			}
-			custom_effect_tooltip = supremacy_tt
+			custom_effect_tooltip = tnk_tnkd_genetic_supremacy_tt
 		}
 	}
 
@@ -3575,17 +3577,17 @@ focus_tree = {
 			has_completed_focus =  tnk_tnkd_light_engines
 		}
 		completion_reward = {
-			add_ideas = {
-				tnk_tnkd_robotic_supremacy
+			hidden_effect = {
+				add_ideas = tnk_tnkd_robotic_supremacy
+				remove_ideas = {
+					tnk_tnkd_annihilation_beam_idea
+					tnk_tnkd_reactors
+					tnk_tnkd_incineration_beam_idea
+					tnk_tnkd_super_saturnite_plating_idea
+					tnk_tnkd_light_engines
+				}
 			}
-			remove_ideas = {
-				tnk_tnkd_annihilation_beam_idea
-				tnk_tnkd_reactors
-				tnk_tnkd_incineration_beam_idea
-				tnk_tnkd_super_saturnite_plating_idea
-				tnk_tnkd_light_engines
-			}
-			custom_effect_tooltip = supremacy_tt
+			custom_effect_tooltip = tnk_tnkd_robotic_supremacy_tt
 		}
 	}
 

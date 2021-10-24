@@ -112,8 +112,7 @@ ideas = {
 				industrial_capacity_factory = 1
 				production_speed_buildings_factor = -0.4
 			}
-		}
-		
+		}	
 		tnk_tnkd_deentrenchment = {
 			allowed = {
 				always = no
@@ -123,7 +122,6 @@ ideas = {
 				justify_war_goal_time = 1
 			}
 		}
-
 		tnk_tnkd_ncr_spotting = {
 			allowed = {
 				always = no
@@ -133,7 +131,6 @@ ideas = {
 				recon_factor = 0.5
 			}
 		}
-
 		# ----------------------------------------------------------------------
 		# Unity defence
 		# ----------------------------------------------------------------------
@@ -193,7 +190,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -1
+				stability_factor = -0.5
 				war_support_factor = -0.5
 			}
 		}
@@ -201,6 +198,7 @@ ideas = {
 		# Mobius unity
 		# ----------------------------------------------------------------------
 		tnk_tnkd_bulwark = {
+			picture = tnk_tnkd_super_shield
 			allowed = {
 				always = no
 			}
@@ -210,7 +208,6 @@ ideas = {
 			}
 		}
 		tnk_tnkd_guardian = {
-			picture = tnk_tnkd_super_shield
 			allowed = {
 				always = no
 			}
@@ -228,8 +225,7 @@ ideas = {
 				attack_bonus_against = 0.2
 			}
 		}
-		tnk_tnkd_giant_slayer_idea = {
-			picture = tnk_tnkd_super_shield
+		tnk_tnkd_giant_slayer = {
 			allowed = {
 				always = no
 			}
@@ -311,7 +307,6 @@ ideas = {
 		# ----------------------------------------------------------------------
 		# Advanced genetics
 		# ----------------------------------------------------------------------
-
 		tnk_tnkd_nanomachines = {
 			allowed = {
 				always = no
@@ -393,7 +388,6 @@ ideas = {
 				weekly_manpower = -20
 			}
 		}
-
 		# ----------------------------------------------------------------------
 		# Advanced robots
 		# ----------------------------------------------------------------------
@@ -414,7 +408,7 @@ ideas = {
 					hard_attack = 0.1
 					ap_attack = 0.1
 					reliability = -0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.05
 					instant = yes
 				}
 			}	
@@ -436,7 +430,7 @@ ideas = {
 					soft_attack = 0.1
 					breakthrough = 0.1
 					reliability = -0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.05
 					instant = yes
 				}
 			}	
@@ -458,7 +452,7 @@ ideas = {
 					hardness = 0.1
 					armor_value = 0.1
 					reliability = -0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.05
 					instant = yes
 				}
 			}	
@@ -478,7 +472,7 @@ ideas = {
 				support_robot_equipment = {
 					fuel_consumption = -0.1
 					reliability = -0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.05
 					instant = yes
 				}
 			}
@@ -490,15 +484,15 @@ ideas = {
 			removal_cost = -1
 			equipment_bonus = {
 				combat_robot_equipment = {
-					maximum_speed = 0.15
+					maximum_speed = 0.2
 					reliability = -0.1
 					build_cost_ic = 0.1
 					instant = yes
 				}
 				support_robot_equipment = {
-					maximum_speed = 0.3
+					maximum_speed = 0.1
 					reliability = -0.1
-					build_cost_ic = 0.1
+					build_cost_ic = 0.05
 					instant = yes
 				}
 			}	
@@ -510,29 +504,27 @@ ideas = {
 			removal_cost = -1
 			equipment_bonus = {
 				combat_robot_equipment = {
-					reliability = 0.1
 					hard_attack = 0.2
 					ap_attack = 0.2
 					soft_attack = 0.2
 					breakthrough = 0.2
 					hardness = 0.2
 					armor_value = 0.2
-					maximum_speed = 0.15
+					maximum_speed = 0.2
 					fuel_consumption = -0.2
 					build_cost_ic = 0.5
 					instant = yes
 				}
 				support_robot_equipment = {
-					reliability = 0.1
 					hard_attack = 0.1
 					ap_attack = 0.1
 					soft_attack = 0.1
 					breakthrough = 0.1
 					hardness = 0.1
 					armor_value = 0.1
-					maximum_speed = 0.3
+					maximum_speed = 0.1
 					fuel_consumption = -0.1
-					build_cost_ic = 0.5
+					build_cost_ic = 0.25
 					instant = yes
 				}
 			}	
@@ -579,58 +571,6 @@ ideas = {
 				heat_attrition = -0.2
 			}
 		}
-		tnk_tnkd_el_dorado = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			targeted_modifier = {
-				tag = ITZ
-				attack_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = GRH
-				attack_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = TDT
-				attack_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = CAF
-				attack_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = ATE
-				attack_bonus_against = 0.1
-			}
-		}
-		tnk_tnkd_valhalla = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			targeted_modifier = {
-				tag = DRE
-				attack_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = BRK
-				attack_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = HAI
-				attack_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = WHI
-				attack_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = KAM
-				attack_bonus_against = 0.1
-			}
-		}
 		# -------------------------------------------------
 		# True convergance
 		# -------------------------------------------------
@@ -644,7 +584,7 @@ ideas = {
 				justify_war_goal_time = -0.25
 			}
 		}
-		tnk_tnkd_attack_weak_idea = {
+		tnk_tnkd_attack_weak = {
 			picture = tnk_tnkd_super_shield
 			allowed = {
 				always = no
@@ -652,39 +592,39 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag = SKY
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = GRA
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = VIP
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = RIP
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = RUB
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = PAL
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = VLT
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = CYC
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = EAS
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.05
 			}
 		}
 		tnk_tnkd_burn_land = {
@@ -705,6 +645,15 @@ ideas = {
 			modifier = {
 				planning_speed = 0.5
 				max_planning_factor = 1
+			}
+		}
+		tnk_tnkd_dna_shattering_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = -50
 			}
 		}
 		tnk_tnkd_missiles = {

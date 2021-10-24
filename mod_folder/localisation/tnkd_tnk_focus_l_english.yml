@@ -115,9 +115,11 @@
 
  tnk_tnkd_guardian:0 "Guardian Protocol"
  tnk_tnkd_guardian_desc:0 "We must defend the remnants of humanity. In time they will learn, we must make a world which allows them this time."
-
- tnk_tnkd_giant_slayer:0 "Giant Slaying"
+ tnk_tnkd_guardian_tt:0 "Gain National Spirit §YGuardian Protocol§!, which grants ((@MLT§Y[MLT.getName]§!, @TRL§Y[TRL.getName]§!, @SHA§Y[SHA.getName]§!) Attack bonus against country: §G+20%§!)."
+  
+ tnk_tnkd_giant_slayer:0 "Giant Slayer"
  tnk_tnkd_giant_slayer_desc:0 "The titans of the wasteland are a threat to the freedom of humanity. \n\n§RWe shall go forth and they shall call timber in our wake."
+ tnk_tnkd_giant_slayer_tt:0 "Gain National Spirit §YGiant Slayer§!, which grants ((@NCR§Y[NCR.getName]§!, @CES§Y[CES.getName]§!, @WBH§Y[WBH.getName]§!, @BOS§Y[BOS.getName]§!, @LAC§Y[LAC.getName]§!, @TBH§Y[TBH.getName]§!, @MAX§Y[MAX.getName]§!, @ZAP§Y[ZAP.getName]§!, @ARM§Y[ARM.getName]§!) Attack bonus against country: §G+20%§!)."
 
  tnk_tnkd_a_future_vision:0 "A Vision Of A Future"
  tnk_tnkd_a_future_vision_desc:0 "A house burned down may still from the ashes provide the fertilisation for spring new life."
@@ -158,8 +160,9 @@
  tnk_tnkd_domination_protocol:0 "Domination Protocol"
  tnk_tnkd_domination_protocol_desc:0 "Our neighbours are not so different from our lobotomites."
 
- tnk_tnkd_attack_weak:0 "Prey On The Weak"
+ tnk_tnkd_attack_weak:0 "Wasteland Vulture"
  tnk_tnkd_attack_weak_desc:0 "The easiest resources must be grasped the quickest."
+ tnk_tnkd_attack_weak_tt:0 "Gain National Spirit §YWasteland Vulture§!, which grants ((@SKY§Y[SKY.getName]§!, @GRA§Y[GRA.getName]§!, @VIP§Y[VIP.getName]§!, @RIP§Y[RIP.getName]§!, @RUB§Y[RUB.getName]§!, @PAL§Y[PAL.getName]§!, @VLT§Y[VLT.getName]§!, @CYC§Y[CYC.getName]§!, @EAS§Y[EAS.getName]§!) Attack bonus against country: §G+5%§!)."
 
  tnk_tnkd_burn_land:0 "Burn The Land"
  tnk_tnkd_burn_land_desc:0 "With appropriate redirection of our gamma weaponry we might burn these cockroaches out of their rotten homes."
@@ -181,7 +184,7 @@
  tnk_tnkd_war_simulations:0 "Deep Red"
  tnk_tnkd_war_simulations_desc:0 "We shall build machines to compute wars beyond comprehension."
  tnk_tnkd_dna_shattering:0 "Genetic Warfare"
- tnk_tnkd_dna_shattering_desc:0 "It doesn't require much cesium to be accidently §Glost§! from our labs for an entire city to die."
+ tnk_tnkd_dna_shattering_desc:0 "It doesn't require much cesium to be accidently §glost§! from our labs for an entire city to die."
  tnk_tnkd_dna_shattering_tt:0 "§YGenetic Warfare§! applies §R-200§! weekly manpower to nations §YThe Think Tank§! is at war with."
  tnk_tnkd_missiles:0 "Ballistic Missilery"
  tnk_tnkd_missiles_desc:0 "We have quite few of these laying around now...\n\nPerhaps with strikes launched at the right places at the right times we can make our small arsenal have devastating effect."
@@ -212,6 +215,7 @@
  tnk_tnkd_cellular_combustion_desc:0 "If we can make our cells blast furnaces we can make our bones titanium."
  tnk_tnkd_genetic_supremacy:0 "Genetic Supremacy"
  tnk_tnkd_genetic_supremacy:0 "With all our research we have formed the most optimal human executors ever seen."
+ tnk_tnkd_genetic_supremacy_tt:0 "Replaces §YNanomachines§!, §YHigh-density Muscle Fibres§!, §YCellular Combustion§!, §YAccelerated Metabolism§! with §YGenetic Supremacy Supremacy§!\nEffective change:\n§YInfantry Equipment§!:\n    £reliability_texticon Reliability: §G+20%§!"
 
  tnk_tnkd_advanced_robots:0 "Advanced Robotics"
  tnk_tnkd_advanced_robots_desc:0 "We can push this even further."
@@ -227,7 +231,7 @@
  tnk_tnkd_light_engines_desc:0 "Some of our robots have a tendency to overheat, why not direct this exhaust?"
  tnk_tnkd_robotic_supremacy:0 "Robotic Supremacy"
  tnk_tnkd_robotic_supremacy:0 "With all our research we have formed the most optimal robotic executors ever seen."
- supremacy_tt:0 "Consolidates dependant focusses and removes thier negative Reliability affect."
+ tnk_tnkd_robotic_supremacy_tt:0 "Replaces §YAnnhilation Beam§!, §YAdvanced Reactors§!, §YIncineration Beam§!, §YSuper Saturnite Plating§!, §YBoost Thrusters§! with §YRobotic Supremacy§!\nEffective change:\n§YCombat Robot§!:\n    £reliability_texticon Reliability: §G+50%§!\n§YSupport Robot§!:\n    £reliability_texticon Reliability: §G+50%§!"
 
  tnk_tnkd_shovels:0 "Shovels"
  tnk_tnkd_shovels_desc:0 "What an incredible discovery, groundbreaking stuff..."
@@ -243,6 +247,7 @@
  tnk_tnkd_south_ships_desc:0 "Silently fishing and escaping crocodiles, these southerns must know a thing or two about shipbuilding."
  tnk_tnkd_el_dorado:0 "El Dorado"
  tnk_tnkd_el_dorado_desc:0 "An ancient legend? a lost city? §YGOLD?!?§!"
+ tnk_tnkd_el_dorado_tt:0 "§RTODO§!"
 
  tnk_tnkd_north_men:0 "Northern Practises"
  tnk_tnkd_north_men_desc:0 "What strange humans choose to live in such a harsh place, surely they must have some unique knowledge for dealing with the harsh cold."
@@ -250,6 +255,7 @@
  tnk_tnkd_north_ships_desc:0 "These northern nations seem to have a knack for showing up far from home, how they do must be a result of their ships, we must investigate. "
  tnk_tnkd_valhalla:0 "Valhalla"
  tnk_tnkd_valhalla_desc:0 "A land of legendary warriors? Sounds like some good grave robbing."
+ tnk_tnkd_valhalla_tt:0 "§RTODO§!"
 
  tnk_tnkd_little_green_dot:0 "Little Green Dot"
  tnk_tnkd_little_green_dot_desc:0 "Is that a star? Why's it green?"

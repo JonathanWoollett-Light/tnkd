@@ -42,17 +42,14 @@
  tnkd_tnk_do_no_harm_idea:0 "Do No Harm"
  tnkd_tnk_do_no_harm_idea_desc:0 "Into whatsoever houses I enter, I will enter to help the sick, and I will abstain from all intentional wrong-doing and harm."
 
- tnk_tnkd_giant_slayer_idea:0 "Giant Slaying"
- tnk_tnkd_giant_slayer_idea_desc:0 "We shall go forth and they shall call timber in our wake."
-
  # True convergance
  # --------------------------------------------------------
 
  tnkd_tnk_test_subjects_idea:0 "Aggressive Abductions"
  tnkd_tnk_test_subjects_idea_desc:0 "WE NEED MORE MEAT"
 
- tnk_tnkd_attack_weak_idea:0 "Wasteland Vulture"
- tnk_tnkd_attack_weak_idea_desc:0 "The easiest resources must be grasped the quickest."
+ tnk_tnkd_dna_shattering_idea:0 "Genetic Warfare"
+ tnk_tnkd_dna_shattering_idea_desc:0 "Even an expert butcher cuts himself on occasion."
 
  # Tech ascendance
  # ---------------------------------------------------------
