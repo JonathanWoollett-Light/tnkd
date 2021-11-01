@@ -673,34 +673,23 @@ country_event = {
 					add_core_of = PREV
 					add_extra_state_shared_building_slots = 25 # maxes out state
 					add_resource = {
-						type = metal
+						type = advanced
 						amount = 30
 					}
 					add_resource = {
-						type = advanced
-						amount = 50
-					}
-					add_resource = {
-						type = energy
-						amount = 50
-					}
-					add_resource = {
 						type = composites
-						amount = 50
+						amount = 30
 					}
 					add_resource = {
 						type = circuitry
-						amount = 50
+						amount = 30
 					}
-					add_resource = {
-						type = water
-						amount = 20
-					}
-					teleport_armies = {
-						limit = {
-							NOT = { original_tag = ALI } 
-						}
-					}
+					# TODO I think this triggers `[00:34:31][trigger.cpp:379]: common/scripted_triggers/exodus_triggers.txt:7: is_subject_of: Invalid Scope` why?
+					# teleport_armies = {
+					# 	limit = {
+					# 		NOT = { original_tag = ALI } 
+					# 	}
+					# }
 				}
 			}
 		}
@@ -743,7 +732,6 @@ country_event = {
 
 	option = {
 		name = nf_tnk.28.a
-		country_event = nf_tnk.28.b
 	}
 }
 
@@ -961,7 +949,7 @@ country_event = {
 					create_wargoal = {
 						type = take_state_focus
 						target = PREV
-						generator = 932
+						generator = { 932 }
 					}
 				}
 			}
@@ -972,7 +960,7 @@ country_event = {
 					create_wargoal = {
 						type = take_state_focus
 						target = PREV
-						generator = 548
+						generator = { 548 }
 					}
 				}
 			}
@@ -983,7 +971,7 @@ country_event = {
 					create_wargoal = {
 						type = take_state_focus
 						target = PREV
-						generator = 291
+						generator = { 291 }
 					}
 				}
 			}

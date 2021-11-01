@@ -36,26 +36,54 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/unique/TNK/tnk_tnkd_fractured_mind.dds"
 	}
 
-    #LUL
+    # LUL
     # ------------------------------------------------
-
 	spriteType = {
 		name = "GFX_idea_tnkd_lul_walking_suits"
 		texturefile = "gfx/interface/ideas/unique/LUL/tnkd_lul_walking_suits.dds"
 	}
 
-    #ALI
+    # ALI
     # ------------------------------------------------
+    spriteType = {
+		name = "GFX_idea_ali_xenos"
+		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_xenos.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_ali_no_leadership"
+		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_no_leadership.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_ali_gamma_core"
+		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_gamma_core.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_ali_beta_core"
+		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_beta_core.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_ali_alpha_core"
+		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_alpha_core.dds"
+	}
 
     spriteType = {
-		name = "GFX_idea_ali_lobotomite_conscription"
-		texturefile = "gfx/interface/ideas/unique/TNK/tnk_lobotomite_conscription.dds"
+		name = "GFX_idea_ali_reinforcements"
+		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_reinforcements.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_ali_communication"
+		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_communication.dds"
 	}
     spriteType = {
 		name = "GFX_idea_tnk_no_labrats"
 		texturefile = "gfx/interface/ideas/unique/TNK/tnk_no_labrats.dds"
 	}
 
+    spriteType = {
+		name = "GFX_idea_ali_power_core"
+		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_power_core.dds"
+	}
     # MTW
     # ------------------------------------------------
     spriteType = {

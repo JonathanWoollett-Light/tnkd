@@ -60,7 +60,7 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		tnkd_ali_reinforcements = {
-			picture = tnk_lobotomite_conscription
+			picture = ali_reinforcements
 			cost = 150
 			level = 4
 			removal_cost = -1
@@ -107,11 +107,11 @@ ideas = {
 	}
 	army_training_laws = {
 		law = yes
-		tnkd_ali_special_operations = {
+		tnkd_ali_communication = {
 			cost = 100
 			removal_cost = -1
 			level = 1
-			picture = tnk_simple_commands
+			picture = ali_communication
 			allowed = {
 				original_tag = ALI
 			}
@@ -119,9 +119,9 @@ ideas = {
 				factor = 1
 			}
 			modifier = {
-				attrition = -0.5
-				decryption_factor = 1
-				encryption_factor = 10
+				attrition = -0.4
+				encryption_factor = 1
+				army_org_factor = 0.1
 			}
 			cancel_if_invalid = no
 		}

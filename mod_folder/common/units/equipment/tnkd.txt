@@ -54,21 +54,21 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 8
-		reliability = 0.70
+		maximum_speed = 7
+		reliability = 0.80
 
 		#Defensive Abilities
-		defense = 10
+		defense = 2x	0
 		breakthrough = 50
 		hardness = 0.5
 		armor_value = 40
 		suppression = 1
 
-		fuel_consumption = 2
+		fuel_consumption = 0.5
 
 		#Offensive Abilities
-		soft_attack = 60
-		hard_attack = 60
+		soft_attack = 50
+		hard_attack = 50
 		ap_attack = 70
 		air_attack = 10
 
@@ -78,8 +78,9 @@ equipments = {
 		build_cost_ic = 100
 		resources = {
 			composites = 2
-			circuitry = 4
+			circuitry = 2
             advanced = 2
+			water = 1
 			energy = 4
 		}
 	}
@@ -97,7 +98,7 @@ equipments = {
 		air_ground_attack = 20
 		air_bombing = 2
 
-		fuel_consumption = 0.5
+		fuel_consumption = 0.3
 
 		naval_strike_attack = 4
 		naval_strike_targetting = 1
@@ -105,7 +106,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 8
 
-		build_cost_ic = 150
+		build_cost_ic = 100
 		resources = {
 			composites = 2
 			advanced = 4
@@ -131,14 +132,14 @@ equipments = {
 		armor_value = 0
 
 		# Offensive Abilities
-		soft_attack = 15
-		hard_attack = 10
-		ap_attack = 25
+		soft_attack = 8
+		hard_attack = 8
+		ap_attack = 20
 		air_attack = 1
 
 		lend_lease_cost = 1
 
-		build_cost_ic = 13
+		build_cost_ic = 8
 
 		resources = {
 			composites = 2
@@ -164,14 +165,14 @@ equipments = {
 		armor_value = 0
 
 		# Offensive Abilities
-		soft_attack = 20
-		hard_attack = 13
-		ap_attack = 30
+		soft_attack = 14
+		hard_attack = 14
+		ap_attack = 35
 		air_attack = 1
 
 		lend_lease_cost = 1
 
-		build_cost_ic = 16
+		build_cost_ic = 14
 
 		resources = {
 			composites = 2

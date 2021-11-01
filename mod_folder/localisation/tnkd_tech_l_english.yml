@@ -1,4 +1,7 @@
 ﻿l_english:
+ mutation_resistance_tech:0 "Genetic Mutation Resistance"
+
+  # Aliens
   exotic_robot_tech:0 "§PExotic Robot§!"
 
   exotic_robot_equipment:0 "Exotic Robot"
@@ -6,13 +9,10 @@
   exotic_robot_equipment_desc:0 ""
 
   robot_zeta_tech:0 "Zeta guardian"
-  robot_zeta_tech_desc:0 "ል ቻዐዪቿጎኗክ ኗሁልዪዕጎልክ ሠቿረዕጎክኗ ልየዐርልረሃየፕጎር ልዪጠልጠቿክፕነ, ልረረ ፕዘዐነቿ ሠዘዐ ነፕዪልሃ ጎክፕዐ ጎፕነ የልፕዘ ቻልርቿ ርቿዪፕልጎክ ልክክጎዘጎረልፕጎዐክ."
-  
-  mutation_resistance_tech:0 "Genetic Mutation Resistance"
   
   exotic_robot_zeta_equipment:0 "Zeta guardian"
   exotic_robot_zeta_equipment_short:0 "Zeta guardian"
-  exotic_robot_zeta_equipment_desc:0 "ል ቻዐዪቿጎኗክ ኗሁልዪዕጎልክ ሠቿረዕጎክኗ ልየዐርልረሃየፕጎር ልዪጠልጠቿክፕነ, ልረረ ፕዘዐነቿ ሠዘዐ ነፕዪልሃ ጎክፕዐ ጎፕነ የልፕዘ ቻልርቿ ርቿዪፕልጎክ ልክክጎዘጎረልፕጎዐክ."
+  exotic_robot_zeta_equipment_desc:0 "A bio-mechanical marvel of technology, this war machine forms the backbone of all special operations forces deployed. Autonmous, standing at 8ft tall and with the agiliy of best infantry these guardians are champions of the battlefield. Although due to their flexibility they do not carry the raw firepower of some of the wastelanders heaviest armaments."
 
   exotic_robot:0 "Exotic Robot Platoon"
   exotic_robot_short:0 "Exotic Robots"
@@ -27,3 +27,6 @@
   alien_equipment_2:0 "Alien Disintegrator"
   alien_equipment_2_short:0 "Alien Disintegrator"
   alien_equipment_2_desc:0 "ል ቻዐዪቿጎኗክ ኗሁልዪዕጎልክ ሠቿረዕጎክኗ ልየዐርልረሃየፕጎር ልዪጠልጠቿክፕነ, ልረረ ፕዘዐነቿ ሠዘዐ ነፕዪልሃ ጎክፕዐ ጎፕነ የልፕዘ ቻልርቿ ርቿዪፕልጎክ ልክክጎዘጎረልፕጎዐክ."
+  saucer_equipment:0 "Flying Saucer"
+  saucer_equipment_short:0 "Flying Saucer"
+  saucer_equipment_desc:0 "ል ቻዐዪቿጎኗክ ኗሁልዪዕጎልክ ሠቿረዕጎክኗ ልየዐርልረሃየፕጎር ልዪጠልጠቿክፕነ, ልረረ ፕዘዐነቿ ሠዘዐ ነፕዪልሃ 

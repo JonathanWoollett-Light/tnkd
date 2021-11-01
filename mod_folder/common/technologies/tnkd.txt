@@ -27,7 +27,7 @@ technologies = {
 		}
 
 		research_cost = 2.2
-		start_year = 2275
+		start_year = 3275
 		folder = {
 			name = fallout_robotics_folder
 			position = { x = 4 y = 30 }
@@ -119,7 +119,7 @@ technologies = {
 
 		research_cost = 4
 
-		start_year = 2283
+		start_year = 2285
 		folder = {
 			name = fallout_infantry_folder
 			position = { x = 4 y = 52 }
@@ -133,7 +133,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 50
-				date > "2287.1.1"
+				date > "2288.1.1"
 			}
 		}
 	}

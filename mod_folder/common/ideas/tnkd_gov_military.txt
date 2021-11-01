@@ -21,8 +21,8 @@ ideas = {
 			default = no
 			cancel_if_invalid = no
 		}
-		tnkd_ali_war_council = {
-			picture = tnk_rule_of_six
+		tnkd_ali_no_leadership = {
+			picture = ali_no_leadership
 			cost = 150
 			removal_cost = -1
 			level = 6
@@ -30,9 +30,51 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				army_org_factor = 0.5
-				special_forces_cap = 2
-				special_forces_min = 50
+				army_org_factor = -0.3
+				max_planning = -0.5
+			}
+			default = no
+			cancel_if_invalid = no
+		}
+		tnkd_ali_gamma_core = {
+			picture = ali_gamma_core
+			cost = 150
+			removal_cost = -1
+			level = 6
+			allowed = {
+				always = no
+			}
+			modifier = {
+				max_planning = -0.25
+			}
+			default = no
+			cancel_if_invalid = no
+		}
+		tnkd_ali_beta_core = {
+			picture = ali_beta_core
+			cost = 150
+			removal_cost = -1
+			level = 6
+			allowed = {
+				always = no
+			}
+			modifier = {
+				max_planning = 0.5
+			}
+			default = no
+			cancel_if_invalid = no
+		}
+		tnkd_ali_alpha_core = {
+			picture = ali_alpha_core
+			cost = 150
+			removal_cost = -1
+			level = 6
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.25
+				max_planning = 1
 			}
 			default = no
 			cancel_if_invalid = no

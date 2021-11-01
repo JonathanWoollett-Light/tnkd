@@ -118,9 +118,9 @@ add_ideas = {
 
     tnkd_ali_reinforcements
 	tnkd_ali_no_apes
-	tnkd_ali_war_council
-	tnkd_ali_offworld_industry
-	tnkd_ali_special_operations
+	tnkd_ali_no_leadership
+	tnkd_ali_power_core
+	tnkd_ali_communication
 	closed_economy
 	chems_legalised
 	outsider_law_none

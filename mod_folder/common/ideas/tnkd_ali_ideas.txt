@@ -1,7 +1,7 @@
 ideas = {
     country = {
         tnkd_ali_xenos = {
-            picture = animated_tnk_mojave_drive_in
+            picture = ali_xenos
             allowed = {
                 always = no
             }
