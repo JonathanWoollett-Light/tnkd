@@ -72,13 +72,30 @@ ideas = {
 					always = no
 				}
 			}
-			allowed_to_remove = {
+			modifier = {
+				weekly_manpower = 25
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		tnkd_ali_gate = {
+			picture = ali_reinforcements
+			cost = 150
+			level = 4
+			removal_cost = -1
+			allowed = {
+				original_tag = ALI
+			}
+			available = {
 				hidden_trigger = {
 					always = no
 				}
 			}
+			visible = {
+				always = no
+			}
 			modifier = {
-				weekly_manpower = 25
+				weekly_manpower = 100
 			}
 			default = yes
 			cancel_if_invalid = no

@@ -8,10 +8,8 @@ ideas = {
 
             removal_cost = -1
             modifier = {
-                custom_modifier_tooltip = tnk_old_world_blues_tt
-                caps_expense_modifier = -1
-                exodus_national_appeal = -1
-                exodus_occupier_appeal = -1
+                justify_war_goal_time = -0.5
+                enemy_justify_war_goal_time = -0.5
             }
         }
     }

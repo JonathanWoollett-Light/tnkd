@@ -1,0 +1,177 @@
+capital = 389
+
+set_country_flag = caps_exempt
+
+set_technology = {
+	infantry_tech_level_tribal = 1 
+	infantry_tech_level_settler = 1
+	infantry_tech_level_scientific = 1
+
+	power_armour_tech_level_tribal = 1
+	power_armour_tech_level_settler = 1
+	power_armour_tech_level_scientific = 1
+
+	special_forces_tech_level_tribal = 1
+	special_forces_tech_level_settler = 1
+	special_forces_tech_level_scientific = 1
+
+	support_tech_level_tribal = 1
+	support_tech_level_settler = 1
+	support_tech_level_scientific = 1
+
+	vehicles_tech_level_settler = 1
+	vehicles_tech_level_tribal = 1
+	vehicles_tech_level_scientific = 1
+
+	# The nation is just almost robots
+	robotics_tech_level_tribal = 1
+	robotics_tech_level_settler = 1
+	robotics_tech_level_scientific = 1
+
+	air_tech_level_tribal = 1
+	air_tech_level_settler = 1
+	air_tech_level_scientific = 1
+
+	naval_tech_level_tribal = 1
+	naval_tech_level_settler = 1
+	naval_tech_level_scientific = 1
+
+	tools_tech_level_tribal = 1
+	tools_tech_level_settler = 1
+	tools_tech_level_scientific = 1
+
+	exploitation_tech_level_tribal = 1
+	exploitation_tech_level_settler = 1
+	exploitation_tech_level_scientific = 1
+
+	habitation_tech_level_tribal = 1
+	habitation_tech_level_settler = 1
+	habitation_tech_level_scientific = 1
+
+	electronics_tech_level_scientific = 1
+	electronics_tech_level_tribal = 1
+	electronics_tech_level_settler = 1
+
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+
+    robot_automation_tech = 1
+	robot_makeshift_automatons_tech = 1
+	robot_thrusters_tech = 1
+	robot_handy_tech = 1
+	robot_fuel_refinement_tech = 1
+	robot_gutsy_tech = 1
+	robot_gutsy_hardening_tech = 1
+
+	robot_fuel_refinement_tech = 1
+	robot_flamethrower_tech = 1
+	robot_antigrav_tech = 1
+	robot_eyebot_tech = 1
+
+	robot_protectron_tech_1 = 1
+	robot_alloy_tech = 1
+	robot_protectron_tech_2 = 1
+	robot_precision_motor_tech = 1
+	robot_assaultron_tech = 1
+    # TODO Add custom dwemer scarab image like robo-scorpion.
+    robot_scurry_tech = 1 #Scurry is last researched light robot, important.
+
+	robot_heavy_lifter_tech = 1
+	robot_cooling_systems_tech_1 = 1
+	robot_sentrybot_tech_1 = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		nautics_tech_1 = 1
+		light_navy_hull_tech_1 = 1
+		naval_invasion_tech_1 = 1
+	}
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		nautics_tech_non_mtg_1 = 1
+		light_navy_hull_tech_non_mtg_1 = 1
+		naval_invasion_tech_non_mtg_1 = 1
+	}
+}
+
+set_stability = 0.6
+set_war_support = 0.2
+set_research_slots = 5
+
+set_country_flag = is_settler_nation
+set_country_flag = is_robotic_nation
+# TODO Uncomment these when unique laws have been added.
+# set_country_flag = has_unique_manpower_law
+# set_country_flag = has_unique_officer_laws
+# set_country_flag = has_unique_economic_laws
+# set_country_flag = has_unique_undesirable_laws
+
+set_politics = {
+	ruling_party = people
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 100
+	elites = 0
+	intellectuals = 0
+	ruler = 0
+}
+
+set_party_name = {
+	ideology = people
+	long_name = "The Mechanism"
+	name = "The Mechanism"
+}
+
+add_ideas = {
+	tnk_old_world_blues
+
+	closed_economy
+	chems_legalised
+	outsider_law_none
+	mutant_law_none
+	slavers_idea_4
+}
+
+set_country_flag = slavery_allowed
+
+# TODO Uncomment these when unique ones have been added.
+# set_country_flag = no_generic_chief
+# set_country_flag = no_generic_high_command
+# set_country_flag = dont_give_settler_generic_chiefs
+# set_country_flag = dont_give_settler_generic_high_command
+# set_country_flag = dont_give_settler_generic_theorists
+# set_country_flag = dont_give_settler_generic_political_advisors
+# set_country_flag = no_generic_advisor
+# set_country_flag = no_generic_manufacturer
+set_country_flag = robot_doctrine_ai
+
+create_country_leader = {
+	name = "The Ancient"
+	desc = "DWM_DESC"
+	picture = "portrait_dwm_ancient.dds"
+	expire = "3000.1.1"
+	ideology = tribal_council
+
+	traits = {
+	}
+}
+
+create_corps_commander = {
+    name = "The Guardian"
+    picture = "portrait_dwm_guardian.dds"
+    traits = { }
+    attack_skill = 4
+	defense_skill = 10
+	planning_skill = 4
+	logistics_skill = 4
+}

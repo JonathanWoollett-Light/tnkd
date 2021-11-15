@@ -673,6 +673,10 @@ country_event = {
 					add_core_of = PREV
 					add_extra_state_shared_building_slots = 25 # maxes out state
 					add_resource = {
+						type = water
+						amount = 10
+					}
+					add_resource = {
 						type = advanced
 						amount = 30
 					}
@@ -993,5 +997,73 @@ country_event = {
 		name = nf_tnk.39.a
 		add_ideas = tnk_tnkd_gev_idea
 		activate_mission = tnk_tnkd_gev_decision
+	}
+}
+
+# Dwemer Spawns
+# ----------------------------------------------------------------
+country_event = {
+	id = nf_tnk.41
+	title = tnk_tnkd_el_dorado
+	desc = tnk_tnkd_el_dorado_desc
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.41.a
+		hidden_effect = {
+			DWM = {
+				transfer_state = 838 # El Astillero Del Comandante (the southmost state)
+				load_oob = "DWM"
+				838 = {
+					add_core_of = PREV
+					add_extra_state_shared_building_slots = 25 # maxes out state
+					add_resource = {
+						type = metal
+						amount = 40
+					}
+					add_resource = {
+						type = advanced
+						amount = 40
+					}
+					add_resource = {
+						type = energy
+						amount = 40
+					}
+					add_resource = {
+						type = water
+						amount = 10
+					}
+					add_resource = {
+						type = composites
+						amount = 40
+					}
+					add_resource = {
+						type = circuitry
+						amount = 40
+					}
+				}
+			}
+		}
+		TNK = {
+			country_event = nf_tnk.42
+		}
+	}
+}
+country_event = {
+	id = nf_tnk.42
+	title = nf_tnk.42.t
+	desc = nf_tnk.42.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.42.a
+	}
+	option = {
+		name = nf_tnk.42.b
+		DWM = { change_tag_from = TNK }
 	}
 }

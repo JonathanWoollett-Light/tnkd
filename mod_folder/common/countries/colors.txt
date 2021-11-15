@@ -850,3 +850,7 @@ MTW = {
 	color = rgb { 200 200 200 }
 	color_ui = rgb { 200 200 200 }
 }
+DWM = {
+	color = rgb { 212 175 55 }
+	color_ui = rgb { 212 175 55 }
+}

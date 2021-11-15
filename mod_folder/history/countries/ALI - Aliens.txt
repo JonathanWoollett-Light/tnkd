@@ -83,9 +83,9 @@ if = {
 	}
 }
 
-set_stability = 0.2
-set_war_support = 0.8
-set_research_slots = 6
+set_stability = 0.3
+set_war_support = 0.3
+set_research_slots = 5
 
 set_country_flag = is_settler_nation
 set_country_flag = is_robotic_nation
@@ -100,20 +100,35 @@ set_politics = {
 }
 
 set_popularities = {
-	people = 0
-	elites = 0
-	intellectuals = 100
-	ruler = 0
+	people = 20
+	elites = 20
+	intellectuals = 20
+	ruler = 40
 }
 
 set_party_name = {
+	ideology = people
+	long_name = "The Democratic Parliament"
+	name = "Parliament"
+}
+set_party_name = {
 	ideology = intellectuals
-	long_name = "The Aliens"
-	name = "Aliens"
+	long_name = "The Scientific Committee"
+	name = "Scientists"
+}
+set_party_name = {
+	ideology = elites
+	long_name = "The Military Hierarchy"
+	name = "Military"
+}
+set_party_name = {
+	ideology = ruler
+	long_name = "The Captain's Word"
+	name = "Captain"
 }
 
-
 add_ideas = {
+	tnk_old_world_blues
 	tnkd_ali_xenos
 
     tnkd_ali_reinforcements
@@ -135,22 +150,54 @@ add_ideas = {
 }
 
 set_country_flag = slavery_allowed
-set_country_flag = no_generic_chief
-set_country_flag = no_generic_high_command
-set_country_flag = dont_give_settler_generic_chiefs
-set_country_flag = dont_give_settler_generic_high_command
-set_country_flag = dont_give_settler_generic_theorists
-set_country_flag = dont_give_settler_generic_political_advisors
-set_country_flag = no_generic_advisor
-set_country_flag = no_generic_manufacturer
+
+# TODO Uncomment these when unique ones have been added.
+# set_country_flag = no_generic_chief
+# set_country_flag = no_generic_high_command
+# set_country_flag = dont_give_settler_generic_chiefs
+# set_country_flag = dont_give_settler_generic_high_command
+# set_country_flag = dont_give_settler_generic_theorists
+# set_country_flag = dont_give_settler_generic_political_advisors
+# set_country_flag = no_generic_advisor
+# set_country_flag = no_generic_manufacturer
 set_country_flag = robot_doctrine_ai
 
 create_country_leader = {
+	name = "Tim"
+	desc = "ALI_DESC"
+	picture = "portrait_ali_people.dds"
+	expire = "3000.1.1"
+	ideology = tribal_council
+
+	traits = {
+	}
+}
+create_country_leader = {
 	name = "Steve"
 	desc = "ALI_DESC"
-	picture = "portrait_ali_leader.dds"
+	picture = "portrait_ali_science.dds"
 	expire = "3000.1.1"
 	ideology = technocracy
+
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Frank"
+	desc = "ALI_DESC"
+	picture = "portrait_ali_military.dds"
+	expire = "3000.1.1"
+	ideology = militarist_technocracy
+
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Jim"
+	desc = "ALI_DESC"
+	picture = "portrait_ali_captain.dds"
+	expire = "3000.1.1"
+	ideology = warlordship
 
 	traits = {
 	}
@@ -158,7 +205,7 @@ create_country_leader = {
 
 create_corps_commander = {
     name = "Phil"
-    picture = "portrait_ali_leader.dds"
+    picture = "portrait_ali_phil.dds"
     traits = { }
     attack_skill = 6
 	defense_skill = 6

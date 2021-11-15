@@ -58,7 +58,7 @@ equipments = {
 		reliability = 0.80
 
 		#Defensive Abilities
-		defense = 2x	0
+		defense = 20
 		breakthrough = 50
 		hardness = 0.5
 		armor_value = 40

@@ -1,6 +1,12 @@
 spriteTypes = {
+	# TNK - The Think Tank
     spriteType = {
 		name = "GFX_tnkd_event_peace"
 		texturefile = "gfx/event_pictures/tnkd_event_peace.dds"
+	}
+	# ALI - Aliens
+	spriteType = {
+		name = "GFX_tnkd_event_dead_new_world"
+		texturefile = "gfx/event_pictures/tnkd_event_dead_new_world.dds"
 	}
 }

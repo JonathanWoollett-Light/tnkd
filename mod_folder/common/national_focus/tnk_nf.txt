@@ -2271,11 +2271,11 @@ focus_tree = {
 			add_ideas = {
 				tnk_tnkd_convergance_idea
 			}
-			# If `tnk` does have currently have the idea `tnk_tnkd_silence_idea`.
+			# If `tnk` does have currently have the idea `tnk_tnkd_silence`.
 			IF = {
 				limit = {
 					NOT = {
-						has_idea = tnk_tnkd_silence_idea
+						has_idea = tnk_tnkd_silence
 					}
 				}
 				every_other_country = {
@@ -2404,7 +2404,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_timed_idea = {
-				idea = tnk_tnkd_classification_protocol_idea
+				idea = tnk_tnkd_threat_classification
 				days = 200
 			}
 		}
@@ -2422,7 +2422,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_timed_idea = {
-				idea = tnk_tnkd_obliteration_protocol_idea
+				idea = tnk_tnkd_threat_obliteration
 				days = 50
 			}
 		}
@@ -2459,7 +2459,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = tnk_tnkd_silence_tt
 			add_timed_idea = {
-				idea = tnk_tnkd_silence_idea
+				idea = tnk_tnkd_silence
 				days = 100
 			}
 		}
@@ -2477,7 +2477,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_timed_idea = {
-				idea = tnk_tnkd_inconspicuous_idea
+				idea = tnk_tnkd_inconspicuous
 				days = 100
 			}
 		}
@@ -3269,7 +3269,7 @@ focus_tree = {
 			controls_state = 838
 		}
 		completion_reward = {
-			custom_effect_tooltip = tnk_tnkd_el_dorado_tt
+			country_event = nf_tnk.41
 		}
 	}
 	focus = {
@@ -3957,343 +3957,6 @@ focus_tree = {
 			focus = lul_1
 		}
 		relative_position_id = lul_1
-
-		completion_reward = {
-			424 = {
-				add_claim_by = LUL
-			}
-		}
-	}
-}
-
-# Aliens
-focus_tree = {
-	id = ali_nf
-	country = {
-		factor = 0
-		modifier = {
-			add = 100
-			tag = ALI
-		}
-	}
-	default = no
-
-	focus = {
-		id = ali_1
-		icon = GFX_goal_ali_service_in_undeath
-		cost = 7
-		x = 15
-		y = 0
-
-		completion_reward = {
-			country_event = nf_ali.1
-		}
-	}
-	focus = {
-		id = ali_ai_1
-		cost = 7
-		x = 10
-		y = 0
-
-		relative_position_id = ali_1
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = tnkd_ali_no_leadership
-				add_idea = tnkd_ali_gamma_core
-			}
-		}
-	}
-	focus = {
-		id = ali_ai_2
-		cost = 7
-		y = 1
-
-		relative_position_id = ali_ai_1
-
-		prerequisite = {
-			focus = ali_ai_1
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = tnkd_ali_gamma_core
-				add_idea = tnkd_ali_beta_core
-			}
-		}
-	}
-	focus = {
-		id = ali_ai_3
-		cost = 7
-		y = 1
-		relative_position_id = ali_ai_2
-		prerequisite = {
-			focus = ali_ai_2
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = tnkd_ali_beta_core
-				add_idea = tnkd_ali_alpha_core
-			}
-		}
-	}
-
-	focus = {
-		id = ali_carthage
-		icon = GFX_goal_ali_hanged_man
-		cost = 30
-		x = -6
-		y = 1
-		prerequisite = {
-			focus = ali_1
-		}
-		relative_position_id = ali_1
-
-		available = {
-			has_war = no
-			any_neighbor_country = {
-				owns_state = 884
-			}
-		}
-		completion_reward = {
-			884 = {
-				add_claim_by = LUL
-			}
-		}
-	}
-
-	focus = {
-		id = ali_conversion
-		icon = GFX_goal_ali_conversion
-		cost = 30
-		x = -3
-		y = 1
-		available = {
-		}
-		prerequisite = {
-			focus = ali_1
-		}
-		relative_position_id = ali_1
-
-		completion_reward = {
-			add_manpower = 8000
-		}
-	}
-
-	focus = {
-		id = ali_hero_legends
-		icon = GFX_goal_CES_women_marriage
-		cost = 30
-		x = -1
-		y = 1
-		available = {
-		}
-		prerequisite = {
-			focus = ali_conversion
-		}
-		relative_position_id = ali_conversion
-
-		completion_reward = {
-			army_experience = 30
-		}
-	}
-
-	focus = {
-		id = ali_equipment
-		icon = GFX_goal_roman_helmet
-		cost = 30
-		x = 1
-		y = 1
-		available = {
-		}
-		prerequisite = {
-			focus = ali_conversion
-		}
-		relative_position_id = ali_conversion
-
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 3000
-			}
-		}
-	}
-
-	focus = {
-		id = ali_stadium_of_the_dead
-		icon = GFX_goal_CES_colosseum
-		cost = 30
-		x = 0
-		y = 1
-		available = {
-			controls_state = 438
-		}
-		prerequisite = {
-			focus = ali_1
-		}
-		relative_position_id = ali_1
-
-		completion_reward = {
-			438 = {
-				add_extra_state_shared_building_slots = 4
-				add_resource = {
-					type = metal
-					amount = 8
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = ali_cult_of_luna
-		icon = GFX_goal_ali_luna
-		cost = 30
-		x = 0
-		y = 1
-		available = {
-		}
-		prerequisite = {
-			focus = ali_stadium_of_the_dead
-		}
-		relative_position_id = ali_stadium_of_the_dead
-
-		completion_reward = {
-			add_political_power = 300
-		}
-	}
-
-	focus = {
-		id = ali_spqr
-		icon = GFX_goal_CES_roman_eagle
-		cost = 30
-		x = 0
-		y = 3
-		prerequisite = {
-			focus = ali_equipment
-		}
-		prerequisite = {
-			focus = ali_cult_of_luna
-		}
-		prerequisite = {
-			focus = ali_lunar_wealth
-		}
-		relative_position_id = ali_1
-
-		completion_reward = {
-			add_research_slot = 2
-			if = {
-				limit = {
-					NOT = { has_tech = infantry_tech_level_scientific }
-				}
-				set_technology = { infantry_tech_level_scientific = 1 }
-			}
-			else = {
-				add_political_power = 300
-			}
-			if = {
-				limit = {
-					NOT = { has_tech = support_tech_level_scientific }
-				}
-				set_technology = { support_tech_level_scientific = 1 }
-			}
-			else = {
-				add_political_power = 300
-			}
-			if = {
-				limit = {
-					NOT = { has_tech = special_forces_tech_level_scientific }
-				}
-				set_technology = { special_forces_tech_level_scientific = 1 }
-			}
-			else = {
-				add_political_power = 300
-			}
-		}
-	}
-
-	focus = {
-		id = ali_trade
-		icon = GFX_goal_ali_denarius
-		cost = 30
-		x = 3
-		y = 1
-		available = {
-		}
-		prerequisite = {
-			focus = ali_1
-		}
-		relative_position_id = ali_1
-
-		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 6
-			}
-		}
-	}
-
-	focus = {
-		id = ali_pontifex_maximus
-		icon = GFX_goal_roman_senate_focus
-		cost = 30
-		x = 1
-		y = 1
-		available = {
-			controls_state = 520
-		}
-		prerequisite = {
-			focus = ali_trade
-		}
-		relative_position_id = ali_trade
-
-		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 3
-			}
-			520 = {
-				add_state_modifier = { modifier = { resistance_target = -0.2 } }
-			}
-		}
-	}
-
-	focus = {
-		id = ali_lunar_wealth
-		icon = GFX_generic_gold_bars
-		cost = 30
-		x = -1
-		y = 1
-		available = {
-		}
-		prerequisite = {
-			focus = ali_trade
-		}
-		relative_position_id = ali_trade
-
-		completion_reward = {
-			set_temp_variable = {
-				caps_to_add = 200
-			}
-			add_caps = yes
-		}
-	}
-
-	focus = {
-		id = ali_hellenics
-		icon = GFX_goal_ali_undead_legion
-		cost = 30
-		x = 6
-		y = 1
-		available = {
-			has_war = no
-			any_neighbor_country = {
-				owns_state = 424
-			}
-		}
-		prerequisite = {
-			focus = ali_1
-		}
-		relative_position_id = ali_1
 
 		completion_reward = {
 			424 = {

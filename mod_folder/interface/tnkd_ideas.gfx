@@ -2,7 +2,6 @@ spriteTypes = {
 
     # TNK
     # ------------------------------------------------
-
     spriteType = {
         name = "GFX_idea_tnk_quirky_science"
         texturefile = "gfx/interface/ideas/unique/TNK/tnk_quirky_science.dds"
@@ -35,6 +34,10 @@ spriteTypes = {
 		name = "GFX_idea_tnk_tnkd_fractured_mind"
 		texturefile = "gfx/interface/ideas/unique/TNK/tnk_tnkd_fractured_mind.dds"
 	}
+    spriteType = {
+		name = "GFX_idea_tnkd_tnk_exotic_expeditions"
+		texturefile = "gfx/interface/ideas/unique/TNK/tnkd_tnk_exotic_expeditions.dds"
+	}
 
     # LUL
     # ------------------------------------------------
@@ -43,47 +46,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/unique/LUL/tnkd_lul_walking_suits.dds"
 	}
 
-    # ALI
-    # ------------------------------------------------
-    spriteType = {
-		name = "GFX_idea_ali_xenos"
-		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_xenos.dds"
-	}
-    spriteType = {
-		name = "GFX_idea_ali_no_leadership"
-		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_no_leadership.dds"
-	}
-    spriteType = {
-		name = "GFX_idea_ali_gamma_core"
-		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_gamma_core.dds"
-	}
-    spriteType = {
-		name = "GFX_idea_ali_beta_core"
-		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_beta_core.dds"
-	}
-    spriteType = {
-		name = "GFX_idea_ali_alpha_core"
-		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_alpha_core.dds"
-	}
-
-    spriteType = {
-		name = "GFX_idea_ali_reinforcements"
-		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_reinforcements.dds"
-	}
-
-    spriteType = {
-		name = "GFX_idea_ali_communication"
-		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_communication.dds"
-	}
-    spriteType = {
-		name = "GFX_idea_tnk_no_labrats"
-		texturefile = "gfx/interface/ideas/unique/TNK/tnk_no_labrats.dds"
-	}
-
-    spriteType = {
-		name = "GFX_idea_ali_power_core"
-		texturefile = "gfx/interface/ideas/unique/ALI/tnkd_ali_power_core.dds"
-	}
     # MTW
     # ------------------------------------------------
     spriteType = {

@@ -134,7 +134,7 @@ ideas = {
 		# ----------------------------------------------------------------------
 		# Unity defence
 		# ----------------------------------------------------------------------
-		tnk_tnkd_silence_idea = {
+		tnk_tnkd_silence = {
 			allowed = {
 				always = no
 			}
@@ -143,7 +143,7 @@ ideas = {
 				encryption_factor = 1
 			}
 		}
-		tnk_tnkd_inconspicuous_idea = {
+		tnk_tnkd_inconspicuous = {
 			allowed = {
 				always = no
 			}
@@ -162,7 +162,7 @@ ideas = {
 				justify_war_goal_time = -0.5
 			}
 		}
-		tnk_tnkd_classification_protocol_idea = {
+		tnk_tnkd_threat_classification = {
 			allowed = {
 				always = no
 			}
@@ -171,13 +171,13 @@ ideas = {
 				max_planning_factor = 1
 			}
 		}
-		tnk_tnkd_obliteration_protocol_idea = {
+		tnk_tnkd_threat_obliteration = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			modifier = {
-				breakthrough_factor = 0.5
+				breakthrough_factor = 1
 				stability_factor = -0.5
 			}
 		}
@@ -533,6 +533,7 @@ ideas = {
 		# Exotic research
 		# ----------------------------------------------------------------------
 		tnk_tnkd_exotic_research = {
+			picture = tnkd_tnk_exotic_expeditions
 			allowed = {
 				always = no
 			}

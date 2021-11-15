@@ -2,14 +2,27 @@ add_namespace = nf_ali
 
 country_event = {
 	id = nf_ali.1
-	title = ali_1
-	desc = nf_ali.1.td
-	picture = GFX_event_big_mt_event_weird_science
+	title = tnkd_ali_dead_new_world
+	desc = nf_ali.1.d
+	picture = GFX_tnkd_event_dead_new_world
 
 	is_triggered_only = yes
 
 	option = {
 		name = nf_ali.1.a
-		add_war_support = 0.1
+		add_war_support = 0.2
+	}
+}
+country_event = {
+	id = nf_ali.2
+	title = tnkd_ali_home
+	desc = nf_ali.2.d
+	picture = GFX_tnkd_event_dead_new_world
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_ali.1.a
+		add_war_support = 0.2
 	}
 }
