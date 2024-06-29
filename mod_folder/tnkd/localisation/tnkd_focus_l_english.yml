@@ -1,0 +1,198 @@
+﻿l_english:
+ # Ceasar defence
+ # --------------------------------------------------------------
+
+ tnkd_next_steps:0 "Venturing Forward"
+ tnkd_next_steps_desc:0 "§OW§ge §Gm§Ro§Mv§Pe §Rf§Oo§gr§Gw§Ra§Mr§Pd §Rt§Oo§gg§Ge§Rt§Mh§Pe§Rr§O."
+ tnkd_next_steps_tt:0 "Completed all focuses in the §YLeaving the "Big Empty"§! tree."
+
+ tnkd_ces_wall:0 "Eastern Wall"
+ tnkd_ces_wall_desc:0 "They shall crash against our walls, like waves agaist a cliff."
+
+ tnkd_caesar_deal:0 "Retreating from the lion"
+ tnkd_caesar_deal_desc:0 "We do not need this territory, let us leave this patch of the wasteland to these fanatics."
+
+ # NCR defence
+ # --------------------------------------------------------------
+
+ tnkd_ncr_defence:0 "An accord with the bear"
+ tnkd_ncr_defence_desc:0 "They speak of democracy, they speak of change, yet they remain the same, the same as the rest of the wasteland, and the same as those who turned this world into the pile of ash it is today. If we do not act they will destroy us as their ancestors destroy this land. Perhaps in exchange for temporary peace we can offer our technological expertise."
+
+ tnkd_ncr_wall:0 "Western Wall"
+ tnkd_ncr_wall_desc:0 "With each step forward they shall only sink deeper into the Mojave desert."
+
+ tnkd_ncr_deal:0 "Returning the Jewels"
+ tnkd_ncr_deal_desc:0 "The NCR has longed after these territories for long enough, let them have them, and they shall let us have peace."
+
+ # Unity
+ # --------------------------------------------------------------
+
+ tnkd_unity:0 "Unity"
+ tnkd_unity_desc:0 "Through unity we shall acheive omniscience. A machine is greater than the sum of its part."
+ 
+ tnkd_isolation:0 "Isolation"
+ tnkd_isolation_desc:0 "§G For centuries we where left alone to do nothing, now we must do something, perhaps we might apply the same approach that worked before."
+ tnkd_silence:0 "Silence"
+ tnkd_silence_desc:0 "§G Intellectually we may be giants, be practically, we are mice compared to the titans of the wasteland, we best do this quietly."
+ tnkd_silence_tt:0 "If §YRadio Silence§! is still active when we begin §YConvergance§! it removes the §YThe Mojave Falls Silent§! event."
+ tnkd_inconspicuous:0 "Inconspicuous"
+ tnkd_inconspicuous_desc:0 "§G Nothing to see here officer."
+
+ tnkd_preemption:0 "Preemption"
+ tnkd_preemption_desc:0 "§M Our enemies will surely strike when we are vunerable, we must strike first and hard."
+ tnkd_threat_identification:0 "Identification protocol"
+ tnkd_threat_identification_desc:0 "§G We are surrounded by apes wielding shotguns. As dumb as they are, we must understand them."
+ tnkd_threat_classification:0 "Classification protocol"
+ tnkd_threat_classification_desc:0 "§g Before one crushes ants, it is best to find their nests... then boil the kettle."
+ tnkd_threat_obliteration:0 "Obliteration protocol"
+ tnkd_threat_obliteration_desc:0 "§M Let rip the dogs of war."
+
+ tnkd_convergance:0 "Convergance"
+ tnkd_convergance_desc:0 "§OM§ga§Gn§Ry §Mb§Pe§Rc§Oo§gm§Ge§Rs §Wone.\n\n§gAdds §RConvergance§g nation spirit which gives §R-100% stability."
+
+ tnkd_perfection_sync:0 "Perfect Synchronisation"
+ tnkd_perfection_sync_desc:0 "We have one mind, now we shall have one nation... one body."
+
+ tnkd_cohesion:0 "Facing The Inveitable"
+ tnkd_cohesion_desc:0 "Eventually a structure becomes so weak it must be demolished entirely before it can be rebuilt."
+ tnkd_cohesion_tt:0 "§RWARNING:§! This will incapacitate §YThe Think Tank§!."
+ tnkd_serenity:0 "Serenity"
+ tnkd_serenity_desc:0"The voices are gone, our...\n\nmy... mind is at peace."
+
+ tnkd_final:0 "Peace"
+ tnkd_final_desc:0 "I sit back and watch the sun rise on a grateful wasteland."
+
+ # Mobius convergance
+ # --------------------------------------------------------------
+
+ tnkd_mobius_convergance:0 "Mobius' will"
+ tnkd_mobius_convergance_desc:0 "§GA unity under good management of course."
+
+ tnkd_do_no_harm:0 "Do No Harm"
+ tnkd_do_no_harm_desc:0 "To harm in pursuit of science is antithetical to the goal."
+ tnkd_bulwark:0 "Bulwark"
+ tnkd_bulwark_desc:0 "Big Mt and our extended territories are but an extension of ourselves, our generals our white bloods cells, and they shall be steadfast."
+
+ tnkd_do_no_harm:0 "Do No Harm"
+ tnkd_do_no_harm_desc:0 "Into whatsoever houses I enter, I will enter to help the sick, and I will abstain from all intentional wrong-doing and harm."
+
+ tnkd_guardian:0 "Guardian Protocol"
+ tnkd_guardian_desc:0 "We must defend the remnants of humanity. In time they will learn, we must make a world which allows them this time."
+ tnkd_guardian_tt:0 "Gain National Spirit §YGuardian Protocol§!, which grants ((@MLT§Y[MLT.getName]§!, @TRL§Y[TRL.getName]§!, @SHA§Y[SHA.getName]§!) Attack bonus against country: §G+20%§!)."
+  
+ tnkd_giant_slayer:0 "Giant Slayer"
+ tnkd_giant_slayer_desc:0 "The titans of the wasteland are a threat to the freedom of humanity. \n\n§RWe shall go forth and they shall call timber in our wake."
+ tnkd_giant_slayer_tt:0 "Gain National Spirit §YGiant Slayer§!, which grants ((@NCR§Y[NCR.getName]§!, @CES§Y[CES.getName]§!, @WBH§Y[WBH.getName]§!, @BOS§Y[BOS.getName]§!, @LAC§Y[LAC.getName]§!, @TBH§Y[TBH.getName]§!, @MAX§Y[MAX.getName]§!, @ZAP§Y[ZAP.getName]§!, @ARM§Y[ARM.getName]§!) Attack bonus against country: §G+20%§!)."
+
+ tnkd_a_future_vision:0 "A Vision Of A Future"
+ tnkd_a_future_vision_desc:0 "A house burned down may still from the ashes provide the fertilisation for spring new life.\n\n§gOf all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive...§!"
+ 
+ tnkd_carrot:0 "The Carrot"
+ tnkd_carrot_desc:0 "Perhaps given the power to rebuild their homes our neighbours might see the path forward."
+ geck_gift_tt:0 "Gift 4 §Mfully functioning G.E.C.K.s§!."
+ geck_offer_tt:0 "Offer 4 §Mfully functioning G.E.C.K.s§! if they join our faction."
+
+ tnkd_stick:0 "The Stick"
+ tnkd_stick_desc:0 "Only through unity may we rebuild this world, we cannot allow the fickle opinions of foreign elites to prevent us helping."
+ tnkd_the_stick_tt:0 "Gives §YPuppet§! war goal against all neighbours."
+
+ tnkd_gecks:0 "In Pursuit of Eden"
+ tnkd_gecks_desc:0 "If we are to rebuild this land, we must not only rediscover how to manufacture §MG.E.C.K.s§! but a new way to deploy their technology, which can replicate and spread... like a virus."
+ tnkd_gecks_1:0 "Grave of Monsters"
+ tnkd_gecks_1_desc:0 "Rumours say this place is the grave the some of the greatest monsters every created by the FEV. This virus might form a brilliant base for our new deployment mechanism."
+ tnkd_gecks_2:0 "Historical Research"
+ tnkd_gecks_2_desc:0 "I think some of our old friends used to work here."
+ tnkd_gecks_3:0 "A Pristine Collection"
+ tnkd_gecks_3_desc:0 "While we might debate calling this people scientists, they certainly have a great collection or pre-war relics, and a specific few we need."
+ tnkd_gev:0 "G.E.V."
+ tnkd_gev_desc:0 "§MEUREKA!§!\n\nWe have done it, we have the tool we need to transform this wasteland.\n\nThe Garden of Eden Virus... §PG.E.V.§!"
+ tnkd_gev_tt:0 "§PG.E.V.§! is unleashed."
+
+ # True convergance
+ # --------------------------------------------------------------
+
+ tnkd_true_convergance:0 "True convergance"
+ tnkd_true_convergance_desc:0 "One being, one mind, one self."
+
+ tnkd_test_subjects:0 "Aggressive Abductions"
+ tnkd_test_subjects_desc:0 "WE NEED MORE MEAT"
+
+ tnkd_larping_luddites:0 "An accord with the Lion"
+ tnkd_larping_luddites_desc:0 "We must deal with these larping luddites who call themselves 'Ceasar's legion'. As technologically stunted as they are, if we do not act they will swarm, consume us, and destroy all we have acheived. Perhaps in exchange for temporary peace we can offer our technological expertise."
+
+ tnkd_domination_protocol:0 "Domination Protocol"
+ tnkd_domination_protocol_desc:0 "Our neighbours are not so different from our lobotomites."
+
+ tnkd_attack_weak:0 "Wasteland Vulture"
+ tnkd_attack_weak_desc:0 "The easiest resources must be grasped the quickest."
+ tnkd_attack_weak_tt:0 "Gain National Spirit §YWasteland Vulture§!, which grants ((@SKY§Y[SKY.getName]§!, @GRA§Y[GRA.getName]§!, @VIP§Y[VIP.getName]§!, @RIP§Y[RIP.getName]§!, @RUB§Y[RUB.getName]§!, @PAL§Y[PAL.getName]§!, @VLT§Y[VLT.getName]§!, @CYC§Y[CYC.getName]§!, @EAS§Y[EAS.getName]§!) Attack bonus against country: §G+5%§!)."
+
+ tnkd_burn_land:0 "Burn The Land"
+ tnkd_burn_land_desc:0 "With appropriate redirection of our gamma weaponry we might burn these cockroaches out of their rotten homes."
+
+ tnkd_the_future_vision:0 "The Vision of the Future"
+ tnkd_the_future_vision_desc:0 "We know what we must do, we have only to execute it... or rather... them."
+
+ tnkd_purification:0 "Purification"
+ tnkd_purification_desc:0 "Enough with these blundering lobotomites, we must purify the gene pool for only the strongest."
+
+ tnkd_extermination:0 "Extermination"
+ tnkd_extermination_desc:0 "We must remove these vermin from our lands."
+ tnkd_extermination_tt:0 "Gives §YAnnex§! war goal against all neighbours."
+
+ tnkd_clean_slate:0 "Clean Slate Protocol"
+ tnkd_clean_slate_desc:0 "Science must be carried out in a clean lab, we must clean the wasteland."
+ tnkd_clean_slate_tt:0 "§RInitiates perpetual war.§!"
+
+ tnkd_war_simulations:0 "Deep Red"
+ tnkd_war_simulations_desc:0 "We shall build machines to compute wars beyond comprehension."
+ tnkd_dna_shattering:0 "Genetic Warfare"
+ tnkd_dna_shattering_desc:0 "It doesn't require much cesium to be accidently §glost§! from our labs for an entire city to die."
+ tnkd_dna_shattering_tt:0 "§YGenetic Warfare§! applies §R-200§! weekly manpower to nations §YThe Think Tank§! is at war with."
+ tnkd_missiles:0 "Ballistic Missilery"
+ tnkd_missiles_desc:0 "We have quite few of these laying around now...\n\nPerhaps with strikes launched at the right places at the right times we can make our small arsenal have devastating effect."
+
+ tnkd_peace:0 "A Silent Wasteland"
+ tnkd_peace_desc:0 "Silence falls.\nNow we can focus."
+
+ # Tech ascendance
+ # --------------------------------------------------------------
+
+ tnkd_balanced_science:0 "Balanced science"
+ tnkd_balanced_science_desc:0 "It becomes difficult to build a brigde to the future when the back half is on fire."
+ tnkd_tech_ascendance:0 "Tech Ascendance"
+ tnkd_tech_ascendance_desc:0 "We shall acheive technological superiority."
+
+ tnkd_advanced_robots:0 "Advanced Robotics"
+ tnkd_advanced_robots_desc:0 "We can push this even further."
+ tnkd_robotic_supremacy:0 "Robotic Supremacy"
+ tnkd_robotic_supremacy:0 "With all our research we have formed the most optimal robotic executors ever seen."
+
+ tnkd_exotic_research:0 "Exotic Research Expeditions"
+ tnkd_exotic_research_desc:0 "There is much to discover, much beyound the decrepit ancient relics our neighbours spend their lives stealing."
+ 
+ tnkd_ship_tt:0 "Will give §YIntermediate Naval Tech§! if §YBasic Naval Tech§! is already researched."
+ 
+ tnkd_south_men:0 "Southern Practises"
+ tnkd_south_men_desc:0 "What strange humans choose to live in such a harsh place, surely they must have some unique knowledge for dealing with the burning heat."
+ tnkd_south_ships:0 "Southern Shipbuilding"
+ tnkd_south_ships_desc:0 "Silently fishing and escaping crocodiles, these southerns must know a thing or two about shipbuilding."
+ tnkd_el_dorado:0 "El Dorado"
+ tnkd_el_dorado_desc:0 "An ancient legend? a lost city? §YGOLD?!?§!"
+
+ tnkd_north_men:0 "Northern Practises"
+ tnkd_north_men_desc:0 "What strange humans choose to live in such a harsh place, surely they must have some unique knowledge for dealing with the harsh cold."
+ tnkd_north_ships:0 "Northern Shipbuilding"
+ tnkd_north_ships_desc:0 "These northern nations seem to have a knack for showing up far from home, how they do must be a result of their ships, we must investigate. "
+ tnkd_valhalla:0 "Valhalla"
+ tnkd_valhalla_desc:0 "A land of legendary warriors? Sounds like some good grave robbing."
+ tnkd_valhalla_tt:0 "§RTODO§!"
+
+ tnkd_little_green_dot:0 "Little Green Dot"
+ tnkd_little_green_dot_desc:0 "Is that a star? Why's it green?"
+ tnkd_a_new_frontier:0 "A New Frontier"
+ tnkd_a_new_frontier_desc:0 "We have heard stories about aliens going back before the war, now we shall truly find out.\n\nWe shall bring them to us."
+ tnkd_shoot_it_down:0 "Shoot it down"
+ tnkd_shoot_it_down_desc:0 "With the concentrated power of the sun we will strike it down."
+ tnkd_force_from_beyond:0 "Force from Beyond"
+ tnkd_force_from_beyond_desc:0 "We can rebuild them, we have the technology."

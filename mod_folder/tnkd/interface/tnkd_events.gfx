@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_tnkd_event_peace"
+		texturefile = "gfx/event_pictures/tnkd_event_peace.dds"
+	}
+}

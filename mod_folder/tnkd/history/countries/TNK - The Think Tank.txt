@@ -1,0 +1,181 @@
+capital = 47
+
+set_country_flag = caps_exempt
+
+set_technology = {
+	basic_supply_transport_tech = 1
+	infantry_tech_level_tribal = 1 #They don't know how humans work
+	#infantry_tech_level_settler = 1
+	#infantry_tech_level_scientific = 1
+
+	#power_armour_tech_level_settler = 1
+	#power_armour_tech_level_scientific = 1
+
+	#special_forces_tech_level_tribal = 1
+	#special_forces_tech_level_settler = 1
+	#special_forces_tech_level_scientific = 1
+
+	support_tech_level_tribal = 1
+	support_tech_level_settler = 1
+	support_tech_level_scientific = 1
+
+	#vehicles_tech_level_scientific = 1
+	#vehicles_tech_level_tribal = 1
+	#vehicles_tech_level_settler = 1
+
+	robotics_tech_level_tribal = 1
+	robotics_tech_level_settler = 1
+	#robotics_tech_level_scientific = 1 #Rely on old experiments, need to get their robotics lab up in order!
+
+	#air_tech_level_tribal = 1
+	#air_tech_level_settler = 1
+	#air_tech_level_scientific = 1
+
+	#naval_tech_level_tribal = 1
+	#naval_tech_level_settler = 1
+	#naval_tech_level_scientific = 1
+
+	tools_tech_level_tribal = 1
+	tools_tech_level_settler = 1
+	tools_tech_level_scientific = 1
+
+	exploitation_tech_level_tribal = 1
+	exploitation_tech_level_settler = 1
+	exploitation_tech_level_scientific = 1
+
+	habitation_tech_level_tribal = 1
+	habitation_tech_level_settler = 1
+	habitation_tech_level_scientific = 1
+
+	electronics_tech_level_scientific = 1
+	electronics_tech_level_tribal = 1
+	electronics_tech_level_settler = 1
+
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+
+	robot_automation_tech = 1
+	robot_makeshift_automatons_tech = 1
+	robot_fission_batteries_tech = 1
+	robot_handy_equipment_tech_1 = 1
+	robot_precision_motor_tech = 1
+
+	robot_scurry_tech = 1 #Scurry is last researched light robot, important.
+
+	# Good electronics
+	electronic_engineering = 1
+	electronic_engineering_1 = 1
+	electronic_engineering_2 = 1
+	electronic_engineering_3 = 1
+	electronic_engineering_4 = 1
+	electronic_engineering_5 = 1
+
+	# Moderate radar
+	radio_detection = 1
+	decimetric_radar = 1
+	improved_decimetric_radar = 1
+
+	# Basic industry
+	tool_engineering = 1
+	basic_industry_tech = 1
+	pre_construction_industry_tech = 1
+	pre_recycling_industry_tech = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		nautics_tech_1 = 1
+		light_navy_hull_tech_1 = 1
+		naval_invasion_tech_1 = 1
+	}
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		nautics_tech_non_mtg_1 = 1
+		light_navy_hull_tech_non_mtg_1 = 1
+		naval_invasion_tech_non_mtg_1 = 1
+	}
+}
+
+set_stability = 0.2
+set_war_support = 0.2
+set_research_slots = 5
+set_country_flag = is_settler_nation
+set_country_flag = is_robotic_nation
+set_country_flag = has_unique_manpower_law
+set_country_flag = has_unique_officer_laws # This flag is currently disabled and has no effect to save on CPU costs @Tran
+set_country_flag = has_unique_economic_laws
+set_country_flag = has_unique_undesirable_laws # This flag is currently disabled and has no effect to save on CPU costs @Tran
+
+set_politics = {
+	ruling_party = intellectuals
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 100
+	ruler = 0
+}
+
+set_party_name = {
+	ideology = intellectuals
+	long_name = TNK_intellectuals_party_long
+	name = TNK_intellectuals_party_short
+}
+
+add_ideas = {
+	tnk_old_world_blues
+	tnk_science_idea
+	tnk_lobotomite_conscription
+	tnk_no_labrats
+	tnk_rule_of_six
+	tnk_scientific_industry
+	tnk_simple_commands
+	closed_economy
+	chems_legalised
+	outsider_law_none
+	mutant_law_none
+	# slavers_idea_1
+	tnkd_crazy_science
+}
+
+add_timed_idea = {
+	idea = tnkd_unexpected_arrival
+	days = 365
+}
+
+set_country_flag = slavery_allowed
+set_country_flag = no_generic_chief
+set_country_flag = no_generic_high_command
+set_country_flag = dont_give_settler_generic_chiefs
+set_country_flag = dont_give_settler_generic_high_command
+set_country_flag = dont_give_settler_generic_theorists
+set_country_flag = dont_give_settler_generic_political_advisors
+set_country_flag = no_generic_advisor
+set_country_flag = no_generic_manufacturer # This flag is currently disabled and has no effect to save on CPU costs @Tran
+set_country_flag = robot_doctrine_ai
+
+recruit_character = TNK_the_think_tank
+recruit_character = TNK_klein
+recruit_character = TNK_8
+recruit_character = TNK_0
+recruit_character = TNK_dala
+recruit_character = TNK_borus
+recruit_character = TNK_mobius
+recruit_character = TNK_sink_autodoc
+recruit_character = TNK_sink_biological_research_station
+recruit_character = TNK_sink_toaster
+recruit_character = TNK_sink_book_chute
+recruit_character = TNK_sink_light_switch_01
+recruit_character = TNK_sink_light_switch_02
+recruit_character = TNK_sink_muggy
+
+set_variable = { science = 10000 }

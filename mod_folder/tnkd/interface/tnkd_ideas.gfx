@@ -1,0 +1,62 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_idea_tnkd_quirky_science"
+        texturefile = "gfx/interface/ideas/tnkd_quirky_science.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_tnkd_wild_science"
+        texturefile = "gfx/interface/ideas/tnkd_wild_science.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_tnkd_crazy_science"
+        texturefile = "gfx/interface/ideas/tnkd_crazy_science.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_tnkd_insane_science"
+        texturefile = "gfx/interface/ideas/tnkd_insane_science.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_tnkd_balanced_science"
+        texturefile = "gfx/interface/ideas/tnkd_balanced_science.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_tnkd_unexpected_arrival"
+        texturefile = "gfx/interface/ideas/tnkd_unexpected_arrival.dds"
+    }
+    spriteType = {
+		name = "GFX_idea_tnkd_fractured_mind"
+		texturefile = "gfx/interface/ideas/tnkd_fractured_mind.dds"
+	}
+    spriteType = {
+        name = "GFX_idea_tnkd_silence"
+        texturefile = "gfx/interface/goals/generic/Weapons/pistol_silenced.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_tnkd_inconspicuous"
+        texturefile = "gfx/interface/goals/generic/Weapons/pistol_silenced.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_tnkd_preemption"
+        texturefile = "gfx/interface/ideas/relieved_tensions.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_tnkd_threat_classification"
+        texturefile = "gfx/interface/ideas/relieved_tensions.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_tnkd_threat_obliteration"
+        texturefile = "gfx/interface/ideas/relieved_tensions.dds"
+    }
+    spriteType = {
+		name = "GFX_idea_tnkd_bulwark"
+		texturefile = "gfx/interface/ideas/tnkd_super_shield.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_exotic_research"
+		texturefile = "gfx/interface/ideas/tnkd_exotic_expeditions.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_attack_weak"
+		texturefile = "gfx/interface/ideas/tnkd_super_shield.dds"
+	}
+}

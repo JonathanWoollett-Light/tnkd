@@ -1,0 +1,82 @@
+characters = {
+	tnkd_oblitus = {
+		name = tnkd_oblitus_name
+		portraits = {
+			army = {
+				large = GFX_Portrait_tnkd_oblitus
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 4
+	        defense_skill = 4
+	        planning_skill = 4
+	        logistics_skill = 4
+			traits = {
+				enduring_trait
+			}
+			legacy_id = -1
+			desc = tnkd_oblitus_desc
+		}
+	}
+    tnkd_vetus = {
+		name = tnkd_vetus_name
+		portraits = {
+			army = {
+				large = GFX_Portrait_tnkd_vetus
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 4
+	        defense_skill = 4
+	        planning_skill = 4
+	        logistics_skill = 4
+			traits = {
+				enduring_trait
+			}
+			legacy_id = -1
+			desc = tnkd_vetus_desc
+		}
+	}
+    tnkd_ardens = {
+		name = tnkd_ardens_name
+		portraits = {
+			army = {
+				large = GFX_Portrait_tnkd_ardens
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 4
+	        defense_skill = 4
+	        planning_skill = 4
+	        logistics_skill = 4
+			traits = {
+				enduring_trait
+			}
+			legacy_id = -1
+			desc = tnkd_ardens_desc
+		}
+	}
+    tnkd_perpetuus = {
+		name = tnkd_perpetuus_name
+		portraits = {
+			army = {
+				large = GFX_Portrait_tnkd_perpetuus
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 4
+	        defense_skill = 4
+	        planning_skill = 4
+	        logistics_skill = 4
+			traits = {
+				enduring_trait
+			}
+			legacy_id = -1
+			desc = tnkd_perpetuus_desc
+		}
+	}
+}

@@ -1,0 +1,18 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_Portrait_tnkd_oblitus"
+		texturefile = "gfx/leaders/tnkd_artsy.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_tnkd_vitus"
+		texturefile = "gfx/leaders/tnkd_smokey.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_tnkd_ardens"
+		texturefile = "gfx/leaders/tnkd_firey.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_tnkd_perpetuus"
+		texturefile = "gfx/leaders/tnkd_lanky.dds"
+	}
+}

@@ -1,0 +1,28 @@
+tnkd_decohesion = {
+	allowed = { tag = TNK }
+	icon = GFX_decision_category_hea_conversion
+	priority = {
+		base = 10
+	}
+}
+tnkd_clean_slate = {
+	allowed = { tag = TNK }
+	icon = GFX_decision_category_hea_conversion
+	priority = {
+		base = 11
+	}
+}
+tnkd_dna_shattering = {
+	allowed = { tag = TNK }
+	icon = GFX_decision_category_hea_conversion
+	priority = {
+		base = 12
+	}
+}
+tnkd_gev_category = {
+	allowed = { tag = TNK }
+	icon = GFX_decision_category_hea_conversion
+	priority = {
+		base = 13
+	}
+}

@@ -1,3 +1,0 @@
-ALI = "countries/ALI - Aliens.txt"
-MTW = "countries/MTW - MT Wastes.txt"
-DWM = "countries/DWM - Dwemer.txt"
