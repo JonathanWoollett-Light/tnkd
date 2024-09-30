@@ -125,6 +125,9 @@ focus_tree = {
 			set_temp_variable = { science_cost = 10000 }
 			science_cost_scripted_trigger = yes
 		}
+		mutually_exclusive = {
+			focus = tnkd_working_with_robco
+		}
 		bypass = {
 			VEG = {
 				all_core_land_owned_by_prev_sphere = yes
@@ -1775,8 +1778,37 @@ focus_tree = {
 		}
 	}
 
-	# Think Tank Defragmented
-	# ------------------------------------------------------------
+	focus = {
+		id = tnkd_working_with_robco
+		icon = GFX_goal_VEG_Architect_of_Destiny
+		cost = 20
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = tnk_0
+		}
+
+		relative_position_id = tnk_0
+		will_lead_to_war_with = VEG
+		available = {
+			VEG = {
+				controls_state = 211
+				is_house_leader = yes
+			}
+			ai_has_no_other_wars_or_wargoals = yes
+		}
+		mutually_exclusive = {
+			focus = tnk_0_bitterness_against_robco
+		}
+		bypass = {
+			VEG = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		completion_reward = {
+			VEG = { country_event = nf_tnk.tnkd_working_with_robco }
+		}
+	}
 
 	focus = {
 		id = tnkd_next_steps
@@ -1822,7 +1854,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 30
 		y = 7
-		x = 11
+		x = 7
 		relative_position_id = tnk_personality_restoration
 		available = {
 			has_completed_focus = tnk_personality_restoration
@@ -1852,7 +1884,7 @@ focus_tree = {
 		id = tnkd_larping_luddites
 		icon = GFX_goal_tnkd_larping_luddites
 		cost = 30
-		x = -4
+		x = -2
 		relative_position_id = tnkd_defensive_infrastructure
 		available = {
 			has_completed_focus = tnk_personality_restoration
@@ -1941,7 +1973,7 @@ focus_tree = {
 		id = tnkd_ncr_defence
 		icon = GFX_goal_generic_focus_ncr_raids
 		cost = 30
-		x = 4
+		x = 2
 		relative_position_id = tnkd_defensive_infrastructure
 		available = {
 			has_completed_focus = tnk_personality_restoration
@@ -2107,8 +2139,8 @@ focus_tree = {
 			}
 			hidden_effect = {
 				# Removes decohesion
-                remove_mission = tnkd_decohesion_decision
-            }
+				remove_mission = tnkd_decohesion_decision
+			}
 			country_event = nf_tnk.35
 			custom_effect_tooltip = tnkd_cohesion_tt
 		}
@@ -2796,7 +2828,7 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		cost = 30
 		y = 7
-		x = -13
+		x = -9
 		
 		available = {
 			has_completed_focus = tnk_0
@@ -2852,7 +2884,7 @@ focus_tree = {
 		icon = GFX_goal_pal_access_the_terminals
 		cost = 30
 		y = 1
-		x = -5
+		x = -2
 		available = {
 			has_completed_focus = tnkd_perfection_sync
 		}
@@ -2873,7 +2905,7 @@ focus_tree = {
 		icon = GFX_goal_BDT_geck_corrupted
 		cost = 30
 		y = 1
-		x = 4
+		x = 2
 		relative_position_id = tnkd_balanced_science
 		prerequisite = {
 			focus = tnkd_balanced_science
@@ -3107,7 +3139,7 @@ focus_tree = {
 		icon = GFX_goal_tnkd_advanced_robots
 		cost = 30
 		y = 1
-		x = -1
+		x = 0
 		relative_position_id = tnkd_tech_ascendance
 		prerequisite = {
 			focus = tnkd_tech_ascendance
@@ -3132,7 +3164,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_to_variable = { tnk_ingenuity_buff_var = 0.1 }
-            subtract_from_variable = { tnk_ingenuity_cost_var = -0.1 }
+			subtract_from_variable = { tnk_ingenuity_cost_var = -0.1 }
 		}
 	}
 
@@ -3153,10 +3185,10 @@ focus_tree = {
 			country_event = nf_tnk.34
 		}
 	}
-}
+	}
 
-# Lunar legion
-focus_tree = {
+	# Lunar legion
+	focus_tree = {
 	id = tnkd_lul_nf
 	country = {
 		factor = 0
@@ -3168,93 +3200,35 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = tnkd_lul_1
-		icon = GFX_goal_tnkd_lul_service_in_undeath
-		cost = 7
+		id = lul_1
+		icon = GFX_goal_lul_service_in_undeath
+		cost = 60
 		x = 15
 		y = 0
 
 		completion_reward = {
-			IF = {
-				limit = {
-					date < 2278.01.01
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 2
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 2000
-				}
-				add_manpower = 2000
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
 			}
-			ELSE_IF = {
-				limit = {
-					date < 2280.01.01
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 4
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 4000
-				}
-				add_manpower = 4000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
 			}
-			ELSE_IF = {
-				limit = {
-					date < 2282.01.01
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 8
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 8000
-				}
-				add_manpower = 8000
-			}
-			ELSE_IF = {
-				limit = {
-					date < 2284.01.01
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 16
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 16000
-				}
-				add_manpower = 16000
-			}
-			ELSE = {
-				add_offsite_building = {
-					type = arms_factory
-					level = 32
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 32000
-				}
-				add_manpower = 32000
-			}
+			add_manpower = 2000
 		}
 	}
 
 	focus = {
-		id = tnkd_lul_carthage
-		icon = GFX_goal_tnkd_lul_hanged_man
-		cost = 30
+		id = lul_carthage
+		icon = GFX_goal_lul_hanged_man
+		cost = 60
 		x = -6
 		y = 1
 		prerequisite = {
-			focus = tnkd_lul_1
+			focus = lul_1
 		}
-		relative_position_id = tnkd_lul_1
+		relative_position_id = lul_1
 
 		available = {
 			has_war = no
@@ -3270,15 +3244,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = tnkd_conversion
-		icon = GFX_goal_tnkd_conversion
-		cost = 30
+		id = lul_conversion
+		icon = GFX_goal_lul_conversion
+		cost = 60
 		x = -3
 		y = 1
 		prerequisite = {
-			focus = tnkd_lul_1
+			focus = lul_1
 		}
-		relative_position_id = tnkd_lul_1
+		relative_position_id = lul_1
 
 		completion_reward = {
 			add_manpower = 8000
@@ -3286,15 +3260,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = tnkd_lul_hero_legends
+		id = lul_hero_legends
 		icon = GFX_goal_CES_women_marriage
-		cost = 30
+		cost = 60
 		x = -1
 		y = 1
 		prerequisite = {
-			focus = tnkd_conversion
+			focus = lul_conversion
 		}
-		relative_position_id = tnkd_conversion
+		relative_position_id = lul_conversion
 
 		completion_reward = {
 			army_experience = 30
@@ -3302,15 +3276,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = tnkd_lul_equipment
+		id = lul_equipment
 		icon = GFX_goal_roman_helmet
-		cost = 30
+		cost = 60
 		x = 1
 		y = 1
 		prerequisite = {
-			focus = tnkd_conversion
+			focus = lul_conversion
 		}
-		relative_position_id = tnkd_conversion
+		relative_position_id = lul_conversion
 
 		completion_reward = {
 			add_equipment_to_stockpile = {
@@ -3321,18 +3295,18 @@ focus_tree = {
 	}
 
 	focus = {
-		id = tnkd_lul_stadium_of_the_dead
+		id = lul_stadium_of_the_dead
 		icon = GFX_goal_CES_colosseum
-		cost = 30
+		cost = 60
 		x = 0
 		y = 1
 		available = {
 			controls_state = 438
 		}
 		prerequisite = {
-			focus = tnkd_lul_1
+			focus = lul_1
 		}
-		relative_position_id = tnkd_lul_1
+		relative_position_id = lul_1
 
 		completion_reward = {
 			438 = {
@@ -3346,15 +3320,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = tnkd_lul_cult_of_luna
-		icon = GFX_goal_tnkd_lul_luna
-		cost = 30
+		id = lul_cult_of_luna
+		icon = GFX_goal_lul_luna
+		cost = 60
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = tnkd_lul_stadium_of_the_dead
+			focus = lul_stadium_of_the_dead
 		}
-		relative_position_id = tnkd_lul_stadium_of_the_dead
+		relative_position_id = lul_stadium_of_the_dead
 
 		completion_reward = {
 			add_political_power = 300
@@ -3362,21 +3336,21 @@ focus_tree = {
 	}
 
 	focus = {
-		id = tnkd_lul_spqr
+		id = lul_spqr
 		icon = GFX_goal_CES_roman_eagle
-		cost = 30
+		cost = 60
 		x = 0
 		y = 3
 		prerequisite = {
-			focus = tnkd_lul_equipment
+			focus = lul_equipment
 		}
 		prerequisite = {
-			focus = tnkd_lul_cult_of_luna
+			focus = lul_cult_of_luna
 		}
 		prerequisite = {
-			focus = tnkd_lul_lunar_wealth
+			focus = lul_lunar_wealth
 		}
-		relative_position_id = tnkd_lul_1
+		relative_position_id = lul_1
 
 		completion_reward = {
 			add_research_slot = 2
@@ -3411,15 +3385,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = tnkd_lul_trade
-		icon = GFX_goal_tnkd_lul_denarius
-		cost = 30
+		id = lul_trade
+		icon = GFX_goal_lul_denarius
+		cost = 60
 		x = 3
 		y = 1
 		prerequisite = {
-			focus = tnkd_lul_1
+			focus = lul_1
 		}
-		relative_position_id = tnkd_lul_1
+		relative_position_id = lul_1
 
 		completion_reward = {
 			add_offsite_building = {
@@ -3430,18 +3404,18 @@ focus_tree = {
 	}
 
 	focus = {
-		id = tnkd_lul_pontifex_maximus
+		id = lul_pontifex_maximus
 		icon = GFX_goal_roman_senate_focus
-		cost = 30
+		cost = 60
 		x = 1
 		y = 1
 		available = {
 			controls_state = 520
 		}
 		prerequisite = {
-			focus = tnkd_lul_trade
+			focus = lul_trade
 		}
-		relative_position_id = tnkd_lul_trade
+		relative_position_id = lul_trade
 
 		completion_reward = {
 			add_offsite_building = {
@@ -3455,15 +3429,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = tnkd_lul_lunar_wealth
+		id = lul_lunar_wealth
 		icon = GFX_generic_gold_bars
-		cost = 30
+		cost = 60
 		x = -1
 		y = 1
 		prerequisite = {
-			focus = tnkd_lul_trade
+			focus = lul_trade
 		}
-		relative_position_id = tnkd_lul_trade
+		relative_position_id = lul_trade
 
 		completion_reward = {
 			set_temp_variable = {
@@ -3474,9 +3448,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = tnkd_lul_hellenics
-		icon = GFX_goal_tnkd_lul_undead_legion
-		cost = 30
+		id = lul_hellenics
+		icon = GFX_goal_lul_undead_legion
+		cost = 60
 		x = 6
 		y = 1
 		available = {
@@ -3486,9 +3460,9 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = tnkd_lul_1
+			focus = lul_1
 		}
-		relative_position_id = tnkd_lul_1
+		relative_position_id = lul_1
 
 		completion_reward = {
 			424 = {

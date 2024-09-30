@@ -1,4 +1,5 @@
 ﻿l_english:
+
   nf_tnk.21.a:0 "We must consolidate our power."
   nf_tnk.21.b:0 "We must protect our borders."
 
@@ -43,12 +44,12 @@
   nf_tnk.36.a:0 "A thoughtless wasteland"
 
   nf_tnk.38.t:0 "The Mojave Falls Silent"
-  nf_tnk.38.d:0 "The robots have gone, the lobotomites have vanished, silence has set upon the normally war torn Mojave.\nWhat are those eggheads at The Think Tank up to?"
-  nf_tnk.38.a:0 "I'm sure it'll be fine."
+  nf_tnk.38.d:0 "The robots have gone, the lobotomites have vanished, silence has set upon the war torn Mojave.\nWhat are those eggheads at The Think Tank up to?"
+  nf_tnk.38.a:0 "I'm sure it will be fine."
 
   nf_tnk.39.t:0 "G.E.V. Infection"
-  nf_tnk.39.d:0 "We do not know what this is, but this thing... we see it in our fields, our water... we see it glimmering in the air.\nOur fields grow greener, our water runs purer and the numbers on our gaiger counters seem after centuries to be decreasing."
-  nf_tnk.39.a:0 "We do not understand this..."
+  nf_tnk.39.d:0 "We do not know what this is, but this thing... we see it in our fields, our water... we see it glimmering in the air.\nOur fields grow greener, our water runs purer and the numbers on our gaiger counters seem, after centuries to be going down."
+  nf_tnk.39.a:0 "Surely there's a catch?"
 
   nf_tnk.40.d:0 "The §BG.E.C.K.§! (Garden of Eden Creation Kit) was a terraforming device created by the Future-Tec division of the Vault-Tec Corporation, to allow Vault dwellers to rehabilitate the post-nucler wasteland."\nUnfortunately since the boombs dropped not a soul left alive knows how to manufacture them, a rare forgotten relic from past.\nBut we do not forget, we must rediscover how to manufacture §BG.E.C.K.§!s to rebuild the world."
   nf_tnk.40.a:0 "We shall create Eden."

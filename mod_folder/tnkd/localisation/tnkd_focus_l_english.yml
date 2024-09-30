@@ -1,6 +1,14 @@
 ﻿l_english:
- # Ceasar defence
+ tnkd_working_with_robco:0 "Working with the Vegas"
+ tnkd_working_with_robco_desc:0 "We calculate a 15.678% probability of surviving alone.\nIf we form an alliance with Vegas we greatly raise these odds."
+ tnkd_working_with_robco_event_title:0 "An offer we can refuse"
+ tnkd_working_with_robco_event_desc:0 "The Think Tank seeks to form an alliance to defend the Mojave. This could be a profitable opportunity."
+
+ # defence
  # --------------------------------------------------------------
+ tnkd_defensive_infrastructure:0 "Defensive infrastructure"
+ tnkd_defensive_infrastructure_desc:0 "We live in the fulcrum of the new world, they will come.. and we must defend it."
+
 
  tnkd_next_steps:0 "Venturing Forward"
  tnkd_next_steps_desc:0 "§OW§ge §Gm§Ro§Mv§Pe §Rf§Oo§gr§Gw§Ra§Mr§Pd §Rt§Oo§gg§Ge§Rt§Mh§Pe§Rr§O."
@@ -11,9 +19,6 @@
 
  tnkd_caesar_deal:0 "Retreating from the lion"
  tnkd_caesar_deal_desc:0 "We do not need this territory, let us leave this patch of the wasteland to these fanatics."
-
- # NCR defence
- # --------------------------------------------------------------
 
  tnkd_ncr_defence:0 "An accord with the bear"
  tnkd_ncr_defence_desc:0 "They speak of democracy, they speak of change, yet they remain the same, the same as the rest of the wasteland, and the same as those who turned this world into the pile of ash it is today. If we do not act they will destroy us as their ancestors destroy this land. Perhaps in exchange for temporary peace we can offer our technological expertise."
