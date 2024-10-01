@@ -13,18 +13,18 @@
   nf_tnk.43.d:0 "As we pick through the wreckage we discover most of the technology is unsalvageable, but even with their scraps we are enlightened."
   nf_tnk.43.a:0 "We use this specimen to greately advanced our aeronautical prowess"
 
-  nf_tnk.21.a:0 "We must consolidate our power."
-  nf_tnk.21.b:0 "We must protect our borders."
+  nf_tnk.21.a:0 "We must consolidate our power"
+  nf_tnk.21.b:0 "We must protect our borders"
 
   nf_tnk.22.d:0 "I guess it was true all along"
   nf_tnk.22.a:0 "ALIENS?!?"
   nf_tnk.22.b:0 "ALIENS!?!"
   
-  nf_tnk.23.d:0 "Night gathers, and now my watch begins"
-  nf_tnk.23.a:0 "§GWe will be the guadian of this wasteland, and we shall build a paradise."
+  nf_tnk.23.d:0 "Night gathers, and now my watch begins.\nWe will be the guadian of this wasteland."
+  nf_tnk.23.a:0 "§GWe shall build a paradise."
 
-  nf_tnk.24.d:0 "We are dominator."
-  nf_tnk.24.a:0 "§MAnd we shall build a paradise."
+  nf_tnk.24.d:0 "We will clean the wasteland"
+  nf_tnk.24.a:0 "§MWe shall build a paradise"
 
   nf_tnk.26.a:0 "They shall burn"
 
@@ -35,34 +35,34 @@
 
   nf_tnk.30.t:0 "An Intriguing Offer"
   nf_tnk.30.d:0 "It would seem for our coperation the Think Tank is willing to offer us fully function G.E.C.K.s."
-  nf_tnk.30.a:0 "We can build a brighter future together."
-  nf_tnk.30.b:0 "We don't need their charity."
+  nf_tnk.30.a:0 "We can build a brighter future together"
+  nf_tnk.30.b:0 "We don't need their charity"
 
   nf_tnk.31.t:0 "An Incredible Gift"
   nf_tnk.31.d:0 "It seems their are certain benefits from working with these scientists."
-  nf_tnk.31.a:0 "We can build a brighter future together."
+  nf_tnk.31.a:0 "We can build a brighter future together"
 
   nf_tnk.32.d:0 "An entirely new paradigm of science appears, even to us, we can only stand in amazement."
-  nf_tnk.32.a:0 "And we shall grasp it with both hemispheres."
+  nf_tnk.32.a:0 "And we shall grasp it with both hemispheres"
 
   nf_tnk.33.t:0 "Decohesion"
   nf_tnk.33.d:0 "WHAT?!? Something went wrong, our consciousnesses are not properly bound, our minds loose cohesion by at each moment."
-  nf_tnk.33.a:0 "Well... this isn't going to end well."
+  nf_tnk.33.a:0 "Well... this isn't going to end well"
 
   nf_tnk.34.d:0 "I sit back and watch the sun rise on a grateful wasteland. BLAH BLAH ADD MORE POETIC SPEECH HERE."
   nf_tnk.34.a:0 "finally... peace..."
 
   nf_tnk.44.t:0 "An ingenious future"
-  nf_tnk.44.d:0 "testing"
-  nf_tnk.44.a:0 "testing"
+  nf_tnk.44.d:0 "With a united consciousness we can apply our genius to continuously improve our robotic executors."
+  nf_tnk.44.a:0 "It is only a matter of time"
 
   nf_tnk.38.t:0 "The Mojave Falls Silent"
   nf_tnk.38.d:0 "The robots have gone, the lobotomites have vanished, silence has set upon the war torn Mojave.\nWhat are those eggheads at The Think Tank up to?"
-  nf_tnk.38.a:0 "I'm sure it will be fine."
+  nf_tnk.38.a:0 "I'm sure it will be fine"
 
   nf_tnk.39.t:0 "G.E.V. Infection"
   nf_tnk.39.d:0 "We do not know what this is, but this thing... we see it in our fields, our water... we see it glimmering in the air.\nOur fields grow greener, our water runs cleaner and the numbers on our geiger counters seem, after centuries to be going down."
   nf_tnk.39.a:0 "Surely there's a catch?"
 
   nf_tnk.40.d:0 "The §BG.E.C.K.§! (Garden of Eden Creation Kit) was a terraforming device created by the Future-Tec division of the Vault-Tec Corporation to allow Vault dwellers to rehabilitate the post-nucler wasteland."\nUnfortunately since the boombs dropped not a soul left alive knows how to manufacture them, a rare forgotten relic from past.\nBut we do not forget, we must rediscover how to manufacture §BG.E.C.K.§!s to rebuild the world."
-  nf_tnk.40.a:0 "We shall create Eden."
+  nf_tnk.40.a:0 "We shall create Eden"

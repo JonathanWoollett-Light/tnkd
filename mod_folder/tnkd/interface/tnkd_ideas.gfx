@@ -37,6 +37,70 @@ spriteTypes = {
 	}
     spriteType = {
 		name = "GFX_idea_tnkd_attack_weak"
-		texturefile = "gfx/interface/ideas/tnkd_super_shield.dds"
+		texturefile = "gfx/interface/ideas/bdt_realm_of_bone.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_dna_shattering_idea"
+		texturefile = "gfx/interface/ideas/bdt_unity.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_convergance_idea"
+		texturefile = "gfx/interface/ideologies/unknown.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_aggressive_abductions_idea"
+		texturefile = "gfx/interface/ideas/unique/TNK/tnk_lobotomite_conscription.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_do_no_harm_idea"
+		texturefile = "gfx/interface/ideas/unique/TNK/tnk_lobotomite_conscription.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_domination_protocol"
+		texturefile = "gfx/interface/ideas/savage_idea.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_missiles"
+		texturefile = "gfx/interface/ideas/kha_overwhelming_firepower.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_burn_land"
+		texturefile = "gfx/interface/ideas/legacy_of_navarro.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_war_simulations"
+		texturefile = "gfx/interface/ideologies/unique/artificial_intelligence/ai_intellectuals.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_giant_slayer"
+		texturefile = "gfx/interface/goals/unique/KHA/kha_land_of_giants_no_more.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_preemption"
+		texturefile = "gfx/interface/ideas/generic_badass.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_threat_obliteration"
+		texturefile = "gfx/interface/ideas/generic_catastrophe.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_threat_classification"
+		texturefile = "gfx/interface/ideas/generic_eyebot.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_guardian"
+		texturefile = "gfx/interface/ideas/pantheon_dea.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_charging_laser"
+		texturefile = "gfx/interface/goals/tnkd_annihilation_beam.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_inconspicuous"
+		texturefile = "gfx/interface/ideas/tnkd_sneakyboi.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_tnkd_silence"
+		texturefile = "gfx/interface/ideas/itz_idea_icdeb.dds"
 	}
 }

@@ -12,16 +12,22 @@ tnkd_ingenuity = {
         fixed_random_seed = no
         is_good = yes
         selectable_mission = yes
-        days_mission_timeout = 30
+        days_mission_timeout = 20
         activation = {
             always = no
         }
         timeout_effect = {
-            hidden_effect = {
-                activate_mission = tnkd_ingenuity_decision
+            if = {
+                limit = {
+                    check_variable = { tnk_ingenuity_buff_var < 0.3 }
+                }
+                hidden_effect = {
+                    activate_mission = tnkd_ingenuity_decision
+                }
             }
+            
             add_to_variable = { tnk_ingenuity_buff_var = 0.01 }
-            subtract_from_variable = { tnk_ingenuity_cost_var = 0.01 }
+            add_to_variable = { tnk_ingenuity_cost_var = 0.04 }
             custom_effect_tooltip = tnkd_ingenuity_decision_tt
         }
     }
@@ -111,7 +117,7 @@ tnkd_dna_shattering = {
         }
         timeout_effect = {
             hidden_effect = {
-                activate_mission = tnkd_clean_slate_decision
+                activate_mission = tnkd_dna_shattering_decision
             }
             every_country = {
                 if = {

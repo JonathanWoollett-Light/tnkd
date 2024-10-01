@@ -1,9 +1,11 @@
 tnk_decohesion_dynamic_modifier = {
-	icon = GFX_decision_single_cap
+	icon = GFX_idea_nor_brain_cracked
 	stability_factor = tnk_decohesion_stability_var
     army_org_factor = tnk_decohesion_org_var
 }
 tnk_ingenuity_dynamic_modifier = {
-	icon = GFX_decision_single_cap
-	stability_factor = tnk_ingenuity_buff_var
+	icon = GFX_idea_general_atomics
+	modifier_army_sub_unit_support_robot_attack_factor = tnk_ingenuity_buff_var
+	modifier_army_sub_unit_combat_robot_attack_factor = tnk_ingenuity_buff_var
+	army_fuel_consumption_factor = tnk_ingenuity_cost_var
 }
