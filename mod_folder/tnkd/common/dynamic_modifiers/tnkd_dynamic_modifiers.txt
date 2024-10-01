@@ -5,24 +5,5 @@ tnk_decohesion_dynamic_modifier = {
 }
 tnk_ingenuity_dynamic_modifier = {
 	icon = GFX_decision_single_cap
-	equipment_bonus = {
-		combat_robot_equipment = {
-			hard_attack = tnk_ingenuity_buff__var
-			ap_attack = tnk_ingenuity_buff__var
-			soft_attack = tnk_ingenuity_buff__var
-			armor_value = tnk_ingenuity_buff__var
-			fuel_consumption = tnk_ingenuity_cost_var
-			build_cost_ic = tnk_ingenuity_buff__var
-			instant = yes
-		}
-		support_robot_equipment = {
-			hard_attack = tnk_ingenuity_buff__var
-			ap_attack = tnk_ingenuity_buff__var
-			soft_attack = tnk_ingenuity_buff__var
-			armor_value = tnk_ingenuity_buff__var
-			fuel_consumption = tnk_ingenuity_cost_var
-			build_cost_ic = tnk_ingenuity_buff__var
-			instant = yes
-		}
-	}
+	stability_factor = tnk_ingenuity_buff_var
 }

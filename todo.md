@@ -9,3 +9,11 @@ tnkd_defensive_infrastructure focus text is broken
 - There's nothing to spend PP on
 - Research buff is too strong, you basically finish the tech tree
 - Maybe add decision to remove research slots to increase network strenght 
+-------------------------------------
+- convergence idea icon is broken
+- guardian leader is broken (text, image, effect, everything)
+- decohesian idea icon is bad
+- ingeuinity mission doesn't really tell you what it does when it expires, should add "+0.01 ingenuinty" or something
+- would be nice to add formable with some the provinces on the east of the dam
+- do no harm idea image is broken
+- how does the carrot focus work when you have already allied NCR?

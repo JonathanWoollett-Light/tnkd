@@ -1,6 +1,9 @@
 ﻿l_english:
+ tnkd_humility:0 "Humility"
+ tnkd_humility_desc:0 "We ask others for help, what have we become..."
+
  tnkd_unexpected_arrival:0 "Unexpected Arrival"
- tnkd_unexpected_arrival_desc:0 "For now we are an anomaly, but soon we shall be understood."
+ tnkd_unexpected_arrival_desc:0 "For now we are an anomaly, but soon we shall be seen as a threat."
 
  tnkd_quirky_science:0 "Quirky science"
  tnkd_quirky_science_desc:0 "Industry? Hammers are boring, space is cool."
@@ -12,9 +15,13 @@
  tnkd_insane_science_desc:0 "Industry? Ethics? People? Reality? All NOTHING COMPARED TO SCIENCE, SCIENCE ABOVE ALL"
 
  tnkd_convergance_idea:0 "Convergance"
+ 
  tnkd_decohesion:0 "Decohesion"
  tnkd_decohesion_desc:0 "WHAT?!? Something went wrong, our consciousnesses are not properly bound, our minds loose cohesion by at each moment."
  tnk_decohesion_dynamic_modifier:0 "Decohesion"
+ 
+ tnkd_ingenuity:0 "Ingenuity"
+ tnkd_ingenuity_desc:0 "With out newfound focus we can continuously optimize our designs."
  tnk_ingenuity_dynamic_modifier:0 "Ingenuity"
 
  tnkd_unity_idea:0 "Perfect Synchronisation"
@@ -31,6 +38,9 @@
 
  # Mobius convergance
  # --------------------------------------------------------
+
+ tnkd_aggressive_abductions_idea:0 "MORE MEAT!!!"
+ tnkd_aggressive_abductions_idea_desc:0 "We shall shovel human lives into our machine of war like coal in an engine."
 
  tnkd_do_no_harm_idea:0 "Do No Harm"
  tnkd_do_no_harm_idea_desc:0 "Into whatsoever houses I enter, I will enter to help the sick, and I will abstain from all intentional wrong-doing and harm."

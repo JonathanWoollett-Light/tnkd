@@ -28,26 +28,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/tnkd_fractured_mind.dds"
 	}
     spriteType = {
-        name = "GFX_idea_tnkd_silence"
-        texturefile = "gfx/interface/goals/generic/Weapons/pistol_silenced.dds"
-    }
-    spriteType = {
-        name = "GFX_idea_tnkd_inconspicuous"
-        texturefile = "gfx/interface/goals/generic/Weapons/pistol_silenced.dds"
-    }
-    spriteType = {
-        name = "GFX_idea_tnkd_preemption"
-        texturefile = "gfx/interface/ideas/relieved_tensions.dds"
-    }
-    spriteType = {
-        name = "GFX_idea_tnkd_threat_classification"
-        texturefile = "gfx/interface/ideas/relieved_tensions.dds"
-    }
-    spriteType = {
-        name = "GFX_idea_tnkd_threat_obliteration"
-        texturefile = "gfx/interface/ideas/relieved_tensions.dds"
-    }
-    spriteType = {
 		name = "GFX_idea_tnkd_bulwark"
 		texturefile = "gfx/interface/ideas/tnkd_super_shield.dds"
 	}

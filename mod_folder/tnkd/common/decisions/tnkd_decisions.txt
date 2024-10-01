@@ -1,4 +1,4 @@
-tnkd_decohesion = {
+tnkd_ingenuity = {
     tnkd_ingenuity_decision = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
@@ -21,10 +21,13 @@ tnkd_decohesion = {
                 activate_mission = tnkd_ingenuity_decision
             }
             add_to_variable = { tnk_ingenuity_buff_var = 0.01 }
-            subtract_from_variable = { tnk_ingenuity_cost_var = -0.01 }
+            subtract_from_variable = { tnk_ingenuity_cost_var = 0.01 }
             custom_effect_tooltip = tnkd_ingenuity_decision_tt
         }
     }
+}
+
+tnkd_decohesion = {
     tnkd_decohesion_decision = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
@@ -46,12 +49,13 @@ tnkd_decohesion = {
             hidden_effect = {
                 activate_mission = tnkd_decohesion_decision
             }
-            subtract_from_variable = { tnk_decohesion_stability_var = 0.01 }
+            subtract_from_variable = { tnk_decohesion_stability_var = 0.02 }
             subtract_from_variable = { tnk_decohesion_org_var = 0.01 }
             custom_effect_tooltip = tnkd_decohesion_decision_tt
         }
     }
 }
+
 tnkd_clean_slate = {
     tnkd_clean_slate_decision = {
         icon = GFX_decision_generic_scorched_earth
@@ -86,6 +90,7 @@ tnkd_clean_slate = {
         }
     }
 }
+
 tnkd_dna_shattering = {
     tnkd_dna_shattering_decision = {
         icon = GFX_decision_generic_scorched_earth
@@ -109,7 +114,7 @@ tnkd_dna_shattering = {
                 activate_mission = tnkd_clean_slate_decision
             }
             every_country = {
-                IF = {
+                if = {
                     limit = {
                         has_war_with = TNK
                     }
@@ -119,6 +124,7 @@ tnkd_dna_shattering = {
         }
     }
 }
+
 tnkd_gev_category = {
     tnkd_gev_decision = {
         icon = GFX_decision_generic_scorched_earth
@@ -133,7 +139,7 @@ tnkd_gev_category = {
         fixed_random_seed = no
         is_good = no
         selectable_mission = yes
-        days_mission_timeout = 40
+        days_mission_timeout = 30
         activation = {
             always = no
         }
@@ -158,7 +164,9 @@ tnkd_gev_category = {
                         50 = {
                             country_event = nf_tnk.39
                         }
-                        50 = { }
+                        50 = {
+
+                        }
                     }
                 }
             }

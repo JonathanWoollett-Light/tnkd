@@ -1,3 +1,10 @@
+tnkd_ingenuity = {
+	allowed = { tag = TNK }
+	icon = GFX_decision_category_hea_conversion
+	priority = {
+		base = 9
+	}
+}
 tnkd_decohesion = {
 	allowed = { tag = TNK }
 	icon = GFX_decision_category_hea_conversion

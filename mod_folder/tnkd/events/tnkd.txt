@@ -1,59 +1,28 @@
 country_event = {
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.21" }
-	id = nf_tnk.tnkd_working_with_robco
-	title = tnkd_working_with_robco_event_title
-	desc = tnkd_working_with_robco_event_desc
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.60" }
+	id = nf_tnk.60
+	title = nf_tnk.60.t
+	desc = nf_tnk.60.d
 	picture = GFX_event_big_mt_event_weird_science
 
 	is_triggered_only = yes
 
 	option = {
-		name = nf_tnk.21.a
-		capital_scope = {
-			add_extra_state_shared_building_slots = 15
-			add_building_construction = {
-				type = bunker2
-				level = 2
-				instant_build = yes
-				province = {
-					all_provinces = yes
-				}
-			}
-			add_building_construction = {
-				type = anti_air_building
-				level = 5
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = arms_factory
-				level = 5
-				instant_build = yes
-			}
+		name = nf_tnk.60.a
+		ai_chance = {
+			base = 100
 		}
+		if = {
+			limit = {
+				TNK = { is_in_faction = no }
+			}
+			TNK = { create_faction = "Mojave Nexus" }
+		}
+		TNK = { add_to_faction = VEG }
 	}
 
 	option = {
-		name = nf_tnk.21.b
-        every_owned_state = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker2
-				level = 2
-				instant_build = yes
-				province = {
-					all_provinces = yes
-				}
-			}
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
+		name = nf_tnk.60.b
 	}
 }
 
@@ -222,7 +191,7 @@ country_event = {
 country_event = {
 	id = nf_tnk.26
 	title = tnkd_shoot_it_down
-	desc = tnkd_shoot_it_down_desc
+	desc = nf_tnk.26.d
 	picture = GFX_event_big_mt_event_weird_science
 
 	is_triggered_only = yes
@@ -315,11 +284,12 @@ country_event = {
 		name = nf_tnk.32.a
 	}
 }
+
 country_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.33" }
 	id = nf_tnk.33
-	title = tnkd_decohesion
-	desc = tnkd_decohesion_desc
+	title = nf_tnk.33.t
+	desc = nf_tnk.33.d
 	picture = GFX_event_big_mt_event_weird_science
 
 	is_triggered_only = yes
@@ -348,47 +318,7 @@ country_event = {
 		name = nf_tnk.34.a
 	}
 }
-country_event = {
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.35" }
-	id = nf_tnk.35
-	title = tnkd_cohesion
-	desc = nf_tnk.35.d
-	picture = GFX_event_big_mt_event_weird_science
 
-	is_triggered_only = yes
-
-	option = {
-		name = nf_tnk.35.a
-		country_event = nf_tnk.36
-		add_ideas = tnkd_fractured_mind
-	}
-}
-country_event = {
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.36" }
-	id = nf_tnk.36
-	title = nf_tnk.36.t
-	desc = nf_tnk.36.d
-	picture = GFX_event_big_mt_event_weird_science
-
-	is_triggered_only = yes
-
-	option = {
-		name = nf_tnk.36.a
-	}
-}
-country_event = {
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.37" }
-	id = nf_tnk.37
-	title = tnkd_serenity
-	desc = nf_tnk.37.d
-	picture = GFX_event_big_mt_event_weird_science
-
-	is_triggered_only = yes
-
-	option = {
-		name = nf_tnk.37.a
-	}
-}
 country_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.38" }
 	id = nf_tnk.38
@@ -472,19 +402,82 @@ country_event = {
 	}
 }
 
-# Dwemer Spawns
+# TODO Spawn dwemer
 # ----------------------------------------------------------------
 
 country_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.41" }
 	id = nf_tnk.41
 	title = tnkd_el_dorado
-	desc = tnkd_el_dorado_desc
+	desc = nf_tnk.41.d
 	picture = GFX_event_big_mt_event_weird_science
 
 	is_triggered_only = yes
 
 	option = {
 		name = nf_tnk.41.a
+		add_offsite_building = {
+			type = industrial_complex
+			level = 12
+		}
+	}
+}
+
+# TODO Spawn vikings
+# ----------------------------------------------------------------
+
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.42" }
+	id = nf_tnk.42
+	title = tnkd_valhalla
+	desc = nf_tnk.42.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.42.a
+		add_offsite_building = {
+			type = arms_factory
+			level = 12
+		}
+	}
+}
+
+# TODO Spawn aliens
+# ----------------------------------------------------------------
+
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.43" }
+	id = nf_tnk.43
+	title = tnkd_force_from_beyond
+	desc = nf_tnk.43.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.43.a
+		set_technology = { high_fighter_unlock_tech = 1 }
+	}
+}
+
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.44" }
+	id = nf_tnk.44
+	title = nf_tnk.44.t
+	desc = nf_tnk.44.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.44.a
+		add_dynamic_modifier = {
+			modifier = tnk_ingenuity_dynamic_modifier
+		}
+		activate_mission = tnkd_ingenuity_decision
+		set_variable = { tnk_ingenuity_buff_var = 0.01 }
+		set_variable = { tnk_ingenuity_cost_var = -0.01 }
 	}
 }

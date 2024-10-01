@@ -64,7 +64,7 @@ focus_tree = {
 	focus = {
 		id = tnk_0
 		icon = GFX_goal_tnk_lobotomite_tank_0
-		cost = 20
+		cost = 15
 		x = -20
 		y = 1
 		prerequisite = {
@@ -107,7 +107,7 @@ focus_tree = {
 	focus = {
 		id = tnk_0_bitterness_against_robco
 		icon = GFX_goal_VEG_Architect_of_Destiny
-		cost = 20
+		cost = 15
 		x = -2
 		y = 1
 		prerequisite = {
@@ -124,9 +124,6 @@ focus_tree = {
 			ai_has_no_other_wars_or_wargoals = yes
 			set_temp_variable = { science_cost = 10000 }
 			science_cost_scripted_trigger = yes
-		}
-		mutually_exclusive = {
-			focus = tnkd_working_with_robco
 		}
 		bypass = {
 			VEG = {
@@ -155,7 +152,7 @@ focus_tree = {
 	focus = {
 		id = tnk_0_bitterness_against_robco_smelt_down_houses_caps
 		icon = GFX_goal_bottlecap
-		cost = 20
+		cost = 15
 		x = -1
 		y = 1
 		prerequisite = {
@@ -184,7 +181,7 @@ focus_tree = {
 	focus = {
 		id = tnk_0_bitterness_against_robco_rework_scrap_the_securitrons
 		icon = GFX_goal_BOS_study_securitron_software
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		prerequisite = {
@@ -218,7 +215,7 @@ focus_tree = {
 	focus = {
 		id = tnk_0_bitterness_against_robco_the_unlucky_38
 		icon = GFX_goal_VEG_The_Lucky_38
-		cost = 20
+		cost = 15
 		x = 0
 		y = 2
 		prerequisite = {
@@ -251,7 +248,7 @@ focus_tree = {
 	focus = {
 		id = tnk_0_bitterness_against_national_electric
 		icon = GFX_goal_tnk_national_electric
-		cost = 20
+		cost = 15
 		x = 2
 		y = 1
 		prerequisite = {
@@ -273,7 +270,7 @@ focus_tree = {
 	focus = {
 		id = tnk_0_bitterness_against_national_electric_completely_rewrite_hologram_os
 		icon = GFX_goal_pal_electronic_plans
-		cost = 20
+		cost = 15
 		x = -1
 		y = 1
 		prerequisite = {
@@ -300,7 +297,7 @@ focus_tree = {
 	focus = {
 		id = tnk_0_bitterness_against_national_electric_rework_targeting_protocols
 		icon = GFX_goal_MOJ_what_remains
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		prerequisite = {
@@ -327,7 +324,7 @@ focus_tree = {
 	focus = {
 		id = tnk_0_bitterness_against_national_electric_system_wide_overhaul
 		icon = GFX_goal_MOJ_old_world_rumors
-		cost = 20
+		cost = 15
 		x = 0
 		y = 2
 		prerequisite = {
@@ -362,7 +359,7 @@ focus_tree = {
 	focus = {
 		id = tnk_a_lovely_melody
 		icon = GFX_goal_MOJ_begin_again
-		cost = 20
+		cost = 15
 		x = 2
 		y = 3
 		prerequisite = {
@@ -387,7 +384,7 @@ focus_tree = {
 	focus = {
 		id = tnk_8
 		icon = GFX_goal_tnk_lobotomite_tank_8
-		cost = 20
+		cost = 15
 		x = -12
 		y = 1
 		prerequisite = {
@@ -430,7 +427,7 @@ focus_tree = {
 	focus = {
 		id = tnk_8_looking_for_a_new_song
 		icon = GFX_goal_tnk_vera
-		cost = 20
+		cost = 15
 		x = -2
 		y = 1
 		prerequisite = {
@@ -452,7 +449,7 @@ focus_tree = {
 	focus = {
 		id = tnk_8_looking_for_a_new_song_remove_hologram_memory_limits
 		icon = GFX_goal_generic_vault_keycard_3
-		cost = 20
+		cost = 15
 		x = -1
 		y = 1
 		prerequisite = {
@@ -479,7 +476,7 @@ focus_tree = {
 	focus = {
 		id = tnk_8_looking_for_a_new_song_sierra_madre_emitter_upgrades
 		icon = GFX_goal_generic_circuit_adv
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		prerequisite = {
@@ -506,7 +503,7 @@ focus_tree = {
 	focus = {
 		id = tnk_8_looking_for_a_new_song_redirect_helios_power_grid
 		icon = GFX_goal_MOJ_energy_boom
-		cost = 20
+		cost = 15
 		x = 0
 		y = 2
 		prerequisite = {
@@ -545,7 +542,7 @@ focus_tree = {
 	focus = {
 		id = tnk_8_hanging_out_in_the_sink
 		icon = GFX_goal_generic_nuka
-		cost = 20
+		cost = 15
 		x = 2
 		y = 1
 		available = {
@@ -566,7 +563,7 @@ focus_tree = {
 	focus = {
 		id = tnk_8_hanging_out_in_the_sink_hide_dirty_magazines
 		icon = GFX_goal_tnk_book_chute
-		cost = 20
+		cost = 15
 		x = -1
 		y = 1
 		prerequisite = {
@@ -584,7 +581,7 @@ focus_tree = {
 	focus = {
 		id = tnk_8_hanging_out_in_the_sink_cook_some_toast
 		icon = GFX_goal_tnk_toaster
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		prerequisite = {
@@ -602,7 +599,7 @@ focus_tree = {
 	focus = {
 		id = tnk_8_hanging_out_in_the_sink_jamming_with_blind_diode_jefferson
 		icon = GFX_goal_tnk_blind_diode_jefferson
-		cost = 20
+		cost = 15
 		x = 0
 		y = 2
 		prerequisite = {
@@ -623,7 +620,7 @@ focus_tree = {
 	focus = {
 		id = tnk_8_hanging_out_in_the_sink_keeping_your_chasis_clean
 		icon = GFX_goal_tnk_sink
-		cost = 20
+		cost = 15
 		x = -2
 		y = 2
 		prerequisite = {
@@ -644,7 +641,7 @@ focus_tree = {
 	focus = {
 		id = tnk_8_hanging_out_in_the_sink_a_happy_little_friend
 		icon = GFX_goal_tnk_muggy
-		cost = 20
+		cost = 15
 		x = 2
 		y = 2
 		prerequisite = {
@@ -665,7 +662,7 @@ focus_tree = {
 	focus = {
 		id = tnk_the_gangs_all_here
 		icon = GFX_goal_tnk_sink_celebration
-		cost = 20
+		cost = 15
 		x = 2
 		y = 3
 		prerequisite = {
@@ -693,7 +690,7 @@ focus_tree = {
 	focus = {
 		id = tnk_mobius
 		icon = GFX_goal_tnk_lobotomite_tank_mobius
-		cost = 20
+		cost = 15
 		x = -4
 		y = 1
 		prerequisite = {
@@ -702,7 +699,6 @@ focus_tree = {
 
 		relative_position_id = tnk_personality_restoration
 		completion_reward = {
-			activate_advisor = TNK_mobius_research_advisor
 			if = {
 				limit = {
 					has_idea = tnkd_wild_science
@@ -736,7 +732,7 @@ focus_tree = {
 	focus = {
 		id = tnk_mobius_repairing_the_sink
 		icon = GFX_goal_tnk_sink_central_intelligence
-		cost = 20
+		cost = 15
 		x = -2
 		y = 1
 		prerequisite = {
@@ -754,7 +750,7 @@ focus_tree = {
 	focus = {
 		id = tnk_mobius_repairing_the_sink_biological_research_station
 		icon = GFX_goal_tnk_biological_research_station
-		cost = 20
+		cost = 15
 		x = -1
 		y = 1
 		prerequisite = {
@@ -772,7 +768,7 @@ focus_tree = {
 	focus = {
 		id = tnk_mobius_repairing_the_sink_autodoc
 		icon = GFX_goal_tnk_autodoc
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		prerequisite = {
@@ -790,7 +786,7 @@ focus_tree = {
 	focus = {
 		id = tnk_mobius_repairing_the_sink_light_switch_1
 		icon = GFX_goal_tnk_light_switch_01
-		cost = 20
+		cost = 15
 		x = 0
 		y = 2
 		mutually_exclusive = {
@@ -814,7 +810,7 @@ focus_tree = {
 	focus = {
 		id = tnk_mobius_repairing_the_sink_light_switch_2
 		icon = GFX_goal_tnk_light_switch_02
-		cost = 20
+		cost = 15
 		x = 2
 		y = 2
 		mutually_exclusive = {
@@ -838,7 +834,7 @@ focus_tree = {
 	focus = {
 		id = tnk_mobius_mentats_break
 		icon = GFX_goal_generic_mentats
-		cost = 20
+		cost = 15
 		x = 0
 		y = 1
 		prerequisite = {
@@ -862,7 +858,7 @@ focus_tree = {
 	focus = {
 		id = tnk_mobius_roboscorpion_research
 		icon = GFX_goal_tnk_roboscorpion_research
-		cost = 20
+		cost = 15
 		x = 2
 		y = 1
 		available = {
@@ -889,7 +885,7 @@ focus_tree = {
 	focus = {
 		id = tnk_mobius_roboscorpion_research_chasis
 		icon = GFX_goal_big_mt_saturnite_research_facility
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		available = {
@@ -914,7 +910,7 @@ focus_tree = {
 	focus = {
 		id = tnk_mobius_roboscorpion_research_power
 		icon = GFX_goal_square_vault_generator
-		cost = 20
+		cost = 15
 		x = -1
 		y = 1
 		available = {
@@ -939,7 +935,7 @@ focus_tree = {
 	focus = {
 		id = tnk_mobius_roboscorpion_research_mark_2_roboscorpions
 		icon = GFX_goal_tnk_roboscorpion_mk2
-		cost = 20
+		cost = 15
 		x = 0
 		y = 2
 		available = {
@@ -961,7 +957,7 @@ focus_tree = {
 	focus = {
 		id = tnk_mobius_roboscorpion_research_improve_the_x42_giant_roboscorpion
 		icon = GFX_goal_tnk_roboscorpion_research_focus
-		cost = 20
+		cost = 15
 		x = 1
 		y = 3
 		available = {
@@ -989,7 +985,7 @@ focus_tree = {
 	focus = {
 		id = tnk_klein
 		icon = GFX_goal_tnk_lobotomite_tank_klein
-		cost = 20
+		cost = 15
 		x = 4
 		y = 1
 		prerequisite = {
@@ -1032,7 +1028,7 @@ focus_tree = {
 	focus = {
 		id = tnk_klein_mojave_experiments
 		icon = GFX_goal_usa_science_reform
-		cost = 20
+		cost = 15
 		x = 2
 		y = 1
 		prerequisite = {
@@ -1052,7 +1048,7 @@ focus_tree = {
 	focus = {
 		id = tnk_klein_mojave_experiments_improve_black_mountain_frequency
 		icon = GFX_goal_moj_uto
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		available = {
@@ -1084,7 +1080,7 @@ focus_tree = {
 	focus = {
 		id = tnk_klein_mojave_experiments_set_up_the_new_x13_experiment
 		icon = GFX_goal_big_mt_x13
-		cost = 20
+		cost = 15
 		x = 2
 		y = 2
 		available = {
@@ -1110,7 +1106,7 @@ focus_tree = {
 	focus = {
 		id = tnk_klein_mojave_experiments_develop_hexcrete_alloy
 		icon = GFX_goal_generic_the_box
-		cost = 20
+		cost = 15
 		x = -1
 		y = 1
 		available = {
@@ -1142,11 +1138,13 @@ focus_tree = {
 	focus = {
 		id = tnk_klein_mojave_experiments_recall_the_z35_satellite
 		icon = GFX_goal_generic_satellite
-		cost = 20
+		cost = 15
 		x = 0
 		y = 2
 		available = {
-			owns_state = 313
+			313 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		prerequisite = {
 			focus = tnk_klein_mojave_experiments_develop_hexcrete_alloy
@@ -1174,7 +1172,7 @@ focus_tree = {
 	focus = {
 		id = tnk_klein_lobotomite_research
 		icon = GFX_goal_tnk_lobotomite_research
-		cost = 20
+		cost = 15
 		x = -2
 		y = 1
 		prerequisite = {
@@ -1200,7 +1198,7 @@ focus_tree = {
 	focus = {
 		id = tnk_klein_lobotomite_research_numbers
 		icon = GFX_goal_tnk_lobotomite_numbers
-		cost = 20
+		cost = 15
 		x = -1
 		y = 1
 		prerequisite = {
@@ -1224,7 +1222,7 @@ focus_tree = {
 	focus = {
 		id = tnk_klein_lobotomite_research_strength
 		icon = GFX_goal_tnk_lobotomite_strength
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		prerequisite = {
@@ -1249,7 +1247,7 @@ focus_tree = {
 	focus = {
 		id = tnk_klein_lobotomite_gear_improvements
 		icon = GFX_goal_tnk_lobotomite_mask
-		cost = 20
+		cost = 15
 		x = 0
 		y = 2
 		prerequisite = {
@@ -1271,7 +1269,7 @@ focus_tree = {
 	focus = {
 		id = tnk_klein_lobotomite_research_focus
 		icon = GFX_goal_tnk_lobotomite_research_focus
-		cost = 20
+		cost = 15
 		x = -1
 		y = 3
 		mutually_exclusive = {
@@ -1296,7 +1294,7 @@ focus_tree = {
 	focus = {
 		id = tnk_dala
 		icon = GFX_goal_tnk_lobotomite_tank_dala
-		cost = 20
+		cost = 15
 		x = 12
 		y = 1
 		prerequisite = {
@@ -1339,7 +1337,7 @@ focus_tree = {
 	focus = {
 		id = tnk_dala_dalas_breathalyzer_hotline
 		icon = GFX_goal_tnk_hotline
-		cost = 20
+		cost = 15
 		x = 2
 		y = 1
 		available = {
@@ -1374,7 +1372,7 @@ focus_tree = {
 	focus = {
 		id = tnk_dala_watch_them_move_watch_them_live
 		icon = GFX_goal_tnk_surveillance
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		prerequisite = {
@@ -1395,7 +1393,7 @@ focus_tree = {
 	focus = {
 		id = tnk_dala_my_little_teddies
 		icon = GFX_goal_generic_teddy
-		cost = 20
+		cost = 15
 		x = -2
 		y = 1
 		prerequisite = {
@@ -1413,7 +1411,7 @@ focus_tree = {
 	focus = {
 		id = tnk_dala_teddy_bear_research
 		icon = GFX_goal_tnk_biological_research
-		cost = 20
+		cost = 15
 		x = -3
 		y = 2
 		prerequisite = {
@@ -1431,7 +1429,7 @@ focus_tree = {
 	focus = {
 		id = tnk_dala_watching_the_bull_dance
 		icon = GFX_goal_tnk_legion
-		cost = 20
+		cost = 15
 		x = 0
 		y = 1
 		prerequisite = {
@@ -1456,7 +1454,7 @@ focus_tree = {
 	focus = {
 		id = tnk_dala_watching_the_bull_dance_helping_the_still_teddies_dance
 		icon = GFX_goal_big_mt_x17
-		cost = 20
+		cost = 15
 		x = -1
 		y = 1
 		prerequisite = {
@@ -1481,7 +1479,7 @@ focus_tree = {
 	focus = {
 		id = tnk_dala_watching_the_bull_dance_learning_the_rythem_of_the_dance
 		icon = GFX_goal_tnk_legion_experiments
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		prerequisite = {
@@ -1506,7 +1504,7 @@ focus_tree = {
 	focus = {
 		id = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
 		icon = GFX_goal_tnk_luna
-		cost = 20
+		cost = 15
 		x = 0
 		y = 2
 		available = {
@@ -1531,7 +1529,7 @@ focus_tree = {
 	focus = {
 		id = tnk_borous
 		icon = GFX_goal_tnk_lobotomite_tank_borous
-		cost = 20
+		cost = 15
 		x = 20
 		y = 1
 		prerequisite = {
@@ -1574,7 +1572,7 @@ focus_tree = {
 	focus = {
 		id = tnk_my_best_friend_gabe
 		icon = GFX_goal_generic_focus_magazine_lal_an_experience_to_remember
-		cost = 20
+		cost = 15
 		x = -4
 		y = 1
 		prerequisite = {
@@ -1596,7 +1594,7 @@ focus_tree = {
 	focus = {
 		id = tnk_my_arch_nemesis_richie_marcus
 		icon = GFX_goal_tnk_richie_marcus
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		prerequisite = {
@@ -1619,7 +1617,7 @@ focus_tree = {
 	focus = {
 		id = tnk_my_gal_pal_betsy_bright
 		icon = GFX_goal_tnk_betsy_bright
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		prerequisite = {
@@ -1642,7 +1640,7 @@ focus_tree = {
 	focus = {
 		id = tnk_restart_the_x8_program
 		icon = GFX_goal_big_mt_x8
-		cost = 20
+		cost = 15
 		x = -1
 		y = 1
 		available = {
@@ -1664,7 +1662,7 @@ focus_tree = {
 	focus = {
 		id = tnk_expanding_the_radar_fence
 		icon = GFX_goal_energy
-		cost = 20
+		cost = 15
 		x = 0
 		y = 2
 		available = {
@@ -1683,14 +1681,13 @@ focus_tree = {
 			set_temp_variable = { science_change = -50000 }
 			tnk_change_science = yes
 			add_ideas = tnk_expanded_radar_fence
-			custom_effect_tooltip = tnk_expanded_radar_fence_desc
 		}
 	}
 
 	focus = {
 		id = tnk_chasing_lost_students
 		icon = GFX_goal_NCN_The_Sorrows
-		cost = 20
+		cost = 15
 		x = -1
 		y = 1
 		available = {
@@ -1724,7 +1721,7 @@ focus_tree = {
 	focus = {
 		id = tnk_study_stanislaus_brauns_research
 		icon = GFX_goal_TTM_Simulation_Training
-		cost = 20
+		cost = 15
 		x = 1
 		y = 1
 		available = {
@@ -1746,7 +1743,7 @@ focus_tree = {
 	focus = {
 		id = tnk_establish_the_tranquility_lane_schooling_board
 		icon = GFX_goal_generic_pioneer_scouts
-		cost = 20
+		cost = 15
 		x = 0
 		y = 2
 		available = {
@@ -1780,33 +1777,25 @@ focus_tree = {
 
 	focus = {
 		id = tnkd_working_with_robco
-		icon = GFX_goal_VEG_Architect_of_Destiny
-		cost = 20
+		icon = GFX_goal_VEG_Ring-a-Ding-Ding
+		cost = 15
 		x = 0
 		y = 1
+		available = {
+			country_exists = VEG
+		}
 		prerequisite = {
 			focus = tnk_0
 		}
-
 		relative_position_id = tnk_0
-		will_lead_to_war_with = VEG
-		available = {
-			VEG = {
-				controls_state = 211
-				is_house_leader = yes
-			}
-			ai_has_no_other_wars_or_wargoals = yes
-		}
-		mutually_exclusive = {
-			focus = tnk_0_bitterness_against_robco
-		}
-		bypass = {
-			VEG = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-		}
 		completion_reward = {
-			VEG = { country_event = nf_tnk.tnkd_working_with_robco }
+			if = {
+				limit = {
+					TNK = { is_in_faction = no }
+				}
+				add_ideas = tnkd_humility
+			}
+			VEG = { country_event = nf_tnk.60 }
 		}
 	}
 
@@ -1816,24 +1805,18 @@ focus_tree = {
 		cost = 30
 		y = 7
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = tnkd_next_steps_tt
-				hidden_trigger = {
-					has_completed_focus = tnk_0_bitterness_against_robco_the_unlucky_38
-					has_completed_focus = tnk_a_lovely_melody
-					has_completed_focus = tnk_the_gangs_all_here
-					OR = {
-						has_completed_focus = tnk_mobius_roboscorpion_research_improve_the_x42_giant_roboscorpion
-						has_completed_focus = tnk_klein_lobotomite_research_focus
-					}
-					has_completed_focus = tnk_klein_mojave_experiments_recall_the_z35_satellite
-					has_completed_focus = tnk_klein_mojave_experiments_set_up_the_new_x13_experiment
-					has_completed_focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
-					has_completed_focus = tnk_expanding_the_radar_fence
-					has_completed_focus = tnk_establish_the_tranquility_lane_schooling_board
-					has_completed_focus = tnk_my_gal_pal_betsy_bright
-				}
+			has_completed_focus = tnk_a_lovely_melody
+			has_completed_focus = tnk_the_gangs_all_here
+			OR = {
+				has_completed_focus = tnk_mobius_roboscorpion_research_improve_the_x42_giant_roboscorpion
+				has_completed_focus = tnk_klein_lobotomite_research_focus
 			}
+			has_completed_focus = tnk_klein_mojave_experiments_recall_the_z35_satellite
+			has_completed_focus = tnk_klein_mojave_experiments_set_up_the_new_x13_experiment
+			has_completed_focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
+			has_completed_focus = tnk_expanding_the_radar_fence
+			has_completed_focus = tnk_establish_the_tranquility_lane_schooling_board
+			has_completed_focus = tnk_my_gal_pal_betsy_bright
 		}
 		relative_position_id = tnk_personality_restoration
 		completion_reward = {
@@ -1883,15 +1866,13 @@ focus_tree = {
 	focus {
 		id = tnkd_larping_luddites
 		icon = GFX_goal_tnkd_larping_luddites
-		cost = 30
+		cost = 15
 		x = -2
 		relative_position_id = tnkd_defensive_infrastructure
 		available = {
 			has_completed_focus = tnk_personality_restoration
-			is_neighbor_of = CES
 		}
 		completion_reward = {
-
 		}
 	}
 	focus {
@@ -1903,9 +1884,6 @@ focus_tree = {
 		relative_position_id = tnkd_larping_luddites
 		prerequisite = {
 			focus = tnkd_larping_luddites
-		}
-		mutually_exclusive = {
-			focus = tnkd_caesar_deal
 		}
 		completion_reward = {
 			every_owned_state = {
@@ -1944,7 +1922,7 @@ focus_tree = {
 	focus {
 		id = tnkd_caesar_deal
 		icon = GFX_goal_tnkd_caesar_deal
-		cost = 30
+		cost = 15
 		y=1
 		x=1
 		relative_position_id = tnkd_larping_luddites
@@ -1954,11 +1932,7 @@ focus_tree = {
 		available = {
 			owns_state = 252
 			owns_state = 613
-			has_completed_focus = tnk_0_bitterness_against_robco_the_unlucky_38
 			has_completed_focus = tnk_klein_mojave_experiments_recall_the_z35_satellite
-		}
-		mutually_exclusive = {
-			focus = tnkd_ces_wall
 		}
 		completion_reward = {
 			country_event = nf_tnk.25
@@ -1972,12 +1946,11 @@ focus_tree = {
 	focus {
 		id = tnkd_ncr_defence
 		icon = GFX_goal_generic_focus_ncr_raids
-		cost = 30
+		cost = 15
 		x = 2
 		relative_position_id = tnkd_defensive_infrastructure
 		available = {
 			has_completed_focus = tnk_personality_restoration
-			is_neighbor_of = NCR
 		}
 		completion_reward = {
 		}
@@ -1992,9 +1965,6 @@ focus_tree = {
 		relative_position_id = tnkd_ncr_defence
 		prerequisite = {
 			focus = tnkd_ncr_defence
-		}
-		mutually_exclusive = {
-			focus = tnkd_ncr_deal
 		}
 		completion_reward = {
 			every_owned_state = {
@@ -2034,7 +2004,7 @@ focus_tree = {
 	focus {
 		id = tnkd_ncr_deal
 		icon = GFX_goal_VEG_Old_Authority
-		cost = 30
+		cost = 15
 		y=1
 		x=-1
 		relative_position_id = tnkd_ncr_defence
@@ -2045,11 +2015,7 @@ focus_tree = {
 			owns_state = 252
 			owns_state = 613
 			owns_state = 211
-			has_completed_focus = tnk_0_bitterness_against_robco_the_unlucky_38
 			has_completed_focus = tnk_klein_mojave_experiments_recall_the_z35_satellite
-		}
-		mutually_exclusive = {
-			focus = tnkd_ncr_wall
 		}
 		completion_reward = {
 			country_event = nf_tnk.29
@@ -2071,7 +2037,7 @@ focus_tree = {
 			focus = tnkd_next_steps
 		}
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.1
 		}
 	}
 	focus {
@@ -2141,39 +2107,20 @@ focus_tree = {
 				# Removes decohesion
 				remove_mission = tnkd_decohesion_decision
 			}
-			country_event = nf_tnk.35
-			custom_effect_tooltip = tnkd_cohesion_tt
+			add_ideas = tnkd_fractured_mind
 		}
 	}
 	focus {
 		id = tnkd_serenity
 		icon = GFX_goal_tnkd_serenity
-		cost = 120
+		cost = 90
 		y=1
 		relative_position_id = tnkd_cohesion
 		prerequisite = {
 			focus = tnkd_cohesion
 		}
 		completion_reward = {
-			country_event = nf_tnk.37
-			if = {
-				limit = {
-					has_idea = tnkd_fractured_mind
-				}
-				remove_ideas = tnkd_fractured_mind
-			}			
-		}
-	}
-	focus {
-		id = tnkd_assuming_control
-		icon = GFX_goal_generic_slave_collars
-		cost = 30
-		y=2
-		relative_position_id = tnkd_serenity
-		prerequisite = {
-			focus = tnkd_serenity
-		}
-		completion_reward = {
+			remove_ideas = tnkd_fractured_mind			
 		}
 	}
 
@@ -2182,6 +2129,7 @@ focus_tree = {
 
 	focus {
 		id = tnkd_preemption
+		icon = GFX_goal_generic_attack_allies
 		cost = 30
 		x=-1
 		y=1
@@ -2204,6 +2152,7 @@ focus_tree = {
 	}
 	focus {
 		id = tnkd_threat_classification
+		icon = GFX_goal_generic_attack_allies
 		cost = 30
 		y=1
 		relative_position_id = tnkd_preemption
@@ -2222,6 +2171,7 @@ focus_tree = {
 	}
 	focus {
 		id = tnkd_threat_obliteration
+		icon = GFX_goal_generic_attack_allies
 		cost = 30
 		y=1
 		relative_position_id = tnkd_threat_classification
@@ -2240,7 +2190,8 @@ focus_tree = {
 	}
 	focus {
 		id = tnkd_isolation
-		cost = 20
+		icon = GFX_goal_generic_bunkers_focus
+		cost = 15
 		x=2
 		relative_position_id = tnkd_preemption
 		available = {
@@ -2258,7 +2209,8 @@ focus_tree = {
 	}
 	focus {
 		id = tnkd_silence
-		cost = 20
+		icon = GFX_goal_generic_bunkers_focus
+		cost = 15
 		y=1
 		relative_position_id = tnkd_isolation
 		available = {
@@ -2277,7 +2229,8 @@ focus_tree = {
 	}
 	focus {
 		id = tnkd_inconspicuous
-		cost = 20
+		icon = GFX_goal_generic_bunkers_focus
+		cost = 15
 		y=1
 		relative_position_id = tnkd_silence
 		available = {
@@ -2300,7 +2253,7 @@ focus_tree = {
 	focus {
 		id = tnkd_true_convergance
 		icon = GFX_goal_tnkd_true_convergance
-		cost = 120
+		cost = 90
 		y=1
 		x=5
 		relative_position_id = tnkd_convergance
@@ -2314,7 +2267,7 @@ focus_tree = {
 			focus = tnkd_mobius_convergance
 		}
 		completion_reward = {
-			add_stability = 0.4
+			add_war_support = 0.2
 			remove_ideas = {
 				tnkd_convergance_idea
 			}
@@ -2332,6 +2285,10 @@ focus_tree = {
 			focus = tnkd_true_convergance
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = tnk_lobotomite_conscription
+				add_idea = tnkd_aggressive_abductions_idea
+			}
 		}
 	}
 	focus {
@@ -2460,9 +2417,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = tnkd_clean_slate_tt
-			hidden_effect = {
-				activate_mission = tnkd_clean_slate_decision
-			}
+			activate_mission = tnkd_clean_slate_decision
 		}
 	}
 	focus {
@@ -2557,7 +2512,7 @@ focus_tree = {
 	focus {
 		id = tnkd_mobius_convergance
 		icon = GFX_goal_tnkd_mobius_convergance
-		cost = 180
+		cost = 120
 		y=1
 		x=-5
 		relative_position_id = tnkd_convergance
@@ -2571,7 +2526,7 @@ focus_tree = {
 			focus = tnkd_true_convergance
 		}
 		completion_reward = {
-			add_stability = 0.2
+			add_stability = 0.1
 			remove_ideas = {
 				tnkd_convergance_idea
 			}
@@ -2814,9 +2769,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = tnkd_gev_tt
-			hidden_effect = {
-				activate_mission = tnkd_gev_decision
-			}
+			activate_mission = tnkd_gev_decision
 		}
 	}
 
@@ -2841,6 +2794,7 @@ focus_tree = {
 
 		relative_position_id = tnk_personality_restoration
 		completion_reward = {
+			add_research_slot = -1
 			if = {
 				limit = {
 					has_idea = tnkd_quirky_science
@@ -2893,7 +2847,8 @@ focus_tree = {
 		}
 		relative_position_id = tnkd_balanced_science
 		completion_reward = {
-			add_stability = 0.2
+			add_stability = 0.1
+			add_research_slot = -1
 		}
 	}
 
@@ -2926,9 +2881,9 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				controls_state = 594
-				controls_state = 9
 				controls_state = 398
+				controls_state = 9
+				controls_state = 17
 				controls_state = 188
 			}
 		}
@@ -2949,9 +2904,9 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				controls_state = 594
-				controls_state = 9
 				controls_state = 398
+				controls_state = 9
+				controls_state = 17
 				controls_state = 188
 			}
 		}
@@ -2985,7 +2940,7 @@ focus_tree = {
 			controls_state = 79
 		}
 		completion_reward = {
-			custom_effect_tooltip = tnkd_valhalla_tt
+			country_event = nf_tnk.42
 		}
 	}
 	focus = {
@@ -3128,6 +3083,7 @@ focus_tree = {
 			controls_state = 389
 		}
 		completion_reward = {
+			country_event = nf_tnk.43
 		}
 	}
 
@@ -3145,12 +3101,8 @@ focus_tree = {
 			focus = tnkd_tech_ascendance
 		}
 		completion_reward = {
-			add_dynamic_modifier = {
-				modifier = tnk_ingenuity_dynamic_modifier
-			}
-			activate_mission = tnkd_ingenuity_decision
-			set_variable = { tnk_ingenuity_buff__var = 0.01 }
-			set_variable = { tnk_ingenuity_cost_var = -0.01 }
+			country_event = nf_tnk.44
+			add_research_slot = -1
 		}
 	}
 	focus = {
@@ -3163,8 +3115,10 @@ focus_tree = {
 			focus = tnkd_advanced_robots
 		}
 		completion_reward = {
+			custom_effect_tooltip = tnkd_robotic_supremacy_tt
 			add_to_variable = { tnk_ingenuity_buff_var = 0.1 }
-			subtract_from_variable = { tnk_ingenuity_cost_var = -0.1 }
+			subtract_from_variable = { tnk_ingenuity_cost_var = 0.1 }
+			add_research_slot = -1
 		}
 	}
 

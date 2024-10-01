@@ -1,18 +1,14 @@
 ﻿l_english:
- tnkd_working_with_robco:0 "Working with the Vegas"
+ tnkd_working_with_robco:0 "Working with Vegas"
  tnkd_working_with_robco_desc:0 "We calculate a 15.678% probability of surviving alone.\nIf we form an alliance with Vegas we greatly raise these odds."
- tnkd_working_with_robco_event_title:0 "An offer we can refuse"
- tnkd_working_with_robco_event_desc:0 "The Think Tank seeks to form an alliance to defend the Mojave. This could be a profitable opportunity."
 
  # defence
  # --------------------------------------------------------------
  tnkd_defensive_infrastructure:0 "Defensive infrastructure"
  tnkd_defensive_infrastructure_desc:0 "We live in the fulcrum of the new world, they will come.. and we must defend it."
 
-
  tnkd_next_steps:0 "Venturing Forward"
  tnkd_next_steps_desc:0 "§OW§ge §Gm§Ro§Mv§Pe §Rf§Oo§gr§Gw§Ra§Mr§Pd §Rt§Oo§gg§Ge§Rt§Mh§Pe§Rr§O."
- tnkd_next_steps_tt:0 "Completed all focuses in the §YLeaving the "Big Empty"§! tree."
 
  tnkd_ces_wall:0 "Eastern Wall"
  tnkd_ces_wall_desc:0 "They shall crash against our walls, like waves agaist a cliff."
@@ -42,6 +38,7 @@
  tnkd_silence_tt:0 "If §YRadio Silence§! is still active when we begin §YConvergance§! it removes the §YThe Mojave Falls Silent§! event."
  tnkd_inconspicuous:0 "Inconspicuous"
  tnkd_inconspicuous_desc:0 "§G Nothing to see here officer."
+ tnkd_robotic_supremacy_tt:0 "Significantly advances §YIngenuity§!."
 
  tnkd_preemption:0 "Preemption"
  tnkd_preemption_desc:0 "§M Our enemies will surely strike when we are vunerable, we must strike first and hard."
@@ -53,14 +50,13 @@
  tnkd_threat_obliteration_desc:0 "§M Let rip the dogs of war."
 
  tnkd_convergance:0 "Convergance"
- tnkd_convergance_desc:0 "§OM§ga§Gn§Ry §Mb§Pe§Rc§Oo§gm§Ge§Rs §Wone.\n\n§gAdds §RConvergance§g nation spirit which gives §R-100% stability."
+ tnkd_convergance_desc:0 "§OM§ga§Gn§Ry §Mb§Pe§Rc§Oo§gm§Ge §Wone."
 
  tnkd_perfection_sync:0 "Perfect Synchronisation"
  tnkd_perfection_sync_desc:0 "We have one mind, now we shall have one nation... one body."
 
  tnkd_cohesion:0 "Facing The Inveitable"
- tnkd_cohesion_desc:0 "Eventually a structure becomes so weak it must be demolished entirely before it can be rebuilt."
- tnkd_cohesion_tt:0 "§RWARNING:§! This will incapacitate §YThe Think Tank§!."
+ tnkd_cohesion_desc:0 "Eventually a structure becomes so weak it must be demolished entirely before it can be rebuilt. Our convergance was rotten, we can do nothing but allow its dissolution for now, the others have broken off, they must be brought back into the fold in time."
  tnkd_serenity:0 "Serenity"
  tnkd_serenity_desc:0"The voices are gone, our...\n\nmy... mind is at peace."
 
@@ -71,7 +67,7 @@
  # --------------------------------------------------------------
 
  tnkd_mobius_convergance:0 "Mobius' will"
- tnkd_mobius_convergance_desc:0 "§GA unity under good management of course."
+ tnkd_mobius_convergance_desc:0 "§GA managemened democracy... for good of course."
 
  tnkd_do_no_harm:0 "Do No Harm"
  tnkd_do_no_harm_desc:0 "To harm in pursuit of science is antithetical to the goal."
@@ -83,7 +79,7 @@
 
  tnkd_guardian:0 "Guardian Protocol"
  tnkd_guardian_desc:0 "We must defend the remnants of humanity. In time they will learn, we must make a world which allows them this time."
- tnkd_guardian_tt:0 "Gain National Spirit §YGuardian Protocol§!, which grants ((@MLT§Y[MLT.getName]§!, @TRL§Y[TRL.getName]§!, @SHA§Y[SHA.getName]§!) Attack bonus against country: §G+20%§!)."
+ tnkd_guardian_tt:0 "Gain National Spirit §YGuardian Protocol§!, which grants ((@MLT§Y[MLT.getName]§!, @TRL§Y[TRL.getName]§!, @SHA§Y[SHA.getName]§!) Attack bonus against country: §G+10%§!)."
   
  tnkd_giant_slayer:0 "Giant Slayer"
  tnkd_giant_slayer_desc:0 "The titans of the wasteland are a threat to the freedom of humanity. \n\n§RWe shall go forth and they shall call timber in our wake."
@@ -171,7 +167,7 @@
  tnkd_advanced_robots:0 "Advanced Robotics"
  tnkd_advanced_robots_desc:0 "We can push this even further."
  tnkd_robotic_supremacy:0 "Robotic Supremacy"
- tnkd_robotic_supremacy:0 "With all our research we have formed the most optimal robotic executors ever seen."
+ tnkd_robotic_supremacy_desc:0 "We can redirect our research into optimizing our robotic executors."
 
  tnkd_exotic_research:0 "Exotic Research Expeditions"
  tnkd_exotic_research_desc:0 "There is much to discover, much beyound the decrepit ancient relics our neighbours spend their lives stealing."
@@ -191,7 +187,6 @@
  tnkd_north_ships_desc:0 "These northern nations seem to have a knack for showing up far from home, how they do must be a result of their ships, we must investigate. "
  tnkd_valhalla:0 "Valhalla"
  tnkd_valhalla_desc:0 "A land of legendary warriors? Sounds like some good grave robbing."
- tnkd_valhalla_tt:0 "§RTODO§!"
 
  tnkd_little_green_dot:0 "Little Green Dot"
  tnkd_little_green_dot_desc:0 "Is that a star? Why's it green?"
