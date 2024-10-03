@@ -1848,7 +1848,7 @@ focus_tree = {
 	# Defence
 	# -----------------------------------------------------------------------
 
-	focus {
+	focus = {
 		id = tnkd_defensive_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 30
@@ -1875,7 +1875,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_better_capital
 		icon = GFX_goal_VEG_Hidden_Valley_Reborn
 		cost = 30
@@ -1892,7 +1892,7 @@ focus_tree = {
 			set_capital = { state = 46 }
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_resource_move
 		icon = GFX_goal_generic_fortify_city
 		cost = 30
@@ -1906,7 +1906,7 @@ focus_tree = {
 			country_event = nf_tnk.45
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_new_reactor
 		icon = GFX_goal_tnkd_new_reactor
 		cost = 30
@@ -1926,7 +1926,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_offensive_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 30
@@ -1947,7 +1947,7 @@ focus_tree = {
 		}
 	}
 
-	focus {
+	focus = {
 		id = tnkd_ally_sleepers
 		icon = GFX_goal_tripartite_pact
 		cost = 30
@@ -1967,7 +1967,7 @@ focus_tree = {
 			SLE = { country_event = nf_tnk.61 }
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_taking_sleepers
 		icon = GFX_goal_tnkd_sleepers
 		cost = 30
@@ -1988,7 +1988,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_waking_sleepers
 		icon = GFX_goal_CES_Sleepers
 		cost = 30
@@ -2045,7 +2045,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_taking_sorrows
 		icon = GFX_goal_tnkd_sorrows
 		cost = 30
@@ -2061,7 +2061,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_taking_dead_horses
 		icon = GFX_goal_tnkd_dead_horses
 		cost = 30
@@ -2081,7 +2081,7 @@ focus_tree = {
 		}
 	}
 
-	focus {
+	focus = {
 		id = tnkd_taking_sky_reavers
 		icon = GFX_goal_tnkd_sky_reavers
 		cost = 30
@@ -2098,7 +2098,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_taking_white_legs
 		icon = GFX_goal_tnkd_white_legs
 		cost = 30
@@ -2118,7 +2118,7 @@ focus_tree = {
 	# Caesar defence
 	# -----------------------------------------------------------------------
 
-	focus {
+	focus = {
 		id = tnkd_larping_luddites
 		icon = GFX_goal_tnkd_larping_luddites
 		cost = 15
@@ -2134,7 +2134,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_ces_wall
 		icon = GFX_goal_tnkd_wall
 		cost = 60
@@ -2178,7 +2178,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_caesar_deal
 		icon = GFX_goal_tnkd_caesar_deal
 		cost = 15
@@ -2202,7 +2202,7 @@ focus_tree = {
 	# NCR defence
 	# -----------------------------------------------------------------------
 
-	focus {
+	focus = {
 		id = tnkd_ncr_defence
 		icon = GFX_goal_generic_focus_ncr_raids
 		cost = 15
@@ -2219,7 +2219,7 @@ focus_tree = {
 		}
 	}
 
-	focus {
+	focus = {
 		id = tnkd_ncr_wall
 		icon = GFX_goal_tnkd_wall
 		cost = 60
@@ -2264,7 +2264,7 @@ focus_tree = {
 		}
 	}
 
-	focus {
+	focus = {
 		id = tnkd_ncr_deal
 		icon = GFX_goal_VEG_Old_Authority
 		cost = 15
@@ -2303,7 +2303,7 @@ focus_tree = {
 			add_war_support = 0.2
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_convergance
 		icon = GFX_goal_tnkd_convergance
 		cost = 7
@@ -2353,7 +2353,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_cohesion
 		icon = GFX_goal_tnkd_cohesion
 		cost = 30
@@ -2373,7 +2373,7 @@ focus_tree = {
 			add_ideas = tnkd_fractured_mind
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_serenity
 		icon = GFX_goal_tnkd_serenity
 		cost = 90
@@ -2556,7 +2556,7 @@ focus_tree = {
 	# Unity Defence
 	# -----------------------------------------------------------------------
 
-	focus {
+	focus = {
 		id = tnkd_preemption
 		icon = GFX_goal_generic_attack_allies
 		cost = 30
@@ -2579,7 +2579,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_threat_classification
 		icon = GFX_goal_generic_attack_allies
 		cost = 30
@@ -2598,7 +2598,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_threat_obliteration
 		icon = GFX_goal_generic_attack_allies
 		cost = 30
@@ -2617,7 +2617,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_isolation
 		icon = GFX_goal_generic_bunkers_focus
 		cost = 15
@@ -2636,7 +2636,7 @@ focus_tree = {
 			add_war_support = -0.1
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_silence
 		icon = GFX_goal_generic_bunkers_focus
 		cost = 15
@@ -2656,7 +2656,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_inconspicuous
 		icon = GFX_goal_generic_bunkers_focus
 		cost = 15
@@ -2679,7 +2679,7 @@ focus_tree = {
 	# True convergance
 	# -----------------------------------------------------------------------
 
-	focus {
+	focus = {
 		id = tnkd_true_convergance
 		icon = GFX_goal_tnkd_true_convergance
 		cost = 90
@@ -2703,7 +2703,7 @@ focus_tree = {
 			country_event = nf_tnk.24
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_test_subjects
 		icon = GFX_goal_tnkd_test_subjects
 		cost = 30
@@ -2720,7 +2720,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_domination_protocol
 		icon = GFX_goal_tnkd_domination_protocol
 		cost = 30
@@ -2736,7 +2736,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_attack_weak
 		icon = GFX_goal_tnkd_attack_weak
 		cost = 30
@@ -2753,7 +2753,7 @@ focus_tree = {
 			custom_effect_tooltip = tnkd_attack_weak_tt
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_burn_land
 		icon = GFX_goal_tnkd_burn_land
 		cost = 30
@@ -2769,7 +2769,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_the_future_vision
 		icon = GFX_goal_tnkd_the_future_vision
 		cost = 30
@@ -2793,7 +2793,7 @@ focus_tree = {
 			add_war_support = 0.2
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_purification
 		icon = GFX_goal_tnkd_purification
 		cost = 60
@@ -2806,7 +2806,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_extermination
 		icon = GFX_goal_tnkd_extermination
 		cost = 60
@@ -2833,7 +2833,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_clean_slate
 		icon = GFX_goal_tnkd_clean_slate
 		cost = 60
@@ -2853,7 +2853,7 @@ focus_tree = {
 			activate_mission = tnkd_clean_slate_decision
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_war_simulations
 		icon = GFX_goal_tnkd_war_simulations
 		cost = 30
@@ -2872,7 +2872,7 @@ focus_tree = {
 			add_ideas = tnkd_war_simulations
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_dna_shattering
 		icon = GFX_goal_tnkd_dna_shattering
 		cost = 30
@@ -2892,7 +2892,7 @@ focus_tree = {
 			custom_effect_tooltip = tnkd_dna_shattering_tt
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_missiles
 		icon = GFX_goal_tnkd_missiles
 		cost = 30
@@ -2911,7 +2911,7 @@ focus_tree = {
 			add_ideas = tnkd_missiles
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_peace
 		icon = GFX_goal_sun_flag
 		cost = 30
@@ -2942,7 +2942,7 @@ focus_tree = {
 	# Mobius' convergance
 	# -----------------------------------------------------------------------
 
-	focus {
+	focus = {
 		id = tnkd_mobius_convergance
 		icon = GFX_goal_tnkd_mobius_convergance
 		cost = 120
@@ -3036,7 +3036,7 @@ focus_tree = {
 			custom_effect_tooltip = tnkd_giant_slayer_tt
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_a_future_vision
 		icon = GFX_goal_tnkd_a_future_vision
 		cost = 30
@@ -3060,7 +3060,7 @@ focus_tree = {
 			add_war_support = 0.2
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_carrot
 		icon = GFX_goal_NEW_bio_med_gel_experiments
 		cost = 60
@@ -3088,7 +3088,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus {
+	focus = {
 		id = tnkd_stick
 		icon = GFX_goal_generic_esp_plasma
 		cost = 60

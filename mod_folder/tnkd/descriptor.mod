@@ -6,8 +6,9 @@ tags={
 	"Events"
 }
 name="The Think Tank"
-supported_version="1.14.*"
-dependencies = {
+dependencies={
 	"Old World Blues"
 }
 picture="thumbnail.png"
+supported_version="1.14.*"
+remote_file_id="3342313594"
