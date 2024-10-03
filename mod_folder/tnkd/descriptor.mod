@@ -6,8 +6,8 @@ tags={
 	"Events"
 }
 name="The Think Tank"
-picture="Thumbnail.gif"
 supported_version="1.14.*"
 dependencies = {
 	"Old World Blues"
 }
+picture="thumbnail.png"
