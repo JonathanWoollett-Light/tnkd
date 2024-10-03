@@ -155,4 +155,29 @@ spriteTypes = {
 		name = "GFX_goal_tnkd_gecks_final"
 		texturefile = "gfx/interface/goals/tnkd_gev.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_tnkd_sky_reavers"
+		texturefile = "gfx/interface/goals/tnkd_sky_reavers.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnkd_white_legs"
+		texturefile = "gfx/interface/goals/tnkd_white_legs.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnkd_sleepers"
+		texturefile = "gfx/interface/goals/tnkd_sleepers.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnkd_sorrows"
+		texturefile = "gfx/interface/goals/tnkd_sorrows.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_tnkd_dead_horses"
+		texturefile = "gfx/interface/goals/tnkd_dead_horses.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_tnkd_new_reactor"
+		texturefile = "gfx/interface/goals/tnkd_reactors.dds"
+	}
 }

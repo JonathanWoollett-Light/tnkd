@@ -1,9 +1,13 @@
 version="1.0.0"
 tags={
-	"Gameplay"
+	"Alternative History"
+	"Map"
+	"National Focuses"
+	"Events"
 }
-name="Think Tank Defragmented"
-supported_version="1.14.6"
+name="The Think Tank"
+picture="Thumbnail.gif"
+supported_version="1.14.*"
 dependencies = {
 	"Old World Blues"
 }

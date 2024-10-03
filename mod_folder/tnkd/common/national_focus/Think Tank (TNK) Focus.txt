@@ -1777,7 +1777,7 @@ focus_tree = {
 
 	focus = {
 		id = tnkd_working_with_robco
-		icon = GFX_goal_VEG_Ring-a-Ding-Ding
+		icon = GFX_goal_VEG_Vegas_for_the_People
 		cost = 15
 		x = 0
 		y = 1
@@ -1798,6 +1798,23 @@ focus_tree = {
 			VEG = { country_event = nf_tnk.60 }
 		}
 	}
+	focus = {
+		id = tnkd_platinum_chip
+		icon = GFX_goal_VEG_Ring-a-Ding-Ding
+		cost = 30
+		x = 0
+		y = 2
+		available = {
+			is_in_faction_with = VEG
+		}
+		prerequisite = {
+			focus = tnkd_working_with_robco
+		}
+		relative_position_id = tnkd_working_with_robco
+		completion_reward = {
+			add_ideas = moj_platinumOS
+		}
+	}
 
 	focus = {
 		id = tnkd_next_steps
@@ -1811,7 +1828,6 @@ focus_tree = {
 				has_completed_focus = tnk_mobius_roboscorpion_research_improve_the_x42_giant_roboscorpion
 				has_completed_focus = tnk_klein_lobotomite_research_focus
 			}
-			has_completed_focus = tnk_klein_mojave_experiments_recall_the_z35_satellite
 			has_completed_focus = tnk_klein_mojave_experiments_set_up_the_new_x13_experiment
 			has_completed_focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
 			has_completed_focus = tnk_expanding_the_radar_fence
@@ -1859,6 +1875,245 @@ focus_tree = {
 			}
 		}
 	}
+	focus {
+		id = tnkd_better_capital
+		icon = GFX_goal_VEG_Hidden_Valley_Reborn
+		cost = 30
+		y = 1
+		x = -1
+		relative_position_id = tnkd_defensive_infrastructure
+		prerequisite = {
+			focus = tnkd_defensive_infrastructure
+		}
+		available = {
+			has_completed_focus = tnkd_next_steps
+		}
+		completion_reward = {
+			set_capital = { state = 46 }
+		}
+	}
+	focus {
+		id = tnkd_resource_move
+		icon = GFX_goal_generic_fortify_city
+		cost = 30
+		y = 1
+		x = 1
+		relative_position_id = tnkd_defensive_infrastructure
+		prerequisite = {
+			focus = tnkd_defensive_infrastructure
+		}
+		completion_reward = {
+			country_event = nf_tnk.45
+		}
+	}
+	focus {
+		id = tnkd_new_reactor
+		icon = GFX_goal_tnkd_new_reactor
+		cost = 30
+		y = 2
+		relative_position_id = tnkd_defensive_infrastructure
+		prerequisite = {
+			focus = tnkd_defensive_infrastructure
+		}
+		available = {
+			has_completed_focus = tnkd_balanced_science
+		}
+		completion_reward = {
+			add_resource = {
+				type = energy
+				amount = 20
+				state = 417
+			}
+		}
+	}
+	focus {
+		id = tnkd_offensive_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 30
+		y = 0
+		x = 8
+		relative_position_id = tnkd_defensive_infrastructure
+		available = {
+			has_completed_focus = tnk_personality_restoration
+		}
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus {
+		id = tnkd_ally_sleepers
+		icon = GFX_goal_tripartite_pact
+		cost = 30
+		y = 1
+		x = 0
+		relative_position_id = tnkd_offensive_infrastructure
+		prerequisite = {
+			focus = tnkd_offensive_infrastructure
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					TNK = { is_in_faction = no }
+				}
+				add_ideas = tnkd_humility
+			}
+			SLE = { country_event = nf_tnk.61 }
+		}
+	}
+	focus {
+		id = tnkd_taking_sleepers
+		icon = GFX_goal_tnkd_sleepers
+		cost = 30
+		x = 2
+		relative_position_id = tnkd_ally_sleepers
+		prerequisite = {
+			focus = tnkd_offensive_infrastructure
+		}
+		bypass = {
+			SLE = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SLE
+			}
+		}
+	}
+	focus {
+		id = tnkd_waking_sleepers
+		icon = GFX_goal_CES_Sleepers
+		cost = 30
+		y = 1
+		relative_position_id = tnkd_ally_sleepers
+		prerequisite = {
+			focus = tnkd_ally_sleepers
+			focus = tnkd_taking_sleepers
+		}
+		available = {
+			127 = {
+				tnkd_sphere_controls_state = yes
+			}
+			508 = {
+				tnkd_sphere_controls_state = yes
+			}
+		}
+		completion_reward = {
+			127 = {
+				add_extra_state_shared_building_slots = 12
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 6
+					instant_build = yes
+				}
+			}
+			508 = {
+				add_extra_state_shared_building_slots = 12
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 6
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus {
+		id = tnkd_taking_sorrows
+		icon = GFX_goal_tnkd_sorrows
+		cost = 30
+		y = 1
+		relative_position_id = tnkd_taking_sleepers
+		prerequisite = {
+			focus = tnkd_taking_sleepers
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOR
+			}
+		}
+	}
+	focus {
+		id = tnkd_taking_dead_horses
+		icon = GFX_goal_tnkd_dead_horses
+		cost = 30
+		y = 1
+		relative_position_id = tnkd_waking_sleepers
+		prerequisite = {
+			focus = tnkd_waking_sleepers
+		}
+		prerequisite = {
+			focus = tnkd_taking_sorrows
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = DEA
+			}
+		}
+	}
+
+	focus {
+		id = tnkd_taking_sky_reavers
+		icon = GFX_goal_tnkd_sky_reavers
+		cost = 30
+		y = 1
+		x = -2
+		relative_position_id = tnkd_offensive_infrastructure
+		prerequisite = {
+			focus = tnkd_offensive_infrastructure
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SKY
+			}
+		}
+	}
+	focus {
+		id = tnkd_taking_white_legs
+		icon = GFX_goal_tnkd_white_legs
+		cost = 30
+		y = 1
+		relative_position_id = tnkd_taking_sky_reavers
+		prerequisite = {
+			focus = tnkd_taking_sky_reavers
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = WHT
+			}
+		}
+	}
 
 	# Caesar defence
 	# -----------------------------------------------------------------------
@@ -1867,20 +2122,24 @@ focus_tree = {
 		id = tnkd_larping_luddites
 		icon = GFX_goal_tnkd_larping_luddites
 		cost = 15
-		x = -2
+		x = -3
+		y = 1
 		relative_position_id = tnkd_defensive_infrastructure
-		available = {
-			has_completed_focus = tnk_personality_restoration
+		prerequisite = {
+			focus = tnkd_defensive_infrastructure
 		}
 		completion_reward = {
+			CES = {
+				add_ideas = tnkd_think_tank_litigation
+			}
 		}
 	}
 	focus {
 		id = tnkd_ces_wall
 		icon = GFX_goal_tnkd_wall
 		cost = 60
-		y=1
-		x=-1
+		y = 1
+		x = -1
 		relative_position_id = tnkd_larping_luddites
 		prerequisite = {
 			focus = tnkd_larping_luddites
@@ -1932,7 +2191,7 @@ focus_tree = {
 		available = {
 			owns_state = 252
 			owns_state = 613
-			has_completed_focus = tnk_klein_mojave_experiments_recall_the_z35_satellite
+			owns_state = 380
 		}
 		completion_reward = {
 			country_event = nf_tnk.25
@@ -1947,12 +2206,16 @@ focus_tree = {
 		id = tnkd_ncr_defence
 		icon = GFX_goal_generic_focus_ncr_raids
 		cost = 15
-		x = 2
+		x = 3
+		y = 1
 		relative_position_id = tnkd_defensive_infrastructure
-		available = {
-			has_completed_focus = tnk_personality_restoration
+		prerequisite = {
+			focus = tnkd_defensive_infrastructure
 		}
 		completion_reward = {
+			NCR = {
+				add_ideas = tnkd_think_tank_litigation
+			}
 		}
 	}
 
@@ -2014,8 +2277,7 @@ focus_tree = {
 		available = {
 			owns_state = 252
 			owns_state = 613
-			owns_state = 211
-			has_completed_focus = tnk_klein_mojave_experiments_recall_the_z35_satellite
+			owns_state = 380
 		}
 		completion_reward = {
 			country_event = nf_tnk.29
@@ -2037,7 +2299,8 @@ focus_tree = {
 			focus = tnkd_next_steps
 		}
 		completion_reward = {
-			add_stability = 0.1
+			add_stability = 0.2
+			add_war_support = 0.2
 		}
 	}
 	focus {
@@ -2073,7 +2336,7 @@ focus_tree = {
 		id = tnkd_perfection_sync
 		icon = GFX_goal_tnkd_perfection_sync
 		cost = 30
-		y = 3
+		y = 2
 		relative_position_id = tnkd_convergance
 		prerequisite = {
 			focus = tnkd_true_convergance
@@ -2121,6 +2384,172 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = tnkd_fractured_mind			
+		}
+	}
+
+	focus = {
+		id = tnkd_expansion_one
+		icon = GFX_goal_generic_generator_fusion
+		cost = 60
+		y = 2
+		relative_position_id = tnkd_serenity
+		prerequisite = {
+			focus = tnkd_serenity
+		}
+		available = {
+			all_core_state = {
+				is_controlled_by = ROOT	
+			}
+		}
+		completion_reward = {
+			every_core_state = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = tnkd_expansion_two
+		icon = GFX_goal_generic_Legion_diplomatic_focus
+		cost = 60
+		y = 1
+		x = 1
+		relative_position_id = tnkd_expansion_one
+		prerequisite = {
+			focus = tnkd_expansion_one
+		}
+		available = {
+			all_core_state = {
+				is_controlled_by = ROOT	
+			}
+			custom_trigger_tooltip = {
+				tooltip = tnkd_expansion_three_tt
+				hidden_trigger = {
+					127 = {
+						tnkd_sphere_controls_state = yes
+					}
+					508 = {
+						tnkd_sphere_controls_state = yes
+					}
+					361 = {
+						tnkd_sphere_controls_state = yes
+					}
+					428 = {
+						tnkd_sphere_controls_state = yes
+					}
+					224 = {
+						tnkd_sphere_controls_state = yes
+					}
+					446 = {
+						tnkd_sphere_controls_state = yes
+					}
+					383 = {
+						tnkd_sphere_controls_state = yes
+					}
+					294 = {
+						tnkd_sphere_controls_state = yes
+					}
+					43 = {
+						tnkd_sphere_controls_state = yes
+					}
+					72 = {
+						tnkd_sphere_controls_state = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = tnkd_expansion_three
+		icon = GFX_goal_generic_NCR_diplomatic_focus
+		cost = 60
+		y = 1
+		x = -1
+		relative_position_id = tnkd_expansion_one
+		prerequisite = {
+			focus = tnkd_expansion_one
+		}
+		available = {
+			all_core_state = {
+				is_controlled_by = ROOT	
+			}
+			custom_trigger_tooltip = {
+				tooltip = tnkd_expansion_two_tt
+				hidden_trigger = {
+					13 = {
+						tnkd_sphere_controls_state = yes
+					}
+					46 = {
+						tnkd_sphere_controls_state = yes
+					}
+					106 = {
+						tnkd_sphere_controls_state = yes
+					}
+					137 = {
+						tnkd_sphere_controls_state = yes
+					}
+					154 = {
+						tnkd_sphere_controls_state = yes
+					}
+					211 = {
+						tnkd_sphere_controls_state = yes
+					}
+					236 = {
+						tnkd_sphere_controls_state = yes
+					}
+					252 = {
+						tnkd_sphere_controls_state = yes
+					}
+					271 = {
+						tnkd_sphere_controls_state = yes
+					}
+					313 = {
+						tnkd_sphere_controls_state = yes
+					}
+					329 = {
+						tnkd_sphere_controls_state = yes
+					}
+					344 = {
+						tnkd_sphere_controls_state = yes
+					}
+					380 = {
+						tnkd_sphere_controls_state = yes
+					}
+					417 = {
+						tnkd_sphere_controls_state = yes
+					}
+					552 = {
+						tnkd_sphere_controls_state = yes
+					}
+					573 = {
+						tnkd_sphere_controls_state = yes
+					}
+					592 = {
+						tnkd_sphere_controls_state = yes
+					}
+					613 = {
+						tnkd_sphere_controls_state = yes
+					}
+				}
+			}
+			
+			
+		}
+		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 
@@ -2315,8 +2744,6 @@ focus_tree = {
 		relative_position_id = tnkd_domination_protocol
 		prerequisite = {
 			focus = tnkd_domination_protocol
-		}
-		prerequisite = {
 			focus = tnkd_test_subjects
 		}
 		completion_reward = {
@@ -2334,8 +2761,6 @@ focus_tree = {
 		relative_position_id = tnkd_test_subjects
 		prerequisite = {
 			focus = tnkd_domination_protocol
-		}
-		prerequisite = {
 			focus = tnkd_test_subjects
 		}
 		completion_reward = {
@@ -2352,12 +2777,20 @@ focus_tree = {
 		relative_position_id = tnkd_true_convergance
 		prerequisite = {
 			focus = tnkd_burn_land
-		}
-		prerequisite = {
 			focus = tnkd_attack_weak
 		}
 		completion_reward = {
-			set_faction_name = "The Vision"
+			if = {
+				limit = {
+					is_in_facction = no
+				}
+				create_faction = "The Vision"
+			}
+			else = {
+				set_faction_name = "The Vision"
+			}
+			add_stability = -0.1
+			add_war_support = 0.2
 		}
 	}
 	focus {
@@ -2577,11 +3010,8 @@ focus_tree = {
 		relative_position_id = tnkd_do_no_harm
 		prerequisite = {
 			focus = tnkd_do_no_harm
-		}
-		prerequisite = {
 			focus = tnkd_bulwark
 		}
-		
 		completion_reward = {
 			hidden_effect = {
 				add_ideas = tnkd_guardian
@@ -2597,11 +3027,8 @@ focus_tree = {
 		relative_position_id = tnkd_bulwark
 		prerequisite = {
 			focus = tnkd_do_no_harm
-		}
-		prerequisite = {
 			focus = tnkd_bulwark
 		}
-		
 		completion_reward = {
 			hidden_effect = {
 				add_ideas = tnkd_giant_slayer
@@ -2617,12 +3044,20 @@ focus_tree = {
 		relative_position_id = tnkd_mobius_convergance
 		prerequisite = {
 			focus = tnkd_guardian
-		}
-		prerequisite = {
 			focus = tnkd_giant_slayer
 		}
 		completion_reward = {
-			set_faction_name = "The American Technical Alliance"
+			if = {
+				limit = {
+					is_in_facction = no
+				}
+				create_faction = "The American Technical Alliance"
+			}
+			else = {
+				set_faction_name = "The American Technical Alliance"
+			}
+			add_stability = -0.1
+			add_war_support = 0.2
 		}
 	}
 	focus {
@@ -2732,6 +3167,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			set_technology = { vertibird_unlock_tech = 1 }
 		}
 	}
 	focus = {
@@ -2750,6 +3186,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			set_technology = { vault_industry_tech = 1 }
 		}
 	}
 	focus = {
@@ -2847,8 +3284,22 @@ focus_tree = {
 		}
 		relative_position_id = tnkd_balanced_science
 		completion_reward = {
-			add_stability = 0.1
 			add_research_slot = -1
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 2
+				category = industry
+			}
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 2
+				category = robotics_tech_category
+			}
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 2
+				category = electronics
+			}
 		}
 	}
 
@@ -3108,7 +3559,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_robotic_supremacy
 		icon = GFX_goal_tnkd_robotic_supremacy
-		cost = 90
+		cost = 60
 		y = 1
 		relative_position_id = tnkd_advanced_robots
 		prerequisite = {
@@ -3129,12 +3580,13 @@ focus_tree = {
 		id = tnkd_final
 		icon = GFX_goal_tnkd_final
 		cost = 10
-		y = 5
+		y = 6
 		relative_position_id = tnkd_serenity
 		prerequisite = {
 			focus = tnkd_peace
 			focus = tnkd_gev
 		}
+		
 		completion_reward = {
 			country_event = nf_tnk.34
 		}

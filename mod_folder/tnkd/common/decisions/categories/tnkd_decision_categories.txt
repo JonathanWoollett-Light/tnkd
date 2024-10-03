@@ -33,3 +33,10 @@ tnkd_gev_category = {
 		base = 13
 	}
 }
+tnkd_resource_consolidation = {
+	allowed = { tag = TNK }
+	icon = GFX_decision_category_hea_conversion
+	priority = {
+		base = 14
+	}
+}

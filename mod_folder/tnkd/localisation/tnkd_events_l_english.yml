@@ -1,8 +1,13 @@
 ﻿l_english:
   nf_tnk.60.t:0 "An offer we can refuse"
   nf_tnk.60.d:0 "[TNK.GetName] seeks to form an alliance to defend the Mojave. This could be a beneficial opportunity."
-  nf_tnk.60.a:0 "This will tilt the odds in our favour."
-  nf_tnk.60.b:0 "We do not need them."
+  nf_tnk.60.a:0 "This will tilt the odds in our favour"
+  nf_tnk.60.b:0 "We do not need them"
+
+  nf_tnk.61.t:0 "A new path forward"
+  nf_tnk.61.d:0 "[TNK.GetName] seeks to form an alliance to defend the Mojave. This could be a beneficial opportunity."
+  nf_tnk.61.a:0 "This will tilt the odds in our favour"
+  nf_tnk.61.b:0 "We do not need them"
 
   nf_tnk.41.d:0 "As we walk through the golden city there is a feeling of something missing... something coming..."
   nf_tnk.41.a:0 "A small prize for now"
@@ -55,6 +60,10 @@
   nf_tnk.44.t:0 "An ingenious future"
   nf_tnk.44.d:0 "With a united consciousness we can apply our genius to continuously improve our robotic executors."
   nf_tnk.44.a:0 "It is only a matter of time"
+
+  nf_tnk.45.t:0 "Resource Consolidation"
+  nf_tnk.45.d:0 "The industrial revolution was intrinsically linked to high density population and industries within cities, if we are to push forward we must consolidate resources."
+  nf_tnk.45.a:0 "We shall become dense!"
 
   nf_tnk.38.t:0 "The Mojave Falls Silent"
   nf_tnk.38.d:0 "The robots have gone, the lobotomites have vanished, silence has set upon the war torn Mojave.\nWhat are those eggheads at The Think Tank up to?"

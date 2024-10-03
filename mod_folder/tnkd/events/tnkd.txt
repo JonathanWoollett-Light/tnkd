@@ -16,13 +16,41 @@ country_event = {
 			limit = {
 				TNK = { is_in_faction = no }
 			}
-			TNK = { create_faction = "Mojave Nexus" }
+			TNK = { create_faction = "The Mojave Technical Alliance" }
 		}
 		TNK = { add_to_faction = VEG }
 	}
 
 	option = {
 		name = nf_tnk.60.b
+	}
+}
+
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.61" }
+	id = nf_tnk.61
+	title = nf_tnk.61.t
+	desc = nf_tnk.61.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.61.a
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				TNK = { is_in_faction = no }
+			}
+			TNK = { create_faction = "The Mojave Technical Alliance" }
+		}
+		TNK = { add_to_faction = SLE }
+	}
+
+	option = {
+		name = nf_tnk.61.b
 	}
 }
 
@@ -459,5 +487,20 @@ country_event = {
 		activate_mission = tnkd_ingenuity_decision
 		set_variable = { tnk_ingenuity_buff_var = 0.01 }
 		set_variable = { tnk_ingenuity_cost_var = 0.04 }
+	}
+}
+
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.45" }
+	id = nf_tnk.45
+	title = nf_tnk.45.t
+	desc = nf_tnk.45.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.45.a
+		activate_mission = tnkd_resource_consolidation_decision
 	}
 }

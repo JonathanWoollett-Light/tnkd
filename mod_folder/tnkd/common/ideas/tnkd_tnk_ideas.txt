@@ -71,6 +71,17 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
+		tnkd_think_tank_litigation = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = TNK
+				breakthrough_bonus_against = -0.2
+				
+			}
+		}
 		
 		# Unity defence
 		# ----------------------------------------------------------------------
@@ -360,7 +371,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				breakthrough_factor = 0.5
+				breakthrough_factor = 0.3
 			}
 		}
 		# -------------------------------------------------

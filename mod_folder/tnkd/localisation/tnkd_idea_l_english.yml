@@ -20,6 +20,9 @@
  tnkd_decohesion_desc:0 "WHAT?!? Something went wrong, our consciousnesses are not properly bound, our minds loose cohesion by at each moment."
  tnk_decohesion_dynamic_modifier:0 "Decohesion"
  
+ tnkd_think_tank_litigation:0 "[TNK.getName] diplomacy"
+ tnkd_think_tank_litigation_desc:0 "Their speakers output a whirlwind of nonsense confusing and wasting the time or our bureaucrats."
+
  tnkd_ingenuity:0 "Ingenuity"
  tnkd_ingenuity_desc:0 "With out newfound focus we can continuously optimize our designs."
  tnk_ingenuity_dynamic_modifier:0 "Ingenuity"

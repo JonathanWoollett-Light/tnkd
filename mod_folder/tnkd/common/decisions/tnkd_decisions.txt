@@ -12,14 +12,14 @@ tnkd_ingenuity = {
         fixed_random_seed = no
         is_good = yes
         selectable_mission = yes
-        days_mission_timeout = 20
+        days_mission_timeout = 10
         activation = {
             always = no
         }
         timeout_effect = {
             if = {
                 limit = {
-                    check_variable = { tnk_ingenuity_buff_var < 0.3 }
+                    check_variable = { tnk_ingenuity_buff_var < 0.4 }
                 }
                 hidden_effect = {
                     activate_mission = tnkd_ingenuity_decision
@@ -176,6 +176,104 @@ tnkd_gev_category = {
                     }
                 }
             }
+        }
+    }
+}
+
+tnkd_resource_consolidation = {
+    tnkd_resource_consolidation_decision = {
+        icon = GFX_decision_generic_scorched_earth
+        priority = 1000
+        visible = {
+            has_country_flag = TNK
+        }
+        allowed = { tag = TNK }
+        available = {
+            always = no
+        }
+        fixed_random_seed = no
+        is_good = yes
+        selectable_mission = yes
+        days_mission_timeout = 10
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            hidden_effect = {
+                activate_mission = tnkd_resource_consolidation_decision
+            }
+            custom_effect_tooltip = tnkd_resource_consolidation_decision_tt
+            random_list = {
+                1 = {
+                    random_owned_state = {
+                        limit = {
+                            metal > 0
+                        }
+                        add_resource = {
+                            type = metal
+                            amount = -1
+                        }
+                        capital_scope = {
+                            add_resource = {
+                                type = metal
+                                amount = 1
+                            }
+                        }
+                    }
+                }
+                1 = {
+                    random_owned_state = {
+                        limit = {
+                            composites > 0
+                        }
+                        add_resource = {
+                            type = composites
+                            amount = -1
+                        }
+                        capital_scope = {
+                            add_resource = {
+                                type = composites
+                                amount = 1
+                            }
+                        }
+                    }
+                }
+                1 = {
+                    random_owned_state = {
+                        limit = {
+                            advanced > 0
+                        }
+                        add_resource = {
+                            type = advanced
+                            amount = -1
+                        }
+                        capital_scope = {
+                            add_resource = {
+                                type = advanced
+                                amount = 1
+                            }
+                        }
+                    }
+                }
+                1 = {
+                    random_owned_state = {
+                        limit = {
+                            circuitry > 0
+                        }
+                        add_resource = {
+                            type = circuitry
+                            amount = -1
+                        }
+                        capital_scope = {
+                            add_resource = {
+                                type = circuitry
+                                amount = 1
+                            }
+                        }
+                    }
+                }
+            }
+            
         }
     }
 }
