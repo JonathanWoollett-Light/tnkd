@@ -3565,7 +3565,8 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = -1
 			custom_effect_tooltip = tnkd_robotic_supremacy_tt
-			add_to_variable = { tnk_ingenuity_buff_var = 0.1 }
+			add_to_variable = { tnk_ingenuity_attack_buff_var = 0.1 }
+			add_to_variable = { tnk_ingenuity_defence_buff_var = 0.05 }
 			add_to_variable = { tnk_ingenuity_cost_var = 0.4 }
 		}
 	}

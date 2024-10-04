@@ -486,8 +486,9 @@ country_event = {
 			modifier = tnk_ingenuity_dynamic_modifier
 		}
 		activate_mission = tnkd_ingenuity_decision
-		set_variable = { tnk_ingenuity_buff_var = 0.01 }
-		set_variable = { tnk_ingenuity_cost_var = 0.04 }
+		set_variable = { tnk_ingenuity_attack_buff_var = 0.02 }
+		set_variable = { tnk_ingenuity_defence_buff_var = 0.01 }
+		set_variable = { tnk_ingenuity_cost_var = 0.08 }
 	}
 }
 
