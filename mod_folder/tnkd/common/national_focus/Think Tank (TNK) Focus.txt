@@ -2782,7 +2782,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					is_in_facction = no
+					is_in_faction = no
 				}
 				create_faction = "The Vision"
 			}
@@ -3049,7 +3049,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					is_in_facction = no
+					is_in_faction = no
 				}
 				create_faction = "The American Technical Alliance"
 			}
