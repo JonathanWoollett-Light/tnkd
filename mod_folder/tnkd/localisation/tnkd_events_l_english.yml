@@ -32,11 +32,17 @@
   nf_tnk.24.a:0 "§MWe shall build a paradise"
 
   nf_tnk.26.a:0 "They shall burn"
-
+  
+  nf_tnk.25.t:0 "Retreating from the lion"
+  nf_tnk.25.d:0 "We do not need this territory, let us leave this patch of the wasteland to these fanatics."
   nf_tnk.25.a:0 "Now is not the time."
 
   nf_tnk.26.d:0 "As the air ripples with the power of the laser we see the craft crashing to ground."
   nf_tnk.26.a:0 "There is so much to learn!"
+
+  nf_tnk.29.t:0 "Returning the Jewels"
+  nf_tnk.29.d:0 "The NCR has longed after these territories for long enough, let them have them, and they shall let us have peace."
+  nf_tnk.29.a:0 "Sacrifices must be made"
 
   nf_tnk.30.t:0 "An Intriguing Offer"
   nf_tnk.30.d:0 "It would seem for our coperation the Think Tank is willing to offer us fully function G.E.C.K.s."

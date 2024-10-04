@@ -19,7 +19,7 @@ tnkd_ingenuity = {
         timeout_effect = {
             if = {
                 limit = {
-                    check_variable = { tnk_ingenuity_buff_var < 0.4 }
+                    check_variable = { tnk_ingenuity_buff_var < 0.39 }
                 }
                 hidden_effect = {
                     activate_mission = tnkd_ingenuity_decision
