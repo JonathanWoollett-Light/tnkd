@@ -103,4 +103,12 @@ spriteTypes = {
 		name = "GFX_idea_tnkd_silence"
 		texturefile = "gfx/interface/ideas/itz_idea_icdeb.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_tnkd_think_tank_litigation"
+		texturefile = "gfx/interface/ideologies/unknown.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tnkd_expertise"
+		texturefile = "gfx/interface/ideas/unique/TNK/idea_tnk_science_idea.dds"
+	}
 }

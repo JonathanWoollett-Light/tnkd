@@ -81,3 +81,8 @@
 
   nf_tnk.40.d:0 "The §BG.E.C.K.§! (Garden of Eden Creation Kit) was a terraforming device created by the Future-Tec division of the Vault-Tec Corporation to allow Vault dwellers to rehabilitate the post-nucler wasteland."\nUnfortunately since the boombs dropped not a soul left alive knows how to manufacture them, a rare forgotten relic from past.\nBut we do not forget, we must rediscover how to manufacture §BG.E.C.K.§!s to rebuild the world."
   nf_tnk.40.a:0 "We shall create Eden"
+
+  nf_tnk.46.t:0 "Technology for peace"
+  nf_tnk.46.d:0 "In exchange for not squashing them [TNK.GetName] has offered us technical expertise in exchange for peace."
+  nf_tnk.46.a:0 "They are a tumour that must be removed"
+  nf_tnk.46.b:0 "We are in no rush to squash them"

@@ -79,12 +79,8 @@ ideas = {
 			targeted_modifier = {
 				tag = TNK
 				breakthrough_bonus_against = -0.2
-				
 			}
 		}
-		
-		# Unity defence
-		# ----------------------------------------------------------------------
 		tnkd_silence = {
 			allowed = {
 				always = no
@@ -133,10 +129,6 @@ ideas = {
 				stability_factor = -0.5
 			}
 		}
-
-		# Unity
-		# ----------------------------------------------------------------------
-
 		tnkd_convergance_idea = {
 			allowed = {
 				always = no
@@ -147,10 +139,6 @@ ideas = {
 				war_support_factor = -0.2
 			}
 		}
-
-		# Mobius unity
-		# ----------------------------------------------------------------------
-
 		tnkd_bulwark = {
 			allowed = {
 				always = no
@@ -235,13 +223,6 @@ ideas = {
 				monthly_population = 0.2
 			}
 		}
-
-		# Tech
-		# ----------------------------------------------------------------------
-
-		# Exotic research
-		# ----------------------------------------------------------------------
-
 		tnkd_exotic_research = {
 			allowed = {
 				always = no
@@ -281,9 +262,6 @@ ideas = {
 				heat_attrition = -0.2
 			}
 		}
-		
-		# True convergance
-		# -------------------------------------------------
 		tnkd_domination_protocol = {
 			allowed = {
 				always = no
@@ -291,7 +269,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				enemy_justify_war_goal_time = -0.2
-				justify_war_goal_time = -0.2
+				justify_war_goal_time = -0.4
 			}
 		}
 		tnkd_attack_weak = {
@@ -342,8 +320,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				air_strategic_bomber_bombing_factor = 0.4
-				strategic_bomb_visibility = -0.4
+				air_strategic_bomber_bombing_factor = 0.3
+				strategic_bomb_visibility = -0.6
 			}
 		}
 		tnkd_war_simulations = {
@@ -374,9 +352,6 @@ ideas = {
 				breakthrough_factor = 0.3
 			}
 		}
-		# -------------------------------------------------
-		# Decohesion
-		# -------------------------------------------------
 		tnkd_fractured_mind = {
             allowed = {
                 always = no
@@ -384,10 +359,29 @@ ideas = {
 
             removal_cost = -1
             modifier = {
-				army_org_factor = -0.4
-				production_factory_max_efficiency_factor = -0.2
-				political_power_factor = -0.6
+				stability_factor = -0.3
+				army_org_factor = -0.3
             }
         }
+		tnkd_expertise = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		tnkd_distributed_radar_fence = {
+			picture = tnk_shield
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				max_dig_in_factor = 0.2
+				dig_in_speed_factor = 0.4
+			}
+		}
     }
 }

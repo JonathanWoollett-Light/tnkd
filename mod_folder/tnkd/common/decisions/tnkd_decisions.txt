@@ -77,23 +77,28 @@ tnkd_clean_slate = {
         fixed_random_seed = no
         is_good = no
         selectable_mission = yes
-        days_mission_timeout = 10
+        days_mission_timeout = 60
         activation = {
             always = no
         }
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_clean_slate_decision
-                every_neighbor_country = {
-                    TNK = {
-                        declare_war_on = {
-                            target = PREV
-                            type =  annex_everything
-                        }
-                    }   
-                }
             }
-            custom_effect_tooltip = tnkd_clean_slate_decision_tt
+            random_neighbor_country = {
+                limit = {
+                    AND = {
+                        NOT = { is_in_faction_with = TNK }
+                        NOT = { has_war_with = TNK }
+                    }
+                }
+                TNK = {
+                    declare_war_on = {
+                        target = PREV
+                        type =  annex_everything
+                    }
+                }   
+            }
         }
     }
 }
@@ -121,10 +126,8 @@ tnkd_dna_shattering = {
                 activate_mission = tnkd_dna_shattering_decision
             }
             every_country = {
-                if = {
-                    limit = {
-                        has_war_with = TNK
-                    }
+                limit = {
+                    has_war_with = TNK
                 }
                 add_manpower = -200
             }

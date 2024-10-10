@@ -175,7 +175,7 @@
 
  tnkd_clean_slate:0 "Clean Slate Protocol"
  tnkd_clean_slate_desc:0 "Science must be carried out in a clean lab, we must clean the wasteland."
- tnkd_clean_slate_tt:0 "§RInitiates perpetual war.§!"
+ tnkd_clean_slate_tt:0 "§RInitiates perpetual war, declaring war on a random neighbour not in our faction every 60 days.§!"
 
  tnkd_war_simulations:0 "Deep Red"
  tnkd_war_simulations_desc:0 "We shall build machines to compute wars beyond comprehension."

@@ -1,17 +1,17 @@
 ﻿l_english:
   tnkd_decohesion_decision:0 "Decohesion"
   tnkd_decohesion_decision_tt:0 "We tear at the seams.\nAdds §R-1%§! to §YDecohesion§!."
+  
   tnkd_ingenuity_decision:0 "Ingenuity"
   tnkd_ingenuity_decision_tt:0 "Never backward always forward, always.\nAdds §G+1%§! to §YIngenuity§!.\nThe maximum value is +40%."
-
+  
   tnkd_clean_slate_decision:0 "Clean Slate Protocol"
-  tnkd_clean_slate_decision_tt:0 "§RDeclares war on all neighbours.§!"
+  
   tnkd_dna_shattering_decision:0 "Genetic Warfare"
-  tnkd_dna_shattering_decision:0 "It doesn't require much cesium to be accidently §Glost§! from our labs for an entire city to die."
-
+  
   tnkd_gev_category:0 "G.E.V."
   tnkd_gev_decision:0 "§PG.E.V.§!"
-
+  
   tnkd_resource_consolidation:0 "Resource Consolidation"
   tnkd_resource_consolidation_decision:0 "Resource Consolidation"
   tnkd_resource_consolidation_decision_tt:0 "Moves a random resource to the capital."
