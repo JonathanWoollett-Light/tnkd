@@ -77,7 +77,7 @@ tnkd_clean_slate = {
         fixed_random_seed = no
         is_good = no
         selectable_mission = yes
-        days_mission_timeout = 60
+        days_mission_timeout = 90
         activation = {
             always = no
         }
