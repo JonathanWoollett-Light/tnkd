@@ -955,11 +955,8 @@ focus_tree = {
 		x = 1
 		y = 3
 		available = {
-			set_temp_variable = { science_cost = 50000 }
+			set_temp_variable = { science_cost = 25000 }
 			science_cost_scripted_trigger = yes
-		}
-		mutually_exclusive = {
-			focus = tnk_klein_lobotomite_research_focus
 		}
 		prerequisite = {
 			focus = tnk_mobius_roboscorpion_research_mark_2_roboscorpions
@@ -967,7 +964,7 @@ focus_tree = {
 
 		relative_position_id = tnk_mobius_roboscorpion_research
 		completion_reward = {
-			set_temp_variable = { science_change = -50000 }
+			set_temp_variable = { science_change = -25000 }
 			tnk_change_science = yes
 			swap_ideas = {
 				remove_idea = tnk_lobotomite_conscription
@@ -1266,20 +1263,17 @@ focus_tree = {
 		cost = 15
 		x = -1
 		y = 3
-		mutually_exclusive = {
-			focus = tnk_mobius_roboscorpion_research_improve_the_x42_giant_roboscorpion
-		}
 		prerequisite = {
 			focus = tnk_klein_lobotomite_gear_improvements
 		}
 
 		relative_position_id = tnk_klein_lobotomite_research
 		available = {
-			set_temp_variable = { science_cost = 50000 }
+			set_temp_variable = { science_cost = 25000 }
 			science_cost_scripted_trigger = yes
 		}
 		completion_reward = {
-			set_temp_variable = { science_change = -50000 }
+			set_temp_variable = { science_change = -25000 }
 			tnk_change_science = yes
 			set_technology = { infantry_tech_level_scientific = 1 }
 		}
@@ -1818,10 +1812,8 @@ focus_tree = {
 		available = {
 			has_completed_focus = tnk_a_lovely_melody
 			has_completed_focus = tnk_the_gangs_all_here
-			OR = {
-				has_completed_focus = tnk_mobius_roboscorpion_research_improve_the_x42_giant_roboscorpion
-				has_completed_focus = tnk_klein_lobotomite_research_focus
-			}
+			has_completed_focus = tnk_mobius_roboscorpion_research_improve_the_x42_giant_roboscorpion
+			has_completed_focus = tnk_klein_lobotomite_research_focus
 			has_completed_focus = tnk_klein_mojave_experiments_set_up_the_new_x13_experiment
 			has_completed_focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
 			has_completed_focus = tnk_expanding_the_radar_fence
@@ -1836,6 +1828,10 @@ focus_tree = {
 			add_state_core = 46
 			add_state_core = 573
 			add_state_core = 552
+			add_victory_points = {
+				province = 3238
+				value = 10
+			}
 		}
 	}
 
@@ -1847,7 +1843,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 30
 		y = 7
-		x = 7
+		x = 10
 		relative_position_id = tnk_personality_restoration
 		available = {
 			has_completed_focus = tnk_personality_restoration
@@ -1925,15 +1921,290 @@ focus_tree = {
 		icon = GFX_goal_generic_land_doctrines_focus
 		cost = 60
 		y = 1
-		relative_position_id = tnkd_new_reactor
+		relative_position_id = tnkd_picking_sides
 		prerequisite = {
-			focus = tnkd_ces_wall
+			focus = tnkd_picking_sides
 		}
-		prerequisite = {
-			focus = tnkd_ncr_wall
+		mutually_exclusive = {
+			focus = tnkd_siding_with_ces
+			focus = tnkd_siding_with_ncr
+		}
+		available = {
+			has_completed_focus = tnkd_ces_wall
+			has_completed_focus = tnkd_ncr_wall
+			not = { is_in_faction_with = CES }
+			not = { is_in_faction_with = NCR }
 		}
 		completion_reward = {
 			add_ideas = tnkd_distributed_radar_fence
+		}
+	}
+	focus = {
+		id = tnkd_siding_with_ces
+		icon = GFX_goal_CES_Generic
+		cost = 60
+		y = 1
+		x = -2
+		relative_position_id = tnkd_picking_sides
+		prerequisite = {
+			focus = tnkd_picking_sides
+		}
+		available = {
+			is_in_faction_with = CES
+		}
+		mutually_exclusive = {
+			focus = tnkd_better_entrenchment
+			focus = tnkd_siding_with_ncr
+		}
+		completion_reward = {
+			add_ideas = tnkd_distributed_radar_fence
+		}
+	}
+	focus = {
+		id = tnkd_siding_with_ncr
+		icon = GFX_goal_NCR_Allisgood
+		cost = 60
+		y = 1
+		x = 2
+		relative_position_id = tnkd_picking_sides
+		prerequisite = {
+			focus = tnkd_picking_sides
+		}
+		available = {
+			is_in_faction_with = NCR
+		}
+		mutually_exclusive = {
+			focus = tnkd_better_entrenchment
+			focus = tnkd_siding_with_ces
+		}
+		completion_reward = {
+			add_ideas = tnkd_distributed_radar_fence
+		}
+	}
+	focus = {
+		id = tnkd_demanding_west
+		icon = GFX_goal_generic_focus_ncr_raids
+		cost = 60
+		y = 1
+		x = -1
+		relative_position_id = tnkd_better_entrenchment
+		prerequisite = {
+			focus = tnkd_siding_with_ces
+			focus = tnkd_better_entrenchment
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = tnkd_demanding_east
+		icon = GFX_goal_RRG_poison_bull
+		cost = 60
+		y = 1
+		x = 1
+		relative_position_id = tnkd_better_entrenchment
+		prerequisite = {
+			focus = tnkd_siding_with_ncr
+			focus = tnkd_better_entrenchment
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = tnkd_ces_reward
+		icon = GFX_goal_LAC_setting_sun
+		cost = 60
+		y = 1
+		relative_position_id = tnkd_demanding_west
+		prerequisite = {
+			focus = tnkd_demanding_west
+		}
+		available = {
+			has_completed_focus = tnkd_siding_with_ces
+			CES = {
+				253 = {
+					tnkd_sphere_controls_state = yes
+				}
+			}
+		}
+		completion_reward = {
+			# Give mojave
+			if = {
+				limit = {
+					CES = {
+						controls_state = 380
+					}
+				}
+				transfer_state = 380
+			}
+			if = {
+				limit = {
+					CES = {
+						controls_state = 613
+					}
+				}
+				transfer_state = 613
+			}
+			if = {
+				limit = {
+					CES = {
+						controls_state = 106
+					}
+				}
+				transfer_state = 106
+			}
+			# Give east territories
+			if = {
+				limit = {
+					CES = {
+						controls_state = 438
+					}
+				}
+				transfer_state = 438
+			}
+			if = {
+				limit = {
+					CES = {
+						controls_state = 359
+					}
+				}
+				transfer_state = 359
+			}
+			if = {
+				limit = {
+					CES = {
+						controls_state = 553
+					}
+				}
+				transfer_state = 553
+			}
+			if = {
+				limit = {
+					CES = {
+						controls_state = 130
+					}
+				}
+				transfer_state = 130
+			}
+			if = {
+				limit = {
+					CES = {
+						controls_state = 49
+					}
+				}
+				transfer_state = 49
+			}
+		}
+	}
+	focus = {
+		id = tnkd_asking_independance
+		icon = GFX_goal_generic_land_doctrines_focus
+		cost = 60
+		y = 3
+		relative_position_id = tnkd_better_entrenchment
+		prerequisite = {
+			focus = tnkd_ces_reward
+			focus = tnkd_ncr_reward
+		}
+		available = {
+			is_in_faction_with = CES
+			is_in_faction_with = NCR
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = tnkd_ncr_reward
+		icon = GFX_goal_ncr_power_armor2
+		cost = 60
+		y = 1
+		relative_position_id = tnkd_demanding_east
+		prerequisite = {
+			focus = tnkd_demanding_east
+		}
+		available = {
+			has_completed_focus = tnkd_siding_with_ncr
+			NCR = {
+				520 = {
+					tnkd_sphere_controls_state = yes
+				}
+			}
+		}
+		completion_reward = {
+			# Give mojave territories
+			if = {
+				limit = {
+					NCR = {
+						controls_state = 77
+					}
+				}
+				transfer_state = 77
+			}
+			if = {
+				limit = {
+					NCR = {
+						controls_state = 380
+					}
+				}
+				transfer_state = 380
+			}
+			if = {
+				limit = {
+					NCR = {
+						controls_state = 613
+					}
+				}
+				transfer_state = 613
+			}
+			if = {
+				limit = {
+					NCR = {
+						controls_state = 106
+					}
+				}
+				transfer_state = 106
+			}
+			# Give west territories
+			if = {
+				limit = {
+					NCR = {
+						controls_state = 13
+					}
+				}
+				transfer_state = 13
+			}
+			if = {
+				limit = {
+					NCR = {
+						controls_state = 271
+					}
+				}
+				transfer_state = 271
+			}
+			if = {
+				limit = {
+					NCR = {
+						controls_state = 592
+					}
+				}
+				transfer_state = 592
+			}
+			if = {
+				limit = {
+					NCR = {
+						controls_state = 329
+					}
+				}
+				transfer_state = 329
+			}
+			if = {
+				limit = {
+					NCR = {
+						controls_state = 603
+					}
+				}
+				transfer_state = 603
+			}
 		}
 	}
 	focus = {
@@ -2168,6 +2439,76 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = tnkd_ces_demand
+		icon = GFX_goal_CES_Exercitus
+		cost = 30
+		y = 2
+		relative_position_id = tnkd_larping_luddites
+		prerequisite = {
+			focus = tnkd_larping_luddites
+		}
+		available = {
+			controls_state = 252
+		}
+		bypass = {
+			438 = {
+				tnkd_sphere_controls_state = yes
+			}
+		}
+		completion_reward = {
+			CES = {
+				country_event = nf_tnk.47
+			}
+		}
+	}
+	focus = {
+		id = tnkd_ces_demand_2
+		icon = GFX_goal_NCR_Damassault
+		cost = 30
+		y = 1
+		relative_position_id = tnkd_ces_demand
+		prerequisite = {
+			focus = tnkd_ces_demand
+		}
+		available = {
+			controls_state = 438
+			not = {
+				is_in_faction_with = CES
+			}
+		}
+		completion_reward = {
+			transfer_state = 553
+			transfer_state = 359
+
+			every_country = {
+				limit = {
+					or = {
+						owns_state = 553
+						owns_state = 359
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = TNK
+				}
+			}
+		}
+	}
+	focus = {
+		id = tnkd_picking_sides
+		icon = GFX_goal_generic_major_alliance
+		cost = 30
+		y = 2
+		relative_position_id = tnkd_new_reactor
+		prerequisite = {
+			focus = tnkd_ces_demand
+			focus = tnkd_ncr_demand
+		}
+		completion_reward = {
+			custom_effect_tooltip = tnkd_picking_sides_tt
+		}
+	}
+	focus = {
 		id = tnkd_ces_wall
 		icon = GFX_goal_tnkd_wall
 		cost = 60
@@ -2237,7 +2578,7 @@ focus_tree = {
 
 	focus = {
 		id = tnkd_ncr_defence
-		icon = GFX_goal_generic_focus_ncr_raids
+		icon = GFX_goal_NCR_Council_Hill
 		cost = 15
 		x = 3
 		y = 1
@@ -2251,6 +2592,27 @@ focus_tree = {
 			}
 			NCR = {
 				country_event = nf_tnk.46
+			}
+		}
+	}
+
+	focus = {
+		id = tnkd_ncr_demand
+		icon = GFX_goal_NCR_MojaveOutpost
+		cost = 30
+		y = 2
+		relative_position_id = tnkd_ncr_defence
+		prerequisite = {
+			focus = tnkd_ncr_defence
+		}
+		bypass = {
+			77 = {
+				tnkd_sphere_controls_state = yes
+			}
+		}
+		completion_reward = {
+			NCR = {
+				country_event = nf_tnk.48
 			}
 		}
 	}
@@ -2419,7 +2781,7 @@ focus_tree = {
 			focus = tnkd_cohesion
 		}
 		completion_reward = {
-			remove_ideas = tnkd_fractured_mind			
+			remove_ideas = tnkd_fractured_mind
 		}
 	}
 
@@ -2815,6 +3177,9 @@ focus_tree = {
 			focus = tnkd_burn_land
 			focus = tnkd_attack_weak
 		}
+		available = {
+        	num_of_controlled_states > 10
+        }
 		completion_reward = {
 			if = {
 				limit = {
@@ -2822,7 +3187,10 @@ focus_tree = {
 				}
 				create_faction = "The Vision"
 			}
-			else = {
+			else_if = {
+				limit = {
+					is_faction_leader = yes
+				}
 				set_faction_name = "The Vision"
 			}
 			add_stability = -0.1
@@ -2840,6 +3208,7 @@ focus_tree = {
 			focus = tnkd_the_future_vision
 		}
 		completion_reward = {
+			add_ideas = tnkd_purification_idea
 		}
 	}
 	focus = {
@@ -2886,7 +3255,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = tnkd_clean_slate_tt
-			activate_mission = tnkd_clean_slate_decision
+			activate_mission = tnkd_clean_slate_decision_0
 		}
 	}
 	focus = {
@@ -2907,7 +3276,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = tnkd_cleaner_slate_tt
 			hidden_effect = {
-				activate_mission = tnkd_clean_slate_decision
+				activate_mission = tnkd_clean_slate_decision_1
 			}
 			add_ideas = tnkd_war_simulations
 		}
@@ -2929,7 +3298,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = tnkd_cleaner_slate_tt
 			hidden_effect = {
-				activate_mission = tnkd_clean_slate_decision
+				activate_mission = tnkd_clean_slate_decision_2
 			}
 			add_ideas = tnkd_dna_shattering_idea
 			activate_mission = tnkd_dna_shattering_decision
@@ -2954,7 +3323,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = tnkd_cleaner_slate_tt
 			hidden_effect = {
-				activate_mission = tnkd_clean_slate_decision
+				activate_mission = tnkd_clean_slate_decision_3
 			}
 			add_ideas = tnkd_missiles
 		}
@@ -3094,6 +3463,9 @@ focus_tree = {
 			focus = tnkd_guardian
 			focus = tnkd_giant_slayer
 		}
+		available = {
+        	num_of_controlled_states > 10
+        }
 		completion_reward = {
 			if = {
 				limit = {
@@ -3101,9 +3473,13 @@ focus_tree = {
 				}
 				create_faction = "The American Technical Alliance"
 			}
-			else = {
+			else_if = {
+				limit = {
+					is_faction_leader = yes
+				}
 				set_faction_name = "The American Technical Alliance"
 			}
+			
 			add_stability = -0.1
 			add_war_support = 0.2
 		}
@@ -3198,6 +3574,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			set_technology = { super_mutant_behemoth = 1 }
 		}
 	}
 	focus = {
@@ -3369,6 +3746,11 @@ focus_tree = {
 			add_ideas = tnkd_exotic_research
 			set_technology = { vehicles_tech_level_tribal = 1 }
 			set_technology = { vehicles_tech_level_settler = 1 }
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 3
+				category = air_tech_category
+			}
 		}
 	}
 	focus = {

@@ -64,7 +64,7 @@ tnkd_decohesion = {
 }
 
 tnkd_clean_slate = {
-    tnkd_clean_slate_decision = {
+    tnkd_clean_slate_decision_0 = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
         visible = {
@@ -83,7 +83,118 @@ tnkd_clean_slate = {
         }
         timeout_effect = {
             hidden_effect = {
-                activate_mission = tnkd_clean_slate_decision
+                activate_mission = tnkd_clean_slate_decision_0
+            }
+            random_neighbor_country = {
+                limit = {
+                    AND = {
+                        NOT = { is_in_faction_with = TNK }
+                        NOT = { has_war_with = TNK }
+                    }
+                }
+                TNK = {
+                    declare_war_on = {
+                        target = PREV
+                        type =  annex_everything
+                    }
+                }   
+            }
+        }
+    }
+    tnkd_clean_slate_decision_1 = {
+        icon = GFX_decision_generic_scorched_earth
+        priority = 1000
+        visible = {
+            has_country_flag = TNK
+        }
+        allowed = { tag = TNK }
+        available = {
+            always = no
+        }
+        fixed_random_seed = no
+        is_good = no
+        selectable_mission = yes
+        days_mission_timeout = 90
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            hidden_effect = {
+                activate_mission = tnkd_clean_slate_decision_1
+            }
+            random_neighbor_country = {
+                limit = {
+                    AND = {
+                        NOT = { is_in_faction_with = TNK }
+                        NOT = { has_war_with = TNK }
+                    }
+                }
+                TNK = {
+                    declare_war_on = {
+                        target = PREV
+                        type =  annex_everything
+                    }
+                }   
+            }
+        }
+    }
+    tnkd_clean_slate_decision_2 = {
+        icon = GFX_decision_generic_scorched_earth
+        priority = 1000
+        visible = {
+            has_country_flag = TNK
+        }
+        allowed = { tag = TNK }
+        available = {
+            always = no
+        }
+        fixed_random_seed = no
+        is_good = no
+        selectable_mission = yes
+        days_mission_timeout = 90
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            hidden_effect = {
+                activate_mission = tnkd_clean_slate_decision_2
+            }
+            random_neighbor_country = {
+                limit = {
+                    AND = {
+                        NOT = { is_in_faction_with = TNK }
+                        NOT = { has_war_with = TNK }
+                    }
+                }
+                TNK = {
+                    declare_war_on = {
+                        target = PREV
+                        type =  annex_everything
+                    }
+                }   
+            }
+        }
+    }
+    tnkd_clean_slate_decision_3 = {
+        icon = GFX_decision_generic_scorched_earth
+        priority = 1000
+        visible = {
+            has_country_flag = TNK
+        }
+        allowed = { tag = TNK }
+        available = {
+            always = no
+        }
+        fixed_random_seed = no
+        is_good = no
+        selectable_mission = yes
+        days_mission_timeout = 90
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            hidden_effect = {
+                activate_mission = tnkd_clean_slate_decision_3
             }
             random_neighbor_country = {
                 limit = {

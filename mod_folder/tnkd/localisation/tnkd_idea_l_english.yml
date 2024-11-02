@@ -60,9 +60,6 @@
  tnkd_charging_laser:0 "Charging Mega-laser"
  tnkd_charging_laser_desc:0 "We will power beyound comphrension to shoot this monstrosity down."
 
- # Decohesion
- # ---------------------------------------------------------
-
  tnkd_fractured_mind:0 "Fractured Mind"
  tnkd_fractured_mind_desc:0 "Our conscious tears as it pulls outwards, memories of selves in defiance of our unity."
  
@@ -70,4 +67,8 @@
  tnkd_better_entrenchment_desc:0 "Applying lessons learned since our venturing fourth we have become experts of defending our territory against our powerful, numerous and volatile neighbours."
  tnkd_distributed_radar_fence:0 "Adaptive Entrenchment"
  tnkd_distributed_radar_fence_desc:0 "If we are to defend our territory in the wars to come we must be able to quickly defend new fronts."
-  
+ tnkd_purification_idea:0 "Purification"
+ tnkd_purification_idea_desc:0 "We must cleanse our workforce and auxiliaries of the weak and the infected."
+
+ tnkd_expertise:0 "[TNK.getName] expertise"
+ tnkd_expertise_desc:0 "The expertise of these pre-war lunatics is surprisingly useful, although their methods are... questionable."

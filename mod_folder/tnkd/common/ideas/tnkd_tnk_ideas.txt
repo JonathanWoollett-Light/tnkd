@@ -78,7 +78,8 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag = TNK
-				breakthrough_bonus_against = -0.2
+				attack_bonus_against = -0.05
+				political_power_factor = -0.05
 			}
 		}
 		tnkd_silence = {
@@ -330,8 +331,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				planning_speed = 0.5
-				max_planning_factor = 1
+				planning_speed = 0.6
+				max_planning_factor = 0.3
 			}
 		}
 		tnkd_dna_shattering_idea = {
@@ -349,7 +350,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				breakthrough_factor = 0.3
+				breakthrough_factor = 0.2
 			}
 		}
 		tnkd_fractured_mind = {
@@ -369,7 +370,10 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				
+				stability_factor = -0.05
 			}
 		}
 		tnkd_distributed_radar_fence = {
@@ -381,6 +385,19 @@ ideas = {
 			modifier = {
 				max_dig_in_factor = 0.2
 				dig_in_speed_factor = 0.4
+			}
+		}
+		tnkd_purification_idea = {
+			picture = tnk_shield
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_attack_factor = 0.2
+				special_forces_defence_factor = 0.2
+				weekly_manpower = -50
+				stability_factor = 0.05
 			}
 		}
     }

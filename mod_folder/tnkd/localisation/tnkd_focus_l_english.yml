@@ -152,6 +152,14 @@
 
  tnkd_larping_luddites:0 "An accord with the Lion"
  tnkd_larping_luddites_desc:0 "We must deal with these larping luddites who call themselves 'Ceasar's legion'. As technologically stunted as they are, if we do not act they will swarm, consume us, and destroy all we have acheived."
+ tnkd_ces_demand:0 "Give an inch?"
+ tnkd_ces_demand_desc:0 "By all rights §Y[438.getName]§! forms a more natural part of our nation, we must demand it back."
+
+ tnkd_ncr_demand:0 "Reunification"
+ tnkd_ncr_demand_desc:0 "Before chaos engulfed the Mojave §Y[77.getName]§! belonged to §Y[MOT.getName]§!, as their successor we must demand this land back."
+
+ tnkd_ces_demand_2:0 "Take a mile"
+ tnkd_ces_demand_2_desc:0 "The legion is stretched thin, with our operatives new outpost we can deploy them to seize control... although for how long we can hold these territories we do not know."
 
  tnkd_domination_protocol:0 "Domination Protocol"
  tnkd_domination_protocol_desc:0 "Our neighbours are not so different from our lobotomites."
@@ -161,7 +169,7 @@
  tnkd_attack_weak_tt:0 "Gain National Spirit §YWasteland Vulture§!, which grants ((@SKY§Y[SKY.getName]§!, @GRA§Y[GRA.getName]§!, @VIP§Y[VIP.getName]§!, @RIP§Y[RIP.getName]§!, @RUB§Y[RUB.getName]§!, @PAL§Y[PAL.getName]§!, @VLT§Y[VLT.getName]§!, @CYC§Y[CYC.getName]§!, @EAS§Y[EAS.getName]§!) Attack bonus against country: §G+5%§!)."
 
  tnkd_burn_land:0 "Burn The Land"
- tnkd_burn_land_desc:0 "With appropriate redirection of our gamma weaponry we might burn these cockroaches out of their rotten homes."
+ tnkd_burn_land_desc:0 "Why would anyone bomb a wasteland? This is what the others say, they have forgotten the devasting possibility, we can exploit this to our great advantage. With appropriate redirection of our gamma weaponry we might burn these cockroaches out of their rotten homes."
 
  tnkd_the_future_vision:0 "The Vision of the Future"
  tnkd_the_future_vision_desc:0 "We know what we must do, we have only to execute it... or rather... them."
@@ -238,3 +246,7 @@
  tnkd_shoot_it_down_desc:0 "With the concentrated power of the sun we will strike it down."
  tnkd_force_from_beyond:0 "Force from Beyond"
  tnkd_force_from_beyond_desc:0 "We can rebuild them, we have the technology."
+
+ tnkd_picking_sides:0 "Picking Sides"
+ tnkd_picking_sides_desc:0 "If we cannot surive alone, we must pick a side in the Mojave, let us start courting §Y[CES.getName]§! and §Y[NCR.getName]§! and see what they might offer for our allegiance."
+ tnkd_picking_sides_tt:0 "§Y[CES.getName]§! and §Y[NCR.getName]§! gain decisions to demand §Y[TNK.getName]§! joins their faction or becomes a puppet in exchange for concessions, after 90 days of open bidding §Y[TNK.getName]§! chooses whether to accept either offer or remain neutral."

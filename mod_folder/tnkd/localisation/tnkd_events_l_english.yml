@@ -83,6 +83,16 @@
   nf_tnk.40.a:0 "We shall create Eden"
 
   nf_tnk.46.t:0 "Technology for peace"
-  nf_tnk.46.d:0 "In exchange for not squashing them [TNK.GetName] has offered us technical expertise in exchange for peace."
+  nf_tnk.46.d:0 "In exchange for not squashing them §Y[TNK.GetName]§! has offered us technical expertise in exchange for peace."
   nf_tnk.46.a:0 "They are a tumour that must be removed"
   nf_tnk.46.b:0 "We are in no rush to squash them"
+
+  nf_tnk.47.t:0 "Give an inch?"
+  nf_tnk.47.d:0 "§Y[TNK.getName]§! requests a small amount of territory in exchange for their continued technical expertise."
+  nf_tnk.47.a:0 "We do not need this land"
+  nf_tnk.47.b:0 "We must protect our borders"
+
+  nf_tnk.48.t:0 "A request for reunification"
+  nf_tnk.48.d:0 "Before the chaos §Y[77.getName]§! belonged to §Y[MOT.getName]§! their successor §Y[TNK.getName]§! now claims they are the rightful owners of this land."
+  nf_tnk.48.a:0 "This land is irrelevant"
+  nf_tnk.48.b:0 "This land is ours"
