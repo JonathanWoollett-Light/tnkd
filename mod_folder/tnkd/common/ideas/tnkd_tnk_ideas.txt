@@ -372,8 +372,17 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
-				
 				stability_factor = -0.05
+			}
+		}
+		tnkd_better_expertise = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 		tnkd_distributed_radar_fence = {
@@ -388,7 +397,7 @@ ideas = {
 			}
 		}
 		tnkd_purification_idea = {
-			picture = tnk_shield
+			picture = generic_skull
 			allowed = {
 				always = no
 			}
@@ -398,6 +407,39 @@ ideas = {
 				special_forces_defence_factor = 0.2
 				weekly_manpower = -50
 				stability_factor = 0.05
+			}
+		}
+		tnkd_going_alone_idea = {
+			picture = generic_raids2
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		tnkd_brain_drain = {
+			picture = tnk_shield
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		tnkd_theoretical_production = {
+			picture = generic_psyker
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.40
+				line_change_production_efficiency_factor = -0.2
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
     }

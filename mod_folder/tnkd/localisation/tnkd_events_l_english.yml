@@ -96,3 +96,23 @@
   nf_tnk.48.d:0 "Before the chaos §Y[77.getName]§! belonged to §Y[MOT.getName]§! their successor §Y[TNK.getName]§! now claims they are the rightful owners of this land."
   nf_tnk.48.a:0 "This land is irrelevant"
   nf_tnk.48.b:0 "This land is ours"
+
+  nf_tnk.49.t:0 "Making an offer"
+  nf_tnk.49.d:0 "§Y[TNK.getName]§! is seeking protection, we can make them an offer for their allegiance. When we conquer [253.getName] we will be obligated to cede [380.getName], [613.getName], [106.getName], [438.getName], [359.getName], [553.getName], [130.getName] and [49.getName]."
+  nf_tnk.49.a:0 "We can protect them"
+  nf_tnk.49.b:0 "We do not need them"
+
+  nf_tnk.50.t:0 "Making an offer"
+  nf_tnk.50.d:0 "§Y[TNK.getName]§! is seeking protection, we can make them an offer for their allegiance. When we conquer [520.getName] we will be obligated to cede [77.getName], [380.getName], [613.getName], [106.getName], [13.getName], [271.getName], [592.getName], [329.getName] and [603.getName]."
+  nf_tnk.50.a:0 "We can protect them"
+  nf_tnk.50.b:0 "We do not need them"
+
+  nf_tnk.52.t:0 "Promises to [TNK.getName]"
+  nf_tnk.52.d:0 "Will we keep our promise?"
+  nf_tnk.52.a:0 "We will honour our agreement"
+  nf_tnk.52.b:0 "We not do owe them anything"
+
+  nf_tnk.53.t:0 "Promises to [TNK.getName]"
+  nf_tnk.53.d:0 "Will we keep our promise?"
+  nf_tnk.53.a:0 "We will honour our agreement"
+  nf_tnk.53.b:0 "We not do owe them anything"

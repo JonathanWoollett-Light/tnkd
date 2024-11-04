@@ -20,6 +20,9 @@
  tnkd_decohesion_desc:0 "WHAT?!? Something went wrong, our consciousnesses are not properly bound, our minds loose cohesion by at each moment."
  tnk_decohesion_dynamic_modifier:0 "Decohesion"
  
+ tnkd_going_alone_idea:0 "Going Alone"
+ tnkd_going_alone_idea_desc:0 "Without a commitee we can focus on our own goals with unparalleled efficiency."
+
  tnkd_think_tank_litigation:0 "[TNK.getName] diplomacy"
  tnkd_think_tank_litigation_desc:0 "Their speakers output a whirlwind of nonsense confusing and wasting the time or our bureaucrats."
 
@@ -72,3 +75,10 @@
 
  tnkd_expertise:0 "[TNK.getName] expertise"
  tnkd_expertise_desc:0 "The expertise of these pre-war lunatics is surprisingly useful, although their methods are... questionable."
+ tnkd_better_expertise:0 "[TNK.getName] consultants"
+ tnkd_better_expertise_desc:0 "Building upon their current expertise we can now communicates directly we their consultants."
+
+ tnkd_brain_drain:0 "Brain Drain"
+ tnkd_brain_drain_desc:0 "We are quantum physics professors teaching cavemen how to make fire."
+ tnkd_theoretical_production:0 "Theoretical Priority"
+ tnkd_theoretical_production_desc:0 "Application is for PhD dropouts, we are scientists."
