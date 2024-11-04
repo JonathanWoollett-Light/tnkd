@@ -1,0 +1,10 @@
+spriteTypes = {
+    frameAnimatedSpriteType = {
+		name = "GFX_Portrait_TNK_leader_animated"
+		texturefile = "gfx/leaders/TNK/tnkd_portrait_tnk_leader.dds"
+		noOfFrames = 100
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}

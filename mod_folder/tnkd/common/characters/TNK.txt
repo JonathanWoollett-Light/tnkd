@@ -1,0 +1,424 @@
+characters = {
+	TNK_the_think_tank = {
+		name = TNK_THINK_TANK_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_TNK_leader_animated
+			}
+		}
+		country_leader = {
+			desc = TNK_THINK_TANK_DESC
+			ideology = technocracy
+			expire = "3000.01.01.01"
+			id = -1
+		}
+		country_leader = {
+			desc = TNK_THINK_TANK_DESC
+			ideology = town_hall_democracy
+			expire = "3000.01.01.01"
+			id = -1
+		}
+		country_leader = {
+			desc = TNK_THINK_TANK_DESC
+			ideology = militarist_oligarchy
+			expire = "3000.01.01.01"
+			id = -1
+		}
+		country_leader = {
+			desc = TNK_THINK_TANK_DESC
+			ideology = oligarchy
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	TNK_klein = {
+		name = TNK_klein
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_klein
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = TNK_klein_army_chief
+			ledger = army
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_klein_army_chief
+				}
+			}
+			modifier = {
+				max_planning = 0.06
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	TNK_8 = {
+		name = TNK_8
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_8
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = TNK_8_navy_chief
+			ledger = navy
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_8_navy_chief
+				}
+			}
+			modifier = {
+				out_of_supply_factor = -0.06
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	TNK_0 = {
+		name = TNK_0
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_0
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = TNK_0_air_chief
+			ledger = air
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_0_air_chief
+				}
+			}
+			modifier = {
+				recon_factor = 0.06
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	TNK_dala = {
+		name = TNK_dala
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_dala
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = TNK_dala_high_command
+			ledger = army
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_dala_high_command
+				}
+			}
+			modifier = {
+				army_morale_factor = 0.06
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	TNK_borus = {
+		name = TNK_borus
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_borus
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = TNK_borus_high_command
+			ledger = army
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_borus_high_command
+				}
+			}
+			modifier = {
+				land_reinforce_rate = 0.06
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	TNK_mobius = {
+		name = TNK_mobius
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_mobius
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = TNK_mobius_theorist
+			ledger = army
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_mobius_theorist
+				}
+			}
+			traits = {
+				TNK_mobius_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	TNK_sink_autodoc = {
+		name = TNK_sink_autodoc
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_sink_autodoc
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = TNK_sink_autodoc_cultural_advisor
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_sink_autodoc_cultural_advisor
+				}
+			}
+			modifier = {
+				army_morale_factor = 0.02
+			}
+			research_bonus = {
+				support_medical_tech_category = 0.04
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	TNK_sink_biological_research_station = {
+		name = TNK_sink_biological_research_station
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_sink_biological_research_station
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = TNK_sink_biological_research_station_cultural_advisor
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_sink_biological_research_station_cultural_advisor
+				}
+			}
+			modifier = {
+				attrition = -0.02
+			}
+			traits = {
+				TNK_sink_biological_research_station_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	TNK_sink_toaster = {
+		name = TNK_sink_toaster
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_sink_toaster
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = TNK_sink_toaster_cultural_advisor
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_sink_toaster_cultural_advisor
+				}
+			}
+			modifier = {
+				army_org_factor = 0.01
+				army_attack_factor = 0.01
+				army_defence_factor = 0.01
+			}
+			traits = {
+				TNK_sink_biological_research_station_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	TNK_sink_book_chute = {
+		name = TNK_sink_book_chute
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_sink_book_chute
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = TNK_sink_book_chute_economic_advisor
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_sink_book_chute_economic_advisor
+				}
+			}
+			modifier = {
+				research_speed_factor = -0.02
+				conversion_cost_civ_to_mil_factor = -0.04
+				stability_factor = 0.02
+			}
+			traits = {
+				TNK_sink_toaster_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	TNK_sink_light_switch_01 = {
+		name = TNK_sink_light_switch_01
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_sink_light_switch_01
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = TNK_sink_light_switch_01_economic_advisor
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_sink_light_switch_01_economic_advisor
+				}
+			}
+			modifier = {
+				army_leader_start_logistics_level = 2
+				recon_factor = 0.04
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	TNK_sink_light_switch_02 = {
+		name = TNK_sink_light_switch_02
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_sink_light_switch_02
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = TNK_sink_light_switch_02_economic_advisor
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_sink_light_switch_02_economic_advisor
+				}
+			}
+			modifier = {
+				army_leader_start_planning_level = 2
+				recon_factor = 0.04
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	TNK_sink_muggy = {
+		name = TNK_sink_muggy
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_sink_muggy
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = TNK_sink_muggy_economic_advisor
+			can_be_fired = no
+			allowed = {
+				original_tag = TNK
+			}
+			available = {
+				hidden_trigger = {
+					has_idea = TNK_sink_muggy_economic_advisor
+				}
+			}
+			modifier = {
+				attrition = -0.02
+				supply_consumption_factor = -0.02
+				out_of_supply_factor = -0.02
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+}
