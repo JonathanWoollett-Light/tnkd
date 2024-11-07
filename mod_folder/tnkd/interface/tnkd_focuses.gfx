@@ -35,10 +35,6 @@ spriteTypes = {
 		name = "GFX_goal_tnkd_wall"
 		texturefile = "gfx/interface/goals/tnkd_wall.dds"
 	}
-
-	# True convergance
-	# ----------------------------------------------------------
-
 	spriteType = {
 		name = "GFX_goal_tnkd_true_convergance"
 		texturefile = "gfx/interface/goals/tnkd_true_convergance.dds"
@@ -87,10 +83,6 @@ spriteTypes = {
 		name = "GFX_goal_tnkd_missiles"
 		texturefile = "gfx/interface/goals/tnkd_missiles.dds"
 	}
-
-	# Advanced robotic
-	# ----------------------------------------------------------
-
 	spriteType = {
 		name = "GFX_goal_tnkd_advanced_robots"
 		texturefile = "gfx/interface/goals/tnkd_advanced_robots.dds"
@@ -103,10 +95,6 @@ spriteTypes = {
 		name = "GFX_goal_tnkd_robotic_supremacy"
 		texturefile = "gfx/interface/goals/tnkd_robotic_supremacy.dds"
 	}
-	
-	# Exotic research
-	# ----------------------------------------------------------
-	
 	spriteType = {
 		name = "GFX_goal_tnkd_little_green_dot"
 		texturefile = "gfx/interface/goals/tnkd_little_green_dot.dds"
@@ -119,10 +107,6 @@ spriteTypes = {
 		name = "GFX_goal_tnkd_el_dorado"
 		texturefile = "gfx/interface/goals/tnkd_el_dorado.dds"
 	}
-
-	# Mobius convergance
-	# ----------------------------------------------------------
-
 	spriteType = {
 		name = "GFX_goal_tnkd_mobius_convergance"
 		texturefile = "gfx/interface/goals/tnkd_mobius_convergance.dds"
@@ -175,7 +159,6 @@ spriteTypes = {
 		name = "GFX_goal_tnkd_dead_horses"
 		texturefile = "gfx/interface/goals/tnkd_dead_horses.dds"
 	}
-	
 	spriteType = {
 		name = "GFX_goal_tnkd_new_reactor"
 		texturefile = "gfx/interface/goals/tnkd_reactors.dds"
