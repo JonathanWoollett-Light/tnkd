@@ -1209,7 +1209,6 @@ focus_tree = {
 			add_ideas = tnk_klein_lobotomite_research_numbers
 		}
 	}
-
 	focus = {
 		id = tnk_klein_lobotomite_research_strength
 		icon = GFX_goal_tnk_lobotomite_strength
@@ -1234,7 +1233,6 @@ focus_tree = {
 			add_ideas = tnk_klein_lobotomite_research_strength
 		}
 	}
-
 	focus = {
 		id = tnk_klein_lobotomite_gear_improvements
 		icon = GFX_goal_tnk_lobotomite_mask
@@ -1256,7 +1254,6 @@ focus_tree = {
 			set_technology = { infantry_tech_level_settler = 1 }
 		}
 	}
-
 	focus = {
 		id = tnk_klein_lobotomite_research_focus
 		icon = GFX_goal_tnk_lobotomite_research_focus
@@ -1278,7 +1275,6 @@ focus_tree = {
 			set_technology = { infantry_tech_level_scientific = 1 }
 		}
 	}
-
 	focus = {
 		id = tnk_dala
 		icon = GFX_goal_tnk_lobotomite_tank_dala
@@ -1321,7 +1317,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnk_dala_dalas_breathalyzer_hotline
 		icon = GFX_goal_tnk_hotline
@@ -1356,7 +1351,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnk_dala_watch_them_move_watch_them_live
 		icon = GFX_goal_tnk_surveillance
@@ -1377,7 +1371,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnk_dala_my_little_teddies
 		icon = GFX_goal_generic_teddy
@@ -1395,7 +1388,6 @@ focus_tree = {
 			add_stability = 0.13
 		}
 	}
-
 	focus = {
 		id = tnk_dala_teddy_bear_research
 		icon = GFX_goal_tnk_biological_research
@@ -1413,7 +1405,6 @@ focus_tree = {
 			add_manpower = 333
 		}
 	}
-
 	focus = {
 		id = tnk_dala_watching_the_bull_dance
 		icon = GFX_goal_tnk_legion
@@ -1438,7 +1429,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnk_dala_watching_the_bull_dance_helping_the_still_teddies_dance
 		icon = GFX_goal_big_mt_x17
@@ -1463,7 +1453,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnk_dala_watching_the_bull_dance_learning_the_rythem_of_the_dance
 		icon = GFX_goal_tnk_legion_experiments
@@ -1488,7 +1477,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
 		icon = GFX_goal_tnk_luna
@@ -1513,7 +1501,6 @@ focus_tree = {
 			country_event = nf_tnk.17
 		}
 	}
-
 	focus = {
 		id = tnk_borous
 		icon = GFX_goal_tnk_lobotomite_tank_borous
@@ -1556,7 +1543,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnk_my_best_friend_gabe
 		icon = GFX_goal_generic_focus_magazine_lal_an_experience_to_remember
@@ -1578,7 +1564,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnk_my_arch_nemesis_richie_marcus
 		icon = GFX_goal_tnk_richie_marcus
@@ -1601,7 +1586,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnk_my_gal_pal_betsy_bright
 		icon = GFX_goal_tnk_betsy_bright
@@ -1624,7 +1608,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnk_restart_the_x8_program
 		icon = GFX_goal_big_mt_x8
@@ -1646,7 +1629,6 @@ focus_tree = {
 			country_event = nf_tnk.4
 		}
 	}
-
 	focus = {
 		id = tnk_expanding_the_radar_fence
 		icon = GFX_goal_energy
@@ -1671,7 +1653,6 @@ focus_tree = {
 			add_ideas = tnk_expanded_radar_fence
 		}
 	}
-
 	focus = {
 		id = tnk_chasing_lost_students
 		icon = GFX_goal_NCN_The_Sorrows
@@ -1705,7 +1686,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnk_study_stanislaus_brauns_research
 		icon = GFX_goal_TTM_Simulation_Training
@@ -1727,7 +1707,6 @@ focus_tree = {
 			country_event = nf_tnk.6
 		}
 	}
-
 	focus = {
 		id = tnk_establish_the_tranquility_lane_schooling_board
 		icon = GFX_goal_generic_pioneer_scouts
@@ -1762,7 +1741,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnkd_working_with_robco
 		icon = GFX_goal_VEG_Vegas_for_the_People
@@ -1803,7 +1781,6 @@ focus_tree = {
 			add_ideas = moj_platinumOS
 		}
 	}
-
 	focus = {
 		id = tnkd_next_steps
 		icon = GFX_goal_tnkd_next_steps
@@ -1834,10 +1811,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	# Defence
-	# -----------------------------------------------------------------------
-
 	focus = {
 		id = tnkd_defensive_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
@@ -1933,6 +1906,25 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = tnkd_picking_sides
+		icon = GFX_goal_generic_major_alliance
+		cost = 30
+		y = 2
+		relative_position_id = tnkd_new_reactor
+		prerequisite = {
+			focus = tnkd_ces_demand
+			focus = tnkd_ncr_demand
+		}
+		completion_reward = {
+			CES = {
+				country_event = nf_tnk.49
+			}
+			NCR = {
+				country_event = nf_tnk.50
+			}
+		}
+	}
+	focus = {
 		id = tnkd_going_alone
 		icon = GFX_goal_NCR_Rangers_Lead_the_War
 		cost = 30
@@ -1981,7 +1973,22 @@ focus_tree = {
 			focus = tnkd_siding_with_ncr
 		}
 		completion_reward = {
-			add_ideas = tnkd_brain_drain
+			custom_effect_tooltip = tnkd_brain_drain_worsen
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = tnk_brain_drain_dynamic_modifier
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = tnk_brain_drain_var }
+					}
+					set_variable = { tnk_brain_drain_var = -0.05 }
+				}
+				else = {
+					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+				}
+			}
+			add_ideas = tnkd_humility
 			CES = {
 				add_to_faction = TNK
 				add_ideas = tnkd_better_expertise
@@ -2018,7 +2025,22 @@ focus_tree = {
 			focus = tnkd_siding_with_ces
 		}
 		completion_reward = {
-			add_ideas = tnkd_brain_drain
+			custom_effect_tooltip = tnkd_brain_drain_worsen
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = tnk_brain_drain_dynamic_modifier
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = tnk_brain_drain_var }
+					}
+					set_variable = { tnk_brain_drain_var = -0.05 }
+				}
+				else = {
+					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+				}
+			}
+			add_ideas = tnkd_humility
 			NCR = {
 				add_to_faction = TNK
 				add_ideas = tnkd_better_expertise
@@ -2098,8 +2120,12 @@ focus_tree = {
 			focus = tnkd_siding_with_ncr
 		}
 		completion_reward = {
+			custom_effect_tooltip = tnkd_brain_drain_improve
+			hidden_effect = {
+				add_to_variable = { tnk_brain_drain_var = 0.05 }
+			}
+
 			leave_faction = yes
-			remove_ideas = tnkd_brain_drain
 		}
 	}
 	focus = {
@@ -2145,7 +2171,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnkd_ally_sleepers
 		icon = GFX_goal_tripartite_pact
@@ -2206,6 +2231,22 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = tnkd_brain_drain_worsen
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = tnk_brain_drain_dynamic_modifier
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = tnk_brain_drain_var }
+					}
+					set_variable = { tnk_brain_drain_var = -0.05 }
+				}
+				else = {
+					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+				}
+			}
+
 			127 = {
 				add_extra_state_shared_building_slots = 12
 				add_building_construction = {
@@ -2289,7 +2330,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnkd_taking_sky_reavers
 		icon = GFX_goal_tnkd_sky_reavers
@@ -2333,10 +2373,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	# Caesar defence
-	# -----------------------------------------------------------------------
-
 	focus = {
 		id = tnkd_larping_luddites
 		icon = GFX_goal_tnkd_larping_luddites
@@ -2413,25 +2449,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = tnkd_picking_sides
-		icon = GFX_goal_generic_major_alliance
-		cost = 30
-		y = 2
-		relative_position_id = tnkd_new_reactor
-		prerequisite = {
-			focus = tnkd_ces_demand
-			focus = tnkd_ncr_demand
-		}
-		completion_reward = {
-			CES = {
-				country_event = nf_tnk.49
-			}
-			NCR = {
-				country_event = nf_tnk.50
-			}
-		}
-	}
-	focus = {
 		id = tnkd_ces_wall
 		icon = GFX_goal_tnkd_wall
 		cost = 60
@@ -2495,10 +2512,6 @@ focus_tree = {
 			custom_effect_tooltip = tnk_caesar_deal_desc
 		}
 	}
-
-	# NCR defence
-	# -----------------------------------------------------------------------
-
 	focus = {
 		id = tnkd_ncr_defence
 		icon = GFX_goal_NCR_Council_Hill
@@ -2518,7 +2531,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnkd_ncr_demand
 		icon = GFX_goal_NCR_MojaveOutpost
@@ -2539,7 +2551,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnkd_ncr_wall
 		icon = GFX_goal_tnkd_wall
@@ -2584,7 +2595,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnkd_ncr_deal
 		icon = GFX_goal_VEG_Old_Authority
@@ -2605,10 +2615,6 @@ focus_tree = {
 			custom_effect_tooltip = tnk_ncr_deal_desc
 		}
 	}
-
-	# Unity
-	# -----------------------------------------------------------------------
-
 	focus = {
 		id = tnkd_unity
 		icon = GFX_goal_tnkd_unity
@@ -2707,7 +2713,6 @@ focus_tree = {
 			remove_ideas = tnkd_fractured_mind
 		}
 	}
-
 	focus = {
 		id = tnkd_theoretical_production_focus
 		icon = GFX_goal_generic_microscope
@@ -2759,7 +2764,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = tnkd_expansion_one
 		icon = GFX_goal_generic_generator_fusion
@@ -2845,7 +2849,6 @@ focus_tree = {
 			add_stability = 0.1
 		}
 	}
-
 	focus = {
 		id = tnkd_expansion_three
 		icon = GFX_goal_generic_NCR_diplomatic_focus
@@ -2926,10 +2929,6 @@ focus_tree = {
 			add_stability = 0.1
 		}
 	}
-
-	# Unity Defence
-	# -----------------------------------------------------------------------
-
 	focus = {
 		id = tnkd_preemption
 		icon = GFX_goal_generic_attack_allies
@@ -3049,10 +3048,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	# True convergance
-	# -----------------------------------------------------------------------
-
 	focus = {
 		id = tnkd_true_convergance
 		icon = GFX_goal_tnkd_true_convergance
@@ -3331,10 +3326,6 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-
-	# Mobius' convergance
-	# -----------------------------------------------------------------------
-
 	focus = {
 		id = tnkd_mobius_convergance
 		icon = GFX_goal_tnkd_mobius_convergance
@@ -3359,7 +3350,6 @@ focus_tree = {
 			country_event = nf_tnk.23
 		}
 	}
-
 	focus = {
 		id = tnkd_do_no_harm
 		icon = GFX_goal_tnkd_do_no_harm
@@ -3610,16 +3600,12 @@ focus_tree = {
 			activate_mission = tnkd_gev_decision
 		}
 	}
-
-	# Tech ascendance
-	# -----------------------------------------------------------------------
-
 	focus = {
 		id = tnkd_balanced_science
 		icon = GFX_goal_generic_neutrality_focus
 		cost = 30
 		y = 7
-		x = -9
+		x = -12
 		
 		available = {
 			has_completed_focus = tnk_0
@@ -3676,7 +3662,6 @@ focus_tree = {
 		icon = GFX_goal_pal_access_the_terminals
 		cost = 30
 		y = 1
-		x = -2
 		available = {
 			has_completed_focus = tnkd_perfection_sync
 		}
@@ -3703,16 +3688,180 @@ focus_tree = {
 			}
 		}
 	}
-
-	# Exotic research
-	# -----------------------------------------------------------------------
-
+	focus = {
+		id = tnkd_seeding_chaos
+		icon = GFX_goal_pal_access_the_terminals
+		cost = 30
+		y = 1
+		x = -4
+		prerequisite = {
+			focus = tnkd_balanced_science
+		}
+		relative_position_id = tnkd_balanced_science
+		completion_reward = {
+			add_ideas = tnkd_wild_and_wacky_idea
+		}
+	}
+	focus = {
+		id = tnkd_helping_mirelurks
+		icon = GFX_goal_mlt_mlyeh
+		cost = 30
+		y = 1
+		x = -1
+		prerequisite = {
+			focus = tnkd_seeding_chaos
+		}
+		relative_position_id = tnkd_seeding_chaos
+		completion_reward = {
+			custom_effect_tooltip = tnkd_brain_drain_worsen
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = tnk_brain_drain_dynamic_modifier
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = tnk_brain_drain_var }
+					}
+					set_variable = { tnk_brain_drain_var = -0.05 }
+				}
+				else = {
+					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+				}
+			}
+			MLT = {
+				add_ideas = tnkd_intervention
+			}
+		}
+	}
+	focus = {
+		id = tnkd_helping_warren
+		icon = GFX_goal_NEW_stirring_giants
+		cost = 30
+		y = 1
+		x = 1
+		prerequisite = {
+			focus = tnkd_seeding_chaos
+		}
+		relative_position_id = tnkd_seeding_chaos
+		completion_reward = {
+			custom_effect_tooltip = tnkd_brain_drain_worsen
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = tnk_brain_drain_dynamic_modifier
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = tnk_brain_drain_var }
+					}
+					set_variable = { tnk_brain_drain_var = -0.05 }
+				}
+				else = {
+					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+				}
+			}
+			TRL = {
+				add_ideas = tnkd_intervention
+			}
+		}
+	}
+	focus = {
+		id = tnkd_helping_choir
+		icon = GFX_goal_generic_psyker
+		cost = 30
+		y = 2
+		prerequisite = {
+			focus = tnkd_seeding_chaos
+		}
+		relative_position_id = tnkd_seeding_chaos
+		completion_reward = {
+			custom_effect_tooltip = tnkd_brain_drain_worsen
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = tnk_brain_drain_dynamic_modifier
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = tnk_brain_drain_var }
+					}
+					set_variable = { tnk_brain_drain_var = -0.05 }
+				}
+				else = {
+					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+				}
+			}
+			CHC = {
+				add_ideas = tnkd_intervention
+			}
+		}
+	}
+	focus = {
+		id = tnkd_helping_roach
+		icon = GFX_goal_roach_random_1
+		cost = 30
+		y = 2
+		x = -2
+		prerequisite = {
+			focus = tnkd_seeding_chaos
+		}
+		relative_position_id = tnkd_seeding_chaos
+		completion_reward = {
+			custom_effect_tooltip = tnkd_brain_drain_worsen
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = tnk_brain_drain_dynamic_modifier
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = tnk_brain_drain_var }
+					}
+					set_variable = { tnk_brain_drain_var = -0.05 }
+				}
+				else = {
+					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+				}
+			}
+			RCK = {
+				add_ideas = tnkd_intervention
+			}
+		}
+	}
+	focus = {
+		id = tnkd_helping_diana
+		icon = GFX_goal_TTM_Diana_Angry
+		cost = 30
+		y = 2
+		x = 2
+		prerequisite = {
+			focus = tnkd_seeding_chaos
+		}
+		relative_position_id = tnkd_seeding_chaos
+		completion_reward = {
+			custom_effect_tooltip = tnkd_brain_drain_worsen
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = tnk_brain_drain_dynamic_modifier
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = tnk_brain_drain_var }
+					}
+					set_variable = { tnk_brain_drain_var = -0.05 }
+				}
+				else = {
+					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+				}
+			}
+			TTM = {
+				add_ideas = tnkd_intervention
+			}
+		}
+	}
 	focus = {
 		id = tnkd_exotic_research
 		icon = GFX_goal_BDT_geck_corrupted
 		cost = 30
 		y = 1
-		x = 2
+		x = 4
 		relative_position_id = tnkd_balanced_science
 		prerequisite = {
 			focus = tnkd_balanced_science
@@ -3946,10 +4095,6 @@ focus_tree = {
 			country_event = nf_tnk.43
 		}
 	}
-
-	# Advanced Robotics
-	# -----------------------------------------------------------------------
-
 	focus = {
 		id = tnkd_advanced_robots
 		icon = GFX_goal_tnkd_advanced_robots
@@ -3982,10 +4127,6 @@ focus_tree = {
 			add_to_variable = { tnk_ingenuity_cost_var = 0.4 }
 		}
 	}
-
-	# Final
-	# -----------------------------------------------------------------------
-
 	focus = {
 		id = tnkd_final
 		icon = GFX_goal_tnkd_final
@@ -4001,10 +4142,129 @@ focus_tree = {
 			country_event = nf_tnk.34
 		}
 	}
-	}
+	focus = {
+		id = tnkd_invite_lunar_legion
+		icon = GFX_goal_CES_roman_eagle
+		cost = 30
+		y = 1
+		relative_position_id = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
+		prerequisite = {
+			focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
+		}
+		completion_reward = {
+			custom_effect_tooltip = tnkd_brain_drain_worsen
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = tnk_brain_drain_dynamic_modifier
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = tnk_brain_drain_var }
+					}
+					set_variable = { tnk_brain_drain_var = -0.05 }
+				}
+				else = {
+					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+				}
+			}
 
-	# Lunar legion
-	focus_tree = {
+			TNK = {
+				puppet = LUL
+			}
+		}
+	}
+	focus = {
+		id = tnkd_lunar_legion_radar
+		icon = GFX_goal_lul_undead_legion
+		cost = 30
+		y = 1
+		x = 2
+		relative_position_id = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
+		prerequisite = {
+			focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
+		}
+		prerequisite = {
+			focus = tnk_expanding_the_radar_fence
+		}
+		completion_reward = {
+			custom_effect_tooltip = tnkd_brain_drain_worsen
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = tnk_brain_drain_dynamic_modifier
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = tnk_brain_drain_var }
+					}
+					set_variable = { tnk_brain_drain_var = -0.05 }
+				}
+				else = {
+					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+				}
+			}
+
+			LUL = {
+				add_ideas = tnkd_lul_shared_tech
+			}
+		}
+	}
+	focus = {
+		id = tnkd_lunar_legion_firepower
+		icon = GFX_goal_lul_denarius
+		cost = 30
+		y = 1
+		x = -2
+		relative_position_id = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
+		prerequisite = {
+			focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
+		}
+		completion_reward = {
+			custom_effect_tooltip = tnkd_brain_drain_worsen
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = tnk_brain_drain_dynamic_modifier
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = tnk_brain_drain_var }
+					}
+					set_variable = { tnk_brain_drain_var = -0.05 }
+				}
+				else = {
+					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+				}
+			}
+
+			LUL = {
+				add_ideas = tnkd_lul_investment
+			}
+		}
+	}
+	focus = {
+		id = tnkd_lunar_legion_investment
+		icon = GFX_goal_HEA_focus_wings_of_the_angels
+		cost = 30
+		y = 1
+		relative_position_id = tnkd_invite_lunar_legion
+		prerequisite = {
+			focus = tnkd_lunar_legion_radar
+		}
+		prerequisite = {
+			focus = tnkd_invite_lunar_legion
+		}
+		prerequisite = {
+			focus = tnkd_lunar_legion_firepower
+		}
+		completion_reward = {
+			LUL = {
+				add_ideas = tnkd_lul_buff
+			}
+		}
+	}
+}
+
+# Lunar legion
+focus_tree = {
 	id = tnkd_lul_nf
 	country = {
 		factor = 0

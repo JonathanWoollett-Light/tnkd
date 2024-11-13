@@ -11,3 +11,8 @@ tnk_ingenuity_dynamic_modifier = {
 	modifier_army_sub_unit_combat_robot_defence_factor = tnk_ingenuity_defence_buff_var
 	army_fuel_consumption_factor = tnk_ingenuity_cost_var
 }
+tnk_brain_drain_dynamic_modifier = {
+	icon = GFX_idea_nor_brain_cracked
+	production_factory_efficiency_gain_factor = tnk_brain_drain_var
+	production_factory_max_efficiency_factor = tnk_brain_drain_var
+}

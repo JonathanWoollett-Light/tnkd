@@ -30,6 +30,9 @@
  tnkd_ingenuity_desc:0 "With out newfound focus we can continuously optimize our designs."
  tnk_ingenuity_dynamic_modifier:0 "Ingenuity"
 
+ tnk_brain_drain_dynamic_modifier:0 "Brain Drain"
+ tnk_brain_drain_dynamic_modifier_desc:0 "We are quantum physics professors teaching cavemen how to make fire."
+ 
  tnkd_unity_idea:0 "Perfect Synchronisation"
  tnkd_unity_idea_desc:0 "We have one mind, now we shall have one nation... one body."
 
@@ -78,7 +81,17 @@
  tnkd_better_expertise:0 "[TNK.getName] consultants"
  tnkd_better_expertise_desc:0 "Building upon their current expertise we can now communicates directly we their consultants."
 
- tnkd_brain_drain:0 "Brain Drain"
- tnkd_brain_drain_desc:0 "We are quantum physics professors teaching cavemen how to make fire."
  tnkd_theoretical_production:0 "Theoretical Priority"
  tnkd_theoretical_production_desc:0 "Application is for PhD dropouts, we are scientists."
+
+ tnkd_lul_buff:0 "Divine Purpose"
+ tnkd_lul_buff_desc:0 "We know of our creators, we know our purpose, we have a divine path to follow. They will lead us to paradise."
+
+ tnkd_lul_investment:0 "[TNK.getName] Overseers"
+ tnkd_lul_investment_desc:0 "Our creators have decided to send us some of their own to help us."
+
+ tnkd_lul_shared_tech:0 "Distributed Radar Fence"
+ tnkd_lul_shared_tech_desc:0 "[TNK.getName] has shared their radar fence technology."
+
+ tnkd_seeding_chaos:0 "Weird and the Wacky"
+ tnkd_seeding_chaos_desc:0 "If we can find those insane enough to accept our influence we can shape the world to our liking."

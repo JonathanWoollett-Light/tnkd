@@ -276,7 +276,24 @@
 
  tnkd_dam:0 "Saturnite Turbines"
  tnkd_dam_desc:0 "We can use this uniquely hard and light material, to make more efficient turbines."
+ 
  tnkd_better_reactors:0 "Better Reactors"
  tnkd_better_reactors_desc:0 "With some inspired adjustments we can improve the efficiency of our reactors."
+ 
  tnkd_theoretical_production_focus:0 "Theorical Priority"
  tnkd_theoretical_production_focus_desc:0 "Theory is fun, application is so boring and weighed down by reality."
+
+ tnkd_invite_lunar_legion:0 "Lords of the Legion"
+ tnkd_invite_lunar_legion_desc:0 "We are their creators, if we ask, they will serve."
+
+ tnkd_brain_drain_worsen:0 "§RBrain Drain increases by 5%§!"
+ tnkd_brain_drain_improve:0 "§GBrain Drain decreases by 5%§!"
+
+ tnkd_lunar_legion_firepower:0 "Pulling the Strings"
+ tnkd_lunar_legion_firepower_desc:0 "We are the puppet masters, they are the puppets, we can help them dance to our tune."
+
+ tnkd_lunar_legion_investment:0 "Bestowing Divine Purpose"
+ tnkd_lunar_legion_investment_desc:0 "From their perspective we are gods and they are our instruments."
+
+ tnkd_lunar_legion_radar:0 "Distributed Radar Fence"
+ tnkd_lunar_legion_radar_desc:0 "We can help our puppets by offering them a lower power version of our radar fence they can use to defend their sprawling territory."

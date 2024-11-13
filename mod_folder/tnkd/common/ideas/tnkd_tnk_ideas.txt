@@ -1,12 +1,13 @@
 ideas = {
     country = {
 		tnkd_humility = {
+			picture = generic_surrender
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_factor = -0.1
+				political_power_factor = -0.2
 			}
 		}
         tnkd_unexpected_arrival = {
@@ -419,17 +420,6 @@ ideas = {
 				political_power_factor = 0.1
 			}
 		}
-		tnkd_brain_drain = {
-			picture = tnk_shield
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			modifier = {
-				production_factory_efficiency_gain_factor = -0.05
-				production_factory_max_efficiency_factor = -0.05
-			}
-		}
 		tnkd_theoretical_production = {
 			picture = generic_psyker
 			allowed = {
@@ -440,6 +430,67 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.40
 				line_change_production_efficiency_factor = -0.2
 				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		tnkd_wild_and_wacky_idea = {
+			picture = generic_psyker
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+		tnkd_lul_buff = {
+			picture = HEA_idea_general_staff
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.2
+				land_reinforce_rate = 0.2
+				army_morale_factor = 0.2
+			}
+		}
+		tnkd_lul_shared_tech = {
+			picture = tnk_shield
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.3
+			}
+		}
+		tnkd_lul_investment = {
+			picture = generic_psyker
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+			}
+		}
+		tnkd_intervention = {
+			picture = animated_tnk_mojave_drive_in
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.3
+				stability_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = TNK
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 		}
     }
