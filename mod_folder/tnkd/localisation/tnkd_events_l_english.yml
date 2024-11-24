@@ -107,6 +107,21 @@
   nf_tnk.50.a:0 "We can protect them"
   nf_tnk.50.b:0 "We do not need them"
 
+  nf_tnk.54.t:0 "[TNK.getName] intervention"
+  nf_tnk.54.d:0 "[TNK.getName] wants to offer us their support, there are certain benefits to working with these scientists, but... they are mad. Do we really wants to go down this path?"
+  nf_tnk.54.a:0 "We need this"
+  nf_tnk.54.b:0 "It is not worth the risk"
+
+  nf_tnk.55.t:0 "Making an offer"
+  nf_tnk.55.d:0 "§Y[TNK.getName]§! is seeking allies in the wasteland. They may be critical if we seek to overthrow §Y[NCR.getName]§!."
+  nf_tnk.55.a:0 "We can use them"
+  nf_tnk.55.b:0 "We do not need them"
+
+  nf_tnk.56.t:0 "Making an offer"
+  nf_tnk.56.d:0 "§Y[TNK.getName]§! is seeking allies in the wasteland. They may be a critical player in the chaos to come."
+  nf_tnk.56.a:0 "We can use them"
+  nf_tnk.56.b:0 "We do not need them"
+
   nf_tnk.52.t:0 "Promises to [TNK.getName]"
   nf_tnk.52.d:0 "Will we keep our promise?"
   nf_tnk.52.a:0 "We will honour our agreement"

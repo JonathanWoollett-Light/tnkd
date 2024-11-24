@@ -386,6 +386,28 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
+		tnkd_ncr_knownledge = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = NCR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		tnkd_ces_knownledge = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = CES
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
 		tnkd_distributed_radar_fence = {
 			picture = tnk_shield
 			allowed = {
@@ -441,6 +463,7 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.05
 				stability_factor = -0.05
+				enemy_justify_war_goal_time = -0.05
 			}
 		}
 		tnkd_lul_buff = {

@@ -1816,7 +1816,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 30
 		y = 7
-		x = 10
+		x = 12
 		relative_position_id = tnk_personality_restoration
 		available = {
 			has_completed_focus = tnk_personality_restoration
@@ -1914,6 +1914,7 @@ focus_tree = {
 		prerequisite = {
 			focus = tnkd_ces_demand
 			focus = tnkd_ncr_demand
+			focus = tnkd_better_entrenchment
 		}
 		completion_reward = {
 			CES = {
@@ -1956,6 +1957,8 @@ focus_tree = {
 			focus = tnkd_picking_sides
 		}
 		available = {
+			country_exists = CES
+			not = { has_war_with = CES }
 			custom_trigger_tooltip = {
 				tooltip = tnkd_siding_with_ces_tt
 				check_variable = {
@@ -2009,6 +2012,8 @@ focus_tree = {
 			focus = tnkd_picking_sides
 		}
 		available = {
+			country_exists = NCR
+			not = { has_war_with = NCR }
 			custom_trigger_tooltip = {
 				tooltip = tnkd_siding_with_ncr_tt
 				check_variable = {
@@ -2047,6 +2052,121 @@ focus_tree = {
 			}
 			CES = {
 				remove_ideas = tnkd_expertise
+			}
+		}
+	}
+	focus = {
+		id = tnkd_siding_with_brotherhood
+		icon = GFX_goal_BOS_generic
+		cost = 15
+		y = 1
+		x = 1
+		relative_position_id = tnkd_siding_with_ncr
+		prerequisite = {
+			focus = tnkd_siding_with_ncr
+		}
+		available = {
+			country_exists = BOS
+		}
+		bypass = {
+			is_in_faction_with = BOS
+		}
+		completion_reward = {
+			BOS = {
+				country_event = nf_tnk.55
+			}
+		}
+	}
+	focus = {
+		id = tnkd_joining_the_brotherhood
+		icon = GFX_goal_BOS_the_mojave_signal
+		cost = 15
+		y = 1
+		relative_position_id = tnkd_siding_with_brotherhood
+		prerequisite = {
+			focus = tnkd_siding_with_brotherhood
+		}
+		available = {
+			country_exists = BOS
+			not = { has_war_with = BOS }
+			not = { is_in_faction_with = BOS }
+			custom_trigger_tooltip = {
+				tooltip = tnkd_siding_with_brotherhood_tt
+				check_variable = {
+					var = tnkd_bos_offer
+					value = 1
+				}
+			}
+		}
+		completion_reward = {
+			BOS = {
+				add_to_faction = TNK
+				add_ideas = tnkd_better_expertise
+				add_ideas = tnkd_ncr_knownledge
+			}
+			NCR = {
+				remove_ideas = tnkd_better_expertise
+			}
+		}
+	}
+	focus = {
+		id = tnkd_siding_with_lanius
+		icon = GFX_goal_CES_immortal_empire
+		cost = 15
+		y = 1
+		x = -1
+		relative_position_id = tnkd_siding_with_ces
+		prerequisite = {
+			focus = tnkd_siding_with_ces
+		}
+		available = {
+			country_exists = LAC
+		}
+		bypass = {
+			is_in_faction_with = LAC
+		}
+		completion_reward = {
+			LAC = {
+				country_event = nf_tnk.56
+			}
+		}
+	}
+	focus = {
+		id = tnkd_joining_lanius
+		icon = GFX_goal_lac_old_helm
+		cost = 15
+		y = 1
+		relative_position_id = tnkd_siding_with_lanius
+		prerequisite = {
+			focus = tnkd_siding_with_lanius
+		}
+		available = {
+			country_exists = LAC
+			not = { has_war_with = LAC }
+			not = { is_in_faction_with = LAC }
+			custom_trigger_tooltip = {
+				tooltip = tnkd_siding_with_lanius_tt
+				check_variable = {
+					var = tnkd_lac_offer
+					value = 1
+				}
+			}
+		}
+		completion_reward = {
+			LAC = {
+				if = {
+					limit = {
+						is_in_faction = no
+					}
+					create_faction = "The New Legion"
+				}
+				add_to_faction = TNK
+				
+				add_ideas = tnkd_better_expertise
+				add_ideas = tnkd_ces_knownledge
+			}
+			CES = {
+				remove_ideas = tnkd_better_expertise
 			}
 		}
 	}
@@ -2097,6 +2217,7 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = tnkd_siding_with_ces
+			is_in_faction_with = CES
 			CES = {
 				253 = {
 					tnkd_sphere_controls_state = yes
@@ -2118,13 +2239,14 @@ focus_tree = {
 		prerequisite = {
 			focus = tnkd_siding_with_ces
 			focus = tnkd_siding_with_ncr
+			focus = tnkd_joining_the_brotherhood
+			focus = tnkd_joining_lanius
 		}
 		completion_reward = {
 			custom_effect_tooltip = tnkd_brain_drain_improve
 			hidden_effect = {
 				add_to_variable = { tnk_brain_drain_var = 0.05 }
 			}
-
 			leave_faction = yes
 		}
 	}
@@ -2139,6 +2261,7 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = tnkd_siding_with_ncr
+			is_in_faction_with = NCR
 			NCR = {
 				520 = {
 					tnkd_sphere_controls_state = yes
@@ -2922,11 +3045,47 @@ focus_tree = {
 					}
 				}
 			}
-			
-			
 		}
 		completion_reward = {
 			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = tnkd_western_cores
+		icon = GFX_goal_generic_NCR_diplomatic_focus
+		cost = 30
+		y = 2
+		relative_position_id = tnkd_expansion_three
+		prerequisite = {
+			focus = tnkd_expansion_three
+		}
+		available = {
+			all_core_state = {
+				is_controlled_by = ROOT	
+			}
+		}
+		completion_reward = {
+			add_state_core = 77
+			add_state_core = 620
+		}
+	}
+	focus = {
+		id = tnkd_eastern_cores
+		icon = GFX_goal_generic_NCR_diplomatic_focus
+		cost = 30
+		y = 2
+		relative_position_id = tnkd_expansion_two
+		prerequisite = {
+			focus = tnkd_expansion_two
+		}
+		available = {
+			all_core_state = {
+				is_controlled_by = ROOT	
+			}
+		}
+		completion_reward = {
+			add_state_core = 380
+			add_state_core = 613
 		}
 	}
 	focus = {
@@ -3690,7 +3849,7 @@ focus_tree = {
 	}
 	focus = {
 		id = tnkd_seeding_chaos
-		icon = GFX_goal_pal_access_the_terminals
+		icon = GFX_goal_NCR_Pokersiege
 		cost = 30
 		y = 1
 		x = -4
@@ -3729,7 +3888,7 @@ focus_tree = {
 				}
 			}
 			MLT = {
-				add_ideas = tnkd_intervention
+				country_event = nf_tnk.54
 			}
 		}
 	}
@@ -3760,7 +3919,7 @@ focus_tree = {
 				}
 			}
 			TRL = {
-				add_ideas = tnkd_intervention
+				country_event = nf_tnk.54
 			}
 		}
 	}
@@ -3790,7 +3949,7 @@ focus_tree = {
 				}
 			}
 			CHC = {
-				add_ideas = tnkd_intervention
+				country_event = nf_tnk.54
 			}
 		}
 	}
@@ -3821,7 +3980,7 @@ focus_tree = {
 				}
 			}
 			RCK = {
-				add_ideas = tnkd_intervention
+				country_event = nf_tnk.54
 			}
 		}
 	}
@@ -3852,7 +4011,7 @@ focus_tree = {
 				}
 			}
 			TTM = {
-				add_ideas = tnkd_intervention
+				country_event = nf_tnk.54
 			}
 		}
 	}

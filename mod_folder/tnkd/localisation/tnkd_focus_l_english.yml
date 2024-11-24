@@ -255,13 +255,31 @@
  tnkd_siding_with_ces:0 "Side with [CES.getName]"
  tnkd_siding_with_ces_desc:0 "We calculate our best odds of survival are with the legion."
  tnkd_siding_with_ces_tt:0 "§Y[CES.getName]§! made an offer."
+
  tnkd_siding_with_ncr:0 "Side with [NCR.getName]"
  tnkd_siding_with_ncr_desc:0 "We calculate our best odds of survival are with the republic."
  tnkd_siding_with_ncr_tt:0 "§Y[NCR.getName]§! made an offer."
+ 
  tnkd_going_alone:0 "Going Alone"
  tnkd_going_alone_desc:0 "Everything that is beautiful was built by a dictator, from Michelangelo to Torvalds. These inferior minds would just slow us down."
+ 
+ tnkd_siding_with_brotherhood:0 "A New Option"
+ tnkd_siding_with_brotherhood_desc:0 "Within the NCR lurks a bear clad in steel, free from the limitations of decadant 'democracy'."
+ tnkd_siding_with_brotherhood_tt:0 "§Y[BOS.getName]§! made an offer."
+
+ tnkd_joining_the_brotherhood:0 "A New Chapter"
+ tnkd_joining_the_brotherhood_desc:0 "Technological preservation above human life? Sounds right up our alley."
+
+ tnkd_siding_with_lanius:0 "A New Monster"
+ tnkd_siding_with_lanius_desc:0 "To the east lies a great conquerer with the strength of Caesar and without his weakness."
+ tnkd_siding_with_lanius_tt:0 "§Y[LAC.getName]§! made an offer."
+
+ tnkd_joining_lanius:0 "A New Legion"
+ tnkd_joining_lanius_desc:0 "The strong will always reign... and we shall stand beside the new apex predator of the wasteland."
+
  tnkd_demanding_west:0 "Demanding the West"
  tnkd_demanding_west_desc:0 "A natural extension of our domain."
+
  tnkd_demanding_east:0 "Demanding the East"
  tnkd_demanding_east_desc:0 "We will reclaim land from the savages."
 
@@ -293,7 +311,28 @@
  tnkd_lunar_legion_firepower_desc:0 "We are the puppet masters, they are the puppets, we can help them dance to our tune."
 
  tnkd_lunar_legion_investment:0 "Bestowing Divine Purpose"
- tnkd_lunar_legion_investment_desc:0 "From their perspective we are gods and they are our instruments."
+ tnkd_lunar_legion_investment_desc:0 "From their perspective we are their gods and they are our instruments."
 
  tnkd_lunar_legion_radar:0 "Distributed Radar Fence"
  tnkd_lunar_legion_radar_desc:0 "We can help our puppets by offering them a lower power version of our radar fence they can use to defend their sprawling territory."
+
+ tnkd_helping_roach:0 "The Roach King"
+ tnkd_helping_roach_desc:0 "They always said roaches would survive the apocalyse; and we will ensure it."
+
+ tnkd_helping_mirelurks:0 "Weird Crabs"
+ tnkd_helping_mirelurks_desc:0 "These crusteceans burst from the sand and annoy everyone, if we help them, they can drag down development in the entire region."
+
+ tnkd_helping_choir:0 "Chained Fools"
+ tnkd_helping_choir_desc:0 "Others see a band of religious zealots, we see useful fools. Their hate will be a useful tool."
+
+ tnkd_helping_warren:0 "The Master's Inheritors"
+ tnkd_helping_warren_desc:0 "Big dumb berserkers, the perfect tools to destroy progress."
+
+ tnkd_helping_diana:0 "A Lost Scientist"
+ tnkd_helping_diana_desc:0 "This entity has the potential to form a stubborn roadblock against the legion with our help."
+
+ tnkd_eastern_cores:0 "Consolidating the East"
+ tnkd_eastern_cores_desc:0 "With our new territorial gains in the east we can now expand how core territory"
+
+ tnkd_western_cores:0 "Consolidating the West"
+ tnkd_western_cores_desc:0 "With our new territorial gains in the west we can now expand how core territory"
