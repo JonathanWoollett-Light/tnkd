@@ -40,3 +40,10 @@ tnkd_resource_consolidation = {
 		base = 14
 	}
 }
+tnkd_border_war_category = {
+	allowed = { tag = TNK }
+	icon = GFX_decision_category_hea_conversion
+	priority = {
+		base = 15
+	}
+}

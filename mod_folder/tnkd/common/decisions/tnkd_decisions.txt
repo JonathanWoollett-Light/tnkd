@@ -392,3 +392,53 @@ tnkd_resource_consolidation = {
         }
     }
 }
+tnkd_border_war_category = {
+	tnkd_ncr_border_war_mission = {
+        icon = generic_prepare_civil_war
+        available = {
+            has_country_flag = tnkd_ncr_border_war_mission_enabled
+        }
+        visible = {
+            has_country_flag = tnkd_ncr_border_war_mission_enabled
+        }
+        cost = 50
+        days_remove = 70
+        complete_effect = {
+            start_border_war = {
+                change_state_controller = 77
+                attacker = {
+                    state = 47
+                    num_provinces = 2
+                }
+                defender = {
+                    state = 77
+                    num_provinces = 2
+                }
+            }
+        }
+    }
+	tnkd_ces_border_war_mission = {
+        icon = generic_prepare_civil_war
+        available = {
+            has_country_flag = tnkd_ces_border_war_mission_enabled
+        }
+        visible = {
+            has_country_flag = tnkd_ces_border_war_mission_enabled
+        }
+        cost = 50
+        days_remove = 70
+        complete_effect = {
+            start_border_war = {
+                change_state_controller = 438
+                attacker = {
+                    state = 252
+                    num_provinces = 2
+                }
+                defender = {
+                    state = 438
+                    num_provinces = 2
+                }
+            }
+        }
+    }
+}

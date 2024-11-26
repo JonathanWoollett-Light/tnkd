@@ -552,6 +552,9 @@ country_event = {
 	option = {
 		name = nf_tnk.47.b
 		remove_ideas = tnkd_expertise
+		TNK = {
+			set_country_flag = tnkd_ces_border_war_mission_enabled
+		}
 	}
 }
 country_event = {
@@ -572,6 +575,9 @@ country_event = {
 	option = {
 		name = nf_tnk.48.b
 		remove_ideas = tnkd_expertise
+		TNK = {
+			set_country_flag = tnkd_ncr_border_war_mission_enabled
+		}
 	}
 }
 country_event = {

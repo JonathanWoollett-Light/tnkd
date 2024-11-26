@@ -1850,6 +1850,7 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = tnkd_next_steps
+			owns_state = 46
 		}
 		completion_reward = {
 			set_capital = { state = 46 }
@@ -1880,6 +1881,9 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = tnkd_balanced_science
+			417 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		completion_reward = {
 			add_resource = {
@@ -2247,7 +2251,16 @@ focus_tree = {
 			hidden_effect = {
 				add_to_variable = { tnk_brain_drain_var = 0.05 }
 			}
-			leave_faction = yes
+			if = {
+				limit = {
+					and = {
+						is_in_faction = yes
+						is_faction_leader = no
+					}
+				}
+				leave_faction = yes
+			}
+			
 		}
 	}
 	focus = {
@@ -2533,6 +2546,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = tnkd_ces_demand_tt
 			CES = {
 				country_event = nf_tnk.47
 			}
@@ -2669,6 +2683,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = tnkd_ncr_demand_tt
 			NCR = {
 				country_event = nf_tnk.48
 			}
@@ -2858,6 +2873,11 @@ focus_tree = {
 		relative_position_id = tnkd_serenity
 		prerequisite = {
 			focus = tnkd_serenity
+		}
+		available = {
+			252 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		completion_reward = {
 			add_resource = {
@@ -3308,21 +3328,23 @@ focus_tree = {
 			focus = tnkd_attack_weak
 		}
 		available = {
-        	num_of_controlled_states > 10
+        	num_of_controlled_states > 12
+			OR = {
+				is_faction_leader = yes
+				NOT = { is_in_faction = yes }
+			}
         }
 		completion_reward = {
 			if = {
 				limit = {
-					is_in_faction = no
-				}
-				create_faction = "The Vision"
-			}
-			else_if = {
-				limit = {
-					is_faction_leader = yes
+					is_in_faction = yes
 				}
 				set_faction_name = "The Vision"
 			}
+			else = {
+				create_faction = "The Vision"
+			}
+			
 			add_stability = -0.1
 			add_war_support = 0.2
 		}
@@ -3382,6 +3404,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = tnkd_serenity
+		}
+		available = {
+			num_of_controlled_states > 24
 		}
 		completion_reward = {
 			custom_effect_tooltip = tnkd_clean_slate_tt
@@ -3589,20 +3614,21 @@ focus_tree = {
 			focus = tnkd_giant_slayer
 		}
 		available = {
-        	num_of_controlled_states > 10
+        	num_of_controlled_states > 12
+			OR = {
+				is_faction_leader = yes
+				NOT = { is_in_faction = yes }
+			}
         }
 		completion_reward = {
 			if = {
 				limit = {
-					is_in_faction = no
-				}
-				create_faction = "The American Technical Alliance"
-			}
-			else_if = {
-				limit = {
-					is_faction_leader = yes
+					is_in_faction = yes
 				}
 				set_faction_name = "The American Technical Alliance"
+			}
+			else = {
+				create_faction = "The American Technical Alliance"
 			}
 			
 			add_stability = -0.1
@@ -3678,6 +3704,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = tnkd_serenity
+		}
+		available = {
+			num_of_controlled_states > 24
 		}
 		completion_reward = {
 			country_event = nf_tnk.40
