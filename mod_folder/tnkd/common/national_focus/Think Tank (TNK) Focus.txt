@@ -4246,6 +4246,7 @@ focus_tree = {
 			add_ideas = {
 				tnkd_charging_laser
 			}
+			set_technology = { high_fighter_unlock_tech = 1 }
 		}
 	}
 	focus = {
@@ -4281,6 +4282,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = nf_tnk.43
+			set_technology = { robot_alien_tech = 1 }
 		}
 	}
 	focus = {

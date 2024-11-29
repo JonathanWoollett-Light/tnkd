@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_robot_alien_tech_medium"
+		texturefile = "gfx/interface/equipment/cosmetic/robots/robot_alien_tech_icon.dds"
+		alwaystransparent = yes
+	}
+}

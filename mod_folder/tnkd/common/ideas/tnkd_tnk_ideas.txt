@@ -497,6 +497,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.15
 				war_support_factor = 0.15
+				political_power_factor = -0.3
 			}
 		}
 		tnkd_intervention = {

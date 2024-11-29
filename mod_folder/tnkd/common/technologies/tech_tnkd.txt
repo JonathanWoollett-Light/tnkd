@@ -1,0 +1,74 @@
+technologies = {
+	@Col_1 = 8
+	@Col_2 = 11
+	@Col_3 = 14
+	@Col_4 = 17
+	@Col_5 = 20
+	@Col_6 = 23
+	@Col_7 = 26
+	@Col_8 = 29
+	@Col_9 = 32
+
+	@Col_10 = 36
+	@Col_11 = 39
+	@Col_12 = 42
+	@Col_13 = 45
+
+	@Row_2_legs = 0
+	@Row_support_robot = 2
+	@Row_thruster = 4
+	@Row_combat = 6
+	@Row_cnc = 8
+
+	#-------------------------------
+	# Robotics
+	#-------------------------------
+    robot_alien_tech = {
+
+        enable_subunits = {
+			destroyer_robot
+		}
+
+		enable_equipments = {
+			destroyer_robot_alien_equipment
+		}
+        on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = destroyer_robot
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_destroyer_robot"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			custom_effect_tooltip = destroyer_robot_tech
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 2.2
+		start_year = 2275
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_support_robot y = @Col_10 }
+		}
+
+		categories = {
+			robotics_tech_category
+			destroyer_robot_tech_category
+			armor_tech_category
+			scientific_tech_category
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

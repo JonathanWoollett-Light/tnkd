@@ -467,7 +467,6 @@ country_event = {
 
 	option = {
 		name = nf_tnk.43.a
-		set_technology = { high_fighter_unlock_tech = 1 }
 	}
 }
 
