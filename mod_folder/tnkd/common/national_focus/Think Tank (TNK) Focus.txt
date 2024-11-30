@@ -3091,7 +3091,7 @@ focus_tree = {
 	}
 	focus = {
 		id = tnkd_eastern_cores
-		icon = GFX_goal_generic_NCR_diplomatic_focus
+		icon = GFX_goal_generic_Legion_diplomatic_focus
 		cost = 30
 		y = 2
 		relative_position_id = tnkd_expansion_two
