@@ -1,0 +1,33 @@
+capital = 47
+
+#Copies techs from TNK on creation
+
+set_stability = 0.4
+set_war_support = 0.4
+set_research_slots = 6
+
+set_politics = {
+	ruling_party = intellectuals
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 100
+	ruler = 0
+}
+
+set_party_name = {
+	ideology = intellectuals
+	long_name = LUL_intellectuals_party_long
+	name = LUL_intellectuals_party_short
+}
+
+add_ideas = {
+	tnk_old_world_blues
+}
+
+set_country_flag = robot_doctrine_ai #Since they copy TNK's techs. Not 'really' flavorful. Something to look into laater.
+
+recruit_character = LUL_rex_astrorum

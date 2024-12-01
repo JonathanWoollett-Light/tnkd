@@ -3,7 +3,7 @@
   tnkd_decohesion_decision_tt:0 "We tear at the seams.\nAdds §R-1%§! to §YDecohesion§!."
   
   tnkd_ingenuity_decision:0 "Ingenuity"
-  tnkd_ingenuity_decision_tt:0 "Never backward always forward, always.\nAdds §G+1%§! to §YIngenuity§!.\nThe maximum value is +40%."
+  tnkd_ingenuity_decision_tt:0 "Never backward always forward, always.\nAdds §G+1%§! to §YIngenuity§!.\nCancels after reaching +25%."
   
   tnkd_clean_slate_decision_0:0 "Clean Slate Protocol"
   tnkd_clean_slate_decision_1:0 "Clean Slate Protocol"

@@ -27,8 +27,9 @@
  tnkd_think_tank_litigation_desc:0 "Their speakers output a whirlwind of nonsense confusing and wasting the time or our bureaucrats."
 
  tnkd_ingenuity:0 "Ingenuity"
- tnkd_ingenuity_desc:0 "With out newfound focus we can continuously optimize our designs."
+ tnkd_ingenuity_desc:0 "With out newfound focus we can continuously optimize our designs.\n\nCurrent inequity [?modifier@tnk_ingenuity_defence_buff_var|+%]"
  tnk_ingenuity_dynamic_modifier:0 "Ingenuity"
+ tnk_ingenuity_dynamic_modifier_desc:0 "With out newfound focus we can continuously optimize our designs."
 
  tnk_brain_drain_dynamic_modifier:0 "Brain Drain"
  tnk_brain_drain_dynamic_modifier_desc:0 "We are quantum physics professors teaching cavemen how to make fire."

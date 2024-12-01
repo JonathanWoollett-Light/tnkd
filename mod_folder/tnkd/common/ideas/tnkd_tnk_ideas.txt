@@ -26,7 +26,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				weekly_manpower = -60
-				research_speed_factor = 0.10
+				research_speed_factor = 0.05
 				stability_factor = -0.05
 			}
 		}
@@ -37,7 +37,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				weekly_manpower = -80
-				research_speed_factor = 0.20
+				research_speed_factor = 0.1
 				stability_factor = -0.1
 			}
 		}
@@ -48,7 +48,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				weekly_manpower = -120
-				research_speed_factor = 0.30
+				research_speed_factor = 0.2
 				stability_factor = -0.2
 			}
 		}
@@ -59,7 +59,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				weekly_manpower = -140
-				research_speed_factor = 0.40
+				research_speed_factor = 0.3
 				stability_factor = -0.3
 			}
 		}
@@ -70,7 +70,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				research_speed_factor = 0.05
-				production_factory_efficiency_gain_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.1
 			}
 		}
 		tnkd_think_tank_litigation = {
@@ -178,38 +178,47 @@ ideas = {
 			targeted_modifier = {
 				tag = NCR
 				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 			targeted_modifier = {
 				tag = CES
 				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 			targeted_modifier = {
 				tag = WBH
 				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 			targeted_modifier = {
 				tag = BOS
 				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 			targeted_modifier = {
 				tag = LAC
 				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 			targeted_modifier = {
 				tag = TBH
 				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 			targeted_modifier = {
 				tag = MAX
 				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 			targeted_modifier = {
 				tag = ZAP
 				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 			targeted_modifier = {
 				tag = ARM
 				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 		}
 		tnkd_gev_idea = {
@@ -427,10 +436,10 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				special_forces_attack_factor = 0.2
-				special_forces_defence_factor = 0.2
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
 				weekly_manpower = -50
-				stability_factor = 0.05
+				experience_loss_factor = -0.1
 			}
 		}
 		tnkd_going_alone_idea = {
@@ -440,7 +449,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_factor = 0.1
+				political_power_factor = 0.2
 			}
 		}
 		tnkd_theoretical_production = {
@@ -450,9 +459,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_factory_efficiency_gain_factor = -0.40
-				line_change_production_efficiency_factor = -0.2
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.2
+				production_factory_max_efficiency_factor = 0.2
 			}
 		}
 		tnkd_wild_and_wacky_idea = {
@@ -474,9 +482,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_org_factor = 0.2
-				land_reinforce_rate = 0.2
-				army_morale_factor = 0.2
+				army_org_factor = 0.3
+				land_reinforce_rate = 0.3
+				army_morale_factor = 0.3
 			}
 		}
 		tnkd_lul_shared_tech = {
@@ -486,7 +494,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_core_defence_factor = 0.3
+				army_core_defence_factor = 0.4
 			}
 		}
 		tnkd_lul_investment = {
@@ -496,9 +504,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.15
-				war_support_factor = 0.15
-				political_power_factor = -0.3
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				training_time_factor = -0.4
 			}
 		}
 		tnkd_intervention = {

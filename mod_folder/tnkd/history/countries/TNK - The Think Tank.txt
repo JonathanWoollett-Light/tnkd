@@ -11,7 +11,7 @@ set_technology = {
 	#power_armour_tech_level_settler = 1
 	#power_armour_tech_level_scientific = 1
 
-	#special_forces_tech_level_tribal = 1
+	special_forces_tech_level_tribal = 1
 	#special_forces_tech_level_settler = 1
 	#special_forces_tech_level_scientific = 1
 
@@ -51,15 +51,6 @@ set_technology = {
 	electronics_tech_level_tribal = 1
 	electronics_tech_level_settler = 1
 
-	standard_weaponry_tech = 1
-	melee_weaponry_tech_1 = 1
-
-	robot_automation_tech = 1
-	robot_makeshift_automatons_tech = 1
-	robot_fission_batteries_tech = 1
-	robot_handy_equipment_tech_1 = 1
-	robot_precision_motor_tech = 1
-
 	robot_scurry_tech = 1 #Scurry is last researched light robot, important.
 
 	# Good electronics
@@ -70,16 +61,58 @@ set_technology = {
 	electronic_engineering_4 = 1
 	electronic_engineering_5 = 1
 
+	# Decent communication
+	communication_engineering = 1
+	communication_engineering_1 = 1
+	communication_engineering_2 = 1
+	encryption = 1
+	encryption_1 = 1
+	decryption = 1
+	decryption_1 = 1
+
 	# Moderate radar
 	radio_detection = 1
 	decimetric_radar = 1
 	improved_decimetric_radar = 1
 
-	# Basic industry
+	# Decent industry
 	tool_engineering = 1
 	basic_industry_tech = 1
 	pre_construction_industry_tech = 1
+	construction_industry_tech_1 = 1
+	extraction_industry_tech_1 = 1
+	extraction_industry_tech_2 =1
+	habitation_industry_tech_1 = 1
+	habitation_industry_tech_2 = 1
+	construction_industry_tech_2 = 1
 	pre_recycling_industry_tech = 1
+	recycling_industry_tech_1 = 1
+	maketool_engineering_1 = 1
+	maketool_engineering_2 = 1
+	resource_generator_tech = 1
+
+	# Okay equipment
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+	ballistic_weaponry_tech_1 = 1
+	energy_weaponry_tech_1 = 1
+	energy_weapon_emitter_tech = 1
+	energy_weaponry_tech_2 = 2
+	heavy_infantry_tech_1 = 1
+
+	# Good robotics
+	robot_command_equipment_tech_1 = 1
+	robot_armour_hardening_tech = 1
+	robot_lifter_equipment_tech = 1
+	robot_makeshift_automatons_tech = 1
+	robot_fission_batteries_tech = 1
+	robot_automation_tech = 1
+	robot_build_efficiency_tech_1 = 1
+	robot_build_efficiency_tech_2 = 2
+	robot_build_efficiency_tech_3 = 1
+	robot_handy_equipment_tech_1 = 1
+	robot_miniature_thruster_tech = 1
+	robot_protectron_equipment_tech_1 = 1
 }
 
 if = {

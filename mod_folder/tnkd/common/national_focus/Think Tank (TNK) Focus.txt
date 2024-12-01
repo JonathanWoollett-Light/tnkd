@@ -1841,7 +1841,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_better_capital
 		icon = GFX_goal_VEG_Hidden_Valley_Reborn
-		cost = 30
+		cost = 15
 		y = 1
 		x = -1
 		relative_position_id = tnkd_defensive_infrastructure
@@ -1854,6 +1854,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_capital = { state = 46 }
+			46 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1912,7 +1919,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_picking_sides
 		icon = GFX_goal_generic_major_alliance
-		cost = 30
+		cost = 15
 		y = 2
 		relative_position_id = tnkd_new_reactor
 		prerequisite = {
@@ -1989,10 +1996,10 @@ focus_tree = {
 					limit = {
 						NOT = { has_variable = tnk_brain_drain_var }
 					}
-					set_variable = { tnk_brain_drain_var = -0.05 }
+					set_variable = { tnk_brain_drain_var = -0.02 }
 				}
 				else = {
-					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
 			add_ideas = tnkd_humility
@@ -2043,10 +2050,10 @@ focus_tree = {
 					limit = {
 						NOT = { has_variable = tnk_brain_drain_var }
 					}
-					set_variable = { tnk_brain_drain_var = -0.05 }
+					set_variable = { tnk_brain_drain_var = -0.02 }
 				}
 				else = {
-					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
 			add_ideas = tnkd_humility
@@ -2249,7 +2256,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = tnkd_brain_drain_improve
 			hidden_effect = {
-				add_to_variable = { tnk_brain_drain_var = 0.05 }
+				add_to_variable = { tnk_brain_drain_var = 0.02 }
 			}
 			if = {
 				limit = {
@@ -2330,7 +2337,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_taking_sleepers
 		icon = GFX_goal_tnkd_sleepers
-		cost = 60
+		cost = 40
 		x = 2
 		relative_position_id = tnkd_ally_sleepers
 		prerequisite = {
@@ -2376,10 +2383,10 @@ focus_tree = {
 					limit = {
 						NOT = { has_variable = tnk_brain_drain_var }
 					}
-					set_variable = { tnk_brain_drain_var = -0.05 }
+					set_variable = { tnk_brain_drain_var = -0.02 }
 				}
 				else = {
-					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
 
@@ -2424,7 +2431,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_taking_sorrows
 		icon = GFX_goal_tnkd_sorrows
-		cost = 60
+		cost = 40
 		y = 1
 		relative_position_id = tnkd_taking_sleepers
 		prerequisite = {
@@ -2445,7 +2452,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_taking_dead_horses
 		icon = GFX_goal_tnkd_dead_horses
-		cost = 60
+		cost = 40
 		y = 1
 		relative_position_id = tnkd_waking_sleepers
 		prerequisite = {
@@ -2469,7 +2476,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_taking_sky_reavers
 		icon = GFX_goal_tnkd_sky_reavers
-		cost = 60
+		cost = 40
 		y = 1
 		x = -2
 		relative_position_id = tnkd_offensive_infrastructure
@@ -2491,7 +2498,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_taking_white_legs
 		icon = GFX_goal_tnkd_white_legs
-		cost = 60
+		cost = 40
 		y = 1
 		relative_position_id = tnkd_taking_sky_reavers
 		prerequisite = {
@@ -2588,12 +2595,17 @@ focus_tree = {
 	focus = {
 		id = tnkd_ces_wall
 		icon = GFX_goal_tnkd_wall
-		cost = 60
+		cost = 40
 		y = 1
 		x = 1
 		relative_position_id = tnkd_larping_luddites
 		prerequisite = {
 			focus = tnkd_larping_luddites
+		}
+		bypass = {
+			not = {
+				country_exists = ces
+			}
 		}
 		completion_reward = {
 			every_owned_state = {
@@ -2692,12 +2704,17 @@ focus_tree = {
 	focus = {
 		id = tnkd_ncr_wall
 		icon = GFX_goal_tnkd_wall
-		cost = 60
+		cost = 40
 		y=1
 		x=-1
 		relative_position_id = tnkd_ncr_defence
 		prerequisite = {
 			focus = tnkd_ncr_defence
+		}
+		bypass = {
+			not = {
+				country_exists = ncr
+			}
 		}
 		completion_reward = {
 			every_owned_state = {
@@ -3345,7 +3362,6 @@ focus_tree = {
 				create_faction = "The Vision"
 			}
 			
-			add_stability = -0.1
 			add_war_support = 0.2
 		}
 	}
@@ -3361,6 +3377,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = tnkd_purification_idea
+			set_technology = { special_forces_tech_level_settler = 1 }
 		}
 	}
 	focus = {
@@ -3631,7 +3648,7 @@ focus_tree = {
 				create_faction = "The American Technical Alliance"
 			}
 			
-			add_stability = -0.1
+			add_stability = 0.1
 			add_war_support = 0.2
 		}
 	}
@@ -3879,7 +3896,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_seeding_chaos
 		icon = GFX_goal_NCR_Pokersiege
-		cost = 30
+		cost = 15
 		y = 1
 		x = -4
 		prerequisite = {
@@ -3893,7 +3910,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_helping_mirelurks
 		icon = GFX_goal_mlt_mlyeh
-		cost = 30
+		cost = 15
 		y = 1
 		x = -1
 		prerequisite = {
@@ -3910,10 +3927,10 @@ focus_tree = {
 					limit = {
 						NOT = { has_variable = tnk_brain_drain_var }
 					}
-					set_variable = { tnk_brain_drain_var = -0.05 }
+					set_variable = { tnk_brain_drain_var = -0.02 }
 				}
 				else = {
-					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
 			MLT = {
@@ -3924,7 +3941,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_helping_warren
 		icon = GFX_goal_NEW_stirring_giants
-		cost = 30
+		cost = 15
 		y = 1
 		x = 1
 		prerequisite = {
@@ -3941,10 +3958,10 @@ focus_tree = {
 					limit = {
 						NOT = { has_variable = tnk_brain_drain_var }
 					}
-					set_variable = { tnk_brain_drain_var = -0.05 }
+					set_variable = { tnk_brain_drain_var = -0.02 }
 				}
 				else = {
-					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
 			TRL = {
@@ -3955,7 +3972,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_helping_choir
 		icon = GFX_goal_generic_psyker
-		cost = 30
+		cost = 15
 		y = 2
 		prerequisite = {
 			focus = tnkd_seeding_chaos
@@ -3971,10 +3988,10 @@ focus_tree = {
 					limit = {
 						NOT = { has_variable = tnk_brain_drain_var }
 					}
-					set_variable = { tnk_brain_drain_var = -0.05 }
+					set_variable = { tnk_brain_drain_var = -0.02 }
 				}
 				else = {
-					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
 			CHC = {
@@ -3985,7 +4002,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_helping_roach
 		icon = GFX_goal_roach_random_1
-		cost = 30
+		cost = 15
 		y = 2
 		x = -2
 		prerequisite = {
@@ -4002,10 +4019,10 @@ focus_tree = {
 					limit = {
 						NOT = { has_variable = tnk_brain_drain_var }
 					}
-					set_variable = { tnk_brain_drain_var = -0.05 }
+					set_variable = { tnk_brain_drain_var = -0.02 }
 				}
 				else = {
-					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
 			RCK = {
@@ -4016,7 +4033,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_helping_diana
 		icon = GFX_goal_TTM_Diana_Angry
-		cost = 30
+		cost = 15
 		y = 2
 		x = 2
 		prerequisite = {
@@ -4033,10 +4050,10 @@ focus_tree = {
 					limit = {
 						NOT = { has_variable = tnk_brain_drain_var }
 					}
-					set_variable = { tnk_brain_drain_var = -0.05 }
+					set_variable = { tnk_brain_drain_var = -0.02 }
 				}
 				else = {
-					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
 			TTM = {
@@ -4313,7 +4330,7 @@ focus_tree = {
 			custom_effect_tooltip = tnkd_robotic_supremacy_tt
 			add_to_variable = { tnk_ingenuity_attack_buff_var = 0.1 }
 			add_to_variable = { tnk_ingenuity_defence_buff_var = 0.05 }
-			add_to_variable = { tnk_ingenuity_cost_var = 0.4 }
+			add_to_variable = { tnk_ingenuity_cost_var = 0.5 }
 		}
 	}
 	focus = {
@@ -4340,6 +4357,9 @@ focus_tree = {
 		prerequisite = {
 			focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
 		}
+		available = {
+			country_exists = lul
+		}
 		completion_reward = {
 			custom_effect_tooltip = tnkd_brain_drain_worsen
 			hidden_effect = {
@@ -4350,10 +4370,10 @@ focus_tree = {
 					limit = {
 						NOT = { has_variable = tnk_brain_drain_var }
 					}
-					set_variable = { tnk_brain_drain_var = -0.05 }
+					set_variable = { tnk_brain_drain_var = -0.02 }
 				}
 				else = {
-					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
 
@@ -4375,6 +4395,9 @@ focus_tree = {
 		prerequisite = {
 			focus = tnk_expanding_the_radar_fence
 		}
+		available = {
+			country_exists = lul
+		}
 		completion_reward = {
 			custom_effect_tooltip = tnkd_brain_drain_worsen
 			hidden_effect = {
@@ -4385,10 +4408,10 @@ focus_tree = {
 					limit = {
 						NOT = { has_variable = tnk_brain_drain_var }
 					}
-					set_variable = { tnk_brain_drain_var = -0.05 }
+					set_variable = { tnk_brain_drain_var = -0.02 }
 				}
 				else = {
-					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
 
@@ -4407,6 +4430,9 @@ focus_tree = {
 		prerequisite = {
 			focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
 		}
+		available = {
+			country_exists = lul
+		}
 		completion_reward = {
 			custom_effect_tooltip = tnkd_brain_drain_worsen
 			hidden_effect = {
@@ -4417,10 +4443,10 @@ focus_tree = {
 					limit = {
 						NOT = { has_variable = tnk_brain_drain_var }
 					}
-					set_variable = { tnk_brain_drain_var = -0.05 }
+					set_variable = { tnk_brain_drain_var = -0.02 }
 				}
 				else = {
-					subtract_from_variable = { tnk_brain_drain_var = 0.05 }
+					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
 
@@ -4443,6 +4469,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = tnkd_lunar_legion_firepower
+		}
+		available = {
+			country_exists = lul
 		}
 		completion_reward = {
 			LUL = {

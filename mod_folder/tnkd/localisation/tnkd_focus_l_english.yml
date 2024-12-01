@@ -70,7 +70,7 @@
  tnkd_silence_tt:0 "If §YRadio Silence§! is still active when we begin §YConvergance§! it removes the §YThe Mojave Falls Silent§! event."
  tnkd_inconspicuous:0 "Inconspicuous"
  tnkd_inconspicuous_desc:0 "§G Nothing to see here officer."
- tnkd_robotic_supremacy_tt:0 "Adds §G+10%§! to §YIngenuity§!."
+ tnkd_robotic_supremacy_tt:0 "Adds §G+5%§! to §YIngenuity§!."
 
  tnkd_preemption:0 "Preemption"
  tnkd_preemption_desc:0 "§M Our enemies will surely strike when we are vunerable, we must strike first and hard."
@@ -115,7 +115,7 @@
   
  tnkd_giant_slayer:0 "Giant Slayer"
  tnkd_giant_slayer_desc:0 "The titans of the wasteland are a threat to the freedom of humanity. \n\n§RWe shall go forth and they shall call timber in our wake."
- tnkd_giant_slayer_tt:0 "Gain National Spirit §YGiant Slayer§!, which grants ((@NCR§Y[NCR.getName]§!, @CES§Y[CES.getName]§!, @WBH§Y[WBH.getName]§!, @BOS§Y[BOS.getName]§!, @LAC§Y[LAC.getName]§!, @TBH§Y[TBH.getName]§!, @MAX§Y[MAX.getName]§!, @ZAP§Y[ZAP.getName]§!, @ARM§Y[ARM.getName]§!) Attack bonus against country: §G+20%§!)."
+ tnkd_giant_slayer_tt:0 "Gain National Spirit §YGiant Slayer§!, which grants ((@NCR§Y[NCR.getName]§!, @CES§Y[CES.getName]§!, @WBH§Y[WBH.getName]§!, @BOS§Y[BOS.getName]§!, @LAC§Y[LAC.getName]§!, @TBH§Y[TBH.getName]§!, @MAX§Y[MAX.getName]§!, @ZAP§Y[ZAP.getName]§!, @ARM§Y[ARM.getName]§!) Attack bonus against country: §G+20%§!, Defense bonus against country: §G+20%§!)."
 
  tnkd_a_future_vision:0 "A Vision Of A Future"
  tnkd_a_future_vision_desc:0 "A house burned down may still from the ashes provide the fertilisation for spring new life.\n\n§gOf all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive...§!"
@@ -308,8 +308,8 @@
  tnkd_invite_lunar_legion:0 "Lords of the Legion"
  tnkd_invite_lunar_legion_desc:0 "We are their creators, if we ask, they will serve."
 
- tnkd_brain_drain_worsen:0 "§RBrain Drain increases by 5%§!"
- tnkd_brain_drain_improve:0 "§GBrain Drain decreases by 5%§!"
+ tnkd_brain_drain_worsen:0 "§RBrain Drain increases by 2%§!"
+ tnkd_brain_drain_improve:0 "§GBrain Drain decreases by 2%§!"
 
  tnkd_lunar_legion_firepower:0 "Pulling the Strings"
  tnkd_lunar_legion_firepower_desc:0 "We are the puppet masters, they are the puppets, we can help them dance to our tune."

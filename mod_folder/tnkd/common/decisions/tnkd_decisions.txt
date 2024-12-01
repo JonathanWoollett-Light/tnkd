@@ -19,7 +19,7 @@ tnkd_ingenuity = {
         timeout_effect = {
             if = {
                 limit = {
-                    check_variable = { tnk_ingenuity_attack_buff_var < 0.38 }
+                    check_variable = { tnk_ingenuity_attack_buff_var < 0.48 }
                 }
                 hidden_effect = {
                     activate_mission = tnkd_ingenuity_decision
@@ -28,7 +28,7 @@ tnkd_ingenuity = {
             
             add_to_variable = { tnk_ingenuity_attack_buff_var = 0.02 }
             add_to_variable = { tnk_ingenuity_defence_buff_var = 0.01 }
-            add_to_variable = { tnk_ingenuity_cost_var = 0.08 }
+            add_to_variable = { tnk_ingenuity_cost_var = 0.1 }
             custom_effect_tooltip = tnkd_ingenuity_decision_tt
         }
     }
