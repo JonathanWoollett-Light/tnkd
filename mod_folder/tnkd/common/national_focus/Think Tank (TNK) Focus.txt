@@ -1816,7 +1816,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 30
 		y = 7
-		x = 12
+		x = 14
 		relative_position_id = tnk_personality_restoration
 		available = {
 			has_completed_focus = tnk_personality_restoration
@@ -1841,7 +1841,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_better_capital
 		icon = GFX_goal_VEG_Hidden_Valley_Reborn
-		cost = 15
+		cost = 30
 		y = 1
 		x = -1
 		relative_position_id = tnkd_defensive_infrastructure
@@ -1860,6 +1860,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 6
 			}
 		}
 	}
@@ -2071,7 +2072,7 @@ focus_tree = {
 		icon = GFX_goal_BOS_generic
 		cost = 15
 		y = 1
-		x = 1
+		x = -1
 		relative_position_id = tnkd_siding_with_ncr
 		prerequisite = {
 			focus = tnkd_siding_with_ncr
@@ -2125,7 +2126,7 @@ focus_tree = {
 		icon = GFX_goal_CES_immortal_empire
 		cost = 15
 		y = 1
-		x = -1
+		x = 1
 		relative_position_id = tnkd_siding_with_ces
 		prerequisite = {
 			focus = tnkd_siding_with_ces
@@ -2185,15 +2186,18 @@ focus_tree = {
 		id = tnkd_demanding_west
 		icon = GFX_goal_generic_focus_ncr_raids
 		cost = 30
-		y = 1
-		x = -1
+		y = 3
+		x = -2
 		relative_position_id = tnkd_going_alone
-		prerequisite = {
-			focus = tnkd_siding_with_ces
-			focus = tnkd_going_alone
+		available = {
+			has_completed_focus = tnkd_picking_sides
+			not = { is_in_faction_with = NCR }
+		}
+		bypass = {
+			has_war_with = NCR
 		}
 		completion_reward = {
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = NCR
 			}
@@ -2203,17 +2207,42 @@ focus_tree = {
 		id = tnkd_demanding_east
 		icon = GFX_goal_RRG_poison_bull
 		cost = 30
-		y = 1
-		x = 1
+		y = 3
+		x = 2
 		relative_position_id = tnkd_going_alone
-		prerequisite = {
-			focus = tnkd_siding_with_ncr
-			focus = tnkd_going_alone
+		available = {
+			has_completed_focus = tnkd_picking_sides
+			not = { is_in_faction_with = CES }
+		}
+		bypass = {
+			has_war_with = CES
 		}
 		completion_reward = {
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = CES
+			}
+		}
+	}
+	focus = {
+		id = tnkd_controlling_ncr
+		icon = GFX_goal_NCR_Bloody_Flag
+		cost = 30
+		y = 1
+		x = 1
+		relative_position_id = tnkd_demanding_west
+		prerequisite = {
+			focus = tnkd_demanding_west
+		}
+		available = {
+			253 = {
+				tnkd_sphere_controls_state = yes
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = tnkd_stretched_governance
+				days = 90
 			}
 		}
 	}
@@ -2222,6 +2251,7 @@ focus_tree = {
 		icon = GFX_goal_LAC_setting_sun
 		cost = 30
 		y = 1
+		x = -1
 		relative_position_id = tnkd_demanding_west
 		prerequisite = {
 			focus = tnkd_demanding_west
@@ -2239,6 +2269,68 @@ focus_tree = {
 			CES = {
 				country_event = nf_tnk.52
 			}
+		}
+	}
+	focus = {
+		id = tnkd_lobotomize_flagstaff
+		icon = GFX_CES_helmet_skeleton
+		cost = 30
+		y = 1
+		relative_position_id = tnkd_controlling_ces
+		prerequisite = {
+			focus = tnkd_controlling_ces
+		}
+		available = {
+			520 = {
+				tnkd_sphere_controls_state = yes
+			}
+		}
+		completion_reward = {
+			520 = {
+				set_temp_variable = { pop_add = -20000 }
+				add_state_population = yes
+			}
+			add_manpower = 10000
+			
+		}
+	}
+	focus = {
+		id = tnkd_lobotomize_shady_sands
+		icon = GFX_goal_CES_Lanius_NCR
+		cost = 30
+		y = 1
+		relative_position_id = tnkd_controlling_ncr
+		prerequisite = {
+			focus = tnkd_controlling_ncr
+		}
+		available = {
+			253 = {
+				tnkd_sphere_controls_state = yes
+			}
+		}
+		completion_reward = {
+			253 = {
+				set_temp_variable = { pop_add = -20000 }
+				add_state_population = yes
+			}
+			add_manpower = 10000
+			
+		}
+	}
+	focus = {
+		id = tnkd_new_era
+		icon = GFX_goal_generic_bot_brain_head
+		cost = 30
+		y = 3
+		relative_position_id = tnkd_asking_independance
+		prerequisite = {
+			focus = tnkd_lobotomize_flagstaff
+		}
+		prerequisite = {
+			focus = tnkd_lobotomize_shady_sands
+		}
+		completion_reward = {
+			add_ideas = tnkd_new_era_idea
 		}
 	}
 	focus = {
@@ -2275,6 +2367,7 @@ focus_tree = {
 		icon = GFX_goal_ncr_power_armor2
 		cost = 30
 		y = 1
+		x = 1
 		relative_position_id = tnkd_demanding_east
 		prerequisite = {
 			focus = tnkd_demanding_east
@@ -2291,6 +2384,28 @@ focus_tree = {
 		completion_reward = {
 			NCR = {
 				country_event = nf_tnk.53
+			}
+		}
+	}
+	focus = {
+		id = tnkd_controlling_ces
+		icon = GFX_goal_CES_LC_empire
+		cost = 30
+		y = 1
+		x = -1
+		relative_position_id = tnkd_demanding_east
+		prerequisite = {
+			focus = tnkd_demanding_east
+		}
+		available = {
+			520 = {
+				tnkd_sphere_controls_state = yes
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = tnkd_stretched_governance
+				days = 90
 			}
 		}
 	}
@@ -2391,7 +2506,7 @@ focus_tree = {
 			}
 
 			127 = {
-				add_extra_state_shared_building_slots = 12
+				add_extra_state_shared_building_slots = 18
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -2407,9 +2522,11 @@ focus_tree = {
 					level = 6
 					instant_build = yes
 				}
+				set_temp_variable = { pop_add = 6000 }
+				add_state_population = yes
 			}
 			508 = {
-				add_extra_state_shared_building_slots = 12
+				add_extra_state_shared_building_slots = 18
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -2425,6 +2542,8 @@ focus_tree = {
 					level = 6
 					instant_build = yes
 				}
+				set_temp_variable = { pop_add = 6000 }
+				add_state_population = yes
 			}
 		}
 	}
@@ -2655,6 +2774,7 @@ focus_tree = {
 			owns_state = 252
 			owns_state = 613
 			owns_state = 380
+			not = { has_war_with = ces }
 		}
 		completion_reward = {
 			country_event = nf_tnk.25
@@ -2764,6 +2884,7 @@ focus_tree = {
 			owns_state = 252
 			owns_state = 613
 			owns_state = 380
+			not = { has_war_with = ncr }
 		}
 		completion_reward = {
 			country_event = nf_tnk.29
@@ -2865,6 +2986,10 @@ focus_tree = {
 			focus = tnkd_cohesion
 		}
 		completion_reward = {
+			custom_effect_tooltip = tnkd_brain_drain_improve
+			hidden_effect = {
+				add_to_variable = { tnk_brain_drain_var = 0.02 }
+			}
 			remove_ideas = tnkd_fractured_mind
 		}
 	}
@@ -3362,7 +3487,7 @@ focus_tree = {
 				create_faction = "The Vision"
 			}
 			
-			add_war_support = 0.2
+			add_ideas = tnkd_a_narrow_path
 		}
 	}
 	focus = {
@@ -3405,6 +3530,7 @@ focus_tree = {
 					}
 				}
 			}
+			add_ideas = tnkd_extermination_idea
 		}
 	}
 	focus = {
@@ -3649,7 +3775,7 @@ focus_tree = {
 			}
 			
 			add_stability = 0.1
-			add_war_support = 0.2
+			add_ideas = tnkd_a_narrow_path
 		}
 	}
 	focus = {
@@ -4079,14 +4205,14 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.3
 				uses = 3
-				category = air_tech_category
+				category = vehicle_tech_category
 			}
 		}
 	}
 	focus = {
 		id = tnkd_north_men
 		icon = GFX_goal_BRK_the_duel
-		cost = 30
+		cost = 15
 		y = 1
 		x = 2
 		relative_position_id = tnkd_exotic_research
@@ -4095,10 +4221,18 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				controls_state = 398
-				controls_state = 9
-				controls_state = 17
-				controls_state = 188
+				398 = {
+					tnkd_sphere_controls_state = yes
+				}
+				9 = {
+					tnkd_sphere_controls_state = yes
+				}
+				17 = {
+					tnkd_sphere_controls_state = yes
+				}
+				188 = {
+					tnkd_sphere_controls_state = yes
+				}
 			}
 		}
 		completion_reward = {
@@ -4110,7 +4244,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_north_ships
 		icon = GFX_goal_generic_wooden_ship
-		cost = 30
+		cost = 15
 		y = 1
 		relative_position_id = tnkd_north_men
 		prerequisite = {
@@ -4118,10 +4252,18 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				controls_state = 398
-				controls_state = 9
-				controls_state = 17
-				controls_state = 188
+				398 = {
+					tnkd_sphere_controls_state = yes
+				}
+				9 = {
+					tnkd_sphere_controls_state = yes
+				}
+				17 = {
+					tnkd_sphere_controls_state = yes
+				}
+				188 = {
+					tnkd_sphere_controls_state = yes
+				}
 			}
 		}
 		completion_reward = {
@@ -4139,19 +4281,26 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = tnkd_ship_tt
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 3
+				category = naval_tech_category
+			}
 		}
 	}
 	focus = {
 		id = tnkd_valhalla
 		icon = GFX_goal_BRK_ragnar_the_mighty
-		cost = 30
+		cost = 60
 		y = 1
 		relative_position_id = tnkd_north_ships
 		prerequisite = {
 			focus = tnkd_north_ships
 		}
 		available = {
-			controls_state = 79
+			79 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		completion_reward = {
 			country_event = nf_tnk.42
@@ -4160,7 +4309,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_south_men
 		icon = GFX_goal_ITZ_the_impossible_possible
-		cost = 30
+		cost = 15
 		y = 1
 		x = -2
 		relative_position_id = tnkd_exotic_research
@@ -4169,9 +4318,15 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				controls_state = 36
-				controls_state = 862
-				controls_state = 111
+				36 = {
+					tnkd_sphere_controls_state = yes
+				}
+				862 = {
+					tnkd_sphere_controls_state = yes
+				}
+				111 = {
+					tnkd_sphere_controls_state = yes
+				}
 			}
 		}
 		completion_reward = {
@@ -4183,7 +4338,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_south_ships
 		icon = GFX_goal_ITZ_ruling_the_waves
-		cost = 30
+		cost = 15
 		y = 1
 		relative_position_id = tnkd_south_men
 		prerequisite = {
@@ -4191,9 +4346,15 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				controls_state = 36
-				controls_state = 862
-				controls_state = 111
+				36 = {
+					tnkd_sphere_controls_state = yes
+				}
+				862 = {
+					tnkd_sphere_controls_state = yes
+				}
+				111 = {
+					tnkd_sphere_controls_state = yes
+				}
 			}
 		}
 		completion_reward = {
@@ -4211,19 +4372,26 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = tnkd_ship_tt
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 3
+				category = naval_tech_category
+			}
 		}
 	}
 	focus = {
 		id = tnkd_el_dorado
 		icon = GFX_goal_tnkd_el_dorado
-		cost = 30
+		cost = 60
 		y = 1
 		relative_position_id = tnkd_south_ships
 		prerequisite = {
 			focus = tnkd_south_ships
 		}
 		available = {
-			controls_state = 838
+			838 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		completion_reward = {
 			country_event = nf_tnk.41
@@ -4232,31 +4400,40 @@ focus_tree = {
 	focus = {
 		id = tnkd_little_green_dot
 		icon = GFX_goal_tnkd_little_green_dot
-		cost = 30
+		cost = 15
 		y = 1
 		x = 0
 		relative_position_id = tnkd_exotic_research
 		available = {
-			controls_state = 389
+			389 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		prerequisite = {
 			focus = tnkd_exotic_research
 		}
 		completion_reward = {
 			country_event = nf_tnk.22
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 3
+				category = air_tech_category
+			}
 		}
 	}
 	focus = {
 		id = tnkd_a_new_frontier
 		icon = GFX_goal_tnkd_a_new_frontier
-		cost = 30
+		cost = 15
 		y = 1
 		relative_position_id = tnkd_little_green_dot
 		prerequisite = {
 			focus = tnkd_little_green_dot
 		}
 		available = {
-			controls_state = 417
+			417 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		completion_reward = {
 			country_event = nf_tnk.32
@@ -4275,7 +4452,9 @@ focus_tree = {
 			focus = tnkd_a_new_frontier
 		}
 		available = {
-			controls_state = 417
+			417 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		completion_reward = {
 			country_event = nf_tnk.26
@@ -4294,7 +4473,9 @@ focus_tree = {
 			focus = tnkd_shoot_it_down
 		}
 		available = {
-			controls_state = 389
+			389 = {
+				tnkd_sphere_controls_state = yes
+			}
 		}
 		completion_reward = {
 			country_event = nf_tnk.43
@@ -4330,7 +4511,7 @@ focus_tree = {
 			custom_effect_tooltip = tnkd_robotic_supremacy_tt
 			add_to_variable = { tnk_ingenuity_attack_buff_var = 0.1 }
 			add_to_variable = { tnk_ingenuity_defence_buff_var = 0.05 }
-			add_to_variable = { tnk_ingenuity_cost_var = 0.5 }
+			add_to_variable = { tnk_ingenuity_cost_var = 0.6 }
 		}
 	}
 	focus = {
@@ -4359,6 +4540,9 @@ focus_tree = {
 		}
 		available = {
 			country_exists = lul
+		}
+		bypass = {
+			has_subject = lul
 		}
 		completion_reward = {
 			custom_effect_tooltip = tnkd_brain_drain_worsen

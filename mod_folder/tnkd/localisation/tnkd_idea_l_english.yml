@@ -27,7 +27,7 @@
  tnkd_think_tank_litigation_desc:0 "Their speakers output a whirlwind of nonsense confusing and wasting the time or our bureaucrats."
 
  tnkd_ingenuity:0 "Ingenuity"
- tnkd_ingenuity_desc:0 "With out newfound focus we can continuously optimize our designs.\n\nCurrent inequity [?modifier@tnk_ingenuity_defence_buff_var|+%]"
+ tnkd_ingenuity_desc:0 "With out newfound focus we can continuously optimize our designs."
  tnk_ingenuity_dynamic_modifier:0 "Ingenuity"
  tnk_ingenuity_dynamic_modifier_desc:0 "With out newfound focus we can continuously optimize our designs."
 
@@ -109,3 +109,12 @@
 
  tnkd_intervention:0 "[TNK.getName] Intervention"
  tnkd_intervention_desc:0 "The [TNK.getName] can provide us with novel technology to suplement our forces, but their presence is a destabilizing force."
+
+ tnkd_stretched_governance:0 "Executive Governance"
+ tnkd_stretched_governance_desc:0 "To integrate new territory we are exercising substantial political executive power, this has left all our other projects without supervision."
+
+ tnkd_new_era_idea:0 "Pax Cognito"
+ tnkd_new_era_idea_desc:0 "We have burst forth onto the wasteland like bacteria ejected from a pustule, we have entered a new era, we will enforce our will on the wasteland."
+
+ tnkd_a_narrow_path:0 "A Narrow Path"
+ tnkd_a_narrow_path_desc:0 "The path is narrow, but we can see it, there is a way."

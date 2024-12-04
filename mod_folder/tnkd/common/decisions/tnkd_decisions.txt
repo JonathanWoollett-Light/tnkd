@@ -28,7 +28,7 @@ tnkd_ingenuity = {
             
             add_to_variable = { tnk_ingenuity_attack_buff_var = 0.02 }
             add_to_variable = { tnk_ingenuity_defence_buff_var = 0.01 }
-            add_to_variable = { tnk_ingenuity_cost_var = 0.1 }
+            add_to_variable = { tnk_ingenuity_cost_var = 0.12 }
             custom_effect_tooltip = tnkd_ingenuity_decision_tt
         }
     }

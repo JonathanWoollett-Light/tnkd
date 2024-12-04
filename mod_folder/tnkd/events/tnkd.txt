@@ -427,7 +427,7 @@ country_event = {
 		name = nf_tnk.41.a
 		add_offsite_building = {
 			type = industrial_complex
-			level = 12
+			level = 16
 		}
 	}
 }
@@ -448,7 +448,7 @@ country_event = {
 		name = nf_tnk.42.a
 		add_offsite_building = {
 			type = arms_factory
-			level = 12
+			level = 16
 		}
 	}
 }
@@ -487,7 +487,7 @@ country_event = {
 		activate_mission = tnkd_ingenuity_decision
 		set_variable = { tnk_ingenuity_attack_buff_var = 0.02 }
 		set_variable = { tnk_ingenuity_defence_buff_var = 0.01 }
-		set_variable = { tnk_ingenuity_cost_var = 0.08 }
+		set_variable = { tnk_ingenuity_cost_var = 0.12 }
 	}
 }
 

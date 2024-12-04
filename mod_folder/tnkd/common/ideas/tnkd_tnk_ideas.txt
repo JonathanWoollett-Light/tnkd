@@ -149,7 +149,19 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				army_defence_factor = 0.1
-				enemy_justify_war_goal_time = 0.1
+				army_core_defence_factor = 0.2
+				enemy_justify_war_goal_time = 0.3
+			}
+		}
+		tnkd_stretched_governance = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 3
+				training_time_factor = 1
+				planning_speed = -1
 			}
 		}
 		tnkd_guardian = {
@@ -332,7 +344,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				air_strategic_bomber_bombing_factor = 0.3
+				air_strategic_bomber_bombing_factor = 0.4
 				strategic_bomb_visibility = -0.6
 			}
 		}
@@ -440,6 +452,45 @@ ideas = {
 				special_forces_defence_factor = 0.1
 				weekly_manpower = -50
 				experience_loss_factor = -0.1
+				experience_gain_army_factor = 0.1
+			}
+		}
+		tnkd_extermination_idea = {
+			picture = generic_skull
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				experience_gain_army = 0.2
+				experience_gain_navy = 0.2
+				experience_gain_air = 0.2
+			}
+		}
+		tnkd_a_narrow_path = {
+			picture = generic_skull
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.2
+				war_support_factor = 0.2
+			}
+		}
+		tnkd_new_era_idea = {
+			picture = generic_skull
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				foreign_subversive_activites = -0.25
+				request_lease_tension = -1
+				send_volunteers_tension = -1
+				send_volunteer_size = 50
+				send_volunteer_divisions_required = -0.9
+				diplomacy_distance = 10000
 			}
 		}
 		tnkd_going_alone_idea = {
