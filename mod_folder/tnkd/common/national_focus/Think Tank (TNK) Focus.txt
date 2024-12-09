@@ -2506,43 +2506,43 @@ focus_tree = {
 			}
 
 			127 = {
-				add_extra_state_shared_building_slots = 18
+				add_extra_state_shared_building_slots = 15
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 6
+					level = 5
 					instant_build = yes
 				}
-				set_temp_variable = { pop_add = 6000 }
+				set_temp_variable = { pop_add = 5000 }
 				add_state_population = yes
 			}
 			508 = {
-				add_extra_state_shared_building_slots = 18
+				add_extra_state_shared_building_slots = 15
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 6
+					level = 5
 					instant_build = yes
 				}
-				set_temp_variable = { pop_add = 6000 }
+				set_temp_variable = { pop_add = 5000 }
 				add_state_population = yes
 			}
 		}
@@ -3792,7 +3792,6 @@ focus_tree = {
 			every_neighbor_country = {
 				limit = {
 					NOT = { is_in_faction_with = TNK }
-					NOT = { tag = CES }
 				}
 				custom_effect_tooltip = geck_offer_tt
 				country_event = nf_tnk.30

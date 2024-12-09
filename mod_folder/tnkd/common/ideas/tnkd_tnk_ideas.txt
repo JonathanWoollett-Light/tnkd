@@ -292,8 +292,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				enemy_justify_war_goal_time = -0.2
-				justify_war_goal_time = -0.4
+				enemy_justify_war_goal_time = -0.15
+				justify_war_goal_time = -0.3
 			}
 		}
 		tnkd_attack_weak = {
