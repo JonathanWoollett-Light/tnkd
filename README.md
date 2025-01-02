@@ -19,7 +19,7 @@ There should be a decision category for each major nation to tell the story of t
     - Decisions to wake the sleepers which can be started and takes 360 days to complete, missions
       for each border county which speed up timers and mission paying political power to speed up
       timer.
-    - Give Sorrows territory.
+    - Give Sorrows territory as new cores.
 - Sky Reavers: Border war to take "North Passage"
 - NCR: A missions counting down to war.
     - Give land to increase timer.
@@ -49,3 +49,8 @@ There should be a decision category for each major nation to tell the story of t
     - Split with Enclave, if Shady Sands and (some other territory) is controlled by TNK and Enclave
       offers decisions to end war early splitting NCR territory.
     - If went good path and made progress can ally Enclave if they also went good path.
+
+### Notes
+
+- When NCR/CES refuses/accepts to return land it should trigger an event that communicates this rather than the affect happening silently (e.g. they could refuse and someone doesn't notice the border war mission is now avaible).
+- Add a meme focus and idea about smoking weed

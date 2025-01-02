@@ -81,6 +81,8 @@ ideas = {
 			targeted_modifier = {
 				tag = TNK
 				attack_bonus_against = -0.05
+			}
+			modifier = {
 				political_power_factor = -0.05
 			}
 		}
@@ -393,9 +395,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
-				stability_factor = -0.05
+				production_factory_max_efficiency_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025
+				stability_factor = -0.025
 			}
 		}
 		tnkd_better_expertise = {
@@ -404,8 +406,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = -0.075
+				production_factory_max_efficiency_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.075
 			}
 		}
 		tnkd_ncr_knownledge = {
@@ -575,6 +578,30 @@ ideas = {
 				tag = TNK
 				attack_bonus_against = -0.1
 				defense_bonus_against = -0.1
+			}
+		}
+		tnkd_veg_concessions = {
+			picture = VEG_The_House_Always_Wins
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = VEG
+				cic_to_target_factor = 0.1
+				mic_to_target_factor = 0.1
+			}
+		}
+		tnkd_payment = {
+			picture = VEG_The_House_Always_Wins
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = TNK
+				cic_to_target_factor = 0.1
+				mic_to_target_factor = 0.1
 			}
 		}
     }

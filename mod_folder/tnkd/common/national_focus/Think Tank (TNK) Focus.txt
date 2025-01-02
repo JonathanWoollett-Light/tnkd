@@ -18,13 +18,23 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = nf_tnk.1
-			set_truce = {
-				target = CES
-				days = 365
+			# TODO Is there a way to make this occur on spawn?
+			# Could it be moved to `countries/TNK - The Think Tank.txt`?
+			set_variable = { global.tnk_ncr_war_countdown = 460 }
+			set_variable = { global.tnk_ces_war_countdown = 460 }
+			activate_mission = tnkd_ncr_war_mission
+			activate_mission = tnkd_ces_war_mission
+			hidden_effect = {
+				NCR = {
+					activate_mission = tnkd_ncr_war_mission
+				}
+				CES = {
+					activate_mission = tnkd_ces_war_mission
+				}
 			}
-			set_truce = {
-				target = NCR
-				days = 365
+			set_variable = { tnk_angels_of_death_var = -0.1 }
+			add_dynamic_modifier = {
+				modifier = tnk_angels_of_death_dynamic_modifier
 			}
 		}
 	}
@@ -2009,7 +2019,12 @@ focus_tree = {
 				add_ideas = tnkd_better_expertise
 			}
 			NCR = {
-				remove_ideas = tnkd_expertise
+				if = {
+					limit = {
+						has_idea = tnkd_expertise
+					}
+					remove_ideas = tnkd_expertise
+				}
 			}
 		}
 	}
@@ -2063,7 +2078,12 @@ focus_tree = {
 				add_ideas = tnkd_better_expertise
 			}
 			CES = {
-				remove_ideas = tnkd_expertise
+				if = {
+					limit = {
+						has_idea = tnkd_expertise
+					}
+					remove_ideas = tnkd_expertise
+				}
 			}
 		}
 	}
@@ -2113,11 +2133,23 @@ focus_tree = {
 		completion_reward = {
 			BOS = {
 				add_to_faction = TNK
+				add_ideas = tnkd_expertise
 				add_ideas = tnkd_better_expertise
 				add_ideas = tnkd_ncr_knownledge
 			}
 			NCR = {
-				remove_ideas = tnkd_better_expertise
+				if = {
+					limit = {
+						has_idea = tnkd_expertise
+					}
+					remove_ideas = tnkd_expertise
+				}
+				if = {
+					limit = {
+						has_idea = tnkd_better_expertise
+					}
+					remove_ideas = tnkd_better_expertise
+				}
 			}
 		}
 	}
@@ -2174,11 +2206,23 @@ focus_tree = {
 				}
 				add_to_faction = TNK
 				
+				add_ideas = tnkd_expertise
 				add_ideas = tnkd_better_expertise
 				add_ideas = tnkd_ces_knownledge
 			}
 			CES = {
-				remove_ideas = tnkd_better_expertise
+				if = {
+					limit = {
+						has_idea = tnkd_expertise
+					}
+					remove_ideas = tnkd_expertise
+				}
+				if = {
+					limit = {
+						has_idea = tnkd_better_expertise
+					}
+					remove_ideas = tnkd_better_expertise
+				}
 			}
 		}
 	}
@@ -2240,10 +2284,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_timed_idea = {
-				idea = tnkd_stretched_governance
-				days = 90
-			}
+			custom_effect_tooltip = tnkd_treaty_ncr_tt
+			
 		}
 	}
 	focus = {
@@ -2272,6 +2314,25 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = tnkd_controlling_ces
+		icon = GFX_goal_CES_LC_empire
+		cost = 30
+		y = 1
+		x = -1
+		relative_position_id = tnkd_demanding_east
+		prerequisite = {
+			focus = tnkd_demanding_east
+		}
+		available = {
+			520 = {
+				tnkd_sphere_controls_state = yes
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = tnkd_treaty_ces_tt
+		}
+	}
+	focus = {
 		id = tnkd_lobotomize_flagstaff
 		icon = GFX_CES_helmet_skeleton
 		cost = 30
@@ -2286,12 +2347,11 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			520 = {
-				set_temp_variable = { pop_add = -20000 }
-				add_state_population = yes
+			custom_effect_tooltip = tnkd_lobotomize_flagstaff_tt
+			add_timed_idea = {
+				idea = tnkd_stretched_governance
+				days = 90
 			}
-			add_manpower = 10000
-			
 		}
 	}
 	focus = {
@@ -2309,28 +2369,11 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			253 = {
-				set_temp_variable = { pop_add = -20000 }
-				add_state_population = yes
+			custom_effect_tooltip = tnkd_lobotomize_shady_sands_tt
+			add_timed_idea = {
+				idea = tnkd_stretched_governance
+				days = 90
 			}
-			add_manpower = 10000
-			
-		}
-	}
-	focus = {
-		id = tnkd_new_era
-		icon = GFX_goal_generic_bot_brain_head
-		cost = 30
-		y = 3
-		relative_position_id = tnkd_asking_independance
-		prerequisite = {
-			focus = tnkd_lobotomize_flagstaff
-		}
-		prerequisite = {
-			focus = tnkd_lobotomize_shady_sands
-		}
-		completion_reward = {
-			add_ideas = tnkd_new_era_idea
 		}
 	}
 	focus = {
@@ -2363,6 +2406,23 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = tnkd_new_era
+		icon = GFX_goal_generic_bot_brain_head
+		cost = 30
+		y = 3
+		relative_position_id = tnkd_asking_independance
+		prerequisite = {
+			focus = tnkd_lobotomize_flagstaff
+		}
+		prerequisite = {
+			focus = tnkd_lobotomize_shady_sands
+		}
+		completion_reward = {
+			add_ideas = tnkd_new_era_idea
+		}
+	}
+	
+	focus = {
 		id = tnkd_ncr_reward
 		icon = GFX_goal_ncr_power_armor2
 		cost = 30
@@ -2388,28 +2448,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = tnkd_controlling_ces
-		icon = GFX_goal_CES_LC_empire
-		cost = 30
-		y = 1
-		x = -1
-		relative_position_id = tnkd_demanding_east
-		prerequisite = {
-			focus = tnkd_demanding_east
-		}
-		available = {
-			520 = {
-				tnkd_sphere_controls_state = yes
-			}
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = tnkd_stretched_governance
-				days = 90
-			}
-		}
-	}
-	focus = {
 		id = tnkd_offensive_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 30
@@ -2420,6 +2458,7 @@ focus_tree = {
 			has_completed_focus = tnk_personality_restoration
 		}
 		completion_reward = {
+			custom_effect_tooltip = tnkd_taking_sky_reavers_tt
 			every_owned_state = {
 				add_building_construction = {
 					type = infrastructure
@@ -2427,6 +2466,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			
 		}
 	}
 	focus = {
@@ -2506,45 +2546,57 @@ focus_tree = {
 			}
 
 			127 = {
-				add_extra_state_shared_building_slots = 15
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = infrastructure
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 2
 					instant_build = yes
 				}
-				set_temp_variable = { pop_add = 5000 }
+				set_temp_variable = { pop_add = 4000 }
 				add_state_population = yes
 			}
 			508 = {
-				add_extra_state_shared_building_slots = 15
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = infrastructure
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 2
 					instant_build = yes
 				}
-				set_temp_variable = { pop_add = 5000 }
+				set_temp_variable = { pop_add = 4000 }
 				add_state_population = yes
 			}
+			SLE = {
+				add_offsite_building = {
+					type = arms_factory
+					level = 8
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 8
+				}
+				add_manpower = 4000
+			}
+			
 		}
 	}
 	focus = {
@@ -2646,12 +2698,7 @@ focus_tree = {
 			focus = tnkd_defensive_infrastructure
 		}
 		completion_reward = {
-			CES = {
-				add_ideas = tnkd_think_tank_litigation
-			}
-			CES = {
-				country_event = nf_tnk.46
-			}
+			custom_effect_tooltip = tnkd_larping_luddites_tt
 		}
 	}
 	focus = {
@@ -2662,9 +2709,6 @@ focus_tree = {
 		relative_position_id = tnkd_larping_luddites
 		prerequisite = {
 			focus = tnkd_larping_luddites
-		}
-		available = {
-			controls_state = 252
 		}
 		bypass = {
 			438 = {
@@ -2770,15 +2814,8 @@ focus_tree = {
 		prerequisite = {
 			focus = tnkd_larping_luddites
 		}
-		available = {
-			owns_state = 252
-			owns_state = 613
-			owns_state = 380
-			not = { has_war_with = ces }
-		}
 		completion_reward = {
-			country_event = nf_tnk.25
-			custom_effect_tooltip = tnk_caesar_deal_desc
+			custom_effect_tooltip = tnkd_caesar_deal_tt
 		}
 	}
 	focus = {
@@ -2792,12 +2829,7 @@ focus_tree = {
 			focus = tnkd_defensive_infrastructure
 		}
 		completion_reward = {
-			NCR = {
-				add_ideas = tnkd_think_tank_litigation
-			}
-			NCR = {
-				country_event = nf_tnk.46
-			}
+			custom_effect_tooltip = tnkd_ncr_defence_tt
 		}
 	}
 	focus = {
@@ -2880,15 +2912,8 @@ focus_tree = {
 		prerequisite = {
 			focus = tnkd_ncr_defence
 		}
-		available = {
-			owns_state = 252
-			owns_state = 613
-			owns_state = 380
-			not = { has_war_with = ncr }
-		}
 		completion_reward = {
-			country_event = nf_tnk.29
-			custom_effect_tooltip = tnk_ncr_deal_desc
+			custom_effect_tooltip = tnkd_ncr_deal_tt
 		}
 	}
 	focus = {
@@ -3391,6 +3416,10 @@ focus_tree = {
 				tnkd_convergance_idea
 			}
 			country_event = nf_tnk.24
+			set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.1
+            }
+            increase_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -3488,6 +3517,10 @@ focus_tree = {
 			}
 			
 			add_ideas = tnkd_a_narrow_path
+			set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.1
+            }
+            increase_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -3554,6 +3587,10 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = tnkd_clean_slate_tt
 			activate_mission = tnkd_clean_slate_decision_0
+			set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.1
+            }
+            increase_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -3651,6 +3688,10 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.1
+            }
+            increase_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -3675,6 +3716,10 @@ focus_tree = {
 				tnkd_convergance_idea
 			}
 			country_event = nf_tnk.23
+			set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.1
+            }
+            decrease_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -3773,9 +3818,12 @@ focus_tree = {
 			else = {
 				create_faction = "The American Technical Alliance"
 			}
-			
 			add_stability = 0.1
 			add_ideas = tnkd_a_narrow_path
+			set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.1
+            }
+            decrease_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -3852,6 +3900,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = nf_tnk.40
+			set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.1
+            }
+            decrease_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -3928,6 +3980,10 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = tnkd_gev_tt
 			activate_mission = tnkd_gev_decision
+			set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.1
+            }
+            decrease_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -4559,10 +4615,20 @@ focus_tree = {
 					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
-
+			every_country = {
+				limit = {
+					has_war_with = LUL
+					not = { has_war_with = TNK }
+				}
+				white_peace = LUL
+			}
 			TNK = {
 				puppet = LUL
 			}
+			set_temp_variable = {
+                global.tnk_ces_war_countdown_temp = 60
+            }
+            decrease_tnk_ces_war_countdown = yes
 		}
 	}
 	focus = {

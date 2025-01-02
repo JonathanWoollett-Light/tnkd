@@ -2,10 +2,10 @@ tnkd_ingenuity = {
     tnkd_ingenuity_decision = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
-        visible = {
-            has_country_flag = TNK
-        }
         allowed = { tag = TNK }
+        activation = {
+            always = no
+        }
         available = {
             always = no
         }
@@ -13,9 +13,7 @@ tnkd_ingenuity = {
         is_good = yes
         selectable_mission = yes
         days_mission_timeout = 20
-        activation = {
-            always = no
-        }
+        
         timeout_effect = {
             if = {
                 limit = {
@@ -38,10 +36,10 @@ tnkd_decohesion = {
     tnkd_decohesion_decision = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
-        visible = {
-            has_country_flag = TNK
-        }
         allowed = { tag = TNK }
+        activation = {
+            always = no
+        }
         available = {
             always = no
         }
@@ -49,9 +47,7 @@ tnkd_decohesion = {
         is_good = no
         selectable_mission = yes
         days_mission_timeout = 20
-        activation = {
-            always = no
-        }
+        
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_decohesion_decision
@@ -67,10 +63,10 @@ tnkd_clean_slate = {
     tnkd_clean_slate_decision_0 = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
-        visible = {
-            has_country_flag = TNK
-        }
         allowed = { tag = TNK }
+        activation = {
+            always = no
+        }
         available = {
             always = no
         }
@@ -78,9 +74,7 @@ tnkd_clean_slate = {
         is_good = no
         selectable_mission = yes
         days_mission_timeout = 90
-        activation = {
-            always = no
-        }
+        
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_clean_slate_decision_0
@@ -104,10 +98,10 @@ tnkd_clean_slate = {
     tnkd_clean_slate_decision_1 = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
-        visible = {
-            has_country_flag = TNK
-        }
         allowed = { tag = TNK }
+        activation = {
+            always = no
+        }
         available = {
             always = no
         }
@@ -115,9 +109,7 @@ tnkd_clean_slate = {
         is_good = no
         selectable_mission = yes
         days_mission_timeout = 90
-        activation = {
-            always = no
-        }
+        
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_clean_slate_decision_1
@@ -141,10 +133,10 @@ tnkd_clean_slate = {
     tnkd_clean_slate_decision_2 = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
-        visible = {
-            has_country_flag = TNK
-        }
         allowed = { tag = TNK }
+        activation = {
+            always = no
+        }
         available = {
             always = no
         }
@@ -152,9 +144,7 @@ tnkd_clean_slate = {
         is_good = no
         selectable_mission = yes
         days_mission_timeout = 90
-        activation = {
-            always = no
-        }
+        
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_clean_slate_decision_2
@@ -178,10 +168,10 @@ tnkd_clean_slate = {
     tnkd_clean_slate_decision_3 = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
-        visible = {
-            has_country_flag = TNK
-        }
         allowed = { tag = TNK }
+        activation = {
+            always = no
+        }
         available = {
             always = no
         }
@@ -189,9 +179,7 @@ tnkd_clean_slate = {
         is_good = no
         selectable_mission = yes
         days_mission_timeout = 90
-        activation = {
-            always = no
-        }
+        
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_clean_slate_decision_3
@@ -218,10 +206,10 @@ tnkd_dna_shattering = {
     tnkd_dna_shattering_decision = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
-        visible = {
-            has_country_flag = TNK
-        }
         allowed = { tag = TNK }
+        activation = {
+            always = no
+        }
         available = {
             always = no
         }
@@ -229,9 +217,6 @@ tnkd_dna_shattering = {
         is_good = yes
         selectable_mission = yes
         days_mission_timeout = 7
-        activation = {
-            always = no
-        }
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_dna_shattering_decision
@@ -250,10 +235,10 @@ tnkd_gev_category = {
     tnkd_gev_decision = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
-        visible = {
-            has_country_flag = TNK
-        }
         allowed = { tag = TNK }
+        activation = {
+            always = no
+        }
         available = {
             always = no
         }
@@ -261,9 +246,6 @@ tnkd_gev_category = {
         is_good = no
         selectable_mission = yes
         days_mission_timeout = 30
-        activation = {
-            always = no
-        }
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_gev_decision
@@ -299,10 +281,10 @@ tnkd_resource_consolidation = {
     tnkd_resource_consolidation_decision = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
-        visible = {
-            has_country_flag = TNK
-        }
         allowed = { tag = TNK }
+        activation = {
+            always = no
+        }
         available = {
             always = no
         }
@@ -310,9 +292,6 @@ tnkd_resource_consolidation = {
         is_good = yes
         selectable_mission = yes
         days_mission_timeout = 10
-        activation = {
-            always = no
-        }
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_resource_consolidation_decision
@@ -388,22 +367,30 @@ tnkd_resource_consolidation = {
                     }
                 }
             }
-            
         }
     }
 }
-tnkd_border_war_category = {
-	tnkd_ncr_border_war_mission = {
+
+tnkd_ncr_category = {
+    tnkd_ncr_border_war_mission = {
         icon = generic_prepare_civil_war
-        available = {
-            has_country_flag = tnkd_ncr_border_war_mission_enabled
-        }
+        allowed = { tag = TNK }
         visible = {
-            has_country_flag = tnkd_ncr_border_war_mission_enabled
+            NCR = {
+                owns_state = 77
+            }
         }
-        cost = 50
-        days_remove = 70
-        complete_effect = {
+        available = {
+            has_completed_focus = tnkd_ncr_demand
+            owns_state = 47
+            NCR = {
+                owns_state = 77
+            }
+        }
+        cost = 30
+        fire_only_once = yes
+        days_remove = 60
+        remove_effect = {
             start_border_war = {
                 change_state_controller = 77
                 attacker = {
@@ -415,19 +402,297 @@ tnkd_border_war_category = {
                     num_provinces = 2
                 }
             }
+            set_temp_variable = {
+                global.tnk_ncr_war_countdown_temp = 60
+            }
+            decrease_tnk_ncr_war_countdown = yes
         }
     }
-	tnkd_ces_border_war_mission = {
+    tnkd_ncr_deal_mission = {
         icon = generic_prepare_civil_war
-        available = {
-            has_country_flag = tnkd_ces_border_war_mission_enabled
-        }
+        allowed = { tag = TNK }
         visible = {
-            has_country_flag = tnkd_ces_border_war_mission_enabled
+            has_active_mission = tnkd_ncr_war_mission
         }
-        cost = 50
-        days_remove = 70
+        available = {
+            has_completed_focus = tnkd_ncr_deal
+            owns_state = 252
+			owns_state = 613
+			owns_state = 380
+			not = { has_war_with = ncr }
+        }
+        cost = 60
         complete_effect = {
+            every_owned_state = {
+                limit = {
+                    NOT = {
+                        OR = {
+                            state = 47
+                            state = 67
+                            state = 46
+                            state = 573
+                            state = 417
+                            state = 137
+                            state = 552
+                        }
+                    }
+                }
+                NCR = {
+                    transfer_state = PREV
+                }
+            }
+            set_temp_variable = {
+                global.tnk_ncr_war_countdown_temp = 180
+            }
+            increase_tnk_ncr_war_countdown = yes
+        }
+    }
+    tnkd_ncr_debuff_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_completed_focus = tnkd_ncr_defence
+        }
+        cost = 60
+        fire_only_once = yes
+        complete_effect = {
+            NCR = {
+				add_ideas = tnkd_think_tank_litigation
+			}
+        }
+    }
+    tnkd_ncr_buff_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_completed_focus = tnkd_ncr_defence
+        }
+        cost = 60
+        fire_only_once = yes
+        complete_effect = {
+            NCR = {
+				country_event = nf_tnk.46
+			}
+            custom_effect_tooltip = tnkd_ncr_buff_mission_tt
+            effect_tooltip = {
+                NCR = {
+                    add_ideas = tnkd_expertise
+                }
+                set_temp_variable = {
+                    global.tnk_ncr_war_countdown_temp = 60
+                }
+                increase_tnk_ncr_war_countdown = yes
+            }
+        }
+    }
+    tnkd_ncr_pp_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        visible = {
+            has_active_mission = tnkd_ncr_war_mission
+        }
+        available = {
+            has_completed_focus = tnkd_ncr_defence
+        }
+        cost = 40
+        complete_effect = {
+            add_war_support = -0.02
+            NCR = {
+                add_stability = 0.01
+            }
+            set_temp_variable = {
+                global.tnk_ncr_war_countdown_temp = 30
+            }
+            increase_tnk_ncr_war_countdown = yes
+        }
+    }
+    tnkd_ncr_temporary_peace_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_war_with = NCR
+            NOT = { has_completed_focus = tnkd_demanding_west }
+        }
+        cost = 60
+        fire_only_once = yes
+        days_remove = 90
+        remove_effect = {
+            NCR = {
+                white_peace = TNK
+            }
+            set_variable = { global.tnk_ncr_war_countdown = 240 }
+            custom_effect_tooltip = tnkd_ncr_temporary_peace_mission_tt
+            hidden_effect = {
+                activate_mission = tnkd_ncr_war_mission
+                NCR = {
+                    activate_mission = tnkd_ncr_war_mission
+                }
+            } 
+        }
+    }
+    tnkd_ncr_war_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { always = no }
+        activation = {
+            has_country_flag = TNK
+        }
+        available = {
+            always = no
+        }
+        cancel_trigger = { # Edge-Casing
+			OR = {
+				TNK = { has_war_with = NCR }
+				TNK = { exists = no }
+				NCR = { exists = no }
+                TNK = { has_completed_focus = tnkd_siding_with_ncr }
+			}
+		}
+        days_mission_timeout = global.tnk_ncr_war_countdown
+        is_good = no
+		war_with_on_timeout = NCR
+		war_with_on_timeout = TNK
+        timeout_effect = {
+            if = {
+				limit = {
+					tag = NCR
+				}
+				declare_war_on = {
+					target = TNK
+					type = annex_everything
+				}
+			}
+			else = {
+				effect_tooltip = {
+					NCR = {
+						declare_war_on = {
+							target = TNK
+							type = annex_everything
+						}
+					}
+				}
+			}
+        }
+    }
+    tnkd_ncr_treaty_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_completed_focus = tnkd_controlling_ncr
+            253 = {
+				tnkd_sphere_controls_state = yes
+			}
+        }
+        fire_only_once = yes
+        cost = 60
+        complete_effect = {
+            NCR = {
+                country_event = nf_tnk.59
+                add_timed_idea = {
+                    idea = tnkd_payment
+                    days = 180
+                }
+            }
+            if = {
+                limit = {
+                    NCR = {
+                        owns_state = 77
+                    }
+                }
+                transfer_state = 77
+            }
+            if = {
+                limit = {
+                    NCR = {
+                        owns_state = 603
+                    }
+                }
+                transfer_state = 603
+            }
+            if = {
+                limit = {
+                    NCR = {
+                        owns_state = 13
+                    }
+                }
+                transfer_state = 13
+            }
+            if = {
+                limit = {
+                    NCR = {
+                        owns_state = 271
+                    }
+                }
+                transfer_state = 271
+            }
+            if = {
+                limit = {
+                    NCR = {
+                        owns_state = 592
+                    }
+                }
+                transfer_state = 592
+            }
+            if = {
+                limit = {
+                    NCR = {
+                        owns_state = 329
+                    }
+                }
+                transfer_state = 329
+            }
+            if = {
+                limit = {
+                    NCR = {
+                        owns_state = 236
+                    }
+                }
+                transfer_state = 236
+            }
+        }
+    }
+    tnkd_ncr_lobot_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_completed_focus = tnkd_lobotomize_shady_sands
+            253 = {
+				tnkd_sphere_controls_state = yes
+			}
+        }
+        cost = 60
+        complete_effect = {
+            253 = {
+                set_temp_variable = { pop_add = -20000 }
+				add_state_population = yes
+            }
+            add_manpower = 10000
+            set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.2
+            }
+            increase_tnk_angels_of_death_var = yes
+        }
+    }
+}
+
+tnkd_ces_category = {
+    tnkd_ces_border_war_mission = {
+        icon = generic_prepare_civil_war
+        visible = {
+            CES = {
+                owns_state = 438
+            }
+        }
+        available = {
+            has_completed_focus = tnkd_ces_demand
+            owns_state = 252
+            CES = {
+                owns_state = 438
+            }
+        }
+        cost = 30
+        fire_only_once = yes
+        days_remove = 60
+        remove_effect = {
             start_border_war = {
                 change_state_controller = 438
                 attacker = {
@@ -439,6 +704,392 @@ tnkd_border_war_category = {
                     num_provinces = 2
                 }
             }
+            set_temp_variable = {
+                global.tnk_ces_war_countdown_temp = 60
+            }
+            decrease_tnk_ces_war_countdown = yes
+        }
+    }
+    tnkd_ces_deal_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        visible = {
+            has_active_mission = tnkd_ces_war_mission
+        }
+        available = {
+            has_completed_focus = tnkd_caesar_deal
+            owns_state = 252
+			owns_state = 613
+			owns_state = 380
+			not = { has_war_with = ces }
+        }
+        cost = 60
+        complete_effect = {
+            every_owned_state = {
+                limit = {
+                    NOT = {
+                        OR = {
+                            state = 47
+                            state = 67
+                            state = 552
+                            state = 46
+                            state = 573
+                            state = 417
+                            state = 137
+                        }
+                    }
+                }
+                CES = {
+                    transfer_state = PREV
+                }
+            }
+            set_temp_variable = {
+                global.tnk_ces_war_countdown_temp = 180
+            }
+            increase_tnk_ces_war_countdown = yes
+        }
+    }
+    tnkd_ces_debuff_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_completed_focus = tnkd_larping_luddites
+        }
+        cost = 60
+        fire_only_once = yes
+        complete_effect = {
+            CES = {
+				add_ideas = tnkd_think_tank_litigation
+			}
+        }
+    }
+    tnkd_ces_buff_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_completed_focus = tnkd_larping_luddites
+        }
+        cost = 60
+        fire_only_once = yes
+        complete_effect = {
+            CES = {
+				country_event = nf_tnk.46
+			}
+            custom_effect_tooltip = tnkd_ces_buff_mission_tt
+            effect_tooltip = {
+                CES = {
+                    add_ideas = tnkd_expertise
+                }
+                set_temp_variable = {
+                    global.tnk_ces_war_countdown_temp = 60
+                }
+                increase_tnk_ces_war_countdown = yes
+            }
+            
+        }
+    }
+    tnkd_ces_pp_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        visible = {
+            has_active_mission = tnkd_ces_war_mission
+        }
+        available = {
+            has_completed_focus = tnkd_larping_luddites
+        }
+        cost = 40
+        complete_effect = {
+            add_manpower = -300
+            CES = {
+                add_manpower = 300
+            }
+            set_temp_variable = {
+                global.tnk_ces_war_countdown_temp = 30
+            }
+            increase_tnk_ces_war_countdown = yes
+        }
+    }
+    tnkd_ces_temporary_peace_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_war_with = CES
+            NOT = { has_completed_focus = tnkd_demanding_east }
+        }
+        cost = 60
+        fire_only_once = yes
+        days_remove = 90
+        remove_effect = {
+            CES = {
+                white_peace = TNK
+            }
+            set_variable = { global.tnk_ces_war_countdown = 240 }
+            custom_effect_tooltip = tnkd_ces_temporary_peace_mission_tt
+            hidden_effect = {
+                activate_mission = tnkd_ces_war_mission
+                CES = {
+                    activate_mission = tnkd_ces_war_mission
+                }
+            } 
+        }
+    }
+    tnkd_ces_war_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { always = no }
+        activation = {
+            has_country_flag = TNK
+        }
+        available = {
+            always = no
+        }
+        cancel_trigger = { # Edge-Casing
+			OR = {
+				TNK = { has_war_with = CES }
+				TNK = { exists = no }
+				CES = { exists = no }
+                TNK = { has_completed_focus = tnkd_siding_with_ces }
+			}
+		}
+        is_good = no
+        days_mission_timeout = global.tnk_ces_war_countdown
+        war_with_on_timeout = CES
+		war_with_on_timeout = TNK
+        timeout_effect = {
+            if = {
+				limit = {
+					tag = CES
+				}
+				declare_war_on = {
+					target = TNK
+					type = annex_everything
+				}
+			}
+			else = {
+				effect_tooltip = {
+					CES = {
+						declare_war_on = {
+							target = TNK
+							type = annex_everything
+						}
+					}
+				}
+			}
+        }
+    }
+    tnkd_ces_treaty_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_completed_focus = tnkd_controlling_ces
+            520 = {
+				tnkd_sphere_controls_state = yes
+			}
+        }
+        fire_only_once = yes
+        cost = 60
+        complete_effect = {
+            CES = {
+                country_event = nf_tnk.58
+                add_timed_idea = {
+                    idea = tnkd_payment
+                    days = 180
+                }
+            }
+            if = {
+                limit = {
+                    CES = {
+                        owns_state = 438
+                    }
+                }
+                transfer_state = 438
+            }
+            if = {
+                limit = {
+                    CES = {
+                        owns_state = 553
+                    }
+                }
+                transfer_state = 553
+            }
+            if = {
+                limit = {
+                    CES = {
+                        owns_state = 359
+                    }
+                }
+                transfer_state = 359
+            }
+            if = {
+                limit = {
+                    CES = {
+                        owns_state = 130
+                    }
+                }
+                transfer_state = 130
+            }
+            if = {
+                limit = {
+                    CES = {
+                        owns_state = 49
+                    }
+                }
+                transfer_state = 49
+            }
+            if = {
+                limit = {
+                    CES = {
+                        owns_state = 242
+                    }
+                }
+                transfer_state = 242
+            }
+        }
+    }
+    tnkd_ces_lobot_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_completed_focus = tnkd_lobotomize_flagstaff
+            520 = {
+				tnkd_sphere_controls_state = yes
+			}
+        }
+        cost = 60
+        complete_effect = {
+            520 = {
+                set_temp_variable = { pop_add = -20000 }
+				add_state_population = yes
+            }
+            add_manpower = 10000
+            set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.2
+            }
+            increase_tnk_angels_of_death_var = yes
+        }
+    }
+}
+
+tnkd_minor_category = {
+    tnkd_sky_border_war_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        visible = {
+            SKY = {
+                owns_state = 12
+            }
+        }
+        available = {
+            has_completed_focus = tnkd_offensive_infrastructure
+            owns_state = 106
+            SKY = {
+                owns_state = 12
+            }
+        }
+        cost = 30
+        fire_only_once = yes
+        days_remove = 60
+        remove_effect = {
+            start_border_war = {
+                change_state_controller = 12
+                attacker = {
+                    state = 106
+                    num_provinces = 2
+                }
+                defender = {
+                    state = 12
+                    num_provinces = 2
+                }
+            }
+        }
+    }
+    tnkd_wht_border_war_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        visible = {
+            WHT = {
+                owns_state = 72
+            }
+        }
+        available = {
+            has_completed_focus = tnkd_offensive_infrastructure
+            owns_state = 12
+            WHT = {
+                owns_state = 72
+            }
+        }
+        cost = 30
+        fire_only_once = yes
+        days_remove = 60
+        remove_effect = {
+            start_border_war = {
+                change_state_controller = 72
+                attacker = {
+                    state = 12
+                    num_provinces = 1
+                }
+                defender = {
+                    state = 72
+                    num_provinces = 1
+                }
+            }
+        }
+    }
+    tnkd_sle_border_war_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        visible = {
+            SLE = {
+                owns_state = 127
+            }
+        }
+        available = {
+            has_completed_focus = tnkd_offensive_infrastructure
+            owns_state = 12
+            SLE = {
+                owns_state = 127
+            }
+        }
+        cost = 30
+        fire_only_once = yes
+        days_remove = 60
+        remove_effect = {
+            start_border_war = {
+                change_state_controller = 127
+                attacker = {
+                    state = 12
+                    num_provinces = 1
+                }
+                defender = {
+                    state = 127
+                    num_provinces = 1
+                }
+            }
+        }
+    }
+    tnkd_lobot_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            TNK = {
+                any_controlled_state = {
+                    state_population > 1000
+                }
+            }
+        }
+        cost = 30
+        complete_effect = {
+            random_controlled_state = {
+                limit = {
+                    state_population > 1000
+                }
+                set_temp_variable = { pop_add = -1000 }
+				add_state_population = yes
+            }
+            add_manpower = 500
+            set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.02
+            }
+            increase_tnk_angels_of_death_var = yes
         }
     }
 }

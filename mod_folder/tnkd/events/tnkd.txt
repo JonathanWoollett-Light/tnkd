@@ -10,7 +10,7 @@ country_event = {
 	option = {
 		name = nf_tnk.60.a
 		ai_chance = {
-			base = 100
+			base = 20
 		}
 		if = {
 			limit = {
@@ -23,6 +23,15 @@ country_event = {
 
 	option = {
 		name = nf_tnk.60.b
+		ai_chance = {
+			base = 80
+		}
+		TNK = {
+			country_event = nf_tnk.57
+		}
+	}
+	option = {
+		name = nf_tnk.60.c
 	}
 }
 
@@ -161,42 +170,6 @@ country_event = {
 	}
 }
 country_event = {
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.25" }
-	id = nf_tnk.25
-	title = tnkd_caesar_deal
-	desc = tnkd_caesar_deal_desc
-	picture = GFX_event_big_mt_event_weird_science
-
-	is_triggered_only = yes
-
-	option = {
-		name = nf_tnk.25.a
-		every_owned_state = {
-			limit = {
-				NOT = {
-					OR = {
-						state = 47
-						state = 67
-						state = 552
-						state = 46
-						state = 573
-						state = 417
-						state = 137
-					}
-				}
-			}
-			CES = {
-				transfer_state = PREV
-			}
-		}
-		diplomatic_relation = {
-			country = CES
-			relation = non_aggression_pact
-			active = yes
-		}
-	}
-}
-country_event = {
 	id = nf_tnk.26
 	title = tnkd_shoot_it_down
 	desc = nf_tnk.26.d
@@ -206,43 +179,6 @@ country_event = {
 
 	option = {
 		name = nf_tnk.26.a
-	}
-}
-
-country_event = {
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.29" }
-	id = nf_tnk.29
-	title = nf_tnk.29.t
-	desc = nf_tnk.29.d
-	picture = GFX_event_big_mt_event_weird_science
-
-	is_triggered_only = yes
-
-	option = {
-		name = nf_tnk.29.a
-		every_owned_state = {
-			limit = {
-				NOT = {
-					OR = {
-						state = 47
-						state = 67
-						state = 46
-						state = 573
-						state = 417
-						state = 137
-						state = 552
-					}
-				}
-			}
-			NCR = {
-				transfer_state = PREV
-			}
-		}
-		diplomatic_relation = {
-			country = NCR
-			relation = non_aggression_pact
-			active = yes
-		}
 	}
 }
 
@@ -526,9 +462,23 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		set_truce = {
-			target = TNK
-			days = 180
+		if = {
+			limit = {
+				tag = CES
+			}
+			set_temp_variable = {
+				global.tnk_ces_war_countdown_temp = 60
+			}
+			increase_tnk_ces_war_countdown = yes
+		}
+		if = {
+			limit = {
+				tag = NCR
+			}
+			set_temp_variable = {
+				global.tnk_ncr_war_countdown_temp = 60
+			}
+			increase_tnk_ncr_war_countdown = yes
 		}
 		add_ideas = tnkd_expertise
 	}
@@ -544,16 +494,19 @@ country_event = {
 
 	option = {
 		name = nf_tnk.47.a
+		ai_chance = {
+			base = 20
+		}
 		TNK = {
 			transfer_state = 438
 		}
 	}
 	option = {
 		name = nf_tnk.47.b
-		remove_ideas = tnkd_expertise
-		TNK = {
-			set_country_flag = tnkd_ces_border_war_mission_enabled
+		ai_chance = {
+			base = 80
 		}
+		remove_ideas = tnkd_expertise
 	}
 }
 country_event = {
@@ -567,16 +520,19 @@ country_event = {
 
 	option = {
 		name = nf_tnk.48.a
+		ai_chance = {
+			base = 20
+		}
 		TNK = {
 			transfer_state = 77
 		}
 	}
 	option = {
 		name = nf_tnk.48.b
-		remove_ideas = tnkd_expertise
-		TNK = {
-			set_country_flag = tnkd_ncr_border_war_mission_enabled
+		ai_chance = {
+			base = 80
 		}
+		remove_ideas = tnkd_expertise
 	}
 }
 country_event = {
@@ -915,12 +871,68 @@ country_event = {
 				value = 1
 			}
 		}
-		
 	}
 	option = {
 		name = nf_tnk.56.b
 		ai_chance = {
             base = 20
         }
+	}
+}
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.57" }
+	id = nf_tnk.57
+	title = nf_tnk.57.t
+	desc = nf_tnk.57.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.57.a
+		if = {
+			limit = {
+				TNK = { is_in_faction = no }
+			}
+			TNK = { create_faction = "The Mojave Technical Alliance" }
+		}
+		TNK = { add_to_faction = VEG }
+		VEG = { transfer_state = 106 }
+		add_ideas = tnkd_veg_concessions
+	}
+	option = {
+		name = nf_tnk.57.b
+	}
+}
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.58" }
+	id = nf_tnk.58
+	title = nf_tnk.58.t
+	desc = nf_tnk.58.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.58.a
+	}
+	option = {
+		name = nf_tnk.58.b
+	}
+}
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.59" }
+	id = nf_tnk.59
+	title = nf_tnk.59.t
+	desc = nf_tnk.59.d
+	picture = GFX_event_big_mt_event_weird_science
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_tnk.59.a
+	}
+	option = {
+		name = nf_tnk.59.b
 	}
 }

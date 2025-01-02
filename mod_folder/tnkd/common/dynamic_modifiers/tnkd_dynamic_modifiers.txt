@@ -18,3 +18,8 @@ tnk_brain_drain_dynamic_modifier = {
 	production_factory_efficiency_gain_factor = tnk_brain_drain_var
 	production_factory_max_efficiency_factor = tnk_brain_drain_var
 }
+tnk_angels_of_death_dynamic_modifier = {
+	icon = GFX_idea_nor_brain_cracked
+	political_power_factor = tnk_angels_of_death_var
+	enemy_justify_war_goal_time = tnk_angels_of_death_var
+}

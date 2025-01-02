@@ -16,6 +16,14 @@
 
  tnkd_taking_sky_reavers:0 "Tearing down the sky"
  tnkd_taking_sky_reavers_desc:0 "These barbarians waste their resources, we should destroy their rotten system and make proper use of their land."
+ tnkd_taking_sky_reavers_tt:0 "Enables decision §Y$tnkd_sky_border_war_mission$§!.\nEnables decision §Y$tnkd_wht_border_war_mission$§!.\nEnables decision §Y$tnkd_sle_border_war_mission$§!."
+ 
+ tnkd_treaty_ncr_tt:0 "Enables decision §Y$tnkd_ncr_treaty_mission$§!."
+ tnkd_treaty_ces_tt:0 "Enables decision §Y$tnkd_ces_treaty_mission$§!."
+ tnkd_lobotomize_flagstaff_tt:0 "Enables decision §Y$tnkd_ces_lobot_mission$§!."
+ tnkd_lobotomize_shady_sands_tt:0 "Enables decision §Y$tnkd_ncr_lobot_mission$§!."
+ tnkd_ncr_treaty_mission:0 "Treaty of Nipton"
+ tnkd_ces_treaty_mission:0 "Treaty of Boulder City"
 
  tnkd_taking_white_legs:0 "Hacking off the legs"
  tnkd_taking_white_legs_desc:0 "The bastard child of Ceasar's legion is just another barbarian plaguing the wasteland, like the others we will purge the infestation."
@@ -155,12 +163,11 @@
  
  tnkd_ces_demand:0 "Give an inch?"
  tnkd_ces_demand_desc:0 "By all rights §Y[438.getName]§! forms a more natural part of our nation, we must demand it back."
- tnkd_ces_demand_tt:0 "If §Y[CES.getName]§! refuses to return §Y[438.getName]§! we can initiate a border war."
-
+ tnkd_ces_demand_tt:0 "If §Y[CES.getName]§! refuses to return §Y[438.getName]§! enables decision §Y$tnkd_ces_border_war_mission$§!."
 
  tnkd_ncr_demand:0 "Reunification"
  tnkd_ncr_demand_desc:0 "Before chaos engulfed the Mojave §Y[77.getName]§! belonged to §Y[MOT.getName]§!, as their successor we must demand this land back."
- tnkd_ncr_demand_tt:0 "If §Y[NCR.getName]§! refuses to return §Y[77.getName]§! we can initiate a border war."
+ tnkd_ncr_demand_tt:0 "If §Y[NCR.getName]§! refuses to return §Y[77.getName]§! enables decision §Y$tnkd_ncr_border_war_mission$§!."
 
  tnkd_ces_demand_2:0 "Take a mile"
  tnkd_ces_demand_2_desc:0 "The legion is stretched thin, with our operatives new outpost we can deploy them to seize control... although for how long we can hold these territories we do not know."
@@ -306,7 +313,7 @@
  tnkd_theoretical_production_focus_desc:0 "Theory is fun, application is so boring and weighed down by reality."
 
  tnkd_invite_lunar_legion:0 "Lords of the Legion"
- tnkd_invite_lunar_legion_desc:0 "We are their creators, if we ask, they will serve."
+ tnkd_invite_lunar_legion_desc:0 "By bringing them under our wing we can create momentary peace with the Legion. As for the rest, we are their creators, if we ask, they will serve."
 
  tnkd_brain_drain_worsen:0 "§RBrain Drain increases by 2%§!"
  tnkd_brain_drain_improve:0 "§GBrain Drain decreases by 2%§!"

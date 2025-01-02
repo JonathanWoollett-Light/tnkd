@@ -1812,7 +1812,16 @@ focus_tree = {
 			focus = veg_secure_the_southern_mojave
 		}
 		available = {
-			controls_state = 252
+            or = {
+                controls_state = 252
+                and = {
+                    is_in_faction_with = TNK
+                    TNK = {
+                        controls_state = 252
+                        has_idea = tnkd_veg_concessions
+                    }
+                }
+            }
 		}
 		relative_position_id = veg_secure
 		x = -1
@@ -1885,7 +1894,16 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			controls_state = 417
+            or = {
+                controls_state = 417
+                and = {
+                    is_in_faction_with = TNK
+                    TNK = {
+                        controls_state = 417
+                        has_idea = tnkd_veg_concessions
+                    }
+                }
+            }
 		}
 		completion_reward = {
 			if = {
@@ -1925,8 +1943,26 @@ focus_tree = {
 		}
 		available = {
 			controls_state = 211
-			controls_state = 252
-			controls_state = 417
+			or = {
+                controls_state = 252
+                and = {
+                    is_in_faction_with = TNK
+                    TNK = {
+                        controls_state = 252
+                        has_idea = tnkd_veg_concessions
+                    }
+                }
+            }
+            or = {
+                controls_state = 417
+                and = {
+                    is_in_faction_with = TNK
+                    TNK = {
+                        controls_state = 417
+                        has_idea = tnkd_veg_concessions
+                    }
+                }
+            }
 		}
 		relative_position_id = veg_broken
 		x = -1
