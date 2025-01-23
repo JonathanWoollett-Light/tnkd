@@ -442,7 +442,7 @@ tnkd_ncr_category = {
                 }
             }
             set_temp_variable = {
-                global.tnk_ncr_war_countdown_temp = 180
+                global.tnk_ncr_war_countdown_temp = 360
             }
             increase_tnk_ncr_war_countdown = yes
         }
@@ -457,7 +457,10 @@ tnkd_ncr_category = {
         fire_only_once = yes
         complete_effect = {
             NCR = {
-				add_ideas = tnkd_think_tank_litigation
+                add_timed_idea = {
+                    idea = tnkd_think_tank_litigation
+                    days = 480
+                }
 			}
         }
     }
@@ -479,7 +482,7 @@ tnkd_ncr_category = {
                     add_ideas = tnkd_expertise
                 }
                 set_temp_variable = {
-                    global.tnk_ncr_war_countdown_temp = 60
+                    global.tnk_ncr_war_countdown_temp = 90
                 }
                 increase_tnk_ncr_war_countdown = yes
             }
@@ -494,11 +497,11 @@ tnkd_ncr_category = {
         available = {
             has_completed_focus = tnkd_ncr_defence
         }
-        cost = 40
+        cost = 30
         complete_effect = {
-            add_war_support = -0.02
+            add_war_support = -0.01
             NCR = {
-                add_stability = 0.01
+                add_stability = 0.005
             }
             set_temp_variable = {
                 global.tnk_ncr_war_countdown_temp = 30
@@ -677,6 +680,7 @@ tnkd_ncr_category = {
 tnkd_ces_category = {
     tnkd_ces_border_war_mission = {
         icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
         visible = {
             CES = {
                 owns_state = 438
@@ -744,7 +748,7 @@ tnkd_ces_category = {
                 }
             }
             set_temp_variable = {
-                global.tnk_ces_war_countdown_temp = 180
+                global.tnk_ces_war_countdown_temp = 360
             }
             increase_tnk_ces_war_countdown = yes
         }
@@ -759,7 +763,10 @@ tnkd_ces_category = {
         fire_only_once = yes
         complete_effect = {
             CES = {
-				add_ideas = tnkd_think_tank_litigation
+                add_timed_idea = {
+                    idea = tnkd_think_tank_litigation
+                    days = 480
+                }
 			}
         }
     }
@@ -781,7 +788,7 @@ tnkd_ces_category = {
                     add_ideas = tnkd_expertise
                 }
                 set_temp_variable = {
-                    global.tnk_ces_war_countdown_temp = 60
+                    global.tnk_ces_war_countdown_temp = 90
                 }
                 increase_tnk_ces_war_countdown = yes
             }
@@ -797,7 +804,7 @@ tnkd_ces_category = {
         available = {
             has_completed_focus = tnkd_larping_luddites
         }
-        cost = 40
+        cost = 30
         complete_effect = {
             add_manpower = -300
             CES = {
@@ -1090,6 +1097,169 @@ tnkd_minor_category = {
                 global.tnk_angels_of_death_var_temp = 0.02
             }
             increase_tnk_angels_of_death_var = yes
+        }
+    }
+    tnkd_culling_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_manpower > 500
+        }
+        cost = 30
+        complete_effect = {
+            add_manpower = -500
+            add_political_power = 60
+        }
+    }
+    tnkd_slave_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_manpower > 250
+        }
+        cost = 30
+        complete_effect = {
+            random_controlled_state = {
+                limit = {
+                    infrastructure < 10
+                }
+                add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+            }
+            add_manpower = -250
+        }
+    }
+    tnkd_experimentation_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_manpower > 500
+        }
+        cost = 30
+        complete_effect = {
+            add_tech_bonus = {
+				bonus = 0.3
+				uses = 1
+                category = infantry_tech_category
+                category = tool_tech
+				category = industry_specialisation_category
+				category = construction_category
+			}
+            add_manpower = -500
+            set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.04
+            }
+            increase_tnk_angels_of_death_var = yes
+        }
+    }
+    tnkd_freedom_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            TNK = {
+                any_controlled_state = {
+                    state_population > 1000
+                }
+            }
+        }
+        cost = 30
+        complete_effect = {
+            random_controlled_state = {
+                limit = {
+                    state_population > 1000
+                }
+                set_temp_variable = { pop_add = -1000 }
+				add_state_population = yes
+            }
+            add_stability = 0.005
+            set_temp_variable = {
+                global.tnk_angels_of_death_var_temp = 0.01
+            }
+            decrease_tnk_angels_of_death_var = yes
+        }
+    }
+    tnkd_offmap_industry_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_manpower > 500
+            any_controlled_state = {
+                industrial_complex > 0
+            }
+        }
+        cost = 30
+        complete_effect = {
+            add_manpower = -500
+            add_offsite_building = {
+                type = industrial_complex
+                level = 1
+            }
+            random_controlled_state = {
+                limit = {
+                    industrial_complex > 0
+                }
+                remove_building = {
+                    type = industrial_complex
+                    level = 1
+                }
+            }
+        }
+    }
+    tnkd_offmap_military_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_manpower > 500
+            any_controlled_state = {
+                arms_factory > 0
+            }
+        }
+        cost = 30
+        complete_effect = {
+            add_manpower = -500
+            add_offsite_building = {
+                type = arms_factory
+                level = 1
+            }
+            random_controlled_state = {
+                limit = {
+                    arms_factory > 0
+                }
+                remove_building = {
+                    type = arms_factory
+                    level = 1
+                }
+            }
+        }
+    }
+    tnkd_offmap_military_mission = {
+        icon = generic_prepare_civil_war
+        allowed = { tag = TNK }
+        available = {
+            has_manpower > 500
+            any_controlled_state = {
+                arms_factory > 0
+            }
+        }
+        cost = 30
+        complete_effect = {
+            add_manpower = -500
+            add_offsite_building = {
+                type = arms_factory
+                level = 1
+            }
+            random_controlled_state = {
+                limit = {
+                    arms_factory > 0
+                }
+                remove_building = {
+                    type = arms_factory
+                    level = 1
+                }
+            }
         }
     }
 }

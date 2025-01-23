@@ -916,9 +916,6 @@ country_event = {
 	option = {
 		name = nf_tnk.58.a
 	}
-	option = {
-		name = nf_tnk.58.b
-	}
 }
 country_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.59" }
@@ -931,8 +928,5 @@ country_event = {
 
 	option = {
 		name = nf_tnk.59.a
-	}
-	option = {
-		name = nf_tnk.59.b
 	}
 }

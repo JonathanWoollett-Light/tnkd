@@ -136,3 +136,11 @@
   nf_tnk.57.d:0 "[VEG.getName] can see a path to friendship but demands concessions to give up their territorial ambitions in the Mojave."
   nf_tnk.57.a:0 "We will build a strong ally"
   nf_tnk.57.b:0 "Too much"
+
+  nf_tnk.59.t:0 "Treaty of Nipton"
+  nf_tnk.59.d:0 "[TNK.getName] has taken Shady Sands for now we must make peace or we will not survive never mind the cost."
+  nf_tnk.59.a:0 "We will suffer this indignity today"
+
+  nf_tnk.58.t:0 "Treaty of Boulder City"
+  nf_tnk.58.d:0 "[TNK.getName] has taken Flagstaff for now we must make peace or we will not survive never mind the cost."
+  nf_tnk.58.a:0 "We will suffer this indignity today"

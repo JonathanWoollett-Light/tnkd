@@ -182,7 +182,7 @@ add_ideas = {
 
 add_timed_idea = {
 	idea = tnkd_unexpected_arrival
-	days = 365
+	days = 900
 }
 
 set_country_flag = slavery_allowed

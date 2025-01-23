@@ -7,7 +7,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_factor = -0.2
+				political_power_factor = -0.1
 			}
 		}
         tnkd_unexpected_arrival = {
@@ -16,7 +16,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				enemy_justify_war_goal_time = 2
+				cant_be_justified_on = 1
 			}
 		}
 		tnkd_quirky_science = {
@@ -80,7 +80,8 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag = TNK
-				attack_bonus_against = -0.05
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.1
 			}
 			modifier = {
 				political_power_factor = -0.05
@@ -92,7 +93,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				encryption_factor = 1
+				encryption_factor = 2
 			}
 		}
 		tnkd_inconspicuous = {
@@ -130,8 +131,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				breakthrough_factor = 1
-				stability_factor = -0.5
+				breakthrough_factor = 1.2
+				stability_factor = -0.3
 			}
 		}
 		tnkd_convergance_idea = {
@@ -395,9 +396,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_factory_max_efficiency_factor = 0.025
-				production_factory_efficiency_gain_factor = 0.025
-				stability_factor = -0.025
+				production_factory_max_efficiency_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.04
+				stability_factor = -0.04
 			}
 		}
 		tnkd_better_expertise = {
@@ -406,9 +407,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.075
-				production_factory_max_efficiency_factor = 0.075
-				production_factory_efficiency_gain_factor = 0.075
+				stability_factor = -0.08
+				production_factory_max_efficiency_factor = 0.08
+				production_factory_efficiency_gain_factor = 0.08
 			}
 		}
 		tnkd_ncr_knownledge = {
@@ -592,6 +593,18 @@ ideas = {
 				mic_to_target_factor = 0.1
 			}
 		}
+		tnkd_veg_victory = {
+			picture = VEG_The_House_Always_Wins
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				political_power_factor = 0.2
+			}
+		}
 		tnkd_payment = {
 			picture = VEG_The_House_Always_Wins
 			allowed = {
@@ -600,8 +613,8 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag = TNK
-				cic_to_target_factor = 0.1
-				mic_to_target_factor = 0.1
+				cic_to_target_factor = 0.2
+				mic_to_target_factor = 0.2
 			}
 		}
     }

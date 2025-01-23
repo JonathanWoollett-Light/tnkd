@@ -53,7 +53,7 @@ tnkd_ncr_category = {
 }
 tnkd_ces_category = {
 	icon = GFX_decision_category_hea_conversion
-	picture = GFX_decision_cat_picture_ncr_helios_one
+	picture = GFX_decision_cat_picture_legion_glory
 	allowed = {
 		OR = {
 			original_tag = TNK
@@ -64,7 +64,6 @@ tnkd_ces_category = {
 }
 tnkd_minor_category = {
 	icon = GFX_decision_category_hea_conversion
-	picture = GFX_decision_cat_picture_ncr_helios_one
 	allowed = {
 		original_tag = TNK
 	}

@@ -14,14 +14,14 @@
  tnkd_insane_science:0 "Insane science"
  tnkd_insane_science_desc:0 "Industry? Ethics? People? Reality? All NOTHING COMPARED TO SCIENCE, SCIENCE ABOVE ALL"
 
- tnkd_convergance_idea:0 "Convergance"
+ tnkd_convergance_idea:0 "Convergence"
  
  tnkd_decohesion:0 "Decohesion"
  tnkd_decohesion_desc:0 "WHAT?!? Something went wrong, our consciousnesses are not properly bound, our minds loose cohesion by at each moment."
  tnk_decohesion_dynamic_modifier:0 "Decohesion"
  
  tnkd_going_alone_idea:0 "Going Alone"
- tnkd_going_alone_idea_desc:0 "Without a commitee we can focus on our own goals with unparalleled efficiency."
+ tnkd_going_alone_idea_desc:0 "Without a committee we can focus on our own goals with unparalleled efficiency."
 
  tnkd_think_tank_litigation:0 "[TNK.getName] diplomacy"
  tnkd_think_tank_litigation_desc:0 "Their speakers output a whirlwind of nonsense confusing and wasting the time or our bureaucrats."
@@ -34,7 +34,7 @@
  tnk_brain_drain_dynamic_modifier:0 "Brain Drain"
  tnk_brain_drain_dynamic_modifier_desc:0 "We are quantum physics professors teaching cavemen how to make fire."
  
- tnkd_unity_idea:0 "Perfect Synchronisation"
+ tnkd_unity_idea:0 "Perfect Synchronization"
  tnkd_unity_idea_desc:0 "We have one mind, now we shall have one nation... one body."
 
  tnkd_intense_radar_fence:0 "Blistering Radar Fence"
@@ -48,18 +48,18 @@
  
 
  tnkd_ncr_category:0 "The Bears embrace"
- tnkd_ncr_category_desc:0 "The emergance of [TNK.getName] out of the chaos of the Mojave has only delayed the inevitable.\nThe bear will charge and hunter will become the hunted."
+ tnkd_ncr_category_desc:0 "The emergence of [TNK.getName] out of the chaos of the Mojave has only delayed the inevitable.\nThe bear will charge and hunter will become the hunted."
  tnkd_ncr_war_mission:0 "The NCR Think Tank war"
  tnkd_ncr_pp_mission:0 "Cover up atrocities"
  tnkd_ncr_deal_mission:0 "Returning the Jewels"
- tnkd_ncr_debuff_mission:0 "Inflitrating the Republic"
+ tnkd_ncr_debuff_mission:0 "Infiltrating the Republic"
  tnkd_ncr_buff_mission:0 "Technology for Peace"
  tnkd_ncr_buff_mission_tt:0 "Applies the below effects only if §Y[NCR.getName]§! accepts."
  tnkd_ncr_temporary_peace_mission:0 "Temporary peace"
  tnkd_ncr_temporary_peace_mission_tt:0 "Re-activates §Y$tnkd_ncr_war_mission$§! with §G240§! days until war."
 
  tnkd_ces_category:0 "The Lions roar"
- tnkd_ces_category_desc:0 "The emergance of [TNK.getName] out of the chaos of the Mojave has only delayed the inevitable.\nThe lion will roar and the dam will be tested."
+ tnkd_ces_category_desc:0 "The emergence of [TNK.getName] out of the chaos of the Mojave has only delayed the inevitable.\nThe lion will roar and the dam will be tested."
  tnkd_ces_war_mission:0 "The Legion Think Tank war"
  tnkd_ces_pp_mission:0 "Gift slaves"
  tnkd_ces_deal_mission:0 "Retreating from the Lion"
@@ -72,17 +72,29 @@
  tnkd_sky_border_war_mission:0 "Learning to fly"
  tnkd_wht_border_war_mission:0 "Stomping the foot"
  tnkd_sle_border_war_mission:0 "Night terrors"
- tnkd_lobot_mission:0 "Lobotomising the Wasteland"
+ tnkd_lobot_mission:0 "Lobotomizing the Wasteland"
+ tnkd_lobot_mission_desc:0 "There are so many people in the wasteland, we can't let them all be free, can we?"
+ tnkd_culling_mission:0 "Culling the Herd"
+ tnkd_culling_mission_desc:0 "Our lobotomite horde has become too unwieldy to manage effectively we must constrain our problem."
+ tnkd_slave_mission:0 "Blood Mortar"
+ tnkd_slave_mission_desc:0 "A measurement of any truly epic monument is the number who died in its construction."
+ tnkd_experimentation_mission:0 "Experimentation"
+ tnkd_experimentation_mission_desc:0 "Far better than lab rats"
+ tnkd_freedom_mission:0 "Refugee Amnesty"
+ tnkd_freedom_mission_desc:0 "We can offer some living within our territory escort and amnesty to seek a new home beyond our antics."
  tnkd_payment:0 "War reparations"
+ tnkd_payment_desc:0 "The price of failure."
 
  tnkd_ces_lobot_mission:0 "Lobotomize Flagstaff"
  tnkd_ncr_lobot_mission:0 "Lobotomize Shady Sands"
  tnk_angels_of_death_dynamic_modifier:0 "Angels of Death"
+ tnk_angels_of_death_dynamic_modifier_desc:0 "There are those who call us the angels of death. As we spread out from our stronghold, towns are devastated in our wake with the population interned in camps to be used for our industry and experimentation, I think we read about someone who was called this in the past..."
 
- tnkd_perfect_sync_idea:0 "Perfect Synchronisation"
+ tnkd_perfect_sync_idea:0 "Perfect Synchronization"
  tnkd_perfect_sync_idea_desc:0 "We have one mind, now we shall have one nation... one body."
 
  tnkd_minor_category:0 "Cleaning the Lab"
+ tnkd_minor_category_desc:0 "Great things are done by a series of small things brought together."
 
  # Mobius convergance
  # --------------------------------------------------------
@@ -103,7 +115,7 @@
  # ---------------------------------------------------------
 
  tnkd_charging_laser:0 "Charging Mega-laser"
- tnkd_charging_laser_desc:0 "We will power beyound comphrension to shoot this monstrosity down."
+ tnkd_charging_laser_desc:0 "We will need power beyond comprehension to shoot this monstrosity down."
 
  tnkd_fractured_mind:0 "Fractured Mind"
  tnkd_fractured_mind_desc:0 "Our conscious tears as it pulls outwards, memories of selves in defiance of our unity."
@@ -146,7 +158,7 @@
  tnkd_wild_and_wacky_idea_desc:0 "We shall shape the world to our liking, whether the world likes it or not."
 
  tnkd_intervention:0 "[TNK.getName] Intervention"
- tnkd_intervention_desc:0 "The [TNK.getName] can provide us with novel technology to suplement our forces, but their presence is a destabilizing force."
+ tnkd_intervention_desc:0 "The [TNK.getName] can provide us with novel technology to supplement our forces, but their presence is a destabilizing force."
 
  tnkd_stretched_governance:0 "Executive Governance"
  tnkd_stretched_governance_desc:0 "To integrate new territory we are exercising substantial political executive power, this has left all our other projects without supervision."
@@ -169,3 +181,7 @@
 
  tnkd_veg_concessions:0 "The cost of doing business"
  tnkd_veg_concessions_desc:0 "[VEG.getName] is boxed in on all sides, to convince them to join us and give up their territorial ambitions in the Mojave comes at a steep price."
+ tnkd_veg_return_mission:0 "Counting Cards"
+ tnkd_veg_return_mission_desc:0 "[VEG.getName] has greater ambitions for this land than we do, we can reinforce our joint position by transferring these territories."
+ tnkd_veg_victory:0 "A Winning Hand"
+

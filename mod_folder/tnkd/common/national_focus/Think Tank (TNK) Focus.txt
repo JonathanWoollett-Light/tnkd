@@ -703,6 +703,7 @@ focus_tree = {
 
 		relative_position_id = tnk_personality_restoration
 		completion_reward = {
+			activate_advisor = TNK_mobius_theorist
 			if = {
 				limit = {
 					has_idea = tnkd_wild_science
@@ -2508,6 +2509,12 @@ focus_tree = {
 				type = annex_everything
 				target = SLE
 			}
+			SLE = {
+				create_wargoal = {
+					type = annex_everything
+					target = TNK
+				}
+			}
 		}
 	}
 	focus = {
@@ -2596,7 +2603,6 @@ focus_tree = {
 				}
 				add_manpower = 4000
 			}
-			
 		}
 	}
 	focus = {
@@ -2617,6 +2623,12 @@ focus_tree = {
 			create_wargoal = {
 				type = annex_everything
 				target = SOR
+			}
+			SOR = {
+				create_wargoal = {
+					type = annex_everything
+					target = TNK
+				}
 			}
 		}
 	}
@@ -2642,6 +2654,12 @@ focus_tree = {
 				type = annex_everything
 				target = DEA
 			}
+			DEA = {
+				create_wargoal = {
+					type = annex_everything
+					target = TNK
+				}
+			}
 		}
 	}
 	focus = {
@@ -2664,6 +2682,12 @@ focus_tree = {
 				type = annex_everything
 				target = SKY
 			}
+			SKY = {
+				create_wargoal = {
+					type = annex_everything
+					target = TNK
+				}
+			}
 		}
 	}
 	focus = {
@@ -2685,6 +2709,12 @@ focus_tree = {
 				type = annex_everything
 				target = WHT
 			}
+			WHT = {
+				create_wargoal = {
+					type = annex_everything
+					target = TNK
+				}
+			}
 		}
 	}
 	focus = {
@@ -2699,6 +2729,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = tnkd_larping_luddites_tt
+			add_political_power = 60
 		}
 	}
 	focus = {
@@ -2719,39 +2750,6 @@ focus_tree = {
 			custom_effect_tooltip = tnkd_ces_demand_tt
 			CES = {
 				country_event = nf_tnk.47
-			}
-		}
-	}
-	focus = {
-		id = tnkd_ces_demand_2
-		icon = GFX_goal_NCR_Damassault
-		cost = 30
-		y = 1
-		relative_position_id = tnkd_ces_demand
-		prerequisite = {
-			focus = tnkd_ces_demand
-		}
-		available = {
-			controls_state = 438
-			not = {
-				is_in_faction_with = CES
-			}
-		}
-		completion_reward = {
-			transfer_state = 553
-			transfer_state = 359
-
-			every_country = {
-				limit = {
-					or = {
-						owns_state = 553
-						owns_state = 359
-					}
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = TNK
-				}
 			}
 		}
 	}
@@ -2830,6 +2828,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = tnkd_ncr_defence_tt
+			add_political_power = 60
 		}
 	}
 	focus = {
@@ -3278,7 +3277,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_preemption
 		icon = GFX_goal_generic_attack_allies
-		cost = 30
+		cost = 15
 		x=-1
 		y=1
 		relative_position_id = tnkd_unity
@@ -3301,7 +3300,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_threat_classification
 		icon = GFX_goal_generic_attack_allies
-		cost = 30
+		cost = 15
 		y=1
 		relative_position_id = tnkd_preemption
 		available = {
@@ -3320,7 +3319,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_threat_obliteration
 		icon = GFX_goal_generic_attack_allies
-		cost = 30
+		cost = 15
 		y=1
 		relative_position_id = tnkd_threat_classification
 		available = {
@@ -3332,14 +3331,14 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = tnkd_threat_obliteration
-				days = 50
+				days = 100
 			}
 		}
 	}
 	focus = {
 		id = tnkd_isolation
 		icon = GFX_goal_generic_bunkers_focus
-		cost = 15
+		cost = 7
 		x=2
 		relative_position_id = tnkd_preemption
 		available = {
@@ -3358,7 +3357,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_silence
 		icon = GFX_goal_generic_bunkers_focus
-		cost = 15
+		cost = 7
 		y=1
 		relative_position_id = tnkd_isolation
 		available = {
@@ -3378,7 +3377,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_inconspicuous
 		icon = GFX_goal_generic_bunkers_focus
-		cost = 15
+		cost = 7
 		y=1
 		relative_position_id = tnkd_silence
 		available = {
@@ -4086,6 +4085,7 @@ focus_tree = {
 		relative_position_id = tnkd_balanced_science
 		completion_reward = {
 			add_ideas = tnkd_wild_and_wacky_idea
+			add_political_power = 60
 		}
 	}
 	focus = {
@@ -4752,13 +4752,13 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 2
+				level = 4
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 2000
+				amount = 4000
 			}
-			add_manpower = 2000
+			add_manpower = 4000
 		}
 	}
 
@@ -4798,7 +4798,7 @@ focus_tree = {
 		relative_position_id = lul_1
 
 		completion_reward = {
-			add_manpower = 8000
+			add_manpower = 16000
 		}
 	}
 
@@ -4814,7 +4814,7 @@ focus_tree = {
 		relative_position_id = lul_conversion
 
 		completion_reward = {
-			army_experience = 30
+			army_experience = 60
 		}
 	}
 
@@ -4832,7 +4832,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 3000
+				amount = 6000
 			}
 		}
 	}
@@ -4853,10 +4853,10 @@ focus_tree = {
 
 		completion_reward = {
 			438 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 8
 				add_resource = {
 					type = metal
-					amount = 8
+					amount = 16
 				}
 			}
 		}
@@ -4941,7 +4941,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 6
+				level = 12
 			}
 		}
 	}
@@ -4963,7 +4963,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 3
+				level = 6
 			}
 			520 = {
 				add_state_modifier = { modifier = { resistance_target = -0.2 } }
