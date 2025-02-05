@@ -442,7 +442,7 @@ tnkd_ncr_category = {
                 }
             }
             set_temp_variable = {
-                global.tnk_ncr_war_countdown_temp = 360
+                global.tnk_ncr_war_countdown_temp = 400
             }
             increase_tnk_ncr_war_countdown = yes
         }
@@ -467,6 +467,9 @@ tnkd_ncr_category = {
     tnkd_ncr_buff_mission = {
         icon = generic_prepare_civil_war
         allowed = { tag = TNK }
+        visible = {
+            has_active_mission = tnkd_ncr_war_mission
+        }
         available = {
             has_completed_focus = tnkd_ncr_defence
         }
@@ -518,7 +521,7 @@ tnkd_ncr_category = {
         }
         cost = 60
         fire_only_once = yes
-        days_remove = 90
+        days_remove = 60
         remove_effect = {
             NCR = {
                 white_peace = TNK
@@ -584,6 +587,9 @@ tnkd_ncr_category = {
             253 = {
 				tnkd_sphere_controls_state = yes
 			}
+            NCR = {
+                exists = yes
+            }
         }
         fire_only_once = yes
         cost = 60
@@ -748,7 +754,7 @@ tnkd_ces_category = {
                 }
             }
             set_temp_variable = {
-                global.tnk_ces_war_countdown_temp = 360
+                global.tnk_ces_war_countdown_temp = 400
             }
             increase_tnk_ces_war_countdown = yes
         }
@@ -773,6 +779,9 @@ tnkd_ces_category = {
     tnkd_ces_buff_mission = {
         icon = generic_prepare_civil_war
         allowed = { tag = TNK }
+        visible = {
+            has_active_mission = tnkd_ces_war_mission
+        }
         available = {
             has_completed_focus = tnkd_larping_luddites
         }
@@ -803,6 +812,7 @@ tnkd_ces_category = {
         }
         available = {
             has_completed_focus = tnkd_larping_luddites
+            has_manpower > 300
         }
         cost = 30
         complete_effect = {
@@ -825,7 +835,7 @@ tnkd_ces_category = {
         }
         cost = 60
         fire_only_once = yes
-        days_remove = 90
+        days_remove = 60
         remove_effect = {
             CES = {
                 white_peace = TNK
@@ -891,6 +901,9 @@ tnkd_ces_category = {
             520 = {
 				tnkd_sphere_controls_state = yes
 			}
+            CES = {
+                exists = yes
+            }
         }
         fire_only_once = yes
         cost = 60
@@ -1083,7 +1096,7 @@ tnkd_minor_category = {
                 }
             }
         }
-        cost = 30
+        cost = 20
         complete_effect = {
             random_controlled_state = {
                 limit = {
@@ -1105,7 +1118,7 @@ tnkd_minor_category = {
         available = {
             has_manpower > 500
         }
-        cost = 30
+        cost = 20
         complete_effect = {
             add_manpower = -500
             add_political_power = 60
@@ -1117,7 +1130,7 @@ tnkd_minor_category = {
         available = {
             has_manpower > 250
         }
-        cost = 30
+        cost = 20
         complete_effect = {
             random_controlled_state = {
                 limit = {
@@ -1138,7 +1151,7 @@ tnkd_minor_category = {
         available = {
             has_manpower > 500
         }
-        cost = 30
+        cost = 20
         complete_effect = {
             add_tech_bonus = {
 				bonus = 0.3
@@ -1190,7 +1203,7 @@ tnkd_minor_category = {
                 industrial_complex > 0
             }
         }
-        cost = 30
+        cost = 20
         complete_effect = {
             add_manpower = -500
             add_offsite_building = {
@@ -1217,7 +1230,7 @@ tnkd_minor_category = {
                 arms_factory > 0
             }
         }
-        cost = 30
+        cost = 20
         complete_effect = {
             add_manpower = -500
             add_offsite_building = {

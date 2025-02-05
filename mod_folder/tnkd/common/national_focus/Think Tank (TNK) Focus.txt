@@ -32,7 +32,7 @@ focus_tree = {
 					activate_mission = tnkd_ces_war_mission
 				}
 			}
-			set_variable = { tnk_angels_of_death_var = -0.1 }
+			set_variable = { global.tnk_angels_of_death_var = -0.1 }
 			add_dynamic_modifier = {
 				modifier = tnk_angels_of_death_dynamic_modifier
 			}
@@ -2122,7 +2122,7 @@ focus_tree = {
 		available = {
 			country_exists = BOS
 			not = { has_war_with = BOS }
-			not = { is_in_faction_with = BOS }
+			not = { BOS = { is_in_faction_with = NCR } }
 			custom_trigger_tooltip = {
 				tooltip = tnkd_siding_with_brotherhood_tt
 				check_variable = {
@@ -2134,8 +2134,14 @@ focus_tree = {
 		completion_reward = {
 			BOS = {
 				add_to_faction = TNK
+			}
+			BOS = {
 				add_ideas = tnkd_expertise
+			}
+			BOS = {
 				add_ideas = tnkd_better_expertise
+			}
+			BOS = {
 				add_ideas = tnkd_ncr_knownledge
 			}
 			NCR = {
@@ -2188,7 +2194,7 @@ focus_tree = {
 		available = {
 			country_exists = LAC
 			not = { has_war_with = LAC }
-			not = { is_in_faction_with = LAC }
+			not = { LAC = { is_in_faction_with = CES } }
 			custom_trigger_tooltip = {
 				tooltip = tnkd_siding_with_lanius_tt
 				check_variable = {
@@ -2206,9 +2212,14 @@ focus_tree = {
 					create_faction = "The New Legion"
 				}
 				add_to_faction = TNK
-				
+			}
+			LAC = {
 				add_ideas = tnkd_expertise
+			}
+			LAC = {
 				add_ideas = tnkd_better_expertise
+			}
+			LAC = {
 				add_ideas = tnkd_ces_knownledge
 			}
 			CES = {
@@ -2231,15 +2242,15 @@ focus_tree = {
 		id = tnkd_demanding_west
 		icon = GFX_goal_generic_focus_ncr_raids
 		cost = 30
-		y = 3
+		y = 1
 		x = -2
-		relative_position_id = tnkd_going_alone
+		relative_position_id = tnkd_taking_dead_horses
+		prerequisite = {
+			focus = tnkd_taking_dead_horses
+		}
 		available = {
 			has_completed_focus = tnkd_picking_sides
 			not = { is_in_faction_with = NCR }
-		}
-		bypass = {
-			has_war_with = NCR
 		}
 		completion_reward = {
 			declare_war_on = {
@@ -2252,15 +2263,15 @@ focus_tree = {
 		id = tnkd_demanding_east
 		icon = GFX_goal_RRG_poison_bull
 		cost = 30
-		y = 3
+		y = 1
 		x = 2
-		relative_position_id = tnkd_going_alone
+		relative_position_id = tnkd_taking_dead_horses
+		prerequisite = {
+			focus = tnkd_taking_dead_horses
+		}
 		available = {
 			has_completed_focus = tnkd_picking_sides
 			not = { is_in_faction_with = CES }
-		}
-		bypass = {
-			has_war_with = CES
 		}
 		completion_reward = {
 			declare_war_on = {
@@ -2410,8 +2421,8 @@ focus_tree = {
 		id = tnkd_new_era
 		icon = GFX_goal_generic_bot_brain_head
 		cost = 30
-		y = 3
-		relative_position_id = tnkd_asking_independance
+		y = 4
+		relative_position_id = tnkd_taking_dead_horses
 		prerequisite = {
 			focus = tnkd_lobotomize_flagstaff
 		}
@@ -2638,6 +2649,9 @@ focus_tree = {
 		cost = 40
 		y = 1
 		relative_position_id = tnkd_waking_sleepers
+		prerequisite = {
+			focus = tnkd_taking_white_legs
+		}
 		prerequisite = {
 			focus = tnkd_waking_sleepers
 		}

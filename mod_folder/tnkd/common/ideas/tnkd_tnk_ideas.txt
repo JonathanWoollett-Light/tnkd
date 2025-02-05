@@ -80,11 +80,11 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag = TNK
-				attack_bonus_against = -0.2
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
 			}
 			modifier = {
-				political_power_factor = -0.05
+				political_power_factor = -0.1
 			}
 		}
 		tnkd_silence = {

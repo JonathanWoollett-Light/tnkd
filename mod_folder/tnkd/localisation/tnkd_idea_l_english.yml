@@ -84,6 +84,10 @@
  tnkd_freedom_mission_desc:0 "We can offer some living within our territory escort and amnesty to seek a new home beyond our antics."
  tnkd_payment:0 "War reparations"
  tnkd_payment_desc:0 "The price of failure."
+ tnkd_offmap_industry_mission:0 "Industrial Consolidation"
+ tnkd_offmap_industry_mission_desc:0 "We must consolidate our industry to ensure our continued survival within our constrained space."
+ tnkd_offmap_military_mission:0 "Military Consolidation"
+ tnkd_offmap_military_mission_desc:0 "We must consolidate our military to ensure our continued survival within our constrained space."
 
  tnkd_ces_lobot_mission:0 "Lobotomize Flagstaff"
  tnkd_ncr_lobot_mission:0 "Lobotomize Shady Sands"

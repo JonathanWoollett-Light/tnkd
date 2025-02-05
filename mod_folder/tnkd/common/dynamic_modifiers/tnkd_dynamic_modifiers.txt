@@ -20,6 +20,6 @@ tnk_brain_drain_dynamic_modifier = {
 }
 tnk_angels_of_death_dynamic_modifier = {
 	icon = GFX_idea_nor_brain_cracked
-	political_power_factor = tnk_angels_of_death_var
-	enemy_justify_war_goal_time = tnk_angels_of_death_var
+	political_power_factor = global.tnk_angels_of_death_var
+	enemy_justify_war_goal_time = global.tnk_angels_of_death_var
 }
