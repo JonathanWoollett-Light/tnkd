@@ -2239,6 +2239,169 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = tnkd_offensive_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 30
+		y = 0
+		x = 8
+		relative_position_id = tnkd_defensive_infrastructure
+		available = {
+			has_completed_focus = tnk_personality_restoration
+		}
+		completion_reward = {
+			custom_effect_tooltip = tnkd_taking_sky_reavers_tt
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = tnkd_ally_sleepers
+		icon = GFX_goal_tripartite_pact
+		cost = 30
+		y = 1
+		x = 0
+		relative_position_id = tnkd_offensive_infrastructure
+		prerequisite = {
+			focus = tnkd_offensive_infrastructure
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					TNK = { is_in_faction = no }
+				}
+				add_ideas = tnkd_humility
+			}
+			SLE = { country_event = nf_tnk.61 }
+		}
+	}
+	focus = {
+		id = tnkd_waking_sleepers
+		icon = GFX_goal_CES_Sleepers
+		cost = 60
+		y = 1
+		relative_position_id = tnkd_ally_sleepers
+		prerequisite = {
+			focus = tnkd_ally_sleepers
+			focus = tnkd_taking_sleepers
+		}
+		available = {
+			127 = {
+				tnkd_sphere_controls_state = yes
+			}
+			508 = {
+				tnkd_sphere_controls_state = yes
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = tnkd_brain_drain_worsen
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = tnk_brain_drain_dynamic_modifier
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = tnk_brain_drain_var }
+					}
+					set_variable = { tnk_brain_drain_var = -0.02 }
+				}
+				else = {
+					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
+				}
+			}
+
+			127 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_temp_variable = { pop_add = 4000 }
+				add_state_population = yes
+			}
+			508 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_temp_variable = { pop_add = 4000 }
+				add_state_population = yes
+			}
+			SLE = {
+				add_offsite_building = {
+					type = arms_factory
+					level = 8
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 8
+				}
+				add_manpower = 4000
+			}
+		}
+	}
+	focus = {
+		id = tnkd_taking_dead_horses
+		icon = GFX_goal_tnkd_dead_horses
+		cost = 40
+		y = 1
+		relative_position_id = tnkd_waking_sleepers
+		prerequisite = {
+			focus = tnkd_taking_white_legs
+		}
+		prerequisite = {
+			focus = tnkd_waking_sleepers
+		}
+		prerequisite = {
+			focus = tnkd_taking_sorrows
+		}
+		bypass = {
+			DEA = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = DEA
+			}
+			DEA = {
+				create_wargoal = {
+					type = annex_everything
+					target = TNK
+				}
+			}
+		}
+	}
+	focus = {
 		id = tnkd_demanding_west
 		icon = GFX_goal_generic_focus_ncr_raids
 		cost = 30
@@ -2460,48 +2623,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = tnkd_offensive_infrastructure
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 30
-		y = 0
-		x = 8
-		relative_position_id = tnkd_defensive_infrastructure
-		available = {
-			has_completed_focus = tnk_personality_restoration
-		}
-		completion_reward = {
-			custom_effect_tooltip = tnkd_taking_sky_reavers_tt
-			every_owned_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			
-		}
-	}
-	focus = {
-		id = tnkd_ally_sleepers
-		icon = GFX_goal_tripartite_pact
-		cost = 30
-		y = 1
-		x = 0
-		relative_position_id = tnkd_offensive_infrastructure
-		prerequisite = {
-			focus = tnkd_offensive_infrastructure
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					TNK = { is_in_faction = no }
-				}
-				add_ideas = tnkd_humility
-			}
-			SLE = { country_event = nf_tnk.61 }
-		}
-	}
-	focus = {
 		id = tnkd_taking_sleepers
 		icon = GFX_goal_tnkd_sleepers
 		cost = 40
@@ -2529,94 +2650,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = tnkd_waking_sleepers
-		icon = GFX_goal_CES_Sleepers
-		cost = 60
-		y = 1
-		relative_position_id = tnkd_ally_sleepers
-		prerequisite = {
-			focus = tnkd_ally_sleepers
-			focus = tnkd_taking_sleepers
-		}
-		available = {
-			127 = {
-				tnkd_sphere_controls_state = yes
-			}
-			508 = {
-				tnkd_sphere_controls_state = yes
-			}
-		}
-		completion_reward = {
-			custom_effect_tooltip = tnkd_brain_drain_worsen
-			hidden_effect = {
-				add_dynamic_modifier = {
-					modifier = tnk_brain_drain_dynamic_modifier
-				}
-				if = {
-					limit = {
-						NOT = { has_variable = tnk_brain_drain_var }
-					}
-					set_variable = { tnk_brain_drain_var = -0.02 }
-				}
-				else = {
-					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
-				}
-			}
-
-			127 = {
-				add_extra_state_shared_building_slots = 8
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_temp_variable = { pop_add = 4000 }
-				add_state_population = yes
-			}
-			508 = {
-				add_extra_state_shared_building_slots = 8
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_temp_variable = { pop_add = 4000 }
-				add_state_population = yes
-			}
-			SLE = {
-				add_offsite_building = {
-					type = arms_factory
-					level = 8
-				}
-				add_offsite_building = {
-					type = industrial_complex
-					level = 8
-				}
-				add_manpower = 4000
-			}
-		}
-	}
-	focus = {
 		id = tnkd_taking_sorrows
 		icon = GFX_goal_tnkd_sorrows
 		cost = 40
@@ -2636,39 +2669,6 @@ focus_tree = {
 				target = SOR
 			}
 			SOR = {
-				create_wargoal = {
-					type = annex_everything
-					target = TNK
-				}
-			}
-		}
-	}
-	focus = {
-		id = tnkd_taking_dead_horses
-		icon = GFX_goal_tnkd_dead_horses
-		cost = 40
-		y = 1
-		relative_position_id = tnkd_waking_sleepers
-		prerequisite = {
-			focus = tnkd_taking_white_legs
-		}
-		prerequisite = {
-			focus = tnkd_waking_sleepers
-		}
-		prerequisite = {
-			focus = tnkd_taking_sorrows
-		}
-		bypass = {
-			DEA = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = DEA
-			}
-			DEA = {
 				create_wargoal = {
 					type = annex_everything
 					target = TNK

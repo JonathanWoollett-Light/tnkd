@@ -1,4 +1,4 @@
-version="2.0.0"
+version="2.1.0"
 tags={
 	"Alternative History"
 	"Map"
@@ -10,5 +10,5 @@ dependencies={
 }
 picture="thumbnail.png"
 name="OWB - The Think Tank"
-supported_version="1.15.*"
+supported_version="1.16.*"
 remote_file_id="3342313594"
