@@ -3,13 +3,16 @@
  tnkd_working_with_robco_desc:0 "We calculate a 15.678% probability of surviving alone.\nIf we form an alliance with Vegas we greatly raise these odds."
 
  tnkd_ally_sleepers:0 "Working with Sleepers"
- tnkd_ally_sleepers_desc:0 "A nation of scientists lives on our border, perhaps they can be persuaded to form an alliance to defend the Mojave."
-
- tnkd_taking_sleepers:0 "A knife in the night"
- tnkd_taking_sleepers_desc:0 "We cannot leave resources under utilized, it is critical to our cause we acquire these."
+ tnkd_ally_sleepers_desc:0 "A nation of mad scientists they say... perhaps there are reasonable people in the wasteland after all."
 
  tnkd_taking_sorrows:0 "Conquering the Sorrows"
  tnkd_taking_sorrows_desc:0 "For the [SOR.getName], the day [TNK.getName] graced your village was the most important day of their lives. But for [TNK.getName], it was Tuesday."
+
+ tnkd_taking_dead_horses:0 "Putting down a lame horse"
+ tnkd_taking_dead_horses_desc:0 "Another petty thief plaguing the wasteland, another rodent to exterminate."
+
+ tnkd_taking_ouroboros:0 "Ending the cycle"
+ tnkd_taking_ouroboros_desc:0 "Another one of the victims Caesar traumatised so much they started larping too."
 
  tnkd_waking_sleepers:0 "Waking up"
  tnkd_waking_sleepers_desc:0 "For long has this land slept, unlike much of the wasteland there are resources unexploited, scraps not yet stolen, if we give a jump start with some of our technology the economic engine of this region can outperform expectations."
@@ -28,8 +31,11 @@
  tnkd_taking_white_legs:0 "Hacking off the legs"
  tnkd_taking_white_legs_desc:0 "The bastard child of Ceasar's legion is just another barbarian plaguing the wasteland, like the others we will purge the infestation."
 
- tnkd_taking_dead_horses:0 "Putting down a lame horse"
- tnkd_taking_dead_horses_desc:0 "Another petty thief plaguing the wasteland, another rodent to exterminate."
+ tnkd_taking_white_legs:0 "Hacking off the legs"
+ tnkd_taking_white_legs_desc:0 "The bastard child of Ceasar's legion is just another barbarian plaguing the wasteland, like the others we will purge the infestation."
+ 
+ tnkd_taking_tarwalkers:0 "Scrubbing off"
+ tnkd_taking_tarwalkers_desc:0 "More mess to clean up..."
 
  tnkd_resource_move:0 "Resource Consolidation"
  tnkd_resource_move_desc:0 "We are squashed between giants, we should makes plans to survive even if we loose territory."
@@ -299,9 +305,6 @@
 
  tnkd_ncr_reward:0 "Claiming our reward"
  tnkd_ncr_reward_desc:0 "The war is won, we are owed what we where promised."
-
- tnkd_asking_independance:0 "Independance"
- tnkd_asking_independance_desc:0 "The time has come to carve our own path... alone."
 
  tnkd_dam:0 "Saturnite Turbines"
  tnkd_dam_desc:0 "We can use this uniquely hard and light material, to make more efficient turbines."

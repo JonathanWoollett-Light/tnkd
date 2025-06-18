@@ -2270,6 +2270,9 @@ focus_tree = {
 		prerequisite = {
 			focus = tnkd_offensive_infrastructure
 		}
+		bypass = {
+			NOT = { country_exists = SLE }
+		}
 		completion_reward = {
 			if = {
 				limit = {
@@ -2288,13 +2291,12 @@ focus_tree = {
 		relative_position_id = tnkd_ally_sleepers
 		prerequisite = {
 			focus = tnkd_ally_sleepers
-			focus = tnkd_taking_sleepers
 		}
 		available = {
-			127 = {
+			1032 = {
 				tnkd_sphere_controls_state = yes
 			}
-			508 = {
+			217 = {
 				tnkd_sphere_controls_state = yes
 			}
 		}
@@ -2314,8 +2316,24 @@ focus_tree = {
 					subtract_from_variable = { tnk_brain_drain_var = 0.02 }
 				}
 			}
-
-			127 = {
+			if = {
+				limit = {
+					country_exists = SLE
+				}
+				SLE = {
+					add_offsite_building = {
+						type = arms_factory
+						level = 8
+					}
+					add_offsite_building = {
+						type = industrial_complex
+						level = 8
+					}
+					add_manpower = 4000
+				}
+			}
+			
+			1032 = {
 				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = infrastructure
@@ -2335,7 +2353,7 @@ focus_tree = {
 				set_temp_variable = { pop_add = 4000 }
 				add_state_population = yes
 			}
-			508 = {
+			217 = {
 				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = infrastructure
@@ -2354,17 +2372,6 @@ focus_tree = {
 				}
 				set_temp_variable = { pop_add = 4000 }
 				add_state_population = yes
-			}
-			SLE = {
-				add_offsite_building = {
-					type = arms_factory
-					level = 8
-				}
-				add_offsite_building = {
-					type = industrial_complex
-					level = 8
-				}
-				add_manpower = 4000
 			}
 		}
 	}
@@ -2373,13 +2380,7 @@ focus_tree = {
 		icon = GFX_goal_tnkd_dead_horses
 		cost = 40
 		y = 1
-		relative_position_id = tnkd_waking_sleepers
-		prerequisite = {
-			focus = tnkd_taking_white_legs
-		}
-		prerequisite = {
-			focus = tnkd_waking_sleepers
-		}
+		relative_position_id = tnkd_taking_sorrows
 		prerequisite = {
 			focus = tnkd_taking_sorrows
 		}
@@ -2402,17 +2403,43 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = tnkd_demanding_west
-		icon = GFX_goal_generic_focus_ncr_raids
-		cost = 30
+		id = tnkd_taking_ouroboros
+		icon = GFX_goal_tnkd_dead_horses
+		cost = 40
 		y = 1
-		x = -2
 		relative_position_id = tnkd_taking_dead_horses
 		prerequisite = {
 			focus = tnkd_taking_dead_horses
 		}
+		bypass = {
+			ORO = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ORO
+			}
+			ORO = {
+				create_wargoal = {
+					type = annex_everything
+					target = TNK
+				}
+			}
+		}
+	}
+	focus = {
+		id = tnkd_demanding_west
+		icon = GFX_goal_generic_focus_ncr_raids
+		cost = 30
+		y = 1
+		x = -4
+		relative_position_id = tnkd_picking_sides
+		prerequisite = {
+			focus = tnkd_picking_sides
+		}
 		available = {
-			has_completed_focus = tnkd_picking_sides
 			not = { is_in_faction_with = NCR }
 		}
 		completion_reward = {
@@ -2427,13 +2454,12 @@ focus_tree = {
 		icon = GFX_goal_RRG_poison_bull
 		cost = 30
 		y = 1
-		x = 2
-		relative_position_id = tnkd_taking_dead_horses
+		x = 4
+		relative_position_id = tnkd_picking_sides
 		prerequisite = {
-			focus = tnkd_taking_dead_horses
+			focus = tnkd_picking_sides
 		}
 		available = {
-			has_completed_focus = tnkd_picking_sides
 			not = { is_in_faction_with = CES }
 		}
 		completion_reward = {
@@ -2552,45 +2578,19 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = tnkd_asking_independance
-		icon = GFX_goal_generic_ideological_fury_focus
-		cost = 60
-		y = 3
-		relative_position_id = tnkd_going_alone
-		prerequisite = {
-			focus = tnkd_siding_with_ces
-			focus = tnkd_siding_with_ncr
-			focus = tnkd_joining_the_brotherhood
-			focus = tnkd_joining_lanius
-		}
-		completion_reward = {
-			custom_effect_tooltip = tnkd_brain_drain_improve
-			hidden_effect = {
-				add_to_variable = { tnk_brain_drain_var = 0.02 }
-			}
-			if = {
-				limit = {
-					and = {
-						is_in_faction = yes
-						is_faction_leader = no
-					}
-				}
-				leave_faction = yes
-			}
-			
-		}
-	}
-	focus = {
 		id = tnkd_new_era
 		icon = GFX_goal_generic_bot_brain_head
 		cost = 30
 		y = 4
-		relative_position_id = tnkd_taking_dead_horses
+		relative_position_id = tnkd_picking_sides
 		prerequisite = {
 			focus = tnkd_lobotomize_flagstaff
 		}
 		prerequisite = {
 			focus = tnkd_lobotomize_shady_sands
+		}
+		prerequisite = {
+			focus = tnkd_going_alone
 		}
 		completion_reward = {
 			add_ideas = tnkd_new_era_idea
@@ -2623,40 +2623,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = tnkd_taking_sleepers
-		icon = GFX_goal_tnkd_sleepers
-		cost = 40
-		x = 2
-		relative_position_id = tnkd_ally_sleepers
-		prerequisite = {
-			focus = tnkd_offensive_infrastructure
-		}
-		bypass = {
-			SLE = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SLE
-			}
-			SLE = {
-				create_wargoal = {
-					type = annex_everything
-					target = TNK
-				}
-			}
-		}
-	}
-	focus = {
 		id = tnkd_taking_sorrows
 		icon = GFX_goal_tnkd_sorrows
 		cost = 40
 		y = 1
-		relative_position_id = tnkd_taking_sleepers
+		x = 2
+		relative_position_id = tnkd_offensive_infrastructure
 		prerequisite = {
-			focus = tnkd_taking_sleepers
+			focus = tnkd_offensive_infrastructure
 		}
 		bypass = {
 			SOR = {
@@ -2724,6 +2698,33 @@ focus_tree = {
 				target = WHT
 			}
 			WHT = {
+				create_wargoal = {
+					type = annex_everything
+					target = TNK
+				}
+			}
+		}
+	}
+	focus = {
+		id = tnkd_taking_tarwalkers
+		icon = GFX_goal_tnkd_white_legs
+		cost = 40
+		y = 1
+		relative_position_id = tnkd_taking_white_legs
+		prerequisite = {
+			focus = tnkd_taking_white_legs
+		}
+		bypass = {
+			TAR = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TAR
+			}
+			TAR = {
 				create_wargoal = {
 					type = annex_everything
 					target = TNK
