@@ -1,0 +1,18 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_Portrait_TNK_Generic_1"
+		texturefile = "gfx/leaders/TNK/portrait_tnk_generic_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_TNK_Generic_1_small"
+		textureFile = "gfx/interface/ideas/character_small_icons/TNK_generic_1.dds"
+	}
+    spriteType = {
+		name = "GFX_Portrait_TNK_Generic_2"
+		texturefile = "gfx/leaders/TNK/portrait_tnk_generic_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_TNK_Generic_2_small"
+		textureFile = "gfx/interface/ideas/character_small_icons/TNK_generic_2.dds"
+	}
+}

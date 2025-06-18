@@ -1248,31 +1248,4 @@ tnkd_minor_category = {
             }
         }
     }
-    tnkd_offmap_military_mission = {
-        icon = generic_prepare_civil_war
-        allowed = { tag = TNK }
-        available = {
-            has_manpower > 500
-            any_controlled_state = {
-                arms_factory > 0
-            }
-        }
-        cost = 30
-        complete_effect = {
-            add_manpower = -500
-            add_offsite_building = {
-                type = arms_factory
-                level = 1
-            }
-            random_controlled_state = {
-                limit = {
-                    arms_factory > 0
-                }
-                remove_building = {
-                    type = arms_factory
-                    level = 1
-                }
-            }
-        }
-    }
 }
