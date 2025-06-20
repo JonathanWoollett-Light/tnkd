@@ -504,7 +504,7 @@ tnkd_ncr_category = {
         complete_effect = {
             add_war_support = -0.01
             NCR = {
-                add_stability = 0.005
+                add_stability = 0.002
             }
             set_temp_variable = {
                 global.tnk_ncr_war_countdown_temp = 30
@@ -519,9 +519,9 @@ tnkd_ncr_category = {
             has_war_with = NCR
             NOT = { has_completed_focus = tnkd_demanding_west }
         }
-        cost = 60
+        cost = 40
         fire_only_once = yes
-        days_remove = 60
+        days_remove = 40
         remove_effect = {
             NCR = {
                 white_peace = TNK
@@ -669,6 +669,7 @@ tnkd_ncr_category = {
 			}
         }
         cost = 60
+        fire_only_once = yes
         complete_effect = {
             253 = {
                 set_temp_variable = { pop_add = -20000 }
@@ -833,9 +834,9 @@ tnkd_ces_category = {
             has_war_with = CES
             NOT = { has_completed_focus = tnkd_demanding_east }
         }
-        cost = 60
+        cost = 40
         fire_only_once = yes
-        days_remove = 60
+        days_remove = 40
         remove_effect = {
             CES = {
                 white_peace = TNK
@@ -975,6 +976,7 @@ tnkd_ces_category = {
 			}
         }
         cost = 60
+        fire_only_once = yes
         complete_effect = {
             520 = {
                 set_temp_variable = { pop_add = -20000 }

@@ -70,7 +70,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				research_speed_factor = 0.05
-				production_factory_efficiency_gain_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 		tnkd_think_tank_litigation = {
@@ -348,7 +348,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				air_strategic_bomber_bombing_factor = 0.4
-				strategic_bomb_visibility = -0.6
+				strategic_bomb_visibility = -0.8
 			}
 		}
 		tnkd_war_simulations = {
@@ -478,7 +478,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_factor = 0.2
+				political_power_factor = 0.3
 				war_support_factor = 0.2
 			}
 		}
@@ -504,7 +504,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_factor = 0.2
+				political_power_factor = 0.25
 			}
 		}
 		tnkd_theoretical_production = {
@@ -514,7 +514,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_factory_efficiency_gain_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.05
 				production_factory_max_efficiency_factor = 0.2
 			}
 		}
@@ -562,6 +562,7 @@ ideas = {
 				stability_factor = 0.2
 				war_support_factor = 0.2
 				training_time_factor = -0.4
+				autonomy_gain = -8
 			}
 		}
 		tnkd_intervention = {

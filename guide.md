@@ -1,0 +1,26 @@
+- Do 3 starting
+- Do civ short path
+- Pick PP gain advisor
+- Do mil long path.
+- Pick army XP advisor
+- Remove anti-tank from power armour divisions
+- Queue up 5 power armour divisions in production
+- Get sunburst prep option from "Testing the Bear" event
+- Go "Tend to Your Business" path
+- When war starts wait a moment for Mojave Territories to attack
+- When war ends give "Long 15" back to NCR
+- Repair hover damn as much as possible as it won't be possible after switching to think tank
+- Pick "To Smother the Sea"
+- Pick "Mandatory Service for All"
+- Go straight to "Midnight Science Fiction Feature"
+- Wait for Caesar to attack then peace out using PP
+- Spend all PP on exploring all Big-MT
+- Go "The Dome" delete all units before focus finishes
+- Going Borous gives you most early civs
+- Then rushing "Your New Friends
+- You will need to ally or conquer New Vegas before NCR conquers them, to complete "Recall the Z-35 Satellite" so you have air tech
+- Quantity side of robotics tree is stronger
+- Get "Machine Learning A.I." Spirit of the Academy idea
+- Don't join war with Vegas when NCR declares war on them
+- "Watch Them Move, Watch Them Live" will help have enough PP to delay wars with NCR and CES
+- "Wasteland Autonomty" robotics doctrine branch is best
