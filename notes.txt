@@ -15,3 +15,4 @@
 - production efficiency growth should be better
 - when ces or ncr no longer exists the decisions category for each shouldn't appear
 - lul seems to never train new units likely bug in base mod
+- need to add more motivation to engage in earlier wars and have fun as tnk should add extra expeditions which need wars and gives clear good rewards
