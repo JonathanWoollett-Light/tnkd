@@ -21,11 +21,11 @@
  tnkd_taking_sky_reavers_desc:0 "These barbarians waste their resources, we should destroy their rotten system and make proper use of their land."
  tnkd_taking_sky_reavers_tt:0 "Enables decision §Y$tnkd_sky_border_war_mission$§!.\nEnables decision §Y$tnkd_wht_border_war_mission$§!.\nEnables decision §Y$tnkd_sle_border_war_mission$§!."
  
- tnkd_treaty_ncr_tt:0 "Enables decision §Y$tnkd_ncr_treaty_mission$§!."
+ tnkd_treaty_ncr_tt:0 "Enables decision §Y$tnkd_ncr_treaty_decision$§!."
  tnkd_treaty_ces_tt:0 "Enables decision §Y$tnkd_ces_treaty_mission$§!."
  tnkd_lobotomize_flagstaff_tt:0 "Enables decision §Y$tnkd_ces_lobot_mission$§!."
- tnkd_lobotomize_shady_sands_tt:0 "Enables decision §Y$tnkd_ncr_lobot_mission$§!."
- tnkd_ncr_treaty_mission:0 "Treaty of Nipton"
+ tnkd_lobotomize_shady_sands_tt:0 "Enables decision §Y$tnkd_ncr_lobot_decision$§!."
+ tnkd_ncr_treaty_decision:0 "Treaty of Nipton"
  tnkd_ces_treaty_mission:0 "Treaty of Boulder City"
 
  tnkd_taking_white_legs:0 "Hacking off the legs"
@@ -169,11 +169,11 @@
  
  tnkd_ces_demand:0 "Give an inch?"
  tnkd_ces_demand_desc:0 "By all rights §Y[438.getName]§! forms a more natural part of our nation, we must demand it back."
- tnkd_ces_demand_tt:0 "If §Y[CES.getName]§! refuses to return §Y[438.getName]§! enables decision §Y$tnkd_ces_border_war_mission$§!."
+ tnkd_ces_demand_tt:0 "If §Y[CES.getName]§! refuses to return §Y[438.getName]§! enables decision §Y$tnkd_ces_border_war_decision$§!."
 
  tnkd_ncr_demand:0 "Reunification"
  tnkd_ncr_demand_desc:0 "Before chaos engulfed the Mojave §Y[77.getName]§! belonged to §Y[MOT.getName]§!, as their successor we must demand this land back."
- tnkd_ncr_demand_tt:0 "If §Y[NCR.getName]§! refuses to return §Y[77.getName]§! enables decision §Y$tnkd_ncr_border_war_mission$§!."
+ tnkd_ncr_demand_tt:0 "If §Y[NCR.getName]§! refuses to return §Y[77.getName]§! enables decision §Y$tnkd_ncr_border_war_decision$§!."
 
  tnkd_ces_demand_2:0 "Take a mile"
  tnkd_ces_demand_2_desc:0 "The legion is stretched thin, with our operatives new outpost we can deploy them to seize control... although for how long we can hold these territories we do not know."

@@ -20,5 +20,5 @@
   tnkd_resource_consolidation_decision_tt:0 "Moves a random resource to the capital."
 
   tnkd_border_war_category:0 "Border Wars"
-  tnkd_ces_border_war_mission:0 "Battle of Weathertop"
-  tnkd_ncr_border_war_mission:0 "The Long War"
+  tnkd_ces_border_war_decision:0 "Battle of Weathertop"
+  tnkd_ncr_border_war_decision:0 "The Long War"

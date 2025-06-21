@@ -26,7 +26,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				weekly_manpower = -60
-				research_speed_factor = 0.05
+				research_speed_factor = 0.04
 				stability_factor = -0.05
 			}
 		}
@@ -37,7 +37,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				weekly_manpower = -80
-				research_speed_factor = 0.1
+				research_speed_factor = 0.08
 				stability_factor = -0.1
 			}
 		}
@@ -48,7 +48,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				weekly_manpower = -120
-				research_speed_factor = 0.2
+				research_speed_factor = 0.16
 				stability_factor = -0.2
 			}
 		}
@@ -59,7 +59,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				weekly_manpower = -140
-				research_speed_factor = 0.3
+				research_speed_factor = 0.24
 				stability_factor = -0.3
 			}
 		}
@@ -69,8 +69,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				research_speed_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				research_speed_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.06
 			}
 		}
 		tnkd_think_tank_litigation = {
@@ -80,11 +80,11 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag = TNK
-				attack_bonus_against = -0.25
-				defense_bonus_against = -0.25
+				attack_bonus_against = -0.3
+				defense_bonus_against = -0.3
 			}
 			modifier = {
-				political_power_factor = -0.1
+				political_power_factor = -0.05
 			}
 		}
 		tnkd_silence = {
