@@ -347,8 +347,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				air_strategic_bomber_bombing_factor = 0.4
-				strategic_bomb_visibility = -0.8
+				air_strategic_bomber_bombing_factor = 1
 			}
 		}
 		tnkd_war_simulations = {
@@ -537,9 +536,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_org_factor = 0.3
-				land_reinforce_rate = 0.3
-				army_morale_factor = 0.3
+				army_org_factor = 0.4
+				land_reinforce_rate = 0.4
+				army_morale_factor = 0.4
 			}
 		}
 		tnkd_lul_shared_tech = {
@@ -550,6 +549,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				army_core_defence_factor = 0.4
+				pocket_penalty = -0.4
+				no_supply_grace = 1000
 			}
 		}
 		tnkd_lul_investment = {
@@ -559,9 +560,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.2
-				war_support_factor = 0.2
-				training_time_factor = -0.4
+				stability_factor = 0.3
+				war_support_factor = 0.3
+				training_time_factor = -0.6
 				autonomy_gain = -8
 			}
 		}
@@ -614,8 +615,8 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag = TNK
-				cic_to_target_factor = 0.2
-				mic_to_target_factor = 0.2
+				cic_to_target_factor = 0.25
+				mic_to_target_factor = 0.25
 			}
 		}
     }

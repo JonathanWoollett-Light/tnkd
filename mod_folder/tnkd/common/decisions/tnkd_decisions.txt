@@ -410,7 +410,6 @@ tnkd_ncr_category = {
         }
     }
     tnkd_ncr_deal_decision = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         visible = {
             has_active_mission = tnkd_ncr_war_mission
@@ -449,7 +448,7 @@ tnkd_ncr_category = {
         }
     }
     tnkd_ncr_debuff_decision = {
-        icon = generic_prepare_civil_war
+        icon = GFX_decision_pistol_suppressed
         allowed = { tag = TNK }
         visible = {
             country_exists = NCR
@@ -470,7 +469,6 @@ tnkd_ncr_category = {
         }
     }
     tnkd_ncr_buff_decision = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         visible = {
             country_exists = NCR
@@ -503,7 +501,6 @@ tnkd_ncr_category = {
         }
     }
     tnkd_ncr_anti_decision = {
-        icon = generic_prepare_civil_war
         allowed = { tag = NCR }
         visible = {
             has_active_mission = tnkd_ncr_war_mission
@@ -521,7 +518,7 @@ tnkd_ncr_category = {
         }
     }
     tnkd_ncr_pp_decision = {
-        icon = generic_prepare_civil_war
+        icon = GFX_decision_enc_propaganda
         allowed = { tag = TNK }
         visible = {
             has_active_mission = tnkd_ncr_war_mission
@@ -542,7 +539,6 @@ tnkd_ncr_category = {
         }
     }
     tnkd_ncr_temporary_peace_decision = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         visible = {
             country_exists = NCR
@@ -612,7 +608,7 @@ tnkd_ncr_category = {
         }
     }
     tnkd_ncr_treaty_decision = {
-        icon = generic_prepare_civil_war
+        icon = GFX_decision_papers
         allowed = { tag = TNK }
         visible = {
             country_exists = NCR
@@ -692,7 +688,6 @@ tnkd_ncr_category = {
         }
     }
     tnkd_ncr_lobot_decision = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         available = {
             has_completed_focus = tnkd_lobotomize_shady_sands
@@ -758,7 +753,6 @@ tnkd_ces_category = {
         }
     }
     tnkd_ces_deal_decision = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         visible = {
             has_active_mission = tnkd_ces_war_mission
@@ -797,7 +791,7 @@ tnkd_ces_category = {
         }
     }
     tnkd_ces_debuff_decision = {
-        icon = generic_prepare_civil_war
+        icon = GFX_decision_pistol_suppressed
         allowed = { tag = TNK }
         visible = {
             country_exists = CES
@@ -818,7 +812,6 @@ tnkd_ces_category = {
         }
     }
     tnkd_ces_buff_decision = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         visible = {
             country_exists = CES
@@ -851,7 +844,6 @@ tnkd_ces_category = {
         }
     }
     tnkd_ces_anti_decision = {
-        icon = generic_prepare_civil_war
         allowed = { tag = CES }
         visible = {
             has_active_mission = tnkd_ces_war_mission
@@ -869,7 +861,6 @@ tnkd_ces_category = {
         }
     }
     tnkd_ces_pp_decision = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         visible = {
             has_active_mission = tnkd_ces_war_mission
@@ -891,7 +882,6 @@ tnkd_ces_category = {
         }
     }
     tnkd_ces_temporary_peace_decision = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         visible = {
             country_exists = CES
@@ -961,7 +951,7 @@ tnkd_ces_category = {
         }
     }
     tnkd_ces_treaty_mission = {
-        icon = generic_prepare_civil_war
+        icon = GFX_decision_papers
         allowed = { tag = TNK }
         available = {
             has_completed_focus = tnkd_controlling_ces
@@ -1033,7 +1023,6 @@ tnkd_ces_category = {
         }
     }
     tnkd_ces_lobot_mission = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         available = {
             has_completed_focus = tnkd_lobotomize_flagstaff
@@ -1158,7 +1147,7 @@ tnkd_minor_category = {
         }
     }
     tnkd_freedom_mission = {
-        icon = generic_prepare_civil_war
+        icon = generic_independence
         allowed = { tag = TNK }
         available = {
             TNK = {
@@ -1187,7 +1176,6 @@ tnkd_minor_category = {
         }
     }
     tnkd_lobot_mission = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         available = {
             TNK = {
@@ -1216,7 +1204,6 @@ tnkd_minor_category = {
         }
     }
     tnkd_culling_mission = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         available = {
             has_manpower > 500
@@ -1231,7 +1218,7 @@ tnkd_minor_category = {
         }
     }
     tnkd_experimentation_mission = {
-        icon = generic_prepare_civil_war
+        icon = GFX_decision_generic_research
         allowed = { tag = TNK }
         available = {
             has_manpower > 250
@@ -1257,7 +1244,6 @@ tnkd_minor_category = {
         }
     }
     tnkd_slave_mission = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         available = {
             has_manpower > 250
@@ -1281,7 +1267,6 @@ tnkd_minor_category = {
         }
     }
     tnkd_offmap_industry_mission = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         available = {
             has_manpower > 250
@@ -1311,7 +1296,6 @@ tnkd_minor_category = {
         }
     }
     tnkd_offmap_military_mission = {
-        icon = generic_prepare_civil_war
         allowed = { tag = TNK }
         available = {
             has_manpower > 250

@@ -3497,6 +3497,7 @@ focus_tree = {
 			focus = tnkd_test_subjects
 		}
 		completion_reward = {
+			set_technology = { mininuke_unlock_tech = 1 }
 			add_ideas = {
 				tnkd_burn_land
 			}

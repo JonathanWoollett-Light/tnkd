@@ -37,22 +37,9 @@ sub_units = {
 		supply_consumption = 0.5
 
 		forest = {
-			movement = -0.1
-		}
-		mountain = {
 			movement = -0.2
 		}
 		jungle = {
-			movement = -0.15
-		}
-		marsh = {
-			movement = -0.15
-		}
-		river = {
-			movement = -0.1
-		}
-		amphibious = {
-			attack = -0.3
 			movement = -0.2
 		}
 	}
