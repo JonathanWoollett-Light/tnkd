@@ -1,5 +1,6 @@
 # todo
 
+- update ncr and ces peace deal decisions to instead be missions which start when capturing capitols then when timing out trigger the peace deal event (where you choose if peace)
 - ingenuity seems broken, fix that
 - add decisions that allow temporarily occupying territory for expeditions without declaring war
 - add more NCR/CES targeted buffs for TNK to help win but not be op
