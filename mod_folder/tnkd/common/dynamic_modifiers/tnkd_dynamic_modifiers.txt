@@ -6,11 +6,8 @@ tnk_decohesion_dynamic_modifier = {
 tnk_ingenuity_dynamic_modifier = {
 	icon = GFX_idea_general_atomics
 	modifier_army_sub_unit_support_robot_attack_factor = tnk_ingenuity_attack_buff_var
-	modifier_army_sub_unit_support_robot_defence_factor = tnk_ingenuity_defence_buff_var
 	modifier_army_sub_unit_combat_robot_attack_factor = tnk_ingenuity_attack_buff_var
-	modifier_army_sub_unit_combat_robot_defence_factor = tnk_ingenuity_defence_buff_var
 	modifier_army_sub_unit_destroyer_robot_attack_factor = tnk_ingenuity_attack_buff_var
-	modifier_army_sub_unit_destroyer_robot_defence_factor = tnk_ingenuity_defence_buff_var
 	army_fuel_consumption_factor = tnk_ingenuity_cost_var
 }
 tnk_brain_drain_dynamic_modifier = {

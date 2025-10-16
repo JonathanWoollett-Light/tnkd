@@ -3265,6 +3265,14 @@ focus_tree = {
 				is_controlled_by = ROOT	
 			}
 		}
+		bypass = {
+			77 = {
+				is_core_of = TNK
+			}
+			620 = {
+				is_core_of = TNK
+			}
+		}
 		completion_reward = {
 			add_state_core = 77
 			add_state_core = 620
@@ -3282,6 +3290,14 @@ focus_tree = {
 		available = {
 			all_core_state = {
 				is_controlled_by = ROOT	
+			}
+		}
+		bypass = {
+			380 = {
+				is_core_of = TNK
+			}
+			613 = {
+				is_core_of = TNK
 			}
 		}
 		completion_reward = {
@@ -4656,9 +4672,6 @@ focus_tree = {
 		relative_position_id = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
 		prerequisite = {
 			focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
-		}
-		prerequisite = {
-			focus = tnk_expanding_the_radar_fence
 		}
 		available = {
 			country_exists = lul
