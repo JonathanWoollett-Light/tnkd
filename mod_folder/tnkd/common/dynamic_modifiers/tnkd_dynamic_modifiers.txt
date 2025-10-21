@@ -1,5 +1,5 @@
 tnk_decohesion_dynamic_modifier = {
-	icon = GFX_idea_nor_brain_cracked
+	icon = apocalypse_now
 	stability_factor = tnk_decohesion_stability_var
     army_org_factor = tnk_decohesion_org_var
 }
@@ -11,12 +11,12 @@ tnk_ingenuity_dynamic_modifier = {
 	army_fuel_consumption_factor = tnk_ingenuity_cost_var
 }
 tnk_brain_drain_dynamic_modifier = {
-	icon = GFX_idea_nor_brain_cracked
+	icon = apocalypse_now
 	production_factory_efficiency_gain_factor = tnk_brain_drain_var
 	production_factory_max_efficiency_factor = tnk_brain_drain_var
 }
 tnk_angels_of_death_dynamic_modifier = {
-	icon = GFX_idea_nor_brain_cracked
+	icon = apocalypse_now
 	political_power_factor = global.tnk_angels_of_death_var
 	enemy_justify_war_goal_time = global.tnk_angels_of_death_var
 }

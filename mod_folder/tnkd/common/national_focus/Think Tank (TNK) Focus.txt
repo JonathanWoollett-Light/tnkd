@@ -2385,9 +2385,7 @@ focus_tree = {
 			focus = tnkd_taking_sorrows
 		}
 		bypass = {
-			DEA = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
+			not = { country_exists = DEA }
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -2412,9 +2410,7 @@ focus_tree = {
 			focus = tnkd_taking_dead_horses
 		}
 		bypass = {
-			ORO = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
+			not = { country_exists = ORO }
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -2439,6 +2435,9 @@ focus_tree = {
 		prerequisite = {
 			focus = tnkd_picking_sides
 		}
+		bypass = {
+			not = { country_exists = NCR }
+		}
 		available = {
 			not = { is_in_faction_with = NCR }
 		}
@@ -2458,6 +2457,9 @@ focus_tree = {
 		relative_position_id = tnkd_picking_sides
 		prerequisite = {
 			focus = tnkd_picking_sides
+		}
+		bypass = {
+			not = { country_exists = CES }
 		}
 		available = {
 			not = { is_in_faction_with = CES }
@@ -2633,9 +2635,7 @@ focus_tree = {
 			focus = tnkd_offensive_infrastructure
 		}
 		bypass = {
-			SOR = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
+			not = { country_exists = SOR }
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -2661,9 +2661,7 @@ focus_tree = {
 			focus = tnkd_offensive_infrastructure
 		}
 		bypass = {
-			SKY = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
+			not = { country_exists = SKY }
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -2688,9 +2686,7 @@ focus_tree = {
 			focus = tnkd_taking_sky_reavers
 		}
 		bypass = {
-			WHT = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
+			not = { country_exists = WHT }
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -2715,9 +2711,7 @@ focus_tree = {
 			focus = tnkd_taking_white_legs
 		}
 		bypass = {
-			TAR = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
+			not = { country_exists = TAR }
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -2998,7 +2992,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_cohesion
 		icon = GFX_goal_tnkd_cohesion
-		cost = 30
+		cost = 60
 		y = 1
 		relative_position_id = tnkd_perfection_sync
 		prerequisite = {
@@ -3369,7 +3363,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_isolation
 		icon = GFX_goal_generic_bunkers_focus
-		cost = 7
+		cost = 15
 		x=2
 		relative_position_id = tnkd_preemption
 		available = {
@@ -3388,7 +3382,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_silence
 		icon = GFX_goal_generic_bunkers_focus
-		cost = 7
+		cost = 15
 		y=1
 		relative_position_id = tnkd_isolation
 		available = {
@@ -3408,7 +3402,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_inconspicuous
 		icon = GFX_goal_generic_bunkers_focus
-		cost = 7
+		cost = 15
 		y=1
 		relative_position_id = tnkd_silence
 		available = {
@@ -3710,13 +3704,7 @@ focus_tree = {
 			focus = tnkd_missiles
 		}
 		available = {
-			all_country = {
-				OR = {
-					is_puppet_of = TNK
-					is_in_faction_with = TNK
-				}
-				
-			}
+			
 		}
 		completion_reward = {
 			set_temp_variable = {
@@ -4553,7 +4541,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_force_from_beyond
 		icon = GFX_goal_generic_focus_magazine_gunsandbullets_plasma
-		cost = 30
+		cost = 15
 		y = 1
 		relative_position_id = tnkd_shoot_it_down
 		prerequisite = {
@@ -4611,7 +4599,24 @@ focus_tree = {
 			focus = tnkd_peace
 			focus = tnkd_gev
 		}
-		
+		available = {
+			if = {
+				limit = { has_completed_focus = tnkd_mobius_convergance }
+				all_country = {
+					has_active_mission = tnkd_gev_decision
+				}
+			}
+			if = {
+				limit = { has_completed_focus = tnkd_true_convergance }
+				all_country = {
+					OR = {
+						is_puppet_of = TNK
+						is_in_faction_with = TNK
+					}
+				}
+			}
+			
+		}
 		completion_reward = {
 			country_event = nf_tnk.34
 		}

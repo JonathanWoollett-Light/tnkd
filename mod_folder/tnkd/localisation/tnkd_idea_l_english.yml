@@ -102,23 +102,14 @@
  tnkd_minor_category:0 "Cleaning the Lab"
  tnkd_minor_category_desc:0 "Great things are done by a series of small things brought together."
 
- # Mobius convergance
- # --------------------------------------------------------
-
  tnkd_aggressive_abductions_idea:0 "MORE MEAT!!!"
  tnkd_aggressive_abductions_idea_desc:0 "We shall shovel human lives into our machine of war like coal in an engine."
 
  tnkd_do_no_harm_idea:0 "Do No Harm"
  tnkd_do_no_harm_idea_desc:0 "Into whatsoever houses I enter, I will enter to help the sick, and I will abstain from all intentional wrong-doing and harm."
 
- # True convergance
- # --------------------------------------------------------
-
  tnkd_dna_shattering_idea:0 "Genetic Warfare"
  tnkd_dna_shattering_idea_desc:0 "Even an expert butcher cuts himself on occasion."
-
- # Tech ascendance
- # ---------------------------------------------------------
 
  tnkd_charging_laser:0 "Charging Mega-laser"
  tnkd_charging_laser_desc:0 "We will need power beyond comprehension to shoot this monstrosity down."
@@ -145,8 +136,8 @@
  tnkd_ces_knownledge:0 "Legion Insider Knowledge"
  tnkd_ces_knownledge_desc:0 "While [TNK.getName] was allied to [CES.getName] they gathered a great deal of information, we can now exploit this infomation."
 
- tnkd_theoretical_production:0 "Theoretical Priority"
- tnkd_theoretical_production_desc:0 "Application is for PhD dropouts, we are scientists."
+ tnkd_theoretical_production:0 "Pre-mature Production Optimization"
+ tnkd_theoretical_production_desc:0 "Imperfection is for less minds."
 
  tnkd_lul_buff:0 "Divine Purpose"
  tnkd_lul_buff_desc:0 "We know of our creators, we know our purpose, we have a divine path to follow. They will lead us to paradise."
@@ -191,3 +182,5 @@
  tnkd_veg_return_mission_desc:0 "[VEG.getName] has greater ambitions for this land than we do, we can reinforce our joint position by transferring these territories."
  tnkd_veg_victory:0 "A Winning Hand"
 
+ tnkd_gev_idea:0 "§PG.E.V.§!"
+ tnkd_gev_idea_desc:0 "They call it §PG.E.V.§!... the Garden of Eden Virus. It seems to be re-writing the DNA of creatures and plants to be able to survive and thrive in the wasteland, some even seem to be feeding off radiation. That said, it seems to have some other... more subtle affects."

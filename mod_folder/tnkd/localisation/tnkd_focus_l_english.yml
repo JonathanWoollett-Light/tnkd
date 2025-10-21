@@ -129,7 +129,7 @@
   
  tnkd_giant_slayer:0 "Giant Slayer"
  tnkd_giant_slayer_desc:0 "The titans of the wasteland are a threat to the freedom of humanity. \n\n§RWe shall go forth and they shall call timber in our wake."
- tnkd_giant_slayer_tt:0 "Gain National Spirit §YGiant Slayer§!, which grants ((@NCR§Y[NCR.getName]§!, @CES§Y[CES.getName]§!, @WBH§Y[WBH.getName]§!, @BOS§Y[BOS.getName]§!, @LAC§Y[LAC.getName]§!, @TBH§Y[TBH.getName]§!, @MAX§Y[MAX.getName]§!, @ZAP§Y[ZAP.getName]§!, @ARM§Y[ARM.getName]§!) Attack bonus against country: §G+20%§!, Defense bonus against country: §G+20%§!)."
+ tnkd_giant_slayer_tt:0 "Gain National Spirit §YGiant Slayer§!, which grants ((@NCR§Y[NCR.getName]§!, @CES§Y[CES.getName]§!, @WBH§Y[WBH.getName]§!, @BOS§Y[BOS.getName]§!, @LAC§Y[LAC.getName]§!, @TBH§Y[TBH.getName]§!, @MAX§Y[MAX.getName]§!, @ZAP§Y[ZAP.getName]§!, @ARM§Y[ARM.getName]§!) Attack bonus against country: §G+15%§!, Defense bonus against country: §G+15%§!)."
 
  tnkd_a_future_vision:0 "A Vision Of A Future"
  tnkd_a_future_vision_desc:0 "A house burned down may still in its ashes provide the fertilizer for new life.\n\n§gOf all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive...§!"
@@ -312,8 +312,8 @@
  tnkd_better_reactors:0 "Better Reactors"
  tnkd_better_reactors_desc:0 "With some inspired adjustments we can improve the efficiency of our reactors."
  
- tnkd_theoretical_production_focus:0 "Theorical Priority"
- tnkd_theoretical_production_focus_desc:0 "Theory is fun, application is so boring and weighed down by reality."
+ tnkd_theoretical_production_focus:0 "Pre-mature Production Optimization"
+ tnkd_theoretical_production_focus_desc:0 "No don't do it like that, do it like this... no not like that..."
 
  tnkd_invite_lunar_legion:0 "Lords of the Legion"
  tnkd_invite_lunar_legion_desc:0 "By bringing them under our wing we can create momentary peace with the Legion. As for the rest, we are their creators, if we ask, they will serve."

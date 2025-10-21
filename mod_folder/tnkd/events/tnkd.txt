@@ -31,6 +31,9 @@ country_event = {
 		}
 	}
 	option = {
+		ai_chance = {
+			base = 0
+		}
 		name = nf_tnk.60.c
 	}
 }
@@ -275,11 +278,41 @@ country_event = {
 
 	option = {
 		name = nf_tnk.38.a
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = nf_tnk.38.b
+		ai_chance = {
+			base = 100
+		}
+		trigger = {
+			AND = {
+				any_owned_state = {
+					is_neighbor_of = TNK
+				}
+				OR = {
+					tag = SKY
+					tag = SOR
+					tag = MOS
+					tag = RAP
+					tag = GRA
+					tag = DEA
+					tag = TAR
+					tag = CRZ
+					AND = {
+						tag = VEG
+						NOT = {
+							is_in_faction_with = TNK
+						}
+					}
+					
+				}
+			}
+		}
 	}
 }
-
-# Mobius Convergance
-# ----------------------------------------------------------------
 
 country_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.40" }
@@ -292,44 +325,8 @@ country_event = {
 
 	option = {
 		name = nf_tnk.40.a
-		932 = {
-			owner = {
-				TNK = {
-					create_wargoal = {
-						type = take_state_focus
-						target = PREV
-						generator = { 932 }
-					}
-				}
-			}
-		}
-		548 = {
-			owner = {
-				TNK = {
-					create_wargoal = {
-						type = take_state_focus
-						target = PREV
-						generator = { 548 }
-					}
-				}
-			}
-		}
-		291 = {
-			owner = {
-				TNK = {
-					create_wargoal = {
-						type = take_state_focus
-						target = PREV
-						generator = { 291 }
-					}
-				}
-			}
-		}
 	}
 }
-
-# G.E.V. spread
-# ----------------------------------------------------------------
 
 country_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.39" }
@@ -897,7 +894,14 @@ country_event = {
 			TNK = { create_faction = "The Mojave Technical Alliance" }
 		}
 		TNK = { add_to_faction = VEG }
-		VEG = { transfer_state = 106 }
+		if = {
+			limit = {
+				TNK = {
+					owns_state = 106
+				}
+			}
+			VEG = { transfer_state = 106 }
+		}
 		add_ideas = tnkd_veg_concessions
 	}
 	option = {

@@ -60,7 +60,7 @@
   nf_tnk.33.d:0 "WHAT?!? Something went wrong, our consciousnesses are not properly bound, our minds loose cohesion by at each moment."
   nf_tnk.33.a:0 "Well... this isn't going to end well"
 
-  nf_tnk.34.d:0 "I sit back and watch the sun rise on a grateful wasteland. BLAH BLAH ADD MORE POETIC SPEECH HERE."
+  nf_tnk.34.d:0 "I sit back and watch the sun rise on a grateful wasteland. \n§RBLAH BLAH ADD MORE POETIC SPEECH HERE.§!"
   nf_tnk.34.a:0 "finally... peace..."
 
   nf_tnk.44.t:0 "An ingenious future"
@@ -74,6 +74,7 @@
   nf_tnk.38.t:0 "The Mojave Falls Silent"
   nf_tnk.38.d:0 "The robots have gone, the lobotomites have vanished, silence has set upon the war torn Mojave.\nWhat are those eggheads at The Think Tank up to?"
   nf_tnk.38.a:0 "I'm sure it will be fine"
+  nf_tnk.38.b:0 "§RNow is our time to strike§!"
 
   nf_tnk.39.t:0 "G.E.V. Infection"
   nf_tnk.39.d:0 "We do not know what this is, but this thing... we see it in our fields, our water... we see it glimmering in the air.\nOur fields grow greener, our water runs cleaner and the numbers on our geiger counters seem, after centuries to be going down."

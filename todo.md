@@ -1,18 +1,18 @@
 # todo
 
+- G.E.V should have a nice decision category image
+- the carrot focus should trigger an event for each neighbour where we can decide if we want to give them the offer (it doesn't make sense to give an evil faction the offer)
+
+- focus icons for attacking tar walkers and ouroboros are duplicated and wrong. Fix this.
 - update ncr and ces peace deal decisions to instead be missions which start when capturing capitols then when timing out trigger the peace deal event (where you choose if peace)
-- ingenuity seems broken, fix that
 - add decisions that allow temporarily occupying territory for expeditions without declaring war
 - add more NCR/CES targeted buffs for TNK to help win but not be op
-- maybe we can expand the current political paths and move the current econ stuff in the center to under balanced science.
 - should add 1 more focus and/or mission before giving claim against each small neighbor that allows a mission to destabilize them so you can beat them early and early war is more viable
 - giving territory should give more time
 - a new countries (aliens, dwemer and vikings) for expeditions paths
 - add NCR and CES war reparation as a mission that decrease industry/military given to TNK over time and they can take decisions to decrease it more.
 - use better decisions/mission icons
-- angels of death idea icon breaks
 - tech for peace decisions are only giving +60 to war time
-- shouldn't bypass attacking vegas if you ally them
 - should add idea to NCR and CES that prevents them manually declaring war on TNK, should remove after mission timer runs out
 - vegas platinum chip focus should require that vegas has completed their platinum chip focus
 - should add later focus after allying vegas that allows backstabbing them

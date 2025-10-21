@@ -243,7 +243,7 @@ tnkd_gev_category = {
             always = no
         }
         fixed_random_seed = no
-        is_good = no
+        is_good = yes
         selectable_mission = yes
         days_mission_timeout = 30
         timeout_effect = {
@@ -261,13 +261,15 @@ tnkd_gev_category = {
             every_neighbor_country = {
                 IF = {
                     limit = {
-                        NOT = { has_decision = tnkd_gev_decision }
+                        NOT = { has_active_mission = tnkd_gev_decision }
+                        NOT = { has_country_flag = tnkd_gev_spread_already }
                     }
                     random_list = {
-                        50 = {
+                        30 = {
+                            set_country_flag = tnkd_gev_spread_already
                             country_event = nf_tnk.39
                         }
-                        50 = {
+                        70 = {
 
                         }
                     }

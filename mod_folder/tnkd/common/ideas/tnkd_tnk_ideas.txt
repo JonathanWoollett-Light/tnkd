@@ -26,8 +26,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				weekly_manpower = -60
-				research_speed_factor = 0.04
-				stability_factor = -0.05
+				research_speed_factor = 0.06
+				stability_factor = -0.06
 			}
 		}
 		tnkd_wild_science = {
@@ -37,7 +37,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				weekly_manpower = -80
-				research_speed_factor = 0.08
+				research_speed_factor = 0.10
 				stability_factor = -0.1
 			}
 		}
@@ -49,7 +49,7 @@ ideas = {
 			modifier = {
 				weekly_manpower = -120
 				research_speed_factor = 0.16
-				stability_factor = -0.2
+				stability_factor = -0.16
 			}
 		}
 		tnkd_insane_science = {
@@ -60,7 +60,7 @@ ideas = {
 			modifier = {
 				weekly_manpower = -140
 				research_speed_factor = 0.24
-				stability_factor = -0.3
+				stability_factor = -0.24
 			}
 		}
 		tnkd_balanced_science = {
@@ -69,7 +69,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				research_speed_factor = 0.04
+				research_speed_factor = 0.06
 				production_factory_efficiency_gain_factor = 0.06
 			}
 		}
@@ -192,51 +192,52 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag = NCR
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
 			targeted_modifier = {
 				tag = CES
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
 			targeted_modifier = {
 				tag = WBH
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
 			targeted_modifier = {
 				tag = BOS
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
 			targeted_modifier = {
 				tag = LAC
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
 			targeted_modifier = {
 				tag = TBH
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
 			targeted_modifier = {
 				tag = MAX
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
 			targeted_modifier = {
 				tag = ZAP
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
 			targeted_modifier = {
 				tag = ARM
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
 		}
 		tnkd_gev_idea = {
+			picture = aztlan_land_distribution
 			allowed = {
 				always = no
 			}
