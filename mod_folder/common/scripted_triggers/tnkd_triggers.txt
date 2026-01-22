@@ -1,4 +1,4 @@
-# Used like 'tag { state { tnkd_sphere_controls_state_of_prev = yes } }'
+# Used like 'tag = { state = { tnkd_sphere_controls_state_of_prev = yes } }'
 tnkd_sphere_controls_state = {
 	custom_trigger_tooltip = {
 		tooltip = tnkd_sphere_controls_state_tt

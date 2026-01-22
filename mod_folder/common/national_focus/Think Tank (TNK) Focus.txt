@@ -2376,6 +2376,32 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = tnkd_taking_sorrows
+		icon = GFX_goal_tnkd_sorrows
+		cost = 40
+		y = 1
+		x = 2
+		relative_position_id = tnkd_offensive_infrastructure
+		prerequisite = {
+			focus = tnkd_offensive_infrastructure
+		}
+		bypass = {
+			not = { country_exists = SOR }
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOR
+			}
+			SOR = {
+				create_wargoal = {
+					type = annex_everything
+					target = TNK
+				}
+			}
+		}
+	}
+	focus = {
 		id = tnkd_taking_dead_horses
 		icon = GFX_goal_tnkd_dead_horses
 		cost = 40
@@ -2621,32 +2647,6 @@ focus_tree = {
 		completion_reward = {
 			NCR = {
 				country_event = nf_tnk.53
-			}
-		}
-	}
-	focus = {
-		id = tnkd_taking_sorrows
-		icon = GFX_goal_tnkd_sorrows
-		cost = 40
-		y = 1
-		x = 2
-		relative_position_id = tnkd_offensive_infrastructure
-		prerequisite = {
-			focus = tnkd_offensive_infrastructure
-		}
-		bypass = {
-			not = { country_exists = SOR }
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SOR
-			}
-			SOR = {
-				create_wargoal = {
-					type = annex_everything
-					target = TNK
-				}
 			}
 		}
 	}

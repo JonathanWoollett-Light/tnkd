@@ -267,6 +267,7 @@ country_event = {
 	}
 }
 
+# The Mojave Falls Silent
 country_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_tnk.38" }
 	id = nf_tnk.38
@@ -280,36 +281,6 @@ country_event = {
 		name = nf_tnk.38.a
 		ai_chance = {
 			base = 0
-		}
-	}
-	option = {
-		name = nf_tnk.38.b
-		ai_chance = {
-			base = 100
-		}
-		trigger = {
-			AND = {
-				any_owned_state = {
-					is_neighbor_of = TNK
-				}
-				OR = {
-					tag = SKY
-					tag = SOR
-					tag = MOS
-					tag = RAP
-					tag = GRA
-					tag = DEA
-					tag = TAR
-					tag = CRZ
-					AND = {
-						tag = VEG
-						NOT = {
-							is_in_faction_with = TNK
-						}
-					}
-					
-				}
-			}
 		}
 	}
 }

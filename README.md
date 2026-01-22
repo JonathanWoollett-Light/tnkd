@@ -4,6 +4,13 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3342313594
 
 Think Tank submod for [Old World Blues](https://steamcommunity.com/sharedfiles/filedetails/?id=2265420196).
 
+### Update process
+
+1. Get [WinMerge](https://winmerge.org/)
+2. Go through every file in the mod and compare to OWB files, resoling conflicts.
+3. Play game to test.
+4. Done.
+
 ### Plans
 
 - Consolidate: Follow the focus tree to build your economy.
