@@ -1,3 +1,0 @@
-technology_categories = {
-    destroyer_robot_tech_category
-}

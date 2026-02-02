@@ -101,8 +101,6 @@ set_technology = {
 	# Good robotics
 	robot_automation_tech = 1
 	robot_command_equipment_tech_1 = 1
-	robot_armour_hardening_tech = 1
-	robot_lifter_equipment_tech = 1
 	robot_makeshift_automatons_tech = 1
 	robot_fission_batteries_tech = 1
 	robot_automation_tech = 1
@@ -110,14 +108,17 @@ set_technology = {
 	robot_build_efficiency_tech_2 = 2
 	robot_build_efficiency_tech_3 = 1
 	robot_handy_equipment_tech_1 = 1
-	robot_precision_motor_tech = 1
 	robot_miniature_thruster_tech = 1
 	robot_protectron_equipment_tech_1 = 1
+	robot_armour_hardening_tech = 1
 
 	robot_scurry_tech = 1 #Scurry is last researched light robot, important.
 	nautics_tech_1 = 1
 	light_navy_hull_tech_1 = 1
 	naval_invasion_tech_1 = 1
+
+	roboscorpion_tech = 1 # Specific TNK tech to allow upgrading roboscorpions
+	automated_warfare = 1 # Automated warfare
 }
 
 set_stability = 0.2

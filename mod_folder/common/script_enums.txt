@@ -112,7 +112,6 @@ script_enum_equipment_bonus_type = {
 	## OWB equipment
 	security_robot_equipment
 	combat_robot_equipment
-    destroyer_robot_equipment
 	blimp_equipment
 	fireteam_equipment
 	motorized
@@ -280,7 +279,6 @@ script_enum_equipment_bonus_type = {
 	support_robot_thruster_equipment_4
 	support_robot_scurry_equipment
 	support_robot_humanoid_equipment
-    destroyer_robot_alien_equipment
 	tank_equipment_1
 	tank_equipment_2
 	tank_equipment_3

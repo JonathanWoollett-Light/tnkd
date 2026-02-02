@@ -9,7 +9,7 @@
 - the carrot focus should trigger an event for each neighbour where we can decide if we want to give them the offer (it doesn't make sense to give an evil faction the offer)
 - instead of having to switch to using traditional combat robots, add upgrade techs for roboscorpions which require base techs so roboscorpions remain good into late game (like securitrons)
 - add big roboscorpion tech that requires modern tanks and acts as a tank replacement same as roboscorpion acts as support robot replacement
-- make the destroyer robot just the roboscorpion equivalent for combat robots, having it be a seperate division type is messy and annoying (a mod shouldn't add content like this which is unpolished and weird)
+- add focuses for restoring mojave economically (that you can start as soon as you beat mojave chapter)
 
 - focus icons for attacking tar walkers and ouroboros are duplicated and wrong. Fix this.
 - update ncr and ces peace deal decisions to instead be missions which start when capturing capitols then when timing out trigger the peace deal event (where you choose if peace)
