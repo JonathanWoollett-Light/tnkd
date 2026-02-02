@@ -1,6 +1,16 @@
 spriteTypes = {
 	# TNK ( Think Tank )
 	spriteType = {
+		name = "GFX_TNK_demolitions_elite_weaponry_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/cyberdog_gun.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_TNK_fireteam_elite_weaponry_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/elijahs_tesla_cannon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_TNK_robot_pacification_bot_tech_medium"
 		texturefile = "gfx/interface/equipment/cosmetic/robots/giant_roboscorpion.dds"
 		alwaystransparent = yes

@@ -1569,6 +1569,7 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { science_change = 20000 }
 			tnk_change_science = yes
+			set_technology = { demolitions_elite_weaponry_tech = 1 }
 			add_tech_bonus = {
 				bonus = 0.42
 				uses = 1
@@ -1799,15 +1800,14 @@ focus_tree = {
 		cost = 30
 		y = 7
 		available = {
-			has_completed_focus = tnk_a_lovely_melody
-			has_completed_focus = tnk_the_gangs_all_here
-			has_completed_focus = tnk_mobius_roboscorpion_research_improve_the_x42_giant_roboscorpion
-			has_completed_focus = tnk_klein_lobotomite_research_focus
-			has_completed_focus = tnk_klein_mojave_experiments_set_up_the_new_x13_experiment
-			has_completed_focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
-			has_completed_focus = tnk_expanding_the_radar_fence
-			has_completed_focus = tnk_establish_the_tranquility_lane_schooling_board
-			has_completed_focus = tnk_my_gal_pal_betsy_bright
+			has_completed_focus = tnk_personality_restoration
+			has_stability > 0.4
+			has_war_support > 0.4
+			OR = {
+				is_in_faction_with = VEG
+				NOT = { country_exists = VEG }
+			}
+			
 		}
 		relative_position_id = tnk_personality_restoration
 		completion_reward = {
@@ -1834,6 +1834,7 @@ focus_tree = {
 			has_completed_focus = tnk_personality_restoration
 		}
 		completion_reward = {
+			add_war_support = 0.05
 			every_owned_state = {
 				limit = {
 					is_coastal = yes
@@ -1865,6 +1866,7 @@ focus_tree = {
 			owns_state = 46
 		}
 		completion_reward = {
+			set_technology = { fireteam_elite_weaponry_tech = 1 }
 			set_capital = { state = 46 }
 			46 = {
 				add_building_construction = {
@@ -1887,6 +1889,7 @@ focus_tree = {
 			focus = tnkd_defensive_infrastructure
 		}
 		completion_reward = {
+			add_stability = 0.05
 			country_event = nf_tnk.45
 		}
 	}
@@ -2250,6 +2253,7 @@ focus_tree = {
 			has_completed_focus = tnk_personality_restoration
 		}
 		completion_reward = {
+			add_war_support = 0.05
 			custom_effect_tooltip = tnkd_taking_sky_reavers_tt
 			every_owned_state = {
 				add_building_construction = {
@@ -2389,17 +2393,16 @@ focus_tree = {
 		bypass = {
 			not = { country_exists = SOR }
 		}
+		bypass_effect = {
+			add_war_support = 0.05
+		}
+		will_lead_to_war_with = SOR
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SOR
-			}
-			SOR = {
-				create_wargoal = {
-					type = annex_everything
-					target = TNK
-				}
-			}
+			add_war_support = 0.05
+			declare_war_on = {
+                target = SOR
+                type = annex_everything
+            }
 		}
 	}
 	focus = {
@@ -2408,23 +2411,25 @@ focus_tree = {
 		cost = 40
 		y = 1
 		relative_position_id = tnkd_taking_sorrows
+		available = {
+			not = { country_exists = SOR }
+		}
 		prerequisite = {
 			focus = tnkd_taking_sorrows
 		}
 		bypass = {
 			not = { country_exists = DEA }
 		}
+		bypass_effect = {
+			add_war_support = 0.05
+		}
+		will_lead_to_war_with = DEA
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = DEA
-			}
-			DEA = {
-				create_wargoal = {
-					type = annex_everything
-					target = TNK
-				}
-			}
+			add_war_support = 0.05
+			declare_war_on = {
+                target = DEA
+                type = annex_everything
+            }
 		}
 	}
 	focus = {
@@ -2433,23 +2438,25 @@ focus_tree = {
 		cost = 40
 		y = 1
 		relative_position_id = tnkd_taking_dead_horses
+		available = {
+			not = { country_exists = DEA }
+		}
 		prerequisite = {
 			focus = tnkd_taking_dead_horses
 		}
 		bypass = {
 			not = { country_exists = ORO }
 		}
+		bypass_effect = {
+			add_war_support = 0.05
+		}
+		will_lead_to_war_with = ORO
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = ORO
-			}
-			ORO = {
-				create_wargoal = {
-					type = annex_everything
-					target = TNK
-				}
-			}
+			add_war_support = 0.05
+			declare_war_on = {
+                target = ORO
+                type = annex_everything
+            }
 		}
 	}
 	focus = {
@@ -2468,6 +2475,7 @@ focus_tree = {
 		available = {
 			not = { is_in_faction_with = NCR }
 		}
+		will_lead_to_war_with = NCR
 		completion_reward = {
 			declare_war_on = {
 				type = annex_everything
@@ -2491,6 +2499,7 @@ focus_tree = {
 		available = {
 			not = { is_in_faction_with = CES }
 		}
+		will_lead_to_war_with = CES
 		completion_reward = {
 			declare_war_on = {
 				type = annex_everything
@@ -2664,17 +2673,16 @@ focus_tree = {
 		bypass = {
 			not = { country_exists = SKY }
 		}
+		bypass_effect = {
+			add_war_support = 0.05
+		}
+		will_lead_to_war_with = SKY
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SKY
-			}
-			SKY = {
-				create_wargoal = {
-					type = annex_everything
-					target = TNK
-				}
-			}
+			add_war_support = 0.05
+			declare_war_on = {
+                target = SKY
+                type = annex_everything
+            }
 		}
 	}
 	focus = {
@@ -2683,23 +2691,25 @@ focus_tree = {
 		cost = 40
 		y = 1
 		relative_position_id = tnkd_taking_sky_reavers
+		available = {
+			not = { country_exists = SKY }
+		}
 		prerequisite = {
 			focus = tnkd_taking_sky_reavers
 		}
 		bypass = {
 			not = { country_exists = WHT }
 		}
+		bypass_effect = {
+			add_war_support = 0.05
+		}
+		will_lead_to_war_with = WHT
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = WHT
-			}
-			WHT = {
-				create_wargoal = {
-					type = annex_everything
-					target = TNK
-				}
-			}
+			add_war_support = 0.05
+			declare_war_on = {
+                target = WHT
+                type = annex_everything
+            }
 		}
 	}
 	focus = {
@@ -2708,23 +2718,25 @@ focus_tree = {
 		cost = 40
 		y = 1
 		relative_position_id = tnkd_taking_white_legs
+		available = {
+			not = { country_exists = WHT }
+		}
 		prerequisite = {
 			focus = tnkd_taking_white_legs
 		}
 		bypass = {
 			not = { country_exists = TAR }
 		}
+		bypass_effect = {
+			add_war_support = 0.05
+		}
+		will_lead_to_war_with = TAR
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = TAR
-			}
-			TAR = {
-				create_wargoal = {
-					type = annex_everything
-					target = TNK
-				}
-			}
+			add_war_support = 0.05
+			declare_war_on = {
+                target = TAR
+                type = annex_everything
+            }
 		}
 	}
 	focus = {
@@ -2779,6 +2791,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_stability = 0.05
 			every_owned_state = {
 				limit = {
 					any_neighbor_state = {
@@ -2878,6 +2891,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_stability = 0.05
 			every_owned_state = {
 				limit = {
 					any_neighbor_state = {
@@ -2928,7 +2942,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_unity
 		icon = GFX_goal_tnkd_unity
-		cost = 30
+		cost = 90
 		y = 1
 		
 		relative_position_id = tnkd_next_steps
@@ -2936,8 +2950,8 @@ focus_tree = {
 			focus = tnkd_next_steps
 		}
 		completion_reward = {
-			add_stability = 0.2
-			add_war_support = 0.2
+			add_stability = 0.15
+			add_war_support = 0.15
 		}
 	}
 	focus = {
@@ -3425,7 +3439,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_true_convergance
 		icon = GFX_goal_tnkd_true_convergance
-		cost = 90
+		cost = 120
 		y=1
 		x=5
 		relative_position_id = tnkd_convergance
@@ -3720,7 +3734,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_mobius_convergance
 		icon = GFX_goal_tnkd_mobius_convergance
-		cost = 120
+		cost = 160
 		y=1
 		x=-5
 		relative_position_id = tnkd_convergance

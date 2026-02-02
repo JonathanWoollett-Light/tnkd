@@ -14,3 +14,12 @@
   TNK_super_heavy_robot_equipment_2:0 "X-54 Mega Robo-scorpion"
   TNK_super_heavy_robot_equipment_2_short:0 "Mega Robo-scorpion"
   TNK_super_heavy_robot_equipment_2_desc:0 "The X-54 mega robo-scorpion iterates on Doctor Mobius' design even further, pulling knowledge from the wider collective. Iterating on armaments from the X-42, the X-54 super-charges this weaponry using a post-war next-gen aneutronic fusion reactor."
+
+  TNK_fireteam_equipment_5:0 "Elijah's jury-rigged Tesla cannon"
+  TNK_fireteam_equipment_5_short:0 "Elijah's Tesla cannon"
+  TNK_fireteam_equipment_5_desc:0 "A military design from the pre-War era, the shoulder-mounted Tesla cannon is a heavy directed energy weapon created to surpass conventional anti-tank weapons. One instance of the weapon ended up in the hands of Father Elijah, a rogue elder of the Mojave Brotherhood, who put it through extensive modification."
+
+  TNK_demolitions_equipment_5:0 "K9000 Cyberdog Gun"
+  TNK_demolitions_equipment_5_short:0 "K9000"
+  TNK_demolitions_equipment_5_desc:0 "An experimental weapon out of Big MT, the K9000 is actually an odd form of cyberdog, except rather than a canine's body infused with cybernetics, only the dog's brain is utilized by being placed inside a biogel "brain cage" integrated into a box-magazine-fed machine gun frame chambered for .357 Magnum ammunition with a telescopic scope for precision."
+  
