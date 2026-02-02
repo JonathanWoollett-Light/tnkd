@@ -1,7 +1,13 @@
 spriteTypes = {
-    spriteType = {
-		name = "GFX_robot_alien_tech_medium"
-		texturefile = "gfx/interface/equipment/cosmetic/robots/robot_alien_tech_icon.dds"
+	# TNK ( Think Tank )
+	spriteType = {
+		name = "GFX_TNK_robot_pacification_bot_tech_medium"
+		texturefile = "gfx/interface/equipment/cosmetic/robots/giant_roboscorpion.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_TNK_robot_behemoth_robot_tech_medium"
+		texturefile = "gfx/interface/equipment/cosmetic/robots/giant_roboscorpion.dds"
 		alwaystransparent = yes
 	}
 }

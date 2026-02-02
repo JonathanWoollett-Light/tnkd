@@ -977,6 +977,7 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { science_change = -25000 }
 			tnk_change_science = yes
+			set_technology = { robot_pacification_bot_tech = 1 }
 			swap_ideas = {
 				remove_idea = tnk_lobotomite_conscription
 				add_idea = tnk_roboscorpion_conscription
@@ -3098,19 +3099,22 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			every_core_state = {
-				add_extra_state_shared_building_slots = 12
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
+			hidden_effect = {
+				every_core_state = {
+					add_extra_state_shared_building_slots = 12
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
 				}
 			}
+			custom_effect_tooltip = tnkd_expansion_one_tt
 		}
 	}
 	focus = {
@@ -4067,9 +4071,6 @@ focus_tree = {
 		icon = GFX_goal_pal_access_the_terminals
 		cost = 30
 		y = 1
-		available = {
-			has_completed_focus = tnkd_perfection_sync
-		}
 		prerequisite = {
 			focus = tnkd_balanced_science
 		}
@@ -4569,6 +4570,9 @@ focus_tree = {
 		y = 1
 		x = 0
 		relative_position_id = tnkd_tech_ascendance
+		available = {
+			has_completed_focus = tnkd_perfection_sync
+		}
 		prerequisite = {
 			focus = tnkd_tech_ascendance
 		}
