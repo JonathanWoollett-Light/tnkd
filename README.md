@@ -1,8 +1,9 @@
-# TNKD - Think Tank Defragmented
+# [OWB - The Think Tank](https://steamcommunity.com/sharedfiles/filedetails/?id=3342313594)
+*A submod for [Old World Blues](https://steamcommunity.com/sharedfiles/filedetails/?id=2265420196)*
 
-https://steamcommunity.com/sharedfiles/filedetails/?id=3342313594
-
-Think Tank submod for [Old World Blues](https://steamcommunity.com/sharedfiles/filedetails/?id=2265420196).
+![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3342313594)
+![Steam Favorites](https://img.shields.io/steam/favorites/3342313594)
+![Steam Update Date](https://img.shields.io/steam/update-date/3342313594)
 
 ## Update process
 
