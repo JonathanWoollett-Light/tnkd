@@ -14,20 +14,22 @@
 
 ## Plan
 
+### Very High Priority
+
+- need to do another playthrough to re-balance things
+- balance `tnkd_next_steps` stability and war support requirements so they are difficult to meet and take some time and focus to get
+- focus icons for attacking tar walkers and ouroboros are duplicated and wrong. Fix this.
+- lul seems to never train new units likely bug in base mod
+
 ### High Priority
 
-- add focuses for restoring mojave economically (that you can start as soon as you beat mojave chapter)
 - add these guns https://fallout.fandom.com/wiki/Category:Old_World_Blues_weapons
-- balance `tnkd_next_steps` stability and war support requirements so they are difficult to meet and take some time and focus to get
 - balance robo-scorpions and other units so think tank is forced to have a varied army e.g. also using infantry (lobotomites).
-- focus icons for attacking tar walkers and ouroboros are duplicated and wrong. Fix this.
-- brain drain icon is broken and might not make sense to be added where its added
-- decohesion idea image is broken
-- lul seems to never train new units likely bug in base mod
 - When NCR/CES refuses/accepts to return land it should trigger an event that communicates this rather than the affect happening silently (e.g. they could refuse and someone doesn't notice the border war mission is now avaible).
 
 ### Medium Priority
 
+- the fixing mojave focuses should be about specific states instead of the whole
 - G.E.V should have a nice decision category image
 - the carrot focus should trigger an event for each neighbour where we can decide if we want to give them the offer (it doesn't make sense to give an evil faction the offer)
 - update ncr and ces peace deal decisions to instead be missions which start when capturing capitols then when timing out trigger the peace deal event (where you choose if peace)

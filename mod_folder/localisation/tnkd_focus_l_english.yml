@@ -45,13 +45,43 @@
  tnkd_better_capital:0 "Strategic Relocation"
  tnkd_better_capital_desc:0 "We are not retreating... we are simply strategically relocating further from the danger."
 
- # defence
- # --------------------------------------------------------------
  tnkd_defensive_infrastructure:0 "Defensive infrastructure"
  tnkd_defensive_infrastructure_desc:0 "We live in the fulcrum of the new world, they will come.. and we must defend it."
 
  tnkd_offensive_infrastructure:0 "Offensive infrastructure"
  tnkd_offensive_infrastructure_desc:0 "If we can secure our border regions and industrial power within them we will greatly raise our probability of survival."
+ 
+ tnkd_new_mojave:0 "The New Mojave"
+ tnkd_new_mojave_tt:0 "Controls §Y[47.GetName]§!, §Y[67.GetName]§!, §Y[137.GetName]§!, §Y[417.GetName]§!, §Y[46.GetName]§!, §Y[573.GetName]§! and §Y[552.GetName]§!."
+ tnkd_new_mojave_desc:0 "The Mojave is not like our labs, it is messy and unpredictable, but it is also full of resources and potential. We must find a way to control it, to make it our own, and to use it to our advantage."
+
+ tnkd_new_mojave_1:0 "Negotiation"
+ tnkd_new_mojave_1_desc:0 "To stabilize the situation in the Mojave our best option is to attempt to bring the power players in the region to the table. This however we fear might give strength to remnant elements of past regimes that ruled the Mojave."
+
+ tnkd_new_mojave_2:0 "Manipulation"
+ tnkd_new_mojave_2_desc:0 "The locals are barely more intelligent than our lobotomites, propaganda and psychological warfare is easier today than even before the great war... and that's saying something."
+
+ tnkd_new_mojave_3:0 "Contacting the Remnants"
+ tnkd_new_mojave_3_desc:0 "Despite our victory a great number of [MOJ.GetName] remnants still lurk about the Mojave, perhaps we could come to an arrangement."
+
+ tnkd_elijah_back:0 "He's back?!?"
+ tnkd_elijah_back_desc:0 "Through communication with [MOJ.GetName] remnant elements, Elijah has come out of hiding, perhaps we can use his knowledge to our advantage... or perhaps he will be a thorn in our side."
+
+ tnkd_new_mojave_4:0 "Patrolling the Mojave"
+ tnkd_new_mojave_4_desc:0 "If we are to spread out control beyound our lab, we need to setup regular patrols of the territory."
+ tnkd_new_mojave_4_tt:0 "Modifies §HNo Compliance Gain§! for §H$tnk_broken_mojave_dynamic_modifier$§! to §GNo§! (Current §RYes§!)."
+
+ tnkd_new_mojave_5:0 "Exploiting the Mojave"
+ tnkd_new_mojave_5_desc:0 "The Mojave is full of resources, if we can secure them we can greatly boost our economy and military power."
+
+ tnkd_new_mojave_6:0 "Reconciliation"
+ tnkd_new_mojave_6_desc:0 "We have an opptunity to bring the Mojave under our control without bloodshed, if we can convince the power players in the region to work with us we can gain stable control of the region."
+ tnkd_new_mojave_6_tt:0 "§Y[47.GetName]§!, §Y[67.GetName]§!, §Y[137.GetName]§!, §Y[417.GetName]§!, §Y[46.GetName]§!, §Y[573.GetName]§! and §Y[552.GetName]§! more than §Y25%§! Compliance."
+
+ tnkd_new_mojave_7:0 "Liquidation"
+ tnkd_new_mojave_7_desc:0 "If they won't work with us, we will have to work without them... and they won't like it."
+ tnkd_new_mojave_7_tt:0 "§Y[47.GetName]§!, §Y[67.GetName]§!, §Y[137.GetName]§!, §Y[417.GetName]§!, §Y[46.GetName]§!, §Y[573.GetName]§! and §Y[552.GetName]§! have been §Cpacified§!."
+ tnkd_new_mojave_7_tt_2:0 "Every controlled states §Ostate population§! changes by §R-500§!."
 
  tnkd_next_steps:0 "Venturing Forward"
  tnkd_next_steps_desc:0 "§OW§ge §Gm§Ro§Mv§Pe §Rf§Oo§gr§Gw§Ra§Mr§Pd §Rt§Oo§gg§Ge§Rt§Mh§Pe§Rr§O."
@@ -70,9 +100,6 @@
 
  tnkd_ncr_deal:0 "Returning the Jewels"
  tnkd_ncr_deal_desc:0 "The NCR has longed after these territories for long enough, let them have them, and they shall let us have peace."
-
- # Unity
- # --------------------------------------------------------------
 
  tnkd_unity:0 "Unity"
  tnkd_unity_desc:0 "Through unity we shall acheive omniscience. A machine is greater than the sum of its part."

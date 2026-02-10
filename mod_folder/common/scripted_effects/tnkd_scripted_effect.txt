@@ -60,13 +60,21 @@ decrease_tnk_ces_war_countdown = {
 }
 increase_tnk_angels_of_death_var = {
 	custom_effect_tooltip = increase_tnk_angels_of_death_tt
-	hidden_effect = {
-		subtract_from_variable = { var = global.tnk_angels_of_death_var value = gloabl.tnk_angels_of_death_var_temp }
-	}
+	subtract_from_variable = { var = global.tnk_angels_of_death_var value = gloabl.tnk_angels_of_death_var_temp }
 }
 decrease_tnk_angels_of_death_var = {
 	custom_effect_tooltip = decrease_tnk_angels_of_death_tt
-	hidden_effect = {
-		add_to_variable = { var = global.tnk_angels_of_death_var value = gloabl.tnk_angels_of_death_var_temp }
-	}
+	add_to_variable = { var = global.tnk_angels_of_death_var value = gloabl.tnk_angels_of_death_var_temp }
+}
+update_tnk_broken_mojave_production_speed_buildings_factor_var = {
+	custom_effect_tooltip = tnk_broken_mojave_production_speed_buildings_factor_var_tt
+	add_to_variable = { tnk_broken_mojave_production_speed_buildings_factor_var = tnk_broken_mojave_production_speed_buildings_factor_var_change }
+}
+update_tnk_broken_mojave_consumer_goods_factor_var = {
+	custom_effect_tooltip = tnk_broken_mojave_consumer_goods_factor_var_tt
+	add_to_variable = { tnk_broken_mojave_consumer_goods_factor_var = tnk_broken_mojave_consumer_goods_factor_var_change }
+}
+update_tnk_broken_mojave_resistance_activity_var = {
+	custom_effect_tooltip = tnk_broken_mojave_resistance_activity_var_tt
+	add_to_variable = { tnk_broken_mojave_resistance_activity_var = tnk_broken_mojave_resistance_activity_var_change }
 }

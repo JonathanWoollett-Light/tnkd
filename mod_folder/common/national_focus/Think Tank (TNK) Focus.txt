@@ -1795,21 +1795,429 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = tnkd_next_steps
-		icon = GFX_goal_tnkd_next_steps
+		id = tnkd_new_mojave
+		icon = GFX_goal_NCR_MojaveOutpost
 		cost = 30
 		y = 7
 		available = {
-			has_completed_focus = tnk_personality_restoration
-			has_stability > 0.4
-			has_war_support > 0.4
+			NOT = { country_exists = MOJ }
+			custom_trigger_tooltip = {
+				tooltip = tnkd_new_mojave_tt
+				AND = {
+					controls_state = 47
+					controls_state = 67
+					controls_state = 137
+					controls_state = 417
+					controls_state = 46
+					controls_state = 573
+					controls_state = 552
+				}
+			}
+		}
+		prerequisite = {
+			focus = tnk_personality_restoration
+		}
+		relative_position_id = tnk_personality_restoration
+		completion_reward = {
+			country_event = nf_tnk.62
+		}
+	}
+	focus = {
+		id = tnkd_new_mojave_1
+		icon = GFX_goal_generic_national_unity
+		cost = 30
+		y = 1
+		x = -1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = tnkd_new_mojave_tt
+				AND = {
+					controls_state = 47
+					controls_state = 67
+					controls_state = 137
+					controls_state = 417
+					controls_state = 46
+					controls_state = 573
+					controls_state = 552
+				}
+			}
+		}
+		prerequisite = {
+			focus = tnkd_new_mojave
+		}
+		mutually_exclusive = {
+			focus = tnkd_new_mojave_2
+		}
+		relative_position_id = tnkd_new_mojave
+		completion_reward = {
+			add_popularity = {
+				ideology = elites
+				popularity = 0.15
+			}
+			add_manpower = 1000
+			set_temp_variable = { tnk_broken_mojave_consumer_goods_factor_var_change = -0.04 }
+			update_tnk_broken_mojave_consumer_goods_factor_var = yes
+		}
+	}
+	focus = {
+		id = tnkd_new_mojave_2
+		icon = GFX_goal_water_generic
+		cost = 30
+		y = 1
+		x = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = tnkd_new_mojave_tt
+				AND = {
+					controls_state = 47
+					controls_state = 67
+					controls_state = 137
+					controls_state = 417
+					controls_state = 46
+					controls_state = 573
+					controls_state = 552
+				}
+			}
+		}
+		prerequisite = {
+			focus = tnkd_new_mojave
+		}
+		mutually_exclusive = {
+			focus = tnkd_new_mojave_1
+		}
+		relative_position_id = tnkd_new_mojave
+		completion_reward = {
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.15
+			}
+			add_political_power = 60
+			set_temp_variable = { tnk_broken_mojave_production_speed_buildings_factor_var_change = 0.12 }
+			update_tnk_broken_mojave_production_speed_buildings_factor_var = yes
+		}
+	}
+	focus = {
+		id = tnkd_new_mojave_3
+		icon = GFX_goal_BOS_the_mojave_signal
+		cost = 30
+		y = 2
+		x = -2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = tnkd_new_mojave_tt
+				AND = {
+					controls_state = 47
+					controls_state = 67
+					controls_state = 137
+					controls_state = 417
+					controls_state = 46
+					controls_state = 573
+					controls_state = 552
+				}
+			}
+		}
+		prerequisite = {
+			focus = tnkd_new_mojave_1
+		}
+		relative_position_id = tnkd_new_mojave
+		completion_reward = {
+			add_popularity = {
+				ideology = elites
+				popularity = 0.15
+			}
+			set_temp_variable = { tnk_broken_mojave_consumer_goods_factor_var_change = -0.04 }
+			update_tnk_broken_mojave_consumer_goods_factor_var = yes
+			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.3 }
+			update_tnk_broken_mojave_resistance_activity_var = yes
+			add_tech_bonus = {
+				name = tnkd_new_mojave_3
+				bonus = 0.3
+				uses = 3
+				category = power_armor_tech_category
+			}
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment_4
+				amount = 500
+				producer = USA
+			}
+		}
+	}
+	focus = {
+		id = tnkd_elijah_back
+		icon = GFX_goal_MOJ_elijah
+		cost = 30
+		y = 2
+		prerequisite = {
+			focus = tnkd_new_mojave_3
+		}
+		prerequisite = {
+			focus = tnkd_new_mojave_6
+		}
+		relative_position_id = tnkd_new_mojave_3
+		completion_reward = {
+			add_popularity = {
+				ideology = elites
+				popularity = 0.15
+			}
+			add_stability = -0.05
+			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.3 }
+			update_tnk_broken_mojave_resistance_activity_var = yes
+			add_tech_bonus = {
+				name = tnkd_new_mojave_3
+				bonus = 0.6
+				ahead_reduction = 3
+				uses = 3
+				category = power_armor_tech_category
+			}
+		}
+	}
+	focus = {
+		id = tnkd_new_mojave_4
+		icon = GFX_goal_generic_protectron_conceptart_primm_slimm
+		cost = 30
+		y = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = tnkd_new_mojave_tt
+				AND = {
+					controls_state = 47
+					controls_state = 67
+					controls_state = 137
+					controls_state = 417
+					controls_state = 46
+					controls_state = 573
+					controls_state = 552
+				}
+			}
+		}
+		prerequisite = {
+			focus = tnkd_new_mojave_1
+			focus = tnkd_new_mojave_2
+		}
+		relative_position_id = tnkd_new_mojave
+		completion_reward = {
+			set_temp_variable = { tnk_broken_mojave_consumer_goods_factor_var_change = -0.02 }
+			update_tnk_broken_mojave_consumer_goods_factor_var = yes
+			set_temp_variable = { tnk_broken_mojave_production_speed_buildings_factor_var_change = 0.06 }
+			update_tnk_broken_mojave_production_speed_buildings_factor_var = yes
+			custom_effect_tooltip = tnkd_new_mojave_4_tt
+			set_variable = { tnk_broken_mojave_no_compliance_gain_var = 0 }
+			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.3 }
+			update_tnk_broken_mojave_resistance_activity_var = yes
+		}
+	}
+	focus = {
+		id = tnkd_new_mojave_5
+		icon = GFX_goal_moj_sunset_sasparilla
+		cost = 30
+		y = 2
+		x = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = tnkd_new_mojave_tt
+				AND = {
+					controls_state = 47
+					controls_state = 67
+					controls_state = 137
+					controls_state = 417
+					controls_state = 46
+					controls_state = 573
+					controls_state = 552
+				}
+			}
+		}
+		prerequisite = {
+			focus = tnkd_new_mojave_2
+		}
+		relative_position_id = tnkd_new_mojave
+		completion_reward = {
+			add_resource = {
+				state = 552
+				type = metal
+				amount = 7
+			}
+			add_resource = {
+				state = 47
+				type = circuitry
+				amount = 4
+			}
+			set_temp_variable = { tnk_broken_mojave_production_speed_buildings_factor_var_change = 0.12 }
+			update_tnk_broken_mojave_production_speed_buildings_factor_var = yes
+		}
+	}
+	focus = {
+		id = tnkd_new_mojave_6
+		icon = GFX_goal_NCR_Buyout
+		cost = 30
+		y = 3
+		x = -1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = tnkd_new_mojave_tt
+				AND = {
+					controls_state = 47
+					controls_state = 67
+					controls_state = 137
+					controls_state = 417
+					controls_state = 46
+					controls_state = 573
+					controls_state = 552
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tnkd_new_mojave_6_tt
+				AND = {
+					47 = {
+						compliance > 25
+					}
+					67 = {
+						compliance > 25
+					}
+					137 = {
+						compliance > 25
+					}
+					417 = {
+						compliance > 25
+					}
+					46 = {
+						compliance > 25
+					}
+					573 = {
+						compliance > 25
+					}
+					552 = {
+						compliance > 25
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = tnkd_new_mojave_3
+			focus = tnkd_new_mojave_5
+		}
+		prerequisite = {
+			focus = tnkd_new_mojave_4
+		}
+		mutually_exclusive = {
+			focus = tnkd_new_mojave_7
+		}
+		relative_position_id = tnkd_new_mojave
+		completion_reward = {
+			add_popularity = {
+				ideology = people
+				popularity = 0.15
+			}
+			set_temp_variable = { tnk_broken_mojave_consumer_goods_factor_var_change = -0.04 }
+			update_tnk_broken_mojave_consumer_goods_factor_var = yes
+			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.3 }
+			update_tnk_broken_mojave_resistance_activity_var = yes
+			add_ideas = tnkd_wastelander_relations
+		}
+	}
+	focus = {
+		id = tnkd_new_mojave_7
+		icon = GFX_goal_VEG_Thorn
+		cost = 30
+		y = 3
+		x = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = tnkd_new_mojave_tt
+				AND = {
+					controls_state = 47
+					controls_state = 67
+					controls_state = 137
+					controls_state = 417
+					controls_state = 46
+					controls_state = 573
+					controls_state = 552
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tnkd_new_mojave_7_tt
+				AND = {
+					47 = {
+						has_active_resistance = no
+					}
+					67 = {
+						has_active_resistance = no
+					}
+					137 = {
+						has_active_resistance = no
+					}
+					417 = {
+						has_active_resistance = no
+					}
+					46 = {
+						has_active_resistance = no
+					}
+					573 = {
+						has_active_resistance = no
+					}
+					552 = {
+						has_active_resistance = no
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = tnkd_new_mojave_3
+			focus = tnkd_new_mojave_5
+		}
+		prerequisite = {
+			focus = tnkd_new_mojave_4
+		}
+		mutually_exclusive = {
+			focus = tnkd_new_mojave_6
+		}
+		relative_position_id = tnkd_new_mojave
+		completion_reward = {
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.15
+			}
+			set_temp_variable = { tnk_broken_mojave_production_speed_buildings_factor_var_change = 0.12 }
+			update_tnk_broken_mojave_production_speed_buildings_factor_var = yes
+			custom_effect_tooltip = tnkd_new_mojave_7_tt_2
+			hidden_effect = {
+				every_controlled_state = {
+					set_temp_variable = { pop_add = -500 }
+					add_state_population = yes
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = tnkd_next_steps
+		icon = GFX_goal_tnkd_next_steps
+		cost = 30
+		y = 4
+		available = {
+			has_stability > 0.5
+			has_war_support > 0.5
 			OR = {
 				is_in_faction_with = VEG
 				NOT = { country_exists = VEG }
 			}
-			
+			custom_trigger_tooltip = {
+				tooltip = tnkd_new_mojave_tt
+				AND = {
+					controls_state = 47
+					controls_state = 67
+					controls_state = 137
+					controls_state = 417
+					controls_state = 46
+					controls_state = 573
+					controls_state = 552
+				}
+			}
 		}
-		relative_position_id = tnk_personality_restoration
+		prerequisite = {
+			focus = tnkd_new_mojave_6
+			focus = tnkd_new_mojave_7
+		}
+		relative_position_id = tnkd_new_mojave
 		completion_reward = {
 			add_state_core = 67
 			add_state_core = 137
@@ -1821,6 +2229,17 @@ focus_tree = {
 				province = 3238
 				value = 10
 			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = tnk_broken_mojave_dynamic_modifier
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = tnk_broken_mojave_dynamic_modifier
+				}
+			}
+			
 		}
 	}
 	focus = {
@@ -2942,7 +3361,7 @@ focus_tree = {
 	focus = {
 		id = tnkd_unity
 		icon = GFX_goal_tnkd_unity
-		cost = 90
+		cost = 30
 		y = 1
 		
 		relative_position_id = tnkd_next_steps
@@ -2978,6 +3397,24 @@ focus_tree = {
 					}
 				}
 				every_other_country = {
+					limit = {
+						any_controlled_state = {
+							OR = {
+								region = 29 # West Arizona
+								region = 3 # North Mojave
+								region = 32 # South Mojave
+								region = 7 # South California
+								region = 51 # Southwest California
+								region = 52 # East California
+								region = 8 # Baja California
+								region = 31 # South Arizona
+								region = 13 # West Sonora
+								region = 28 # South Utah
+								region = 56 # South Nevada
+								region = 39 # Southwest Utah
+							}
+						}
+					}
 					country_event = nf_tnk.38
 				}
 			}
@@ -3336,7 +3773,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = tnkd_preemption
-				days = 300
+				days = 150
 			}
 		}
 	}
@@ -3355,7 +3792,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = tnkd_threat_classification
-				days = 200
+				days = 100
 			}
 		}
 	}
@@ -3374,7 +3811,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = tnkd_threat_obliteration
-				days = 100
+				days = 50
 			}
 		}
 	}
@@ -3394,7 +3831,10 @@ focus_tree = {
 			focus = tnkd_preemption
 		}
 		completion_reward = {
-			add_war_support = -0.1
+			add_timed_idea = {
+				idea = tnkd_isolation
+				days = 150
+			}
 		}
 	}
 	focus = {
@@ -3432,7 +3872,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = tnkd_inconspicuous
-				days = 100
+				days = 50
 			}
 		}
 	}
@@ -3448,6 +3888,8 @@ focus_tree = {
 		}
 		available = {
 			has_army_manpower = { size < 501 }
+			intellectuals > 0.8
+			not = { has_completed_focus = tnkd_new_mojave_6 }
 		}
 		mutually_exclusive = {
 			focus = tnkd_mobius_convergance
@@ -3743,6 +4185,8 @@ focus_tree = {
 		}
 		available = {
 			has_army_manpower = { size < 501 }
+			ruler > 0.8
+			not = { has_completed_focus = tnkd_new_mojave_7 }
 		}
 		mutually_exclusive = {
 			focus = tnkd_true_convergance

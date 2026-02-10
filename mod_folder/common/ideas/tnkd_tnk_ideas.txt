@@ -87,13 +87,24 @@ ideas = {
 				political_power_factor = -0.05
 			}
 		}
-		tnkd_silence = {
+		tnkd_isolation = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			modifier = {
 				encryption_factor = 2
+				enemy_intel_network_gain_factor_over_occupied_tag = -1
+			}
+		}
+		tnkd_silence = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				enemy_justify_war_goal_time = 0.5
+				local_intel_to_enemies = -0.5
 			}
 		}
 		tnkd_inconspicuous = {
@@ -102,7 +113,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				enemy_justify_war_goal_time = 0.5
+				cant_be_justified_on = 1
 			}
 		}
 		tnkd_preemption = {
@@ -132,7 +143,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				breakthrough_factor = 1.2
-				stability_factor = -0.3
+				org_loss_when_moving = -0.6
 			}
 		}
 		tnkd_convergance_idea = {
@@ -618,6 +629,16 @@ ideas = {
 				tag = TNK
 				cic_to_target_factor = 0.25
 				mic_to_target_factor = 0.25
+			}
+		}
+		tnkd_wastelander_relations = {
+			picture = VEG_The_House_Always_Wins
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				non_core_manpower = 0.2
 			}
 		}
     }
