@@ -631,15 +631,5 @@ ideas = {
 				mic_to_target_factor = 0.25
 			}
 		}
-		tnkd_wastelander_relations = {
-			picture = VEG_The_House_Always_Wins
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			modifier = {
-				non_core_manpower = 0.2
-			}
-		}
     }
 }

@@ -18,23 +18,17 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = nf_tnk.1
-			# TODO Is there a way to make this occur on spawn?
-			# Could it be moved to `countries/TNK - The Think Tank.txt`?
-			set_variable = { global.tnk_ncr_war_countdown = 460 }
-			set_variable = { global.tnk_ces_war_countdown = 460 }
-			activate_mission = tnkd_ncr_war_mission
-			activate_mission = tnkd_ces_war_mission
 			hidden_effect = {
+				set_variable = { global.tnk_ncr_war_countdown = 460 }
+				set_variable = { global.tnk_ces_war_countdown = 460 }
+				activate_mission = tnkd_ncr_war_mission
+				activate_mission = tnkd_ces_war_mission
 				NCR = {
 					activate_mission = tnkd_ncr_war_mission
 				}
 				CES = {
 					activate_mission = tnkd_ces_war_mission
 				}
-			}
-			set_variable = { global.tnk_angels_of_death_var = -0.1 }
-			add_dynamic_modifier = {
-				modifier = tnk_angels_of_death_dynamic_modifier
 			}
 		}
 	}
@@ -1855,8 +1849,8 @@ focus_tree = {
 				popularity = 0.15
 			}
 			add_manpower = 1000
-			set_temp_variable = { tnk_broken_mojave_consumer_goods_factor_var_change = -0.04 }
-			update_tnk_broken_mojave_consumer_goods_factor_var = yes
+			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.2 }
+			update_tnk_broken_mojave_resistance_activity_var = yes
 		}
 	}
 	focus = {
@@ -1892,8 +1886,8 @@ focus_tree = {
 				popularity = 0.15
 			}
 			add_political_power = 60
-			set_temp_variable = { tnk_broken_mojave_production_speed_buildings_factor_var_change = 0.12 }
-			update_tnk_broken_mojave_production_speed_buildings_factor_var = yes
+			set_temp_variable = { tnk_broken_mojave_compliance_growth_on_our_occupied_states_var_change = 0.2 }
+			update_tnk_broken_mojave_compliance_growth_on_our_occupied_states_var = yes
 		}
 	}
 	focus = {
@@ -1925,21 +1919,9 @@ focus_tree = {
 				ideology = elites
 				popularity = 0.15
 			}
-			set_temp_variable = { tnk_broken_mojave_consumer_goods_factor_var_change = -0.04 }
-			update_tnk_broken_mojave_consumer_goods_factor_var = yes
-			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.3 }
+			set_technology = { power_armour_tech_level_tribal = 1 }
+			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.2 }
 			update_tnk_broken_mojave_resistance_activity_var = yes
-			add_tech_bonus = {
-				name = tnkd_new_mojave_3
-				bonus = 0.3
-				uses = 3
-				category = power_armor_tech_category
-			}
-			add_equipment_to_stockpile = {
-				type = power_armor_equipment_4
-				amount = 500
-				producer = USA
-			}
 		}
 	}
 	focus = {
@@ -1959,14 +1941,15 @@ focus_tree = {
 				ideology = elites
 				popularity = 0.15
 			}
+			set_technology = { power_armour_tech_level_settler = 1 }
 			add_stability = -0.05
-			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.3 }
+			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.2 }
 			update_tnk_broken_mojave_resistance_activity_var = yes
 			add_tech_bonus = {
 				name = tnkd_new_mojave_3
-				bonus = 0.6
-				ahead_reduction = 3
-				uses = 3
+				bonus = 0.4
+				ahead_reduction = 2
+				uses = 4
 				category = power_armor_tech_category
 			}
 		}
@@ -1996,14 +1979,15 @@ focus_tree = {
 		}
 		relative_position_id = tnkd_new_mojave
 		completion_reward = {
-			set_temp_variable = { tnk_broken_mojave_consumer_goods_factor_var_change = -0.02 }
-			update_tnk_broken_mojave_consumer_goods_factor_var = yes
-			set_temp_variable = { tnk_broken_mojave_production_speed_buildings_factor_var_change = 0.06 }
-			update_tnk_broken_mojave_production_speed_buildings_factor_var = yes
-			custom_effect_tooltip = tnkd_new_mojave_4_tt
-			set_variable = { tnk_broken_mojave_no_compliance_gain_var = 0 }
-			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.3 }
-			update_tnk_broken_mojave_resistance_activity_var = yes
+			if = {
+				limit = {
+					has_dynamic_modifier = tnk_broken_mojave
+				}
+				set_temp_variable = { tnk_broken_mojave_consumer_goods_factor_var_change = 0.08 }
+				update_tnk_broken_mojave_consumer_goods_factor_var = yes
+				custom_effect_tooltip = tnkd_new_mojave_4_tt
+				set_variable = { tnk_broken_mojave_no_compliance_gain_var = 0 }
+			}
 		}
 	}
 	focus = {
@@ -2041,8 +2025,8 @@ focus_tree = {
 				type = circuitry
 				amount = 4
 			}
-			set_temp_variable = { tnk_broken_mojave_production_speed_buildings_factor_var_change = 0.12 }
-			update_tnk_broken_mojave_production_speed_buildings_factor_var = yes
+			set_temp_variable = { tnk_broken_mojave_consumer_goods_factor_var_change = -0.04 }
+			update_tnk_broken_mojave_consumer_goods_factor_var = yes
 		}
 	}
 	focus = {
@@ -2068,32 +2052,28 @@ focus_tree = {
 				tooltip = tnkd_new_mojave_6_tt
 				AND = {
 					47 = {
-						compliance > 25
+						compliance > 30
 					}
 					67 = {
-						compliance > 25
+						compliance > 30
 					}
 					137 = {
-						compliance > 25
+						compliance > 30
 					}
 					417 = {
-						compliance > 25
+						compliance > 30
 					}
 					46 = {
-						compliance > 25
+						compliance > 30
 					}
 					573 = {
-						compliance > 25
+						compliance > 30
 					}
 					552 = {
-						compliance > 25
+						compliance > 30
 					}
 				}
 			}
-		}
-		prerequisite = {
-			focus = tnkd_new_mojave_3
-			focus = tnkd_new_mojave_5
 		}
 		prerequisite = {
 			focus = tnkd_new_mojave_4
@@ -2107,11 +2087,15 @@ focus_tree = {
 				ideology = people
 				popularity = 0.15
 			}
-			set_temp_variable = { tnk_broken_mojave_consumer_goods_factor_var_change = -0.04 }
+			add_stability = 0.1
+			set_temp_variable = { tnk_broken_mojave_consumer_goods_factor_var_change = 0.04 }
 			update_tnk_broken_mojave_consumer_goods_factor_var = yes
-			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.3 }
+			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.4 }
 			update_tnk_broken_mojave_resistance_activity_var = yes
-			add_ideas = tnkd_wastelander_relations
+			set_temp_variable = {
+                global.tnk_angels_of_death_var_change = 0.1
+            }
+            update_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -2161,10 +2145,6 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = tnkd_new_mojave_3
-			focus = tnkd_new_mojave_5
-		}
-		prerequisite = {
 			focus = tnkd_new_mojave_4
 		}
 		mutually_exclusive = {
@@ -2176,8 +2156,7 @@ focus_tree = {
 				ideology = intellectuals
 				popularity = 0.15
 			}
-			set_temp_variable = { tnk_broken_mojave_production_speed_buildings_factor_var_change = 0.12 }
-			update_tnk_broken_mojave_production_speed_buildings_factor_var = yes
+			add_stability = 0.1
 			custom_effect_tooltip = tnkd_new_mojave_7_tt_2
 			hidden_effect = {
 				every_controlled_state = {
@@ -2185,7 +2164,10 @@ focus_tree = {
 					add_state_population = yes
 				}
 			}
-			
+			set_temp_variable = {
+                global.tnk_angels_of_death_var_change = -0.1
+            }
+            update_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -2891,11 +2873,15 @@ focus_tree = {
 		bypass = {
 			not = { country_exists = NCR }
 		}
+		bypass_effect = {
+			add_war_support = 0.1
+		}
 		available = {
 			not = { is_in_faction_with = NCR }
 		}
 		will_lead_to_war_with = NCR
 		completion_reward = {
+			add_war_support = 0.1
 			declare_war_on = {
 				type = annex_everything
 				target = NCR
@@ -2915,11 +2901,15 @@ focus_tree = {
 		bypass = {
 			not = { country_exists = CES }
 		}
+		bypass_effect = {
+			add_war_support = 0.1
+		}
 		available = {
 			not = { is_in_faction_with = CES }
 		}
 		will_lead_to_war_with = CES
 		completion_reward = {
+			add_war_support = 0.1
 			declare_war_on = {
 				type = annex_everything
 				target = CES
@@ -3901,9 +3891,9 @@ focus_tree = {
 			}
 			country_event = nf_tnk.24
 			set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.1
+                global.tnk_angels_of_death_var_change = -0.1
             }
-            increase_tnk_angels_of_death_var = yes
+            update_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -4003,9 +3993,9 @@ focus_tree = {
 			
 			add_ideas = tnkd_a_narrow_path
 			set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.1
+                global.tnk_angels_of_death_var_change = -0.1
             }
-            increase_tnk_angels_of_death_var = yes
+            update_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -4073,9 +4063,9 @@ focus_tree = {
 			custom_effect_tooltip = tnkd_clean_slate_tt
 			activate_mission = tnkd_clean_slate_decision_0
 			set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.1
+                global.tnk_angels_of_death_var_change = -0.1
             }
-            increase_tnk_angels_of_death_var = yes
+            update_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -4167,10 +4157,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.1
-            }
-            increase_tnk_angels_of_death_var = yes
+			add_stability = 0.2
 		}
 	}
 	focus = {
@@ -4198,9 +4185,9 @@ focus_tree = {
 			}
 			country_event = nf_tnk.23
 			set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.1
+                global.tnk_angels_of_death_var_change = 0.1
             }
-            decrease_tnk_angels_of_death_var = yes
+            update_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -4302,9 +4289,9 @@ focus_tree = {
 			add_stability = 0.1
 			add_ideas = tnkd_a_narrow_path
 			set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.1
+                global.tnk_angels_of_death_var_change = 0.1
             }
-            decrease_tnk_angels_of_death_var = yes
+            update_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -4382,9 +4369,9 @@ focus_tree = {
 		completion_reward = {
 			country_event = nf_tnk.40
 			set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.1
+                global.tnk_angels_of_death_var_change = 0.1
             }
-            decrease_tnk_angels_of_death_var = yes
+            update_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {
@@ -4460,11 +4447,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = tnkd_gev_tt
-			activate_mission = tnkd_gev_decision
+			hidden_effect = {
+				activate_mission = tnkd_gev_decision
+			}
 			set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.1
+                global.tnk_angels_of_death_var_change = 0.2
             }
-            decrease_tnk_angels_of_death_var = yes
+            update_tnk_angels_of_death_var = yes
 		}
 	}
 	focus = {

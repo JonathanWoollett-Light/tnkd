@@ -706,9 +706,9 @@ tnkd_ncr_category = {
 				add_state_population = yes
             }
             set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.2
+                global.tnk_angels_of_death_var_change = -0.2
             }
-            increase_tnk_angels_of_death_var = yes
+            update_tnk_angels_of_death_var = yes
         }
         remove_effect = {
             add_manpower = 10000
@@ -1041,9 +1041,9 @@ tnkd_ces_category = {
 				add_state_population = yes
             }
             set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.2
+                global.tnk_angels_of_death_var_change = -0.2
             }
-            increase_tnk_angels_of_death_var = yes
+            update_tnk_angels_of_death_var = yes
         }
         remove_effect = {
             add_manpower = 10000
@@ -1172,9 +1172,9 @@ tnkd_minor_category = {
         remove_effect = {
             add_stability = 0.005
             set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.02
+                global.tnk_angels_of_death_var_change = 0.02
             }
-            decrease_tnk_angels_of_death_var = yes
+            update_tnk_angels_of_death_var = yes
         }
     }
     tnkd_lobot_mission = {
@@ -1197,9 +1197,9 @@ tnkd_minor_category = {
 				add_state_population = yes
             }
             set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.02
+                global.tnk_angels_of_death_var_change = -0.02
             }
-            increase_tnk_angels_of_death_var = yes
+            update_tnk_angels_of_death_var = yes
         }
         remove_effect = {
             add_manpower = 500
@@ -1230,9 +1230,9 @@ tnkd_minor_category = {
         complete_effect = {
             add_manpower = -250
             set_temp_variable = {
-                global.tnk_angels_of_death_var_temp = 0.02
+                global.tnk_angels_of_death_var_change = -0.02
             }
-            increase_tnk_angels_of_death_var = yes
+            update_tnk_angels_of_death_var = yes
         }
         remove_effect = {
             add_tech_bonus = {

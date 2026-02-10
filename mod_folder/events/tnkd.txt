@@ -892,9 +892,10 @@ country_event = {
 	option = {
 		name = nf_tnk.62.a
 		set_variable = { tnk_broken_mojave_production_speed_buildings_factor_var = -0.48 }
-		set_variable = { tnk_broken_mojave_consumer_goods_factor_var = 0.16 }
+		set_variable = { tnk_broken_mojave_consumer_goods_factor_var = 0.12 }
 		set_variable = { tnk_broken_mojave_no_compliance_gain_var = 1 }
 		set_variable = { tnk_broken_mojave_resistance_activity_var = 2 }
+		set_variable = { tnk_broken_mojave_compliance_growth_on_our_occupied_states_var = -1 }
 		add_dynamic_modifier = {
 			modifier = tnk_broken_mojave_dynamic_modifier
 		}

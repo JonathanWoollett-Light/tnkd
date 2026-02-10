@@ -29,6 +29,7 @@
 
 ### Medium Priority
 
+- allow same usage of archimedes as Mojave Chapter has
 - the fixing mojave focuses should be about specific states instead of the whole
 - G.E.V should have a nice decision category image
 - the carrot focus should trigger an event for each neighbour where we can decide if we want to give them the offer (it doesn't make sense to give an evil faction the offer)
