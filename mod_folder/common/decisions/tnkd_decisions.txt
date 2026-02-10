@@ -705,9 +705,7 @@ tnkd_ncr_category = {
                 set_temp_variable = { pop_add = -20000 }
 				add_state_population = yes
             }
-            set_temp_variable = {
-                global.tnk_angels_of_death_var_change = -0.2
-            }
+            set_temp_variable = { tnk_angels_of_death_var_change = -0.2 }
             update_tnk_angels_of_death_var = yes
         }
         remove_effect = {
@@ -1040,9 +1038,7 @@ tnkd_ces_category = {
                 set_temp_variable = { pop_add = -20000 }
 				add_state_population = yes
             }
-            set_temp_variable = {
-                global.tnk_angels_of_death_var_change = -0.2
-            }
+            set_temp_variable = { tnk_angels_of_death_var_change = -0.2 }
             update_tnk_angels_of_death_var = yes
         }
         remove_effect = {
@@ -1171,9 +1167,7 @@ tnkd_minor_category = {
         }
         remove_effect = {
             add_stability = 0.005
-            set_temp_variable = {
-                global.tnk_angels_of_death_var_change = 0.02
-            }
+            set_temp_variable = { tnk_angels_of_death_var_change = 0.02 }
             update_tnk_angels_of_death_var = yes
         }
     }
@@ -1196,9 +1190,7 @@ tnkd_minor_category = {
                 set_temp_variable = { pop_add = -1000 }
 				add_state_population = yes
             }
-            set_temp_variable = {
-                global.tnk_angels_of_death_var_change = -0.02
-            }
+            set_temp_variable = { tnk_angels_of_death_var_change = -0.02 }
             update_tnk_angels_of_death_var = yes
         }
         remove_effect = {
@@ -1229,9 +1221,7 @@ tnkd_minor_category = {
         days_remove = 30
         complete_effect = {
             add_manpower = -250
-            set_temp_variable = {
-                global.tnk_angels_of_death_var_change = -0.02
-            }
+            set_temp_variable = { tnk_angels_of_death_var_change = -0.02 }
             update_tnk_angels_of_death_var = yes
         }
         remove_effect = {

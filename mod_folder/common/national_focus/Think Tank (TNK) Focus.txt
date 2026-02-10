@@ -2092,9 +2092,7 @@ focus_tree = {
 			update_tnk_broken_mojave_consumer_goods_factor_var = yes
 			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.4 }
 			update_tnk_broken_mojave_resistance_activity_var = yes
-			set_temp_variable = {
-                global.tnk_angels_of_death_var_change = 0.1
-            }
+			set_temp_variable = { tnk_angels_of_death_var_change = 0.1 }
             update_tnk_angels_of_death_var = yes
 		}
 	}
@@ -2164,9 +2162,7 @@ focus_tree = {
 					add_state_population = yes
 				}
 			}
-			set_temp_variable = {
-                global.tnk_angels_of_death_var_change = -0.1
-            }
+			set_temp_variable = { tnk_angels_of_death_var_change = -0.1 }
             update_tnk_angels_of_death_var = yes
 		}
 	}
@@ -3890,9 +3886,7 @@ focus_tree = {
 				tnkd_convergance_idea
 			}
 			country_event = nf_tnk.24
-			set_temp_variable = {
-                global.tnk_angels_of_death_var_change = -0.1
-            }
+			set_temp_variable = { tnk_angels_of_death_var_change = -0.1 }
             update_tnk_angels_of_death_var = yes
 		}
 	}
@@ -3992,9 +3986,7 @@ focus_tree = {
 			}
 			
 			add_ideas = tnkd_a_narrow_path
-			set_temp_variable = {
-                global.tnk_angels_of_death_var_change = -0.1
-            }
+			set_temp_variable = { tnk_angels_of_death_var_change = -0.1 }
             update_tnk_angels_of_death_var = yes
 		}
 	}
@@ -4062,9 +4054,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = tnkd_clean_slate_tt
 			activate_mission = tnkd_clean_slate_decision_0
-			set_temp_variable = {
-                global.tnk_angels_of_death_var_change = -0.1
-            }
+			set_temp_variable = { tnk_angels_of_death_var_change = -0.1 }
             update_tnk_angels_of_death_var = yes
 		}
 	}
@@ -4184,9 +4174,7 @@ focus_tree = {
 				tnkd_convergance_idea
 			}
 			country_event = nf_tnk.23
-			set_temp_variable = {
-                global.tnk_angels_of_death_var_change = 0.1
-            }
+			set_temp_variable = { tnk_angels_of_death_var_change = 0.1 }
             update_tnk_angels_of_death_var = yes
 		}
 	}
@@ -4288,9 +4276,7 @@ focus_tree = {
 			}
 			add_stability = 0.1
 			add_ideas = tnkd_a_narrow_path
-			set_temp_variable = {
-                global.tnk_angels_of_death_var_change = 0.1
-            }
+			set_temp_variable = { tnk_angels_of_death_var_change = 0.1 }
             update_tnk_angels_of_death_var = yes
 		}
 	}
@@ -4368,9 +4354,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = nf_tnk.40
-			set_temp_variable = {
-                global.tnk_angels_of_death_var_change = 0.1
-            }
+			set_temp_variable = { tnk_angels_of_death_var_change = 0.1 }
             update_tnk_angels_of_death_var = yes
 		}
 	}
@@ -4450,9 +4434,7 @@ focus_tree = {
 			hidden_effect = {
 				activate_mission = tnkd_gev_decision
 			}
-			set_temp_variable = {
-                global.tnk_angels_of_death_var_change = 0.2
-            }
+			set_temp_variable = { tnk_angels_of_death_var_change = 0.2 }
             update_tnk_angels_of_death_var = yes
 		}
 	}
