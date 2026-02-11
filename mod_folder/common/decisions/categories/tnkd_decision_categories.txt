@@ -28,14 +28,7 @@ tnkd_gev_category = {
 		base = 13
 	}
 }
-tnkd_resource_consolidation = {
-	allowed = { tag = TNK }
-	priority = {
-		base = 14
-	}
-}
 tnkd_ncr_category = {
-	picture = GFX_decision_cat_picture_ncr_helios_one
 	allowed = {
 		OR = {
 			original_tag = TNK
@@ -45,7 +38,6 @@ tnkd_ncr_category = {
 	priority = 1000
 }
 tnkd_ces_category = {
-	picture = GFX_decision_cat_picture_legion_glory
 	allowed = {
 		OR = {
 			original_tag = TNK
@@ -55,6 +47,13 @@ tnkd_ces_category = {
 	priority = 1000
 }
 tnkd_minor_category = {
+	allowed = {
+		original_tag = TNK
+	}
+	priority = 1000
+}
+
+tnkd_mojave_category = {
 	allowed = {
 		original_tag = TNK
 	}

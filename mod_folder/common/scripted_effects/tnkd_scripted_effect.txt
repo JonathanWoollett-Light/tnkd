@@ -65,7 +65,9 @@ update_tnk_angels_of_death_var = {
 update_tnk_broken_mojave_consumer_goods_factor_var = {
 	if = {
 		limit = {
-			has_dynamic_modifier = tnk_broken_mojave
+			has_dynamic_modifier = {
+				modifier = tnk_broken_mojave_dynamic_modifier
+			}
 		}
 		custom_effect_tooltip = tnk_broken_mojave_consumer_goods_factor_var_tt
 		add_to_variable = { tnk_broken_mojave_consumer_goods_factor_var = tnk_broken_mojave_consumer_goods_factor_var_change }
@@ -74,18 +76,22 @@ update_tnk_broken_mojave_consumer_goods_factor_var = {
 update_tnk_broken_mojave_resistance_activity_var = {
 	if = {
 		limit = {
-			has_dynamic_modifier = tnk_broken_mojave
+			has_dynamic_modifier = {
+				modifier = tnk_broken_mojave_dynamic_modifier
+			}
 		}
 		custom_effect_tooltip = tnk_broken_mojave_resistance_activity_var_tt
 		add_to_variable = { tnk_broken_mojave_resistance_activity_var = tnk_broken_mojave_resistance_activity_var_change }
 	}
 }
-update_tnk_broken_mojave_compliance_growth_on_our_occupied_states_var = {
+update_tnk_broken_mojave_compliance_gain_var = {
 	if = {
 		limit = {
-			has_dynamic_modifier = tnk_broken_mojave
+			has_dynamic_modifier = {
+				modifier = tnk_broken_mojave_dynamic_modifier
+			}
 		}
-		custom_effect_tooltip = tnk_broken_mojave_compliance_growth_on_our_occupied_states_var_tt
-		add_to_variable = { tnk_broken_mojave_compliance_growth_on_our_occupied_states_var = tnk_broken_mojave_compliance_growth_on_our_occupied_states_var_change }
+		custom_effect_tooltip = tnk_broken_mojave_compliance_gain_var_tt
+		add_to_variable = { tnk_broken_mojave_compliance_gain_var = tnk_broken_mojave_compliance_gain_var_change }
 	}
 }

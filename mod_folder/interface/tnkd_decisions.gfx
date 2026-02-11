@@ -4,4 +4,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_picture_big_mt.dds"
         legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_ces"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_ces.dds"
+        legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_ncr"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_ncr.dds"
+        legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_mojave"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_mojave.dds"
+        legacy_lazy_load = no
+	}
 }

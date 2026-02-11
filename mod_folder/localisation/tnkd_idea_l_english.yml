@@ -48,7 +48,7 @@
  
 
  tnkd_ncr_category:0 "The Bears embrace"
- tnkd_ncr_category_desc:0 "The emergence of [TNK.getName] out of the chaos of the Mojave has only delayed the inevitable.\nThe bear will charge and hunter will become the hunted."
+ tnkd_ncr_category_desc:0 "\n\n\n\n\n\n\n\n\n\n\n£decision_cat_picture_ncr \n\n\n\n\n\n\n\n\n\n\n\n\nThe emergence of [TNK.getName] out of the chaos of the Mojave has only delayed the inevitable.\nThe bear will charge and hunter will become the hunted."
  tnkd_ncr_war_mission:0 "The [NCR.GetAdjective] [TNK.GetAdjective] war"
  tnkd_ncr_anti_decision:0 "Accelerate mobilization"
  tnkd_ncr_pp_decision:0 "Cover up atrocities"
@@ -60,7 +60,7 @@
  tnkd_ncr_temporary_peace_decision_tt:0 "Re-activates §Y$tnkd_ncr_war_mission$§! with §G240§! days until war."
 
  tnkd_ces_category:0 "The Lions roar"
- tnkd_ces_category_desc:0 "The emergence of [TNK.getName] out of the chaos of the Mojave has only delayed the inevitable.\nThe lion will roar and the dam will be tested."
+ tnkd_ces_category_desc:0 "\n\n\n\n\n\n\n\n\n\n\n£decision_cat_picture_ces \n\n\n\n\n\n\n\n\n\n\n\n\nThe emergence of [TNK.getName] out of the chaos of the Mojave has only delayed the inevitable.\nThe lion will roar and the dam will be tested."
  tnkd_ces_war_mission:0 "The [CES.GetAdjective] [TNK.GetAdjective] war"
  tnkd_ces_anti_decision:0 "Accelerate mobilization"
  tnkd_ces_pp_decision:0 "Gift slaves"
@@ -106,6 +106,9 @@
 
  tnkd_minor_category:0 "Cleaning the Lab"
  tnkd_minor_category_desc:0 "\n\n\n\n\n\n\n£decision_cat_picture_big_mt \n\n\n\n\n\n\n\n\n\n\n\nGreat things are done by a series of small things brought together."
+
+ tnkd_mojave_category:0 "Rebuilding the Mojave"
+ tnkd_mojave_category_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£decision_cat_picture_mojave \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Mojave is a mess, a broken land of chaos and suffering, our re-emergence has only made it worse, it is our mess to fix."
 
  tnkd_aggressive_abductions_idea:0 "MORE MEAT!!!"
  tnkd_aggressive_abductions_idea_desc:0 "We shall shovel human lives into our machine of war like coal in an engine."
@@ -182,7 +185,7 @@
 
  tnk_broken_mojave_consumer_goods_factor_var_tt:0 "Modifies §H£consumer_goods_texticon Consumer Goods Factor§! for §H$tnk_broken_mojave_dynamic_modifier$§! by [?tnk_broken_mojave_consumer_goods_factor_var_change|-%] (Current: [?tnk_broken_mojave_consumer_goods_factor_var|-%])"
  tnk_broken_mojave_resistance_activity_var_tt:0 "Modifies §H£GFX_legitimacy Resistance Activity§! for §H$tnk_broken_mojave_dynamic_modifier$§! by [?tnk_broken_mojave_resistance_activity_var_change|-%] (Current: [?tnk_broken_mojave_resistance_activity_var|-%])"
- tnk_broken_mojave_compliance_growth_on_our_occupied_states_var_tt:0 "Modifies §H£GFX_decision_icon_small Compliance Growth§! for §H$tnk_broken_mojave_dynamic_modifier$§! by [?tnk_broken_mojave_compliance_growth_on_our_occupied_states_var_change|+%] (Current: [?tnk_broken_mojave_compliance_growth_on_our_occupied_states_var|+%])"
+ tnk_broken_mojave_compliance_gain_var_tt:0 "Modifies §H£GFX_decision_icon_small Daily Compliance Gain§! for §H$tnk_broken_mojave_dynamic_modifier$§! by [?tnk_broken_mojave_compliance_gain_var_change|+] (Current: [?tnk_broken_mojave_compliance_gain_var|+])"
 
  tnkd_veg_concessions:0 "The cost of doing business"
  tnkd_veg_concessions_desc:0 "[VEG.getName] is boxed in on all sides, to convince them to join us and give up their territorial ambitions in the Mojave comes at a steep price."

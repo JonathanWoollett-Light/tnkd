@@ -26,5 +26,5 @@ tnk_broken_mojave_dynamic_modifier = {
 	consumer_goods_factor = tnk_broken_mojave_consumer_goods_factor_var
 	no_compliance_gain = tnk_broken_mojave_no_compliance_gain_var
 	resistance_activity = tnk_broken_mojave_resistance_activity_var
-	compliance_growth_on_our_occupied_states = tnk_broken_mojave_compliance_growth_on_our_occupied_states_var
+	compliance_gain = tnk_broken_mojave_compliance_gain_var
 }

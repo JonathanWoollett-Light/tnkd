@@ -1505,6 +1505,7 @@ focus_tree = {
 			set_temp_variable = { science_change = -100000 }
 			tnk_change_science = yes
 			country_event = nf_tnk.17
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	focus = {
@@ -1813,6 +1814,7 @@ focus_tree = {
 		}
 		relative_position_id = tnk_personality_restoration
 		completion_reward = {
+			custom_effect_tooltip = tnkd_new_mojave_tt_2
 			country_event = nf_tnk.62
 		}
 	}
@@ -1886,8 +1888,8 @@ focus_tree = {
 				popularity = 0.15
 			}
 			add_political_power = 60
-			set_temp_variable = { tnk_broken_mojave_compliance_growth_on_our_occupied_states_var_change = 0.2 }
-			update_tnk_broken_mojave_compliance_growth_on_our_occupied_states_var = yes
+			set_temp_variable = { tnk_broken_mojave_compliance_gain_var_change = 0.25 }
+			update_tnk_broken_mojave_compliance_gain_var = yes
 		}
 	}
 	focus = {
@@ -1922,6 +1924,7 @@ focus_tree = {
 			set_technology = { power_armour_tech_level_tribal = 1 }
 			set_temp_variable = { tnk_broken_mojave_resistance_activity_var_change = -0.2 }
 			update_tnk_broken_mojave_resistance_activity_var = yes
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	focus = {
@@ -1929,6 +1932,9 @@ focus_tree = {
 		icon = GFX_goal_MOJ_elijah
 		cost = 30
 		y = 2
+		allow_branch = {
+			has_completed_focus = tnkd_new_mojave_3
+		}
 		prerequisite = {
 			focus = tnkd_new_mojave_3
 		}
@@ -1981,7 +1987,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_dynamic_modifier = tnk_broken_mojave
+					has_dynamic_modifier = {
+						modifier = tnk_broken_mojave_dynamic_modifier
+					}
 				}
 				set_temp_variable = { tnk_broken_mojave_consumer_goods_factor_var_change = 0.08 }
 				update_tnk_broken_mojave_consumer_goods_factor_var = yes
@@ -2268,10 +2276,10 @@ focus_tree = {
 			46 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 4
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 12
 			}
 		}
 	}
@@ -3465,14 +3473,82 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = tnkd_reindustrialization
+		icon = GFX_goal_generic_generator_fusion
+		cost = 120
+		y = 1
+		relative_position_id = tnkd_serenity
+		prerequisite = {
+			focus = tnkd_serenity
+		}
+		prerequisite = {
+			focus = tnkd_a_future_vision
+			focus = tnkd_the_future_vision
+		}
+		available = {
+			all_core_state = {
+				is_owned_and_controlled_by = ROOT	
+			}
+			has_completed_focus = tnkd_northern_mojave
+			has_completed_focus = tnkd_southern_mojave
+			has_stability > 0.8
+			custom_trigger_tooltip = {
+				tooltip = tnkd_reindustrialization_tt
+				all_state = {
+					if = {
+						limit = {
+							OR = {
+								region = 3
+								region = 32
+							}
+						}
+						is_owned_and_controlled_by = TNK
+						has_active_resistance = no
+					}
+				}
+			}
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						region = 3
+						region = 32
+					}
+				}
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_resource = {
+					type = metal
+					amount = -2
+					show_state_in_tooltip = no
+				}
+				add_resource = {
+					type = water
+					amount = -1
+					show_state_in_tooltip = no
+				}
+			}
+		}
+	}
+	focus = {
 		id = tnkd_theoretical_production_focus
 		icon = GFX_goal_generic_microscope
 		cost = 60
 		y = 1
-		x = 2
-		relative_position_id = tnkd_serenity
+		x = 1
+		relative_position_id = tnkd_reindustrialization
 		prerequisite = {
-			focus = tnkd_serenity
+			focus = tnkd_reindustrialization
 		}
 		completion_reward = {
 			add_ideas = tnkd_theoretical_production
@@ -3483,13 +3559,14 @@ focus_tree = {
 		icon = GFX_goal_generic_dam
 		cost = 60
 		y = 1
-		relative_position_id = tnkd_serenity
+		x = -1
+		relative_position_id = tnkd_reindustrialization
 		prerequisite = {
-			focus = tnkd_serenity
+			focus = tnkd_reindustrialization
 		}
 		available = {
 			252 = {
-				tnkd_sphere_controls_state = yes
+				is_owned_and_controlled_by = TNK
 			}
 		}
 		completion_reward = {
@@ -3501,243 +3578,81 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = tnkd_better_reactors
-		icon = GFX_goal_tnkd_new_reactor
-		cost = 60
-		y = 2
-		relative_position_id = tnkd_dam
-		prerequisite = {
-			focus = tnkd_dam
-		}
-		available = {
-			has_completed_focus = tnkd_tech_ascendance
-		}
-		completion_reward = {
-			add_resource = {
-				type = energy
-				amount = 20
-				state = 47
-			}
-		}
-	}
-	focus = {
-		id = tnkd_expansion_one
-		icon = GFX_goal_generic_generator_fusion
-		cost = 60
+		id = tnkd_northern_mojave
+		icon = GFX_goal_NCR_Propaganda_1
+		cost = 90
 		y = 1
 		x = -2
-		relative_position_id = tnkd_serenity
+		relative_position_id = tnkd_next_steps
 		prerequisite = {
-			focus = tnkd_serenity
+			focus = tnkd_next_steps
 		}
 		available = {
 			all_core_state = {
 				is_controlled_by = ROOT	
 			}
-		}
-		completion_reward = {
-			hidden_effect = {
-				every_core_state = {
-					add_extra_state_shared_building_slots = 12
-					add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = industrial_complex
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-			custom_effect_tooltip = tnkd_expansion_one_tt
-		}
-	}
-	focus = {
-		id = tnkd_expansion_two
-		icon = GFX_goal_generic_Legion_diplomatic_focus
-		cost = 60
-		y = 2
-		x = 1
-		relative_position_id = tnkd_serenity
-		prerequisite = {
-			focus = tnkd_serenity
-		}
-		available = {
-			all_core_state = {
-				is_controlled_by = ROOT	
-			}
+			has_stability > 0.8
 			custom_trigger_tooltip = {
-				tooltip = tnkd_expansion_three_tt
-				hidden_trigger = {
-					127 = {
-						tnkd_sphere_controls_state = yes
-					}
-					508 = {
-						tnkd_sphere_controls_state = yes
-					}
-					361 = {
-						tnkd_sphere_controls_state = yes
-					}
-					428 = {
-						tnkd_sphere_controls_state = yes
-					}
-					224 = {
-						tnkd_sphere_controls_state = yes
-					}
-					446 = {
-						tnkd_sphere_controls_state = yes
-					}
-					383 = {
-						tnkd_sphere_controls_state = yes
-					}
-					294 = {
-						tnkd_sphere_controls_state = yes
-					}
-					43 = {
-						tnkd_sphere_controls_state = yes
-					}
-					72 = {
-						tnkd_sphere_controls_state = yes
+				tooltip = tnkd_northern_mojave_tt
+				all_state = {
+					if = {
+						limit = {
+							region = 3
+						}
+						is_owned_and_controlled_by = TNK
+						has_active_resistance = no
 					}
 				}
 			}
 		}
 		completion_reward = {
 			add_stability = 0.1
+			every_state = {
+				limit = {
+					region = 3
+					not = { is_core_of = TNK }
+				}
+				add_core_of = TNK
+			}
 		}
 	}
 	focus = {
-		id = tnkd_expansion_three
-		icon = GFX_goal_generic_NCR_diplomatic_focus
-		cost = 60
-		y = 2
-		x = -1
-		relative_position_id = tnkd_serenity
+		id = tnkd_southern_mojave
+		icon = GFX_goal_brahmin_cart
+		cost = 90
+		y = 1
+		x = 2
+		relative_position_id = tnkd_next_steps
 		prerequisite = {
-			focus = tnkd_serenity
+			focus = tnkd_next_steps
 		}
 		available = {
 			all_core_state = {
 				is_controlled_by = ROOT	
 			}
+			has_stability > 0.8
 			custom_trigger_tooltip = {
-				tooltip = tnkd_expansion_two_tt
-				hidden_trigger = {
-					13 = {
-						tnkd_sphere_controls_state = yes
-					}
-					46 = {
-						tnkd_sphere_controls_state = yes
-					}
-					106 = {
-						tnkd_sphere_controls_state = yes
-					}
-					137 = {
-						tnkd_sphere_controls_state = yes
-					}
-					154 = {
-						tnkd_sphere_controls_state = yes
-					}
-					211 = {
-						tnkd_sphere_controls_state = yes
-					}
-					236 = {
-						tnkd_sphere_controls_state = yes
-					}
-					252 = {
-						tnkd_sphere_controls_state = yes
-					}
-					271 = {
-						tnkd_sphere_controls_state = yes
-					}
-					313 = {
-						tnkd_sphere_controls_state = yes
-					}
-					329 = {
-						tnkd_sphere_controls_state = yes
-					}
-					344 = {
-						tnkd_sphere_controls_state = yes
-					}
-					380 = {
-						tnkd_sphere_controls_state = yes
-					}
-					417 = {
-						tnkd_sphere_controls_state = yes
-					}
-					552 = {
-						tnkd_sphere_controls_state = yes
-					}
-					573 = {
-						tnkd_sphere_controls_state = yes
-					}
-					592 = {
-						tnkd_sphere_controls_state = yes
-					}
-					613 = {
-						tnkd_sphere_controls_state = yes
+				tooltip = tnkd_southern_mojave_tt
+				all_state = {
+					if = {
+						limit = {
+							region = 32
+						}
+						is_owned_and_controlled_by = TNK
+						has_active_resistance = no
 					}
 				}
 			}
 		}
 		completion_reward = {
 			add_stability = 0.1
-		}
-	}
-	focus = {
-		id = tnkd_western_cores
-		icon = GFX_goal_generic_NCR_diplomatic_focus
-		cost = 30
-		y = 2
-		relative_position_id = tnkd_expansion_three
-		prerequisite = {
-			focus = tnkd_expansion_three
-		}
-		available = {
-			all_core_state = {
-				is_controlled_by = ROOT	
+			every_state = {
+				limit = {
+					region = 32
+					not = { is_core_of = TNK }
+				}
+				add_core_of = TNK
 			}
-		}
-		bypass = {
-			77 = {
-				is_core_of = TNK
-			}
-			620 = {
-				is_core_of = TNK
-			}
-		}
-		completion_reward = {
-			add_state_core = 77
-			add_state_core = 620
-		}
-	}
-	focus = {
-		id = tnkd_eastern_cores
-		icon = GFX_goal_generic_Legion_diplomatic_focus
-		cost = 30
-		y = 2
-		relative_position_id = tnkd_expansion_two
-		prerequisite = {
-			focus = tnkd_expansion_two
-		}
-		available = {
-			all_core_state = {
-				is_controlled_by = ROOT	
-			}
-		}
-		bypass = {
-			380 = {
-				is_core_of = TNK
-			}
-			613 = {
-				is_core_of = TNK
-			}
-		}
-		completion_reward = {
-			add_state_core = 380
-			add_state_core = 613
 		}
 	}
 	focus = {
@@ -3866,15 +3781,15 @@ focus_tree = {
 		id = tnkd_true_convergance
 		icon = GFX_goal_tnkd_true_convergance
 		cost = 120
-		y=1
-		x=5
+		y = 1
+		x = 3
 		relative_position_id = tnkd_convergance
 		prerequisite = {
 			focus = tnkd_convergance
 		}
 		available = {
 			has_army_manpower = { size < 501 }
-			intellectuals > 0.8
+			intellectuals > 0.1
 			not = { has_completed_focus = tnkd_new_mojave_6 }
 		}
 		mutually_exclusive = {
@@ -4154,15 +4069,15 @@ focus_tree = {
 		id = tnkd_mobius_convergance
 		icon = GFX_goal_tnkd_mobius_convergance
 		cost = 160
-		y=1
-		x=-5
+		y = 1
+		x = -3
 		relative_position_id = tnkd_convergance
 		prerequisite = {
 			focus = tnkd_convergance
 		}
 		available = {
 			has_army_manpower = { size < 501 }
-			ruler > 0.8
+			ruler > 0.1
 			not = { has_completed_focus = tnkd_new_mojave_7 }
 		}
 		mutually_exclusive = {
@@ -5029,9 +4944,9 @@ focus_tree = {
 	}
 	focus = {
 		id = tnkd_final
-		icon = GFX_goal_tnkd_final
+		icon = GFX_goal_animated_mojave_drive_inn
 		cost = 10
-		y = 6
+		y = 5
 		relative_position_id = tnkd_serenity
 		prerequisite = {
 			focus = tnkd_peace
@@ -5062,11 +4977,14 @@ focus_tree = {
 	focus = {
 		id = tnkd_invite_lunar_legion
 		icon = GFX_goal_CES_roman_eagle
-		cost = 30
+		cost = 15
 		y = 1
 		relative_position_id = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
 		prerequisite = {
 			focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
+		}
+		allow_branch = {
+			has_completed_focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
 		}
 		available = {
 			country_exists = lul
@@ -5109,12 +5027,12 @@ focus_tree = {
 	focus = {
 		id = tnkd_lunar_legion_radar
 		icon = GFX_goal_lul_undead_legion
-		cost = 30
+		cost = 15
 		y = 1
-		x = 2
-		relative_position_id = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
+		x = -1
+		relative_position_id = tnkd_invite_lunar_legion
 		prerequisite = {
-			focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
+			focus = tnkd_invite_lunar_legion
 		}
 		available = {
 			country_exists = lul
@@ -5144,12 +5062,12 @@ focus_tree = {
 	focus = {
 		id = tnkd_lunar_legion_firepower
 		icon = GFX_goal_lul_denarius
-		cost = 30
+		cost = 15
 		y = 1
-		x = -2
-		relative_position_id = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
+		x = 1
+		relative_position_id = tnkd_invite_lunar_legion
 		prerequisite = {
-			focus = tnk_dala_watching_the_bull_dance_show_them_something_beautiful
+			focus = tnkd_invite_lunar_legion
 		}
 		available = {
 			country_exists = lul
@@ -5179,14 +5097,11 @@ focus_tree = {
 	focus = {
 		id = tnkd_lunar_legion_investment
 		icon = GFX_goal_HEA_focus_wings_of_the_angels
-		cost = 30
-		y = 1
+		cost = 15
+		y = 2
 		relative_position_id = tnkd_invite_lunar_legion
 		prerequisite = {
 			focus = tnkd_lunar_legion_radar
-		}
-		prerequisite = {
-			focus = tnkd_invite_lunar_legion
 		}
 		prerequisite = {
 			focus = tnkd_lunar_legion_firepower
@@ -5217,7 +5132,7 @@ focus_tree = {
 	focus = {
 		id = lul_1
 		icon = GFX_goal_lul_service_in_undeath
-		cost = 60
+		cost = 30
 		x = 15
 		y = 0
 
@@ -5237,7 +5152,7 @@ focus_tree = {
 	focus = {
 		id = lul_carthage
 		icon = GFX_goal_lul_hanged_man
-		cost = 60
+		cost = 30
 		x = -6
 		y = 1
 		prerequisite = {
@@ -5261,7 +5176,7 @@ focus_tree = {
 	focus = {
 		id = lul_conversion
 		icon = GFX_goal_lul_conversion
-		cost = 60
+		cost = 30
 		x = -3
 		y = 1
 		prerequisite = {
@@ -5277,7 +5192,7 @@ focus_tree = {
 	focus = {
 		id = lul_hero_legends
 		icon = GFX_goal_CES_women_marriage
-		cost = 60
+		cost = 30
 		x = -1
 		y = 1
 		prerequisite = {
@@ -5293,7 +5208,7 @@ focus_tree = {
 	focus = {
 		id = lul_equipment
 		icon = GFX_goal_roman_helmet
-		cost = 60
+		cost = 30
 		x = 1
 		y = 1
 		prerequisite = {
@@ -5312,7 +5227,7 @@ focus_tree = {
 	focus = {
 		id = lul_stadium_of_the_dead
 		icon = GFX_goal_CES_colosseum
-		cost = 60
+		cost = 30
 		x = 0
 		y = 1
 		available = {
@@ -5337,7 +5252,7 @@ focus_tree = {
 	focus = {
 		id = lul_cult_of_luna
 		icon = GFX_goal_lul_luna
-		cost = 60
+		cost = 30
 		x = 0
 		y = 1
 		prerequisite = {
@@ -5353,7 +5268,7 @@ focus_tree = {
 	focus = {
 		id = lul_spqr
 		icon = GFX_goal_CES_roman_eagle
-		cost = 60
+		cost = 30
 		x = 0
 		y = 3
 		prerequisite = {
@@ -5402,7 +5317,7 @@ focus_tree = {
 	focus = {
 		id = lul_trade
 		icon = GFX_goal_lul_denarius
-		cost = 60
+		cost = 30
 		x = 3
 		y = 1
 		prerequisite = {
@@ -5421,7 +5336,7 @@ focus_tree = {
 	focus = {
 		id = lul_pontifex_maximus
 		icon = GFX_goal_roman_senate_focus
-		cost = 60
+		cost = 30
 		x = 1
 		y = 1
 		available = {
@@ -5446,7 +5361,7 @@ focus_tree = {
 	focus = {
 		id = lul_lunar_wealth
 		icon = GFX_generic_gold_bars
-		cost = 60
+		cost = 30
 		x = -1
 		y = 1
 		prerequisite = {
@@ -5465,7 +5380,7 @@ focus_tree = {
 	focus = {
 		id = lul_hellenics
 		icon = GFX_goal_lul_undead_legion
-		cost = 60
+		cost = 30
 		x = 6
 		y = 1
 		available = {

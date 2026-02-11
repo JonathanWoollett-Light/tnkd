@@ -15,10 +15,18 @@
   tnkd_gev_category:0 "G.E.V."
   tnkd_gev_decision:0 "§PG.E.V.§!"
   
-  tnkd_resource_consolidation:0 "Resource Consolidation"
   tnkd_resource_consolidation_decision:0 "Resource Consolidation"
-  tnkd_resource_consolidation_decision_tt:0 "Moves a random resource to the capital."
+  tnkd_resource_consolidation_decision_tt:0 "No owned state has atleast §Y3£resources_strip_texticon|3 §!, §Y1£resources_strip_texticon|4 §!, §Y1£resources_strip_texticon|5 §! or §Y1£resources_strip_texticon|6 §!."
+  tnkd_resource_consolidation_decision_metal_tt:0 "Moves production of §Y1£resources_strip_texticon|3 §! to §Y[TNK.capital.GetName]§!."
+  tnkd_resource_consolidation_decision_composites_tt:0 "Moves production of §Y1£resources_strip_texticon|4 §! to §Y[TNK.capital.GetName]§!."
+  tnkd_resource_consolidation_decision_circuitry_tt:0 "Moves production of §Y1£resources_strip_texticon|5 §! to §Y[TNK.capital.GetName]§!."
+  tnkd_resource_consolidation_decision_advanced_tt:0 "Moves production of §Y1£resources_strip_texticon|6 §! to §Y[TNK.capital.GetName]§!."
 
   tnkd_border_war_category:0 "Border Wars"
   tnkd_ces_border_war_decision:0 "Battle of Weathertop"
   tnkd_ncr_border_war_decision:0 "The Long War"
+
+  tnkd_northern_mojave_industry_mission:0 "Northern Mojave Industry"
+  tnkd_northern_mojave_military_mission:0 "Northern Mojave Military"
+  tnkd_quarry_junction_mission:0 "Clearing Quarry Junction"
+  tnkd_quarry_junction_mission_desc:0 "The deathclaws and other creatures of the quarry junction are a constant threat to the people (and more importantly industry) in the region, we must clear them out."

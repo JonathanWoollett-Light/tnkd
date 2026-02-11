@@ -23,12 +23,15 @@
 
 ### High Priority
 
-- add these guns https://fallout.fandom.com/wiki/Category:Old_World_Blues_weapons
+- add focuses that give civ/mils in capital (maybe some missions that allow economic raids with neighbours to steal civs/mils)
+- re-industrializing the Mojave should be similar to convergance in that it should be a mission and various events that give buffs.
 - balance robo-scorpions and other units so think tank is forced to have a varied army e.g. also using infantry (lobotomites).
 - When NCR/CES refuses/accepts to return land it should trigger an event that communicates this rather than the affect happening silently (e.g. they could refuse and someone doesn't notice the border war mission is now avaible).
 
 ### Medium Priority
 
+- add these guns https://fallout.fandom.com/wiki/Category:Old_World_Blues_weapons
+- change convergance to be a decision category with a bunch of missions that spawn negative events related to the convergance (e.g. lobotomites escapes, robots self destruct, factories deconstructs itself, etc.) to give a more impactful feeling of things falling apart.
 - allow same usage of archimedes as Mojave Chapter has
 - the fixing mojave focuses should be about specific states instead of the whole
 - G.E.V should have a nice decision category image
@@ -43,11 +46,13 @@
 
 ### Low Priority
 
+- when triggering the broken mojave event which the "Almost makes you wish for a nuclear winter" it would be fun to play an audio clip of the npc saying "patrolling the mojave almost makes you wish for a nuclear winter".
 - Make AI Think Tank more interesting
   - Always beats Mojave Brotherhood
   - Spawn with more units
   - Code AI path through focus tree
   - Possibly give AI buffs not given to players
+- add a blowing up the hoover damn decisions/focus (bc whole point is for the think tank is that they fck around and find out)
 - add decisions that allow temporarily occupying territory for expeditions without declaring war
 - add more NCR/CES targeted buffs for TNK to help win but not be op
 - a new countries (aliens, dwemer and vikings) for expeditions paths

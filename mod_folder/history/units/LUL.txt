@@ -33,168 +33,168 @@ units = {
 		name = "1st Hold Triarii"
 		location = 9074
 		division_template = "Triarii"
-		start_experience_factor = 0.15
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2nd Hold Triarii"
 		location = 9074
 		division_template = "Triarii"
-		start_experience_factor = 0.15
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "3rd Hold Triarii"
 		location = 9074
 		division_template = "Triarii"
-		start_experience_factor = 0.15
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Cotton Triarii"
 		location = 965
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Wells Triarii"
 		location = 968
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Bonelli Triarii"
-		location =  1623
+		location =  4523
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Frontsman Triarii"
 		location =  978
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Frontsman Triarii"
 		location =  5173
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Frontsman Triarii"
 		location =  1541
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Frontsman Triarii"
 		location =  958
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Frontsman Triarii"
 		location =  1863
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Frontsman Triarii"
 		location =  1864
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Frontsman Triarii"
 		location =  1865
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Frontsman Triarii"
 		location =  3221
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Frontsman Triarii"
 		location =  5648
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Frontsman Triarii"
 		location =  931
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Frontsman Triarii"
 		location =  932
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "1st Hold Triarii"
 		location = 9074
 		division_template = "Triarii"
-		start_experience_factor = 0.15
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2nd Hold Triarii"
 		location = 9074
 		division_template = "Triarii"
-		start_experience_factor = 0.15
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "3rd Hold Triarii"
 		location = 9074
 		division_template = "Triarii"
-		start_experience_factor = 0.15
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Cotton Triarii"
 		location = 965
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Wells Triarii"
 		location = 968
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Bonelli Triarii"
-		location =  1623
+		location =  4523
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Frontsman Triarii"
 		location =  978
 		division_template = "Triarii"
-		start_experience_factor = 0.16
+		start_experience_factor = 0.45
 		start_equipment_factor = 1.0
 	}
 }

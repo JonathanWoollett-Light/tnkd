@@ -3,17 +3,11 @@ tnkd_ingenuity = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
         allowed = { tag = TNK }
-        activation = {
-            always = no
-        }
-        available = {
-            always = no
-        }
+        activation = { always = no }
+        available = { hidden_trigger = { always = no } }
         fixed_random_seed = no
         is_good = yes
-        selectable_mission = yes
         days_mission_timeout = 20
-        
         timeout_effect = {
             if = {
                 limit = {
@@ -37,17 +31,11 @@ tnkd_decohesion = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
         allowed = { tag = TNK }
-        activation = {
-            always = no
-        }
-        available = {
-            always = no
-        }
+        activation = { always = no }
+        available = { hidden_trigger = { always = no } }
         fixed_random_seed = no
         is_good = no
-        selectable_mission = yes
         days_mission_timeout = 20
-        
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_decohesion_decision
@@ -64,17 +52,11 @@ tnkd_clean_slate = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
         allowed = { tag = TNK }
-        activation = {
-            always = no
-        }
-        available = {
-            always = no
-        }
+        activation = { always = no }
+        available = { hidden_trigger = { always = no } }
         fixed_random_seed = no
         is_good = no
-        selectable_mission = yes
         days_mission_timeout = 90
-        
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_clean_slate_decision_0
@@ -99,17 +81,11 @@ tnkd_clean_slate = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
         allowed = { tag = TNK }
-        activation = {
-            always = no
-        }
-        available = {
-            always = no
-        }
+        activation = { always = no }
+        available = { hidden_trigger = { always = no } }
         fixed_random_seed = no
         is_good = no
-        selectable_mission = yes
         days_mission_timeout = 90
-        
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_clean_slate_decision_1
@@ -134,17 +110,11 @@ tnkd_clean_slate = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
         allowed = { tag = TNK }
-        activation = {
-            always = no
-        }
-        available = {
-            always = no
-        }
+        activation = { always = no }
+        available = { hidden_trigger = { always = no } }
         fixed_random_seed = no
         is_good = no
-        selectable_mission = yes
         days_mission_timeout = 90
-        
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_clean_slate_decision_2
@@ -169,17 +139,11 @@ tnkd_clean_slate = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
         allowed = { tag = TNK }
-        activation = {
-            always = no
-        }
-        available = {
-            always = no
-        }
+        activation = { always = no }
+        available = { hidden_trigger = { always = no } }
         fixed_random_seed = no
         is_good = no
-        selectable_mission = yes
         days_mission_timeout = 90
-        
         timeout_effect = {
             hidden_effect = {
                 activate_mission = tnkd_clean_slate_decision_3
@@ -207,15 +171,10 @@ tnkd_dna_shattering = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
         allowed = { tag = TNK }
-        activation = {
-            always = no
-        }
-        available = {
-            always = no
-        }
+        activation = { always = no }
+        available = { hidden_trigger = { always = no } }
         fixed_random_seed = no
         is_good = yes
-        selectable_mission = yes
         days_mission_timeout = 7
         timeout_effect = {
             hidden_effect = {
@@ -236,15 +195,10 @@ tnkd_gev_category = {
         icon = GFX_decision_generic_scorched_earth
         priority = 1000
         allowed = { tag = TNK }
-        activation = {
-            always = no
-        }
-        available = {
-            always = no
-        }
+        activation = { always = no }
+        available = { hidden_trigger = { always = no } }
         fixed_random_seed = no
         is_good = yes
-        selectable_mission = yes
         days_mission_timeout = 30
         timeout_effect = {
             hidden_effect = {
@@ -271,100 +225,6 @@ tnkd_gev_category = {
                         }
                         70 = {
 
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-tnkd_resource_consolidation = {
-    tnkd_resource_consolidation_decision = {
-        icon = GFX_decision_generic_scorched_earth
-        priority = 1000
-        allowed = { tag = TNK }
-        activation = {
-            always = no
-        }
-        available = {
-            always = no
-        }
-        fixed_random_seed = no
-        is_good = yes
-        selectable_mission = yes
-        days_mission_timeout = 10
-        timeout_effect = {
-            hidden_effect = {
-                activate_mission = tnkd_resource_consolidation_decision
-            }
-            custom_effect_tooltip = tnkd_resource_consolidation_decision_tt
-            random_list = {
-                1 = {
-                    random_owned_state = {
-                        limit = {
-                            metal > 0
-                        }
-                        add_resource = {
-                            type = metal
-                            amount = -1
-                        }
-                        capital_scope = {
-                            add_resource = {
-                                type = metal
-                                amount = 1
-                            }
-                        }
-                    }
-                }
-                1 = {
-                    random_owned_state = {
-                        limit = {
-                            composites > 0
-                        }
-                        add_resource = {
-                            type = composites
-                            amount = -1
-                        }
-                        capital_scope = {
-                            add_resource = {
-                                type = composites
-                                amount = 1
-                            }
-                        }
-                    }
-                }
-                1 = {
-                    random_owned_state = {
-                        limit = {
-                            advanced > 0
-                        }
-                        add_resource = {
-                            type = advanced
-                            amount = -1
-                        }
-                        capital_scope = {
-                            add_resource = {
-                                type = advanced
-                                amount = 1
-                            }
-                        }
-                    }
-                }
-                1 = {
-                    random_owned_state = {
-                        limit = {
-                            circuitry > 0
-                        }
-                        add_resource = {
-                            type = circuitry
-                            amount = -1
-                        }
-                        capital_scope = {
-                            add_resource = {
-                                type = circuitry
-                                amount = 1
-                            }
                         }
                     }
                 }
@@ -568,20 +428,27 @@ tnkd_ncr_category = {
     }
     tnkd_ncr_war_mission = {
         icon = generic_prepare_civil_war
-        allowed = { always = no }
-        activation = {
-            has_country_flag = TNK
-        }
-        available = {
-            always = no
-        }
+        priority = 1000
+        allowed = { tag = TNK }
+        activation = { always = no }
+        available = { hidden_trigger = { always = no } }
         cancel_trigger = { # Edge-Casing
-			OR = {
-				TNK = { has_war_with = NCR }
-				TNK = { exists = no }
-				NCR = { exists = no }
-                TNK = { has_completed_focus = tnkd_siding_with_ncr }
-			}
+            if = {
+                limit = { tag = NCR }
+                OR = {
+                    TNK = { exists = no }
+                    has_war_with = TNK
+                    TNK = { has_completed_focus = tnkd_siding_with_ncr }
+                }
+            }
+            if = {
+                limit = { tag = TNK }
+                OR = {
+                    NCR = { exists = no }
+                    has_war_with = NCR
+                    has_completed_focus = tnkd_siding_with_ncr
+                }
+            }
 		}
         days_mission_timeout = global.tnk_ncr_war_countdown
         is_good = no
@@ -909,20 +776,27 @@ tnkd_ces_category = {
     }
     tnkd_ces_war_mission = {
         icon = generic_prepare_civil_war
-        allowed = { always = no }
-        activation = {
-            has_country_flag = TNK
-        }
-        available = {
-            always = no
-        }
+        priority = 1000
+        allowed = { tag = TNK }
+        activation = { always = no }
+        available = { hidden_trigger = { always = no } }
         cancel_trigger = { # Edge-Casing
-			OR = {
-				TNK = { has_war_with = CES }
-				TNK = { exists = no }
-				CES = { exists = no }
-                TNK = { has_completed_focus = tnkd_siding_with_ces }
-			}
+			if = {
+                limit = { tag = CES }
+                OR = {
+                    TNK = { exists = no }
+                    has_war_with = TNK
+                    TNK = { has_completed_focus = tnkd_siding_with_ces }
+                }
+            }
+            if = {
+                limit = { tag = TNK }
+                OR = {
+                    CES = { exists = no }
+                    has_war_with = CES
+                    has_completed_focus = tnkd_siding_with_ces
+                }
+            }
 		}
         is_good = no
         days_mission_timeout = global.tnk_ces_war_countdown
@@ -1066,6 +940,10 @@ tnkd_minor_category = {
         cost = 30
         fire_only_once = yes
         days_remove = 60
+        war_with_on_remove = SKY
+        complete_effect = {
+            add_war_support = 0.025
+        }
         remove_effect = {
             start_border_war = {
                 change_state_controller = 12
@@ -1098,6 +976,10 @@ tnkd_minor_category = {
         cost = 30
         fire_only_once = yes
         days_remove = 60
+        war_with_on_remove = WHT
+        complete_effect = {
+            add_war_support = 0.025
+        }
         remove_effect = {
             start_border_war = {
                 change_state_controller = 72
@@ -1107,38 +989,6 @@ tnkd_minor_category = {
                 }
                 defender = {
                     state = 72
-                    num_provinces = 1
-                }
-            }
-        }
-    }
-    tnkd_sle_border_war_mission = {
-        icon = generic_prepare_civil_war
-        allowed = { tag = TNK }
-        visible = {
-            SLE = {
-                owns_state = 127
-            }
-        }
-        available = {
-            has_completed_focus = tnkd_offensive_infrastructure
-            owns_state = 12
-            SLE = {
-                owns_state = 127
-            }
-        }
-        cost = 30
-        fire_only_once = yes
-        days_remove = 60
-        remove_effect = {
-            start_border_war = {
-                change_state_controller = 127
-                attacker = {
-                    state = 12
-                    num_provinces = 1
-                }
-                defender = {
-                    state = 127
                     num_provinces = 1
                 }
             }
@@ -1258,18 +1108,226 @@ tnkd_minor_category = {
             }
         }
     }
+    tnkd_resource_consolidation_decision = {
+        icon = GFX_decision_generic_scorched_earth
+        priority = 1000
+        allowed = { tag = TNK }
+        activation = { always = no }
+        available = { hidden_trigger = { always = no } }
+        fixed_random_seed = no
+        is_good = yes
+        days_mission_timeout = 10
+        timeout_effect = {
+            hidden_effect = {
+                activate_mission = tnkd_resource_consolidation_decision
+            }
+            # Can these `if`s be inside the `random_list` so it just doesn't show the 0% chance options?
+            # Need this `if` bc if `random_list` is fully 0 it crashes.
+            if = {
+                limit = {
+                    any_owned_state = {
+                        AND = {
+                            is_capital = no
+                            OR = {
+                                metal > 2
+                                composites > 0
+                                advanced > 0
+                                circuitry > 0
+                            }
+                        }
+                    }
+                }
+                random_list = {
+                    0 = {
+                        modifier = {
+                            add = 1
+                            any_owned_state = {
+                                AND = {
+                                    is_capital = no
+                                    metal > 2
+                                }
+                            }
+                        }
+                        random_owned_state = {
+                            limit = {
+                                is_capital = no
+                                # Since `tnkd_reindustrialization` removes 2 metal from every state we
+                                # don't want to cheat this by having all the states have moved their
+                                # metal before hand.
+                                metal > 2
+                            }
+                            custom_effect_tooltip = tnkd_resource_consolidation_decision_metal_tt
+                            hidden_effect = {
+                                add_resource = {
+                                    type = metal
+                                    amount = -1
+                                }
+                                capital_scope = {
+                                    add_resource = {
+                                        type = metal
+                                        amount = 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    0 = {
+                        modifier = {
+                            add = 1
+                            any_owned_state = {
+                                AND = {
+                                    is_capital = no
+                                    composites > 0
+                                }
+                            }
+                        }
+                        random_owned_state = {
+                            limit = {
+                                is_capital = no
+                                composites > 0
+                            }
+                            custom_effect_tooltip = tnkd_resource_consolidation_decision_composites_tt
+                            hidden_effect = {
+                                add_resource = {
+                                    type = composites
+                                    amount = -1
+                                }
+                                capital_scope = {
+                                    add_resource = {
+                                        type = composites
+                                        amount = 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    0 = {
+                        modifier = {
+                            add = 1
+                            any_owned_state = {
+                                AND = {
+                                    is_capital = no
+                                    advanced > 0
+                                }
+                            }
+                        }
+                        random_owned_state = {
+                            limit = {
+                                is_capital = no
+                                advanced > 0
+                            }
+                            custom_effect_tooltip = tnkd_resource_consolidation_decision_advanced_tt
+                            hidden_effect = {
+                                add_resource = {
+                                    type = advanced
+                                    amount = -1
+                                }
+                                capital_scope = {
+                                    add_resource = {
+                                        type = advanced
+                                        amount = 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    0 = {
+                        modifier = {
+                            add = 1
+                            any_owned_state = {
+                                AND = {
+                                    is_capital = no
+                                    circuitry > 0
+                                }
+                            }
+                        }
+                        random_owned_state = {
+                            limit = {
+                                is_capital = no
+                                circuitry > 0
+                            }
+                            custom_effect_tooltip = tnkd_resource_consolidation_decision_circuitry_tt
+                            hidden_effect = {
+                                add_resource = {
+                                    type = circuitry
+                                    amount = -1
+                                }
+                                capital_scope = {
+                                    add_resource = {
+                                        type = circuitry
+                                        amount = 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+tnkd_mojave_category = {
+    tnkd_quarry_junction_mission = {
+        priority = 1000
+        allowed = { tag = TNK }
+        visible = { has_completed_focus = tnkd_new_mojave }
+        available = {
+            has_manpower > 500
+            controls_state = 552
+            has_equipment = {
+                infantry_equipment > 499
+            }
+        }
+        cost = 30
+        days_remove = 30
+        complete_effect = {
+            add_manpower = -500
+            add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+        }
+        remove_effect = {
+            add_manpower = 100
+            add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+			}
+            552 = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes 
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes 
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                    province = 9067
+                }
+            }
+        }
+    }
     tnkd_offmap_industry_mission = {
         allowed = { tag = TNK }
+        visible = { has_completed_focus = tnkd_new_mojave }
         available = {
-            has_manpower > 250
+            has_manpower > 300
             any_controlled_state = {
                 industrial_complex > 0
             }
         }
-        cost = 15
+        cost = 20
         days_remove = 30
         complete_effect = {
-            add_manpower = -250
+            add_manpower = -300
             random_controlled_state = {
                 limit = {
                     industrial_complex > 0
@@ -1289,16 +1347,17 @@ tnkd_minor_category = {
     }
     tnkd_offmap_military_mission = {
         allowed = { tag = TNK }
+        visible = { has_completed_focus = tnkd_new_mojave }
         available = {
-            has_manpower > 250
+            has_manpower > 300
             any_controlled_state = {
                 arms_factory > 0
             }
         }
-        cost = 15
+        cost = 20
         days_remove = 30
         complete_effect = {
-            add_manpower = -250
+            add_manpower = -300
             random_controlled_state = {
                 limit = {
                     arms_factory > 0
@@ -1313,6 +1372,73 @@ tnkd_minor_category = {
             add_offsite_building = {
                 type = arms_factory
                 level = 1
+            }
+        }
+    }
+    tnkd_northern_mojave_industry_mission = {
+        allowed = { tag = TNK }
+        visible = { has_completed_focus = tnkd_new_mojave }
+        available = {
+            has_manpower > 200
+            any_controlled_state = {
+                AND = {
+                    industrial_complex < 2
+                    region = 3
+                }
+            }
+        }
+        cost = 10
+        days_remove = 20
+        complete_effect = {
+            add_manpower = -200
+            
+        }
+        remove_effect = {
+            random_controlled_state = {
+                limit = {
+                    AND = {
+                        industrial_complex < 3
+                        region = 3
+                    }
+                }
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes 
+                }
+            }
+        }
+    }
+    tnkd_northern_mojave_military_mission = {
+        allowed = { tag = TNK }
+        visible = { has_completed_focus = tnkd_new_mojave }
+        available = {
+            has_manpower > 200
+            any_controlled_state = {
+                AND = {
+                    arms_factory < 3
+                    region = 3
+                }
+            }
+        }
+        cost = 10
+        days_remove = 20
+        complete_effect = {
+            add_manpower = -200
+        }
+        remove_effect = {
+            random_controlled_state = {
+                limit = {
+                    AND = {
+                        arms_factory < 3
+                        region = 3
+                    }
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes 
+                }
             }
         }
     }

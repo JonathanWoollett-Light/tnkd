@@ -895,9 +895,11 @@ country_event = {
 		set_variable = { tnk_broken_mojave_consumer_goods_factor_var = 0.12 }
 		set_variable = { tnk_broken_mojave_no_compliance_gain_var = 1 }
 		set_variable = { tnk_broken_mojave_resistance_activity_var = 2 }
-		set_variable = { tnk_broken_mojave_compliance_growth_on_our_occupied_states_var = -1 }
-		add_dynamic_modifier = {
-			modifier = tnk_broken_mojave_dynamic_modifier
+		set_variable = { tnk_broken_mojave_compliance_gain_var = -0.5 }
+		hidden_effect = {
+			add_dynamic_modifier = {
+				modifier = tnk_broken_mojave_dynamic_modifier
+			}
 		}
 	}
 }

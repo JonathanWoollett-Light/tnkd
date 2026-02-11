@@ -53,6 +53,7 @@
  
  tnkd_new_mojave:0 "The New Mojave"
  tnkd_new_mojave_tt:0 "Controls §Y[47.GetName]§!, §Y[67.GetName]§!, §Y[137.GetName]§!, §Y[417.GetName]§!, §Y[46.GetName]§!, §Y[573.GetName]§! and §Y[552.GetName]§!."
+ tnkd_new_mojave_tt_2:0 "Enables decisions to rebuild the Mojave."
  tnkd_new_mojave_desc:0 "The Mojave is not like our labs, it is messy and unpredictable, but it is also full of resources and potential. We must find a way to control it, to make it our own, and to use it to our advantage."
 
  tnkd_new_mojave_1:0 "Negotiation"
@@ -133,8 +134,8 @@
  tnkd_serenity:0 "Serenity"
  tnkd_serenity_desc:0"The voices are gone, our...\n\nmy... mind is at peace."
 
- tnkd_final:0 "Peace"
- tnkd_final_desc:0 "We sit back and watch the sun rise on a grateful wasteland."
+ tnkd_final:0 "New World Blues"
+ tnkd_final_desc:0 "It is time to stop focussing on the old world and look forward to the new one."
 
  # Mobius convergance
  # --------------------------------------------------------------
@@ -241,16 +242,21 @@
  tnkd_peace:0 "A Silent Wasteland"
  tnkd_peace_desc:0 "Silence falls.\nNow we can focus."
 
+ tnkd_reindustrialization:0 "Reindustrializing the Mojave"
+ tnkd_reindustrialization_desc:0 "With the entire Mojave under our control we can re-invest into the territory and spark a new industrial boom and cultural renaissance. "
+ tnkd_reindustrialization_tt:0 "§Y[TNK.getName]§! owns, controlls and has §Cpacified§! all states in §YMojave§!."
+ 
+ tnkd_eastern_cores:0 "Consolidating the East"
+ tnkd_eastern_cores_desc:0 "With our new territorial gains in the east we can now expand how core territory"
 
- tnkd_expansion_one:0 "Innovation"
- tnkd_expansion_one_desc:0 "With our mind and territory unified we can reinvest to ignite industrial innovation."
- tnkd_expansion_one_tt:0 "Add §G12§! §YBuilding Slots§!, §G3§! §YArms Workshops§! and §G3§! §YCivilian Workshop§! to every core state."
- tnkd_expansion_two:0 "Expanding East"
- tnkd_expansion_two_desc:0 "Without the [CES.getName] on our doorstep we have some room to breath."
- tnkd_expansion_two_tt:0 "§Y[TNK.getName]§!, their subjects, or their allies control all territory within §YNorthern Mojave§!."
- tnkd_expansion_three:0 "Expanding West"
- tnkd_expansion_three_desc:0 "Without the [NCR.getName] on our doorstep we have some room to breath."
- tnkd_expansion_three_tt:0 "§Y[TNK.getName]§!, their subjects, or their allies control all territory within §YSouthern Utah§!."
+ tnkd_northern_mojave:0 "Expanding North"
+ tnkd_northern_mojave_desc:0 "Without the [NCR.getName] on our doorstep we have some room to breath."
+ tnkd_northern_mojave_tt:0 "§Y[TNK.getName]§! owns, controlls and has §Cpacified§! all states in §YNorthern Mojave§!."
+ 
+ tnkd_southern_mojave:0 "Expanding South"
+ tnkd_southern_mojave_desc:0 "With our new territorial gains in the west we can now expand how core territory"
+ tnkd_southern_mojave_tt:0 "§Y[TNK.getName]§! owns, controlls and has §Cpacified§! all states in §YSouthern Mojave§!."
+
  tnkd_platinum_chip:0 "Chip on loan"
  tnkd_platinum_chip_desc:0 "I'm sure he won't mind if we borrow it for a bit."
  # Tech ascendance
@@ -337,9 +343,6 @@
  tnkd_dam:0 "Saturnite Turbines"
  tnkd_dam_desc:0 "We can use this uniquely hard and light material, to make more efficient turbines."
  
- tnkd_better_reactors:0 "Better Reactors"
- tnkd_better_reactors_desc:0 "With some inspired adjustments we can improve the efficiency of our reactors."
- 
  tnkd_theoretical_production_focus:0 "Pre-mature Production Optimization"
  tnkd_theoretical_production_focus_desc:0 "No don't do it like that, do it like this... no not like that..."
 
@@ -372,12 +375,6 @@
 
  tnkd_helping_diana:0 "A Lost Scientist"
  tnkd_helping_diana_desc:0 "This entity has the potential to form a stubborn roadblock against the legion with our help."
-
- tnkd_eastern_cores:0 "Consolidating the East"
- tnkd_eastern_cores_desc:0 "With our new territorial gains in the east we can now expand how core territory"
-
- tnkd_western_cores:0 "Consolidating the West"
- tnkd_western_cores_desc:0 "With our new territorial gains in the west we can now expand how core territory"
 
  tnkd_controlling_ncr:0 "Pacifying the Republic"
  tnkd_controlling_ncr_desc:0 "It will require a period of chaotic readjustment to bring the territories of the NCR into line."
