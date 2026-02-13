@@ -3796,6 +3796,10 @@ focus_tree = {
 			focus = tnkd_mobius_convergance
 		}
 		completion_reward = {
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.1
+			}
 			add_war_support = 0.2
 			remove_ideas = {
 				tnkd_convergance_idea
@@ -3899,7 +3903,10 @@ focus_tree = {
 			else = {
 				create_faction = "The Vision"
 			}
-			
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.2
+			}
 			add_ideas = tnkd_a_narrow_path
 			set_temp_variable = { tnk_angels_of_death_var_change = -0.1 }
             update_tnk_angels_of_death_var = yes
@@ -4084,6 +4091,13 @@ focus_tree = {
 			focus = tnkd_true_convergance
 		}
 		completion_reward = {
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.1
+			}
+			set_politics = {
+				ruling_party = ruler
+			}
 			add_stability = 0.1
 			remove_ideas = {
 				tnkd_convergance_idea
@@ -4188,6 +4202,10 @@ focus_tree = {
 			}
 			else = {
 				create_faction = "The American Technical Alliance"
+			}
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.2
 			}
 			add_stability = 0.1
 			add_ideas = tnkd_a_narrow_path
