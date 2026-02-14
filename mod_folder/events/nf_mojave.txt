@@ -718,6 +718,8 @@ country_event = {
 			base = 100
 		}
 		name = nf_mojave_brotherhood.27.c
+		552 = { add_core_of = TNK }
+		67 = { add_core_of = TNK }
 		every_state = {
 			limit = {
 				AND = {
@@ -733,6 +735,7 @@ country_event = {
 				}
 			}
 			transfer_state_to = TNK
+			add_core_of = TNK
 		}
 		TNK = {
 			add_ideas = tnkd_crisis
