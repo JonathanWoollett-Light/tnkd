@@ -2043,6 +2043,9 @@ focus_tree = {
 		cost = 30
 		y = 3
 		x = -1
+		ai_will_do = {
+			base = 0
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = tnkd_new_mojave_tt
@@ -2110,6 +2113,9 @@ focus_tree = {
 		cost = 30
 		y = 3
 		x = 1
+		ai_will_do = {
+			base = 1
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = tnkd_new_mojave_tt
@@ -2123,29 +2129,34 @@ focus_tree = {
 					controls_state = 552
 				}
 			}
-			custom_trigger_tooltip = {
-				tooltip = tnkd_new_mojave_7_tt
-				AND = {
-					47 = {
-						has_active_resistance = no
-					}
-					67 = {
-						has_active_resistance = no
-					}
-					137 = {
-						has_active_resistance = no
-					}
-					417 = {
-						has_active_resistance = no
-					}
-					46 = {
-						has_active_resistance = no
-					}
-					573 = {
-						has_active_resistance = no
-					}
-					552 = {
-						has_active_resistance = no
+			if = {
+				limit = {
+					is_ai = no
+				}
+				custom_trigger_tooltip = {
+					tooltip = tnkd_new_mojave_7_tt
+					AND = {
+						47 = {
+							has_active_resistance = no
+						}
+						67 = {
+							has_active_resistance = no
+						}
+						137 = {
+							has_active_resistance = no
+						}
+						417 = {
+							has_active_resistance = no
+						}
+						46 = {
+							has_active_resistance = no
+						}
+						573 = {
+							has_active_resistance = no
+						}
+						552 = {
+							has_active_resistance = no
+						}
 					}
 				}
 			}
@@ -2363,6 +2374,9 @@ focus_tree = {
 		cost = 30
 		y = 1
 		relative_position_id = tnkd_picking_sides
+		ai_will_do = {
+			base = 1
+		}
 		prerequisite = {
 			focus = tnkd_picking_sides
 		}
@@ -2385,6 +2399,9 @@ focus_tree = {
 		y = 1
 		x = -2
 		relative_position_id = tnkd_picking_sides
+		ai_will_do = {
+			base = 0
+		}
 		prerequisite = {
 			focus = tnkd_picking_sides
 		}
@@ -2445,6 +2462,9 @@ focus_tree = {
 		y = 1
 		x = 2
 		relative_position_id = tnkd_picking_sides
+		ai_will_do = {
+			base = 0
+		}
 		prerequisite = {
 			focus = tnkd_picking_sides
 		}
@@ -3377,7 +3397,12 @@ focus_tree = {
 			focus = tnkd_unity
 		}
 		available = {
-			has_army_manpower = { size < 501 }
+			if = {
+				limit = {
+					is_ai = no
+				}
+				has_army_manpower = { size < 501 }
+			}
 		}
 		completion_reward = {
 			add_ideas = {
@@ -3784,11 +3809,19 @@ focus_tree = {
 		y = 1
 		x = 3
 		relative_position_id = tnkd_convergance
+		ai_will_do = {
+			base = 1
+		}
 		prerequisite = {
 			focus = tnkd_convergance
 		}
 		available = {
-			has_army_manpower = { size < 501 }
+			if = {
+				limit = {
+					is_ai = no
+				}
+				has_army_manpower = { size < 501 }
+			}
 			intellectuals > 0.1
 			not = { has_completed_focus = tnkd_new_mojave_6 }
 		}
@@ -4079,11 +4112,19 @@ focus_tree = {
 		y = 1
 		x = -3
 		relative_position_id = tnkd_convergance
+		ai_will_do = {
+			base = 0
+		}
 		prerequisite = {
 			focus = tnkd_convergance
 		}
 		available = {
-			has_army_manpower = { size < 501 }
+			if = {
+				limit = {
+					is_ai = no
+				}
+				has_army_manpower = { size < 501 }
+			}
 			ruler > 0.1
 			not = { has_completed_focus = tnkd_new_mojave_7 }
 		}

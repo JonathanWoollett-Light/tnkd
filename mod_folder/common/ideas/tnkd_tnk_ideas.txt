@@ -631,5 +631,28 @@ ideas = {
 				mic_to_target_factor = 0.25
 			}
 		}
+		tnkd_crisis = {
+			picture = generic_cannibal
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 1
+				production_factory_efficiency_gain_factor = 1
+				stability_factor = 1
+				war_support_factor = 1
+				breakthrough_factor = 1
+				org_loss_when_moving = -1
+				political_power_factor = 1
+				army_org_factor = 1
+				army_morale_factor = 1
+				army_core_attack_factor = 1
+				army_core_defence_factor = 1
+				research_speed_factor = 1
+				resistance_activity = -1
+				training_time_factor = -1
+			}
+		}
     }
 }

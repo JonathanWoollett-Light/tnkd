@@ -195,3 +195,6 @@
 
  tnkd_gev_idea:0 "§PG.E.V.§!"
  tnkd_gev_idea_desc:0 "They call it §PG.E.V.§!... the Garden of Eden Virus. It seems to be re-writing the DNA of creatures and plants to be able to survive and thrive in the wasteland, some even seem to be feeding off radiation. That said, it seems to have some other... more subtle affects."
+ 
+ tnkd_crisis:0 "§RMonsters of the Mojave§!"
+ tnkd_crisis_desc:0 "An unbridled pursuit of power and knowledge by immortal insane scientists... what has Elijah done?!?\n\n§GWhen AI controlled [TNK.GetNameDef] is a mid to late game crisis.§!"
