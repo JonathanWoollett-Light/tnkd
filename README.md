@@ -16,6 +16,7 @@
 
 ### Very High Priority
 
+- add decisions to buff popularity of each political party (probably lock them behind some focuses).
 - when AI controls think tank make it a mid-late game crisis
 - need to do another playthrough to re-balance things
 - balance `tnkd_next_steps` stability and war support requirements so they are difficult to meet and take some time and focus to get
